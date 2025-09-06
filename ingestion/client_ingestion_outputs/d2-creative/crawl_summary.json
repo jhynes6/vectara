@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-09-06T16:11:52.719331",
+  "folder_id": "1oe7dVJA9iYPIO9_QGv01s33xqw4750Wa",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 7,
+    "supported_files": 5,
+    "successfully_processed": 5,
+    "errors": 0
+  },
+  "crawled_files": [
+    {
+      "name": "Client Intake Form - D2 Creative",
+      "final_filename": "client_intake_client-intake-form-d2-creative.md",
+      "id": "1wpsLVTR39ciEnjzxyoFppYwlpzbaOuPefgHefoIerPo",
+      "size": "38710",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1wpsLVTR39ciEnjzxyoFppYwlpzbaOuPefgHefoIerPo/view",
+      "word_count": 803,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "Trade Show Capabilities 040125.pdf",
+      "final_filename": "capabilities_overview_trade-show-capabilities-040125.md",
+      "id": "1RgtOR2xtlMlHgZRVPzooiOa3HDi0NJcx",
+      "size": "5562395",
+      "mime_type": "application/pdf",
+      "content_type": "capabilities_overview",
+      "url": "https://drive.google.com/file/d/1RgtOR2xtlMlHgZRVPzooiOa3HDi0NJcx/view",
+      "word_count": 1944
+    },
+    {
+      "name": "D2Creative-Techical-Capabilities Overview_General_07292025.pdf",
+      "final_filename": "capabilities_overview_d2creative-techical-capabilities-overview-general-07292025.md",
+      "id": "1TULz1X99dc7yP9h2K7gSmsMwKVFS0Bvu",
+      "size": "383101",
+      "mime_type": "application/pdf",
+      "content_type": "capabilities_overview",
+      "url": "https://drive.google.com/file/d/1TULz1X99dc7yP9h2K7gSmsMwKVFS0Bvu/view",
+      "word_count": 455
+    },
+    {
+      "name": "D2-Capabilities-Brochure_2024.pdf",
+      "final_filename": "brochures_newsletters_d2-capabilities-brochure-2024.md",
+      "id": "1qQuZW9qeG3yKxz9GYXNTUcrCwzdBiOMi",
+      "size": "753067",
+      "mime_type": "application/pdf",
+      "content_type": "brochures_newsletters",
+      "url": "https://drive.google.com/file/d/1qQuZW9qeG3yKxz9GYXNTUcrCwzdBiOMi/view",
+      "word_count": 281
+    },
+    {
+      "name": "D2-Capabilities-Brochure-Technology.pdf",
+      "final_filename": "brochures_newsletters_d2-capabilities-brochure-technology.md",
+      "id": "1Yhs7U0T-PX5wzvvCMsIg1Fl3tH4IIChH",
+      "size": "771106",
+      "mime_type": "application/pdf",
+      "content_type": "brochures_newsletters",
+      "url": "https://drive.google.com/file/d/1Yhs7U0T-PX5wzvvCMsIg1Fl3tH4IIChH/view",
+      "word_count": 289
+    }
+  ]
+}

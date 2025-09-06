@@ -1,0 +1,17 @@
+---
+source: "website"
+content_type: "case_studies"
+url: "https://www.d2creative.com/our-work/geo-targeted-website/"
+title: "Serve Multiple Audiences Targeted Content with a Single Site"
+domain: "www.d2creative.com"
+path: "/our-work/geo-targeted-website/"
+scraped_time: "2025-09-06T13:53:07.332640"
+url_depth: 2
+word_count: 426
+client_name: "D2 Creative"
+---
+
+# Serve Multiple Audiences Targeted Content with a Single Site
+
+Coopergenomics Serving a Global Audience with an Adaptable Site Branding Design & Development , SEO & SEM , Website Design & Development The Challenge Our Approach The Result CooperSurgical acquired three pioneering, reproductive genetic testing companies, overnight becoming a market-leading provider of preimplantation genetic testing. The audiences for these products were historically IVF professionals and clinicians; however, several products were going to be marketed directly to consumers in both the US and abroad. Compounding the complexity, the products are labeled and marketed differently outside the U.S. CooperSurgical looked to D2 Creative to unify the positioning, combine the websites and organize their overlapping product offerings. Our challenge was twofold: serve a global audience with a single site, and give a “friendly face” to cutting-edge science and technology. An Unintimidating Look and Feel A key audience for the site is couples looking to start families. So they featured prominently in our design. To help explain complex scientific content, we employed simple illustrations and iconography . The navigation was streamlined to allow quick access to content and improve the brand experience. Product content was organized into “Who? What? Why? How? and When” categories, making it easier to understand. Geo-Location Based Content Depending on the geographic location of the user, the new site had to present regionally-appropriate content. Using browser geolocation detection we are able to switch out product names, page content, navigation elements and images based on each visitor’s location. What’s more, all of this happens “behind the scenes” within one site, without the need for separate administration or publishing. Maintaining multiple websites can be expensive. By creating one site that serves consumers globally, we were able to significantly reduce costs and workload for brand managers. From a design perspective, we delivered an experience that evokes compassion while still maintaining CooperSurgical’s commitment to advancing the field of reproductive genetics. From front end to back, we’ve created a site that allows our client easy site maintenance while providing a welcoming experience for visitors . Branding Web Design & Development Mobile Web Design & Development See More Case Studies Let’s Connect Let’s Connect New Business Mike DeFabrizio 732-539-2257 Email Mike Careers at D2 See Openings Insights Explore contemporary marketing and communications expertise: Digital Glossary Blog White Papers Video Library Digital Ad Performance Calculator Location 399 Campus Drive Suite 309 Somerset, NJ
+08873-1178 Connect Send Us a Note How can we help you? Discuss a Project Learn More About D2 Creative Partner With Us Awards & Certifications D2 Creative is a Women-owned Minority-owned Business. ©2025 D2 Creative. All Rights Reserved. Privacy Policy

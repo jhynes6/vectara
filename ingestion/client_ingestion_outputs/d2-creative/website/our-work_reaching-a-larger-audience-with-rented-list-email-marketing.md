@@ -1,0 +1,55 @@
+---
+source: "website"
+content_type: "case_studies"
+url: "https://www.d2creative.com/our-work/reaching-a-larger-audience-with-rented-list-email-marketing/"
+title: "Reaching a Larger Audience with Rented List Email Marketing"
+domain: "www.d2creative.com"
+path: "/our-work/reaching-a-larger-audience-with-rented-list-email-marketing/"
+scraped_time: "2025-09-06T16:15:50.683436"
+url_depth: 2
+word_count: 505
+client_name: "d2-creative"
+---
+
+# Reaching a Larger Audience with Rented List Email Marketing
+
+Expand Reach with Rented List Email Marketing Campaigns
+
+## D2 CREATIVE
+
+#
+
+Reaching a Larger Audience with Rented List Email Marketing
+
+Campaign Development, Digital Marketing
+
+## The
+Challenge
+
+## Our
+Approach
+
+## The
+Result
+
+Purchasing email lists has become an increasingly difficult task as laws and regulations online have made strides to protect people’s privacy. Nowadays, these types of lists have become far more expensive, and trying to upload an improperly vetted list can lead to email services not accepting the new emails or at worst, blacklisting your account entirely.
+
+Alternatively, renting email lists provide businesses with access to a larger, targeted audience, saving time and costs associated with building their own lists. It allows for immediate campaign deployment, increases brand visibility, and expands market reach. Rented email lists often provide options to target specific demographics, interests, or industries. This allows businesses to refine their marketing efforts and reach the most relevant audience for their offerings, increasing the chances of generating meaningful leads or conversions.
+
+Our team collaborates with a number of clients, including IEEE, to deploy rented list email campaigns.
+
+Working with a partner that specializes in acquiring email opt-ins gives us and by extension our clients, access to thousands of potential emails. And, by finding a service with fully CAN-SPAM and CASL Compliant lists verified through daily scrubs, weekly data passes, and periodic checks of user interest, we can utilize these lists without worrying about email services not accepting them.
+
+But, just having access to emails isn’t enough. To maximize the success of a rented list email campaign, they needed content that truly speaks to the newly acquired audiences and a compelling offer that would increase opt-ins for the client.
+
+We segment and target our audience based on demographics and industry, then craft compelling email content with attention-grabbing subject lines. This allows us to pinpoint sends to exact customer segments so our clients could corner their niche.
+
+With each campaign, we also deploy a resend to those who opened and interacted with the original email, allowing for even more opportunities to connect and convert with tailored messaging for the most interested recipients.
+
+By providing our clients with access to hundreds of thousands of new emails to contact, we’re able to help them not only execute their email marketing campaigns but make them a success as well. With campaigns generating as much as 6,000 clicks from one email, the campaigns using these lists helped to promote both our clients and their offerings to a plethora of people they couldn’t reach before. The way these campaigns were executed gave our clients valuable insight into who is interacting with their content while giving them the ability to follow up on potential leads with personalized remarketing campaigns.
+
+![Table showing the industry average open and click through rates compared to D2 rented list email rates](https://www.d2creative.com/wp-content/uploads/2023/10/img-mobile-email-table@2x1.png)
+
+## Email Templates
+
+![Preview of a promotional email for TRIOSE's capabilities and solutions](https://www.d2creative.com/wp-content/uploads/2023/10/d-2-mobile-email-thumb-1@2x1.jpg) ![Preview of an IEEE and Rutgers Online Mini MBA for Engineers promotional email](https://www.d2creative.com/wp-content/uploads/2023/10/d-2-mobile-email-thumb-2@2x1.jpg) ![Preview of IEEE Collabratec email campaign: ](https://www.d2creative.com/wp-content/uploads/2023/10/d-2-mobile-email-thumb-3@2x1.jpg)

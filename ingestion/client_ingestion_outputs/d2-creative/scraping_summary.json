@@ -1,0 +1,23 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 145,
+    "successful_scrapes": 145,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 74682,
+    "categories": {
+      "case_studies": 38,
+      "blogs_resources": 69,
+      "services_products": 16,
+      "other": 15,
+      "about": 2,
+      "careers": 2,
+      "industry_markets": 2,
+      "homepage": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "d2-creative"
+    },
+    "scrape_time": "2025-09-06T16:16:31.203326"
+  }
+}

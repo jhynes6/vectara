@@ -1,0 +1,17 @@
+---
+source: "website"
+content_type: "case_studies"
+url: "https://www.d2creative.com/our-work/building-nasa-icon-a-website/"
+title: "Katherine Johnson Foundation Website | Case Study"
+domain: "www.d2creative.com"
+path: "/our-work/building-nasa-icon-a-website/"
+scraped_time: "2025-09-06T13:53:09.892316"
+url_depth: 2
+word_count: 482
+client_name: "D2 Creative"
+---
+
+# Katherine Johnson Foundation Website | Case Study
+
+Katherine Johnson Foundation Building NASA Icon Katherine Johnson the Website She Deserves Website Design & Development The Challenge Our Approach The Result The family of Katherine Johnson, legendary NASA research mathematician and subject of the film Hidden Figures, approached D2 Creative for help with a very personal website redesign project. The Katherine Johnson Foundation had a website, but the family was not happy with its cold, impersonal feel, and believed that the information on it about Katherine Johnson’s life and accomplishments didn’t do an adequate job capturing her remarkable journey. They wanted the website to tell a more personal story that spoke to who Katherine Johnson really was, not just what a Wikipedia article or Hollywood movie would tell you about her. Katherine Johnson was more than just a character in a movie, she was a devoted mother, an educator, and a mentor. To tell that side of her story, we needed to get real insights from the people who knew her best. We arranged interviews with her daughters, colleagues, and sorority sisters, so that we could get the full picture of who Katherine Johnson was outside the spotlight. We also took the time to read all of Katherine’s published memoirs, all in order to tell her personal story. We wanted the site to reflect and support Katherine Johnson’s commitment to education. When writing for the website, we made efforts to ensure that the content was not only informative, but easily absorbable for the children she loved to teach. We also used this redesign as an opportunity to help educate children the way Katherine did in life with links to both her books and various other teaching resources. All of our planning came together in the new design of the Official Website of the Katherine Johnson Foundation . Warm colors, carefully selected photography, and a modern look and feel helped to give the site a much more personal atmosphere than the old, plain site. The new site contains intimate biographical information, a timeline of her professional work and accomplishments, educational resources for teachers and students, and much more for people of all ages to discover and learn about Katherine Johnson. In order to help raise money for the Katherine Johnson Foundation and empower future students in STEM, we integrated a footer form on each page for easy donating. WEB DESIGN & DEVELOPMENT Katherine’s Story Katherine’s Work See More Case Studies Let’s Connect Let’s Connect New Business Mike DeFabrizio 732-539-2257 Email Mike Careers at D2 See Openings Insights Explore contemporary marketing and communications expertise: Digital Glossary Blog White Papers Video Library Digital Ad Performance Calculator Location 399 Campus Drive Suite 309 Somerset, NJ
+08873-1178 Connect Send Us a Note How can we help you? Discuss a Project Learn More About D2 Creative Partner With Us Awards & Certifications D2 Creative is a Women-owned Minority-owned Business. ©2025 D2 Creative. All Rights Reserved. Privacy Policy
