@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "vertex-ai-rag"
+version = "0.1.0"
+description = "Vertex AI RAG implementation for client knowledge management"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = [{include = "vertex_ai_rag"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+google-cloud-aiplatform = {extras = ["adk", "agent-engines"], version = "^1.108.0"}
+google-adk = "^1.10.0"
+google-auth = "^2.35.0"
+google-api-python-client = "^2.154.0"
+python-dotenv = "^1.0.1"
+requests = "^2.32.3"
+tqdm = "^4.67.1"
+llama-index = "^0.13.3"
+llama-index-core = "^0.13.3"
+openai = "^1.99.3"
+pydantic = "^2.11.5"
+beautifulsoup4 = "^4.12.3"
+markitdown = "^0.0.1a2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.0"
+black = "^24.10.0"
+isort = "^5.13.2"
+mypy = "^1.13.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
