@@ -1,0 +1,14 @@
+# Inbox Manager Requirements
+
+# Web Framework
+flask==3.1.0
+
+# Database
+psycopg2-binary==2.9.10
+
+# LLM Providers
+openai>=1.99.3
+anthropic==0.62.0
+
+# Utilities
+python-dotenv==1.0.1
