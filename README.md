@@ -1,72 +1,103 @@
-# Vectara Workspace Inspector
+# Client Onboarding & RAG Workflow System
 
-A Python script to inspect your Vectara workspace and list:
-- 🤖 All agents (if available via API)
-- 📚 All corpora 
-- 📄 All documents in each corpus
+A comprehensive AI-powered client onboarding system featuring:
+- 🤖 **Agentic Workflow** using OpenAI Assistants (NEW!)
+- 📚 Website & Google Drive content ingestion
+- 📄 Intelligent PDF processing with fallback methods
+- ☁️  Vertex AI RAG corpus management
+- 📝 Automated client brief generation
+
+## 🚀 Quick Start
+
+### New Agentic Workflow (Recommended)
+
+Run the AI-powered orchestrator:
+
+```bash
+# Interactive mode
+python3 agentic_workflow.py
+
+# Batch mode
+python3 agentic_workflow.py \
+  --client-id "client-name" \
+  --drive-folder-id "1ABC123..." \
+  --client-homepage-url "https://example.com" \
+  --batch-mode
+```
+
+**See [QUICK_START.md](QUICK_START.md) for detailed setup.**
 
 ## Setup
 
-### 1. Virtual Environment
-
-The project is already set up with a Python virtual environment. To activate it:
+### 1. Install Dependencies
 
 ```bash
-source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
-### 2. Dependencies
+### 2. Configuration
 
-Dependencies are already installed from the consolidated requirements of:
-- `vectara-agentic` (AI agent library)
-- `vectara-ingest` (data ingestion framework)
-
-### 3. Configuration
-
-Create a `.env` file with your Vectara API key:
+Create a `.env` file with your API keys:
 
 ```bash
-cp env.template .env
+# Required for agentic workflow
+OPENAI_API_KEY=sk-your-openai-key-here
+
+# Required for Vertex AI RAG
+VECTARA_API_KEY=your-vectara-api-key-here
+
+# Optional
+BRIGHTDATA_API_TOKEN=your-brightdata-token
 ```
 
-Then edit `.env` and add your actual API key:
+### 3. Google Drive Credentials
 
-```
-VECTARA_API_KEY=your_actual_vectara_api_key_here
-```
+Place your service account JSON file:
 
-You can get your API key from the [Vectara Console](https://console.vectara.com).
+```bash
+cp /path/to/your-service-account.json ./service_account.json
+```
 
 ## Usage
 
-### Basic Usage
+### 🤖 Agentic Workflow (NEW - Recommended)
+
+The intelligent AI-orchestrated workflow:
 
 ```bash
-python vectara_inspector.py
+# Interactive - guides you through setup
+python3 agentic_workflow.py
+
+# Automated batch processing
+python3 agentic_workflow.py \
+  --client-id "acme-corp" \
+  --drive-folder-id "1ABC..." \
+  --client-homepage-url "https://acme.com" \
+  --batch-mode
 ```
 
-### With Command Line Options
+**Benefits:**
+- ✅ Intelligent error handling
+- ✅ Adaptive workflow execution  
+- ✅ Self-documenting process
+- ✅ Easy to extend and modify
+
+### 📚 Traditional Workflow Components
+
+Individual scripts for manual orchestration:
 
 ```bash
-# Specify API key directly
-python vectara_inspector.py --api-key "your-api-key"
+# 1. Client ingestion
+python3 new_client_ingestion.py --client-id "client" \
+  --drive-folder-id "1ABC..." --client-homepage-url "https://..."
 
-# Enable verbose output
-python vectara_inspector.py --verbose
+# 2. PDF reprocessing (if needed)
+python3 ingestion/reprocess_failed_pdfs.py \
+  --output-dir "ingestion/client_ingestion_outputs/client"
 
-# Use custom endpoint
-python vectara_inspector.py --endpoint "https://custom-vectara.domain.com"
-
-# Show help
-python vectara_inspector.py --help
+# 3. Brief generation
+python3 client_brief_generator.py --corpus-key "client"
 ```
-
-### Environment Variables
-
-You can also set these environment variables:
-
-- `VECTARA_API_KEY`: Your Vectara API key (required)
-- `VECTARA_ENDPOINT`: Vectara API endpoint (optional, defaults to https://api.vectara.io)
 
 ## Output
 
@@ -88,11 +119,27 @@ The script will display:
 
 ## Features
 
-- 🎨 Beautiful terminal output using Rich
-- 📊 Tabular data presentation
-- 🔄 Paginated API calls (handles large workspaces)
-- 🛡️ Error handling with informative messages
-- 🔧 Configurable via command line or environment variables
+### Agentic Workflow
+- 🤖 **AI Orchestration**: OpenAI Assistants coordinate entire workflow
+- 🧠 **Intelligent Decisions**: Adapts to errors and makes smart choices
+- 🔄 **Automatic Retry**: Smart retry logic for failed operations
+- 📝 **Self-Documenting**: Agent explains its reasoning
+
+### Content Processing
+- 🌐 **Website Scraping**: Intelligent content extraction from sitemaps
+- 📁 **Google Drive Integration**: Automated file download and processing
+- 📄 **Advanced PDF Processing**: Multiple extraction methods (GPT-4, MarkItDown, PDFPlumber)
+- 🏷️ **LLM Categorization**: Automatic content type classification
+
+### RAG & Search
+- ☁️  **Vertex AI RAG**: Automated corpus creation and document upload
+- 🔍 **Semantic Search**: Query client knowledge base
+- 📊 **Rich Metadata**: Comprehensive document tagging
+
+### Brief Generation
+- 📝 **Automated Briefs**: AI-generated comprehensive client summaries
+- 📤 **Drive Upload**: Automatic upload to client folders
+- 🎯 **Multi-Source**: Combines website, docs, and intake forms
 
 ## Troubleshooting
 
@@ -110,10 +157,64 @@ If no corpora or documents are found:
 2. Check that your API key has read permissions
 3. Ensure you have corpora created in your Vectara workspace
 
+## Documentation
+
+📖 **Start Here:**
+- [QUICK_START.md](QUICK_START.md) - Get running in 5 minutes
+- [AGENTIC_WORKFLOW_GUIDE.md](AGENTIC_WORKFLOW_GUIDE.md) - Complete guide to agent workflow
+- [AGENT_VS_TRADITIONAL_COMPARISON.md](AGENT_VS_TRADITIONAL_COMPARISON.md) - Detailed comparison
+
+📚 **Additional Guides:**
+- [NEW_CLIENT_ONBOARDING.md](NEW_CLIENT_ONBOARDING.md) - Traditional workflow guide
+- [pdf_processing_docs.md](pdf_processing_docs.md) - PDF processing details
+
+## Architecture
+
+```
+┌─────────────────────────────────────────────────────┐
+│          OpenAI Coordinator Agent                   │
+│  (Intelligent workflow orchestration)               │
+└────────────┬────────────────────────────────────────┘
+             │
+    ┌────────┴────────┬──────────┬──────────┐
+    │                 │          │          │
+    ▼                 ▼          ▼          ▼
+┌────────┐    ┌─────────┐  ┌────────┐  ┌────────┐
+│Ingest  │    │PDF      │  │Vertex  │  │Brief   │
+│Website │    │Process  │  │AI RAG  │  │Generate│
+│& Drive │    │         │  │Upload  │  │        │
+└────────┘    └─────────┘  └────────┘  └────────┘
+```
+
+## Testing
+
+Run the test suite to verify installation:
+
+```bash
+python3 test_agentic_workflow.py
+```
+
+Expected output:
+```
+================================================================================
+🎉 ALL TESTS PASSED!
+The agentic workflow is ready to use.
+================================================================================
+```
+
 ## Dependencies
 
-This project combines dependencies from the Vectara ecosystem:
-- Core Vectara libraries for API interaction
-- Rich for beautiful terminal output
-- Typer for command-line interface
-- Requests for HTTP operations
+**Core:**
+- `openai>=2.1.0` - OpenAI SDK with Assistants API
+- `vectara>=0.1.0` - Vertex AI RAG integration
+- `llama-index` - LLM application framework
+
+**Processing:**
+- `beautifulsoup4` - Web scraping
+- `pdfplumber` - PDF extraction
+- `markitdown` - Advanced PDF processing
+- `python-slugify` - Filename sanitization
+
+**Infrastructure:**
+- `python-dotenv` - Environment management
+- `google-api-python-client` - Google Drive API

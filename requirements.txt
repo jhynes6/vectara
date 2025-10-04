@@ -12,7 +12,7 @@ vectara>=0.1.0
 # LLM providers
 llama-index-llms-openai==0.5.4
 llama-index-llms-anthropic==0.8.5
-openai>=1.99.3
+openai>=2.1.0
 anthropic==0.62.0
 
 # Core Python packages
