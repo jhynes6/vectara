@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox Manager - Customer Service AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📬 Inbox Manager</h1>
+            <p class="subtitle">AI-Powered Customer Service Email Handler</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Configuration Panel -->
+            <div class="panel config-panel">
+                <h2>⚙️ Configuration</h2>
+                
+                <div class="form-group">
+                    <label for="client-select">Client</label>
+                    <select id="client-select" class="form-control">
+                        <option value="">Loading clients...</option>
+                    </select>
+                    <small id="client-info" class="info-text"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="llm-select">LLM Provider</label>
+                    <select id="llm-select" class="form-control">
+                        <option value="openai">OpenAI (GPT-4o)</option>
+                        <option value="anthropic">Anthropic (Claude 3.5 Sonnet)</option>
+                    </select>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" id="verification-check" checked>
+                        Enable Response Verification
+                    </label>
+                    <small class="info-text">Adds extra layer to ensure responses are grounded in documents</small>
+                </div>
+            </div>
+
+            <!-- Email Input Panel -->
+            <div class="panel email-panel">
+                <h2>📧 Customer Email</h2>
+                <div class="form-group">
+                    <label for="email-content">Email Content</label>
+                    <textarea 
+                        id="email-content" 
+                        class="form-control" 
+                        rows="8" 
+                        placeholder="Paste the customer's email here...
+
+Example:
+Hi, I'm having trouble understanding how your product works with our existing CRM system. Can you explain the integration process?"
+                    ></textarea>
+                </div>
+
+                <div class="button-group">
+                    <button id="process-btn" class="btn btn-primary">
+                        <span class="btn-text">🚀 Process Email</span>
+                        <span class="btn-loader" style="display: none;">⏳ Processing...</span>
+                    </button>
+                    <button id="clear-btn" class="btn btn-secondary">Clear</button>
+                </div>
+            </div>
+
+            <!-- Response Panel -->
+            <div class="panel response-panel" id="response-panel" style="display: none;">
+                <h2>✨ AI Response</h2>
+                
+                <div class="status-badge" id="status-badge"></div>
+                
+                <div class="response-content" id="response-content"></div>
+
+                <!-- Metadata Panel -->
+                <div class="metadata-section" id="metadata-section">
+                    <h3>📊 Response Metadata</h3>
+                    <div class="metadata-grid">
+                        <div class="metadata-item">
+                            <span class="metadata-label">Documents Found:</span>
+                            <span id="meta-docs-found">-</span>
+                        </div>
+                        <div class="metadata-item">
+                            <span class="metadata-label">Confidence Score:</span>
+                            <span id="meta-confidence">-</span>
+                        </div>
+                        <div class="metadata-item">
+                            <span class="metadata-label">Relevance Check:</span>
+                            <span id="meta-relevance">-</span>
+                        </div>
+                        <div class="metadata-item">
+                            <span class="metadata-label">Verification:</span>
+                            <span id="meta-verification">-</span>
+                        </div>
+                    </div>
+
+                    <div class="documents-list" id="documents-list"></div>
+                </div>
+
+                <div class="button-group">
+                    <button id="copy-btn" class="btn btn-secondary">📋 Copy Response</button>
+                    <button id="new-email-btn" class="btn btn-secondary">➕ New Email</button>
+                </div>
+            </div>
+
+            <!-- Document Search Panel -->
+            <div class="panel search-panel">
+                <h2>🔍 Document Search</h2>
+                <p class="info-text">Test the knowledge base directly</p>
+                
+                <div class="form-group">
+                    <input 
+                        type="text" 
+                        id="search-query" 
+                        class="form-control" 
+                        placeholder="Search the knowledge base..."
+                    >
+                </div>
+                
+                <button id="search-btn" class="btn btn-secondary">
+                    <span class="btn-text">Search</span>
+                    <span class="btn-loader" style="display: none;">Searching...</span>
+                </button>
+
+                <div id="search-results" class="search-results"></div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Built with 💙 using Supabase Vector Database</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
