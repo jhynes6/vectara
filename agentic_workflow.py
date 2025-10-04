@@ -80,9 +80,9 @@ class WorkflowTools:
         logger.info("🔧 Tool: run_ingestion")
         
         try:
-            from new_client_ingestion import VertexAIClientOnboarder
+            from supabase_client_ingestion import SupabaseClientOnboarder
             
-            onboarder = VertexAIClientOnboarder(
+            onboarder = SupabaseClientOnboarder(
                 client_id=self.client_id,
                 drive_folder_id=self.drive_folder_id,
                 client_homepage_url=self.client_homepage_url,
@@ -95,8 +95,8 @@ class WorkflowTools:
             # Create directories
             onboarder.create_client_directories()
             
-            # Create corpus
-            onboarder.create_vertex_corpus()
+            # Create client record in Supabase
+            onboarder.create_client_record()
             
             # Run ingestion
             website_task = onboarder.run_website_ingestion(self.config.get('use_llm_categories', True))
@@ -172,14 +172,14 @@ class WorkflowTools:
                 'error': error_msg
             }
     
-    def upload_to_vertex(self) -> Dict[str, Any]:
-        """Upload processed files to Vertex AI RAG"""
-        logger.info("🔧 Tool: upload_to_vertex")
+    def upload_to_supabase(self) -> Dict[str, Any]:
+        """Upload processed files to Supabase Vector DB"""
+        logger.info("🔧 Tool: upload_to_supabase")
         
         try:
-            from new_client_ingestion import VertexAIClientOnboarder
+            from supabase_client_ingestion import SupabaseClientOnboarder
             
-            onboarder = VertexAIClientOnboarder(
+            onboarder = SupabaseClientOnboarder(
                 client_id=self.client_id,
                 drive_folder_id=self.drive_folder_id,
                 client_homepage_url=self.client_homepage_url,
@@ -190,7 +190,7 @@ class WorkflowTools:
             )
             
             files_to_upload = onboarder.get_files_to_upload()
-            successful_uploads, failed_uploads = onboarder.upload_files_to_vertex_ai(files_to_upload)
+            successful_uploads, failed_uploads = onboarder.upload_files_to_supabase(files_to_upload)
             total_files = successful_uploads + failed_uploads
             
             # Generate report
@@ -200,7 +200,7 @@ class WorkflowTools:
             
             return {
                 'success': True,
-                'message': f'Uploaded {successful_uploads}/{total_files} files to Vertex AI',
+                'message': f'Uploaded {successful_uploads}/{total_files} files to Supabase',
                 'successful_uploads': successful_uploads,
                 'failed_uploads': failed_uploads,
                 'total_files': total_files,
@@ -208,7 +208,7 @@ class WorkflowTools:
             }
             
         except Exception as e:
-            error_msg = f"Vertex AI upload failed: {str(e)}"
+            error_msg = f"Supabase upload failed: {str(e)}"
             self.state['errors'].append(error_msg)
             logger.error(error_msg)
             return {
@@ -221,10 +221,10 @@ class WorkflowTools:
         logger.info("🔧 Tool: generate_brief")
         
         try:
-            from client_brief_generator import ClientBriefGenerator
+            from supabase_brief_generator import SupabaseClientBriefGenerator
             
-            generator = ClientBriefGenerator(
-                corpus_key=self.client_id,
+            generator = SupabaseClientBriefGenerator(
+                client_id=self.client_id,
                 drive_folder_id=self.drive_folder_id,
                 credentials_file=self.credentials
             )
@@ -305,7 +305,7 @@ Your job is to orchestrate the complete client onboarding process through these 
 
 1. **Ingestion Phase**: Ingest client website and Google Drive content
 2. **PDF Processing Phase**: Reprocess any failed PDF extractions
-3. **Upload Phase**: Upload all processed content to Vertex AI RAG
+3. **Upload Phase**: Upload all processed content to Supabase Vector DB
 4. **Brief Generation Phase**: Generate a comprehensive client brief
 
 You must:
@@ -348,8 +348,8 @@ Your response should be concise and actionable."""
             {
                 "type": "function",
                 "function": {
-                    "name": "upload_to_vertex",
-                    "description": "Upload all processed files to Vertex AI RAG corpus. Run after PDF reprocessing.",
+                    "name": "upload_to_supabase",
+                    "description": "Upload all processed files to Supabase Vector DB. Run after PDF reprocessing.",
                     "parameters": {
                         "type": "object",
                         "properties": {},
@@ -402,7 +402,7 @@ Your response should be concise and actionable."""
         tool_methods = {
             'run_ingestion': self.tools.run_ingestion,
             'reprocess_pdfs': self.tools.reprocess_pdfs,
-            'upload_to_vertex': self.tools.upload_to_vertex,
+            'upload_to_supabase': self.tools.upload_to_supabase,
             'generate_brief': self.tools.generate_brief,
             'get_state': self.tools.get_state
         }

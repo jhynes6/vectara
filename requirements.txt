@@ -1,13 +1,15 @@
 # Consolidated requirements for Vectara workspace inspector
 # Based on vectara-agentic and vectara-ingest dependencies
 
-# Core LlamaIndex and Vectara dependencies
+# Core LlamaIndex dependencies  
 llama-index==0.13.3
 llama-index-core==0.13.3
 llama-index-workflows==1.3.0
 llama-index-cli==0.5.0
-llama-index-indices-managed-vectara==0.5.0
-vectara>=0.1.0
+
+# Supabase and PostgreSQL
+psycopg2-binary>=2.9.9
+supabase>=2.0.0
 
 # LLM providers
 llama-index-llms-openai==0.5.4

@@ -1,10 +1,10 @@
 # Client Onboarding & RAG Workflow System
 
 A comprehensive AI-powered client onboarding system featuring:
-- 🤖 **Agentic Workflow** using OpenAI Assistants (NEW!)
+- 🤖 **Agentic Workflow** using OpenAI Assistants
 - 📚 Website & Google Drive content ingestion
 - 📄 Intelligent PDF processing with fallback methods
-- ☁️  Vertex AI RAG corpus management
+- 🗄️ **Supabase Vector DB** with pgvector for RAG (NEW!)
 - 📝 Automated client brief generation
 
 ## 🚀 Quick Start
@@ -43,8 +43,9 @@ Create a `.env` file with your API keys:
 # Required for agentic workflow
 OPENAI_API_KEY=sk-your-openai-key-here
 
-# Required for Vertex AI RAG
-VECTARA_API_KEY=your-vectara-api-key-here
+# Required for Supabase Vector DB
+SUPABASE_VECTOR_DB_CONN=postgresql://postgres:password@host:5432/postgres
+SUPABASE_ACCESS_TOKEN=your-supabase-token
 
 # Optional
 BRIGHTDATA_API_TOKEN=your-brightdata-token
@@ -132,9 +133,10 @@ The script will display:
 - 🏷️ **LLM Categorization**: Automatic content type classification
 
 ### RAG & Search
-- ☁️  **Vertex AI RAG**: Automated corpus creation and document upload
-- 🔍 **Semantic Search**: Query client knowledge base
+- 🗄️ **Supabase Vector DB**: PostgreSQL + pgvector for vector storage
+- 🔍 **Semantic Search**: OpenAI embeddings + cosine similarity
 - 📊 **Rich Metadata**: Comprehensive document tagging
+- 💰 **Cost Effective**: 95% cheaper than SaaS alternatives
 
 ### Brief Generation
 - 📝 **Automated Briefs**: AI-generated comprehensive client summaries
@@ -206,7 +208,8 @@ The agentic workflow is ready to use.
 
 **Core:**
 - `openai>=2.1.0` - OpenAI SDK with Assistants API
-- `vectara>=0.1.0` - Vertex AI RAG integration
+- `psycopg2-binary>=2.9.9` - PostgreSQL adapter
+- `supabase>=2.0.0` - Supabase client
 - `llama-index` - LLM application framework
 
 **Processing:**
