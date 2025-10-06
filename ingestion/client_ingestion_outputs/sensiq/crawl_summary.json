@@ -1,0 +1,80 @@
+{
+  "timestamp": "2025-10-05T03:31:07.461335",
+  "folder_id": "1FZDv7e0zikQqIgEHhnhoprCju49UPTKj",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 5,
+    "supported_files": 4,
+    "successfully_processed": 4,
+    "failed_files_count": 2,
+    "errors": 2
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Client Intake Form - SensIQ",
+      "final_filename": "client_intake_client-intake-form-sensiq.md",
+      "id": "1kQqpS4fNl0BPJlI6lskAs1XTul3Sx2Xza3G6Pl2dnbQ",
+      "size": "54805",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1kQqpS4fNl0BPJlI6lskAs1XTul3Sx2Xza3G6Pl2dnbQ/view",
+      "word_count": 1034,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "hubspot-crm-exports-unengaged-contacts-2025-04-01.xlsx",
+      "final_filename": "other_hubspot-crm-exports-unengaged-contacts-2025-04-01.md",
+      "id": "1WQ95cjG40lU2IkFkzWG_AKtPoDWPBAG5",
+      "size": "160276",
+      "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1WQ95cjG40lU2IkFkzWG_AKtPoDWPBAG5/view",
+      "word_count": 67144
+    },
+    {
+      "name": "Email 2.png",
+      "final_filename": "other_email-2.md",
+      "id": "1EoGvzQK10FKWV8CenTbjxzczAMcEqEY0",
+      "size": "67804",
+      "mime_type": "image/png",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1EoGvzQK10FKWV8CenTbjxzczAMcEqEY0/view",
+      "word_count": 7
+    },
+    {
+      "name": "Email 1.png",
+      "final_filename": "other_email-1.md",
+      "id": "1Y0ny1pTmU0_jNU4qglf_xzHxNhhqNnBT",
+      "size": "226560",
+      "mime_type": "image/png",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1Y0ny1pTmU0_jNU4qglf_xzHxNhhqNnBT/view",
+      "word_count": 7
+    }
+  ],
+  "failed_files": [
+    {
+      "name": "Email 2.png",
+      "id": "1EoGvzQK10FKWV8CenTbjxzczAMcEqEY0",
+      "mime_type": "image/png",
+      "size": "67804",
+      "url": "https://drive.google.com/file/d/1EoGvzQK10FKWV8CenTbjxzczAMcEqEY0/view",
+      "error": "MarkItDown returned empty content",
+      "error_type": "MarkItDownProcessingError",
+      "file_category": "client_materials",
+      "timestamp": "2025-10-05T03:31:07.396647"
+    },
+    {
+      "name": "Email 1.png",
+      "id": "1Y0ny1pTmU0_jNU4qglf_xzHxNhhqNnBT",
+      "mime_type": "image/png",
+      "size": "226560",
+      "url": "https://drive.google.com/file/d/1Y0ny1pTmU0_jNU4qglf_xzHxNhhqNnBT/view",
+      "error": "MarkItDown returned empty content",
+      "error_type": "MarkItDownProcessingError",
+      "file_category": "client_materials",
+      "timestamp": "2025-10-05T03:31:07.459145"
+    }
+  ]
+}

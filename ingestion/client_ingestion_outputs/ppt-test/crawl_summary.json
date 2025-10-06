@@ -1,0 +1,55 @@
+{
+  "timestamp": "2025-10-03T13:46:24.203921",
+  "folder_id": "1gaOLC7F0cEQmW69Z1cLEL2tfZp07NLcm",
+  "delegated_user": "",
+  "days_back": 365,
+  "summary": {
+    "total_files_found": 6,
+    "supported_files": 4,
+    "successfully_processed": 4,
+    "errors": 2
+  },
+  "crawled_files": [
+    {
+      "name": "mintleads - client intake",
+      "final_filename": "client_intake_mintleads-client-intake.md",
+      "id": "1Rz7M7bAmvi8F_X0sE3-m82gF0RuKQbeCiZMZlFlUSQ4",
+      "size": "1024",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1Rz7M7bAmvi8F_X0sE3-m82gF0RuKQbeCiZMZlFlUSQ4/view",
+      "word_count": 43,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "MintLeads_Deck_v3.pdf",
+      "final_filename": "pitch_decks_mintleads-deck-v3.md",
+      "id": "1MLykqa6SInOqeWTNPpfc-Yf0ZQFatVBE",
+      "size": "6500077",
+      "mime_type": "application/pdf",
+      "content_type": "pitch_decks",
+      "url": "https://drive.google.com/file/d/1MLykqa6SInOqeWTNPpfc-Yf0ZQFatVBE/view",
+      "word_count": 1
+    },
+    {
+      "name": "Generic Pitch Deck.pdf",
+      "final_filename": "pitch_decks_generic-pitch-deck.md",
+      "id": "1omO8Dn8qRXOqaHpIxUZSTKpAUjcqGNae",
+      "size": "2485443",
+      "mime_type": "application/pdf",
+      "content_type": "pitch_decks",
+      "url": "https://drive.google.com/file/d/1omO8Dn8qRXOqaHpIxUZSTKpAUjcqGNae/view",
+      "word_count": 1446
+    },
+    {
+      "name": "MintLeads_CaseStudy_Saber CS-1138 (6).pdf",
+      "final_filename": "case_studies_mintleads-casestudy-saber-cs-1138-6.md",
+      "id": "1_LVcNh3ETOYkqzR0x2t4CDABM2mMrhiW",
+      "size": "114531",
+      "mime_type": "application/pdf",
+      "content_type": "case_studies",
+      "url": "https://drive.google.com/file/d/1_LVcNh3ETOYkqzR0x2t4CDABM2mMrhiW/view",
+      "word_count": 224
+    }
+  ]
+}

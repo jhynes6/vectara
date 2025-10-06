@@ -2,35 +2,24 @@
 source: "website"
 content_type: "case_studies"
 url: "https://www.d2creative.com/our-work/medical-device-pwa-development/"
-title: "In-services Available Anywhere and Any Time"
+title: "Progressive Web App for CooperSurgical Medical Devices"
 domain: "www.d2creative.com"
 path: "/our-work/medical-device-pwa-development/"
-scraped_time: "2025-09-06T16:13:00.656132"
+scraped_time: "2025-10-04T18:56:58.485299"
 url_depth: 2
-word_count: 584
+word_count: 568
 client_name: "d2-creative"
 ---
 
-# In-services Available Anywhere and Any Time
-
-Progressive Web App Built With HTML5 & Mobile Users in Mind
-
 ## COOPERSURGICAL MEDICAL DEVICES
-
-#
 
 In-services Available Anywhere and Any Time
 
-App Design & Development, Digital Marketing, Web Analytics & Measurement
+App Design & Development, Digital Marketing, Web Analytics & Measurement
 
-## The
-Challenge
+![CooperSurgical logo.](https://www.d2creative.com/wp-content/uploads/2022/07/cs-med-devices-logo@2x.png)
 
-## Our
-Approach
-
-## The
-Result
+## The  Challenge
 
 From training and mobilizing salesforces to engaging with patients and providers, medical technology companies have relied on face-to-face communication to sell and train users on their products. Throughout the COVID-19 pandemic, face-to-face interactions with hands-on learning, including live case proctoring and in-field training, became nearly impossible.
 
@@ -38,7 +27,7 @@ CooperSurgical, a leading medical device company that specializes in women’s h
 
 The company has a large amount of training videos and product literature on their website, but it was not ideal for quick access and use for practical and on-demand training refreshers often needed just prior to performing procedures. Building a native iOS/Android application could solve the issue, but that approach can be expensive and take time to build. Furthermore, native apps require a version for each operating system, with all future updates having to be made independently. Native apps also require users download and install the app on their device.
 
-In order to save budget and lead-time, D2 Creative recommended building a progressive web app (PWA), an emerging approach to [app development](/capabilities/website-design-and-app-development/) that uses the same technologies used to build websites, such as HTML, CSS, and JavaScript. Its simple architecture meant that it would be less expensive to produce, and faster to develop and deploy, compared to a native app, but with nearly identical functionality. Users could access the PWA on any connected device and view information without having to download an application. Their user experience with a PWA is nearly identical to that of a native app; there are no typical web-browsing tools, like an address bar, disrupting the in-app experience.
+In order to save budget and lead-time, D2 Creative recommended building a progressive web app (PWA), an emerging approach to app development that uses the same technologies used to build websites, such as HTML, CSS, and JavaScript. Its simple architecture meant that it would be less expensive to produce, and faster to develop and deploy, compared to a native app, but with nearly identical functionality. Users could access the PWA on any connected device and view information without having to download an application. Their user experience with a PWA is nearly identical to that of a native app; there are no typical web-browsing tools, like an address bar, disrupting the in-app experience.
 
 The team at CooperSurgical agreed that a PWA would be the preferred option as it allowed for more flexibility, less complexity, and faster time-to-market. Our team produced an HTML5 PWA supported by Google Firebase. The app can be used on any connected mobile device, without requiring user installations.
 

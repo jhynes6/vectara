@@ -1,0 +1,15 @@
+{
+  "client_id": "pr-return",
+  "timestamp": "2025-10-05T06:39:32.874755Z",
+  "files_processed": 189,
+  "successful_uploads": 82,
+  "failed_uploads": 107,
+  "database_stats": {
+    "client_id": "pr-return",
+    "client_uuid": "pr-return",
+    "document_count": 189,
+    "chunk_count": 200,
+    "total_tokens": 44946
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/pr-return"
+}

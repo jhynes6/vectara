@@ -1,0 +1,24 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 54,
+    "successful_scrapes": 54,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 37626,
+    "categories": {
+      "services_products": 8,
+      "blogs_resources": 28,
+      "about": 4,
+      "case_studies": 7,
+      "testimonials": 1,
+      "other": 3,
+      "homepage": 1,
+      "pricing": 1,
+      "careers": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "x-agency"
+    },
+    "scrape_time": "2025-10-05T01:51:43.151200"
+  }
+}

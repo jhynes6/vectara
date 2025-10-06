@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-10-05T04:23:15.040817",
+  "folder_id": "1AqLTL1fnYHs0iRuQQujKi8JdDdIDz5Lg",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 8,
+    "supported_files": 2,
+    "successfully_processed": 2,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "F1: Client Intake Form",
+      "final_filename": "client_intake_f1-client-intake-form.md",
+      "id": "1i0lTyuK7guyOjcKZCQJ-1VIEd3OEbNJPORmeKID58tQ",
+      "size": "18249",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1i0lTyuK7guyOjcKZCQJ-1VIEd3OEbNJPORmeKID58tQ/view",
+      "word_count": 1082,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "F1 Client Testimonials.docx",
+      "final_filename": "other_f1-client-testimonials.md",
+      "id": "13LUmZEVI8U8_Fs9uYExLLn7ku1eiLvcx",
+      "size": "25128",
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/13LUmZEVI8U8_Fs9uYExLLn7ku1eiLvcx/view",
+      "word_count": 653
+    }
+  ],
+  "failed_files": []
+}

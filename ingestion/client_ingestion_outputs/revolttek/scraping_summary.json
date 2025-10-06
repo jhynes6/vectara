@@ -1,0 +1,22 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 31,
+    "successful_scrapes": 31,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 22022,
+    "categories": {
+      "blogs_resources": 11,
+      "services_products": 12,
+      "other": 4,
+      "testimonials": 1,
+      "homepage": 1,
+      "about": 1,
+      "industry_markets": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "revolttek"
+    },
+    "scrape_time": "2025-10-05T00:16:31.584434"
+  }
+}

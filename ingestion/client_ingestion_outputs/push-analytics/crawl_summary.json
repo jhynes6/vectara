@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-10-05T05:00:25.472027",
+  "folder_id": "1yrJop5fYvIXOK-_lfzwAanoI3dzA_Hs9",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 1,
+    "supported_files": 1,
+    "successfully_processed": 1,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Client Intake Form - Push Analytics",
+      "final_filename": "client_intake_client-intake-form-push-analytics.md",
+      "id": "18RGaJQmgE9TYiODaLPpJB-sKjtS4jWd6KYeHwtRdyAI",
+      "size": "35408",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/18RGaJQmgE9TYiODaLPpJB-sKjtS4jWd6KYeHwtRdyAI/view",
+      "word_count": 1149,
+      "special_category": "client_intake"
+    }
+  ],
+  "failed_files": []
+}

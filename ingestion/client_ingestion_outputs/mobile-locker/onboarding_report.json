@@ -1,0 +1,15 @@
+{
+  "client_id": "mobile-locker",
+  "timestamp": "2025-10-05T04:09:25.740309Z",
+  "files_processed": 118,
+  "successful_uploads": 118,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "mobile-locker",
+    "client_uuid": "mobile-locker",
+    "document_count": 118,
+    "chunk_count": 179,
+    "total_tokens": 101984
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/mobile-locker"
+}

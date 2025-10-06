@@ -1,0 +1,191 @@
+{
+  "timestamp": "2025-10-05T04:48:53.018343",
+  "folder_id": "1fbcn8XXWZvFFF_xqagY1Gy6Cqew0E-AJ",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 16,
+    "supported_files": 14,
+    "successfully_processed": 14,
+    "failed_files_count": 3,
+    "errors": 3
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Slingshot Client Intake Form",
+      "final_filename": "client_intake_slingshot-client-intake-form.md",
+      "id": "1FXSpl5heNZECBB7sHVHqejuHwZtjloT1V-Upzef7oqg",
+      "size": "19166",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1FXSpl5heNZECBB7sHVHqejuHwZtjloT1V-Upzef7oqg/view",
+      "word_count": 1421,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "2023 Litigated or Licensed Old Medical Pats 11-25-23.XLSX",
+      "final_filename": "other_2023-litigated-or-licensed-old-medical-pats-11-25-23.md",
+      "id": "1SmP_yZF9SgBKrEHdzlddWwpPEFBOziS1",
+      "size": "1276256",
+      "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1SmP_yZF9SgBKrEHdzlddWwpPEFBOziS1/view",
+      "word_count": 251274
+    },
+    {
+      "name": "Information for MintLeads_KO_11-3-23.pptx",
+      "final_filename": "pitch_decks_information-for-mintleads-ko-11-3-23.md",
+      "id": "1kG5jrcFCR23bd1M2B1ht3DdfaTe3SUH0",
+      "size": "49250",
+      "mime_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "content_type": "pitch_decks",
+      "url": "https://drive.google.com/file/d/1kG5jrcFCR23bd1M2B1ht3DdfaTe3SUH0/view",
+      "word_count": 480
+    },
+    {
+      "name": "MintLeads.zip",
+      "final_filename": "other_mintleads.md",
+      "id": "1jV6gABVUIYqaMG73Tpyf0cSrqgv_M1no",
+      "size": "18765814",
+      "mime_type": "application/zip",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1jV6gABVUIYqaMG73Tpyf0cSrqgv_M1no/view",
+      "word_count": 20659
+    },
+    {
+      "name": "Slingshot_Marketing Strategy_2021.pdf",
+      "final_filename": "other_slingshot-marketing-strategy-2021.md",
+      "id": "1GL3tT-D5Iury_ETmrw6c30joFQJY3gb_",
+      "size": "306520",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1GL3tT-D5Iury_ETmrw6c30joFQJY3gb_/view",
+      "word_count": 1051
+    },
+    {
+      "name": "Slingshot Brandscript 6_15_2018.pdf",
+      "final_filename": "other_slingshot-brandscript-6-15-2018.md",
+      "id": "1-X9GgLL4WIbXyS2X-F3N32LeFOq-7NAi",
+      "size": "128486",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1-X9GgLL4WIbXyS2X-F3N32LeFOq-7NAi/view",
+      "word_count": 3125
+    },
+    {
+      "name": "Business Analysis_2022.pdf",
+      "final_filename": "other_business-analysis-2022.md",
+      "id": "16LZx3jPdH8pd7xqlNAyyuRP15mQxkE20",
+      "size": "284356",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/16LZx3jPdH8pd7xqlNAyyuRP15mQxkE20/view",
+      "word_count": 723
+    },
+    {
+      "name": "Slingshot_Intro-Process-Template 9.16.22.pdf",
+      "final_filename": "other_slingshot-intro-process-template-9-16-22.md",
+      "id": "1VBaCRfZSLCMMBf8Zu05ZyGaE5lCdyUI9",
+      "size": "2562089",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1VBaCRfZSLCMMBf8Zu05ZyGaE5lCdyUI9/view",
+      "word_count": 211
+    },
+    {
+      "name": "Proposal Example for MintLeads Review.pdf",
+      "final_filename": "other_proposal-example-for-mintleads-review.md",
+      "id": "1bAKjVDAuSx4781ZDS6VxfQkMFKd7EFUE",
+      "size": "1055500",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1bAKjVDAuSx4781ZDS6VxfQkMFKd7EFUE/view",
+      "word_count": 12328
+    },
+    {
+      "name": "2020_Released_20 Years New Prospective Client_email.pdf",
+      "final_filename": "other_2020-released-20-years-new-prospective-client-email.md",
+      "id": "1NA6xxvkaDVRmGAA0A_hpIj-zYLYnblkx",
+      "size": "1990400",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1NA6xxvkaDVRmGAA0A_hpIj-zYLYnblkx/view",
+      "word_count": 93
+    },
+    {
+      "name": "2022_Released_Slingshot Winter Holiday Card_Design 1_Final_2.png",
+      "final_filename": "brochures_newsletters_2022-released-slingshot-winter-holiday-card-design-1-final-2.md",
+      "id": "1iwYYRKWPUrDWhek_lSPLPnH8g-EWVr03",
+      "size": "6767613",
+      "mime_type": "image/png",
+      "content_type": "brochures_newsletters",
+      "url": "https://drive.google.com/file/d/1iwYYRKWPUrDWhek_lSPLPnH8g-EWVr03/view",
+      "word_count": 10
+    },
+    {
+      "name": "2022_Released_WMU Banner.jpg",
+      "final_filename": "other_2022-released-wmu-banner.md",
+      "id": "1zRzW9wpifDHRZCJAs-Uc0rbeMBZM2oHv",
+      "size": "2147635",
+      "mime_type": "image/jpeg",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1zRzW9wpifDHRZCJAs-Uc0rbeMBZM2oHv/view",
+      "word_count": 7
+    },
+    {
+      "name": "2021_Released_Slingshot One-Pager Brochure.pdf",
+      "final_filename": "brochures_newsletters_2021-released-slingshot-one-pager-brochure.md",
+      "id": "1A_sm8XRE3Q1AhjkLtNYDrj-zokIbUxDS",
+      "size": "284483",
+      "mime_type": "application/pdf",
+      "content_type": "brochures_newsletters",
+      "url": "https://drive.google.com/file/d/1A_sm8XRE3Q1AhjkLtNYDrj-zokIbUxDS/view",
+      "word_count": 228
+    },
+    {
+      "name": "2020_Released_Slingshot_HolidayCard_Email.jpg",
+      "final_filename": "brochures_newsletters_2020-released-slingshot-holidaycard-email.md",
+      "id": "1ZSI7UqWQmLVs-vUVH96D1TqGvZiVkb_c",
+      "size": "5067923",
+      "mime_type": "image/jpeg",
+      "content_type": "brochures_newsletters",
+      "url": "https://drive.google.com/file/d/1ZSI7UqWQmLVs-vUVH96D1TqGvZiVkb_c/view",
+      "word_count": 6
+    }
+  ],
+  "failed_files": [
+    {
+      "name": "2022_Released_Slingshot Winter Holiday Card_Design 1_Final_2.png",
+      "id": "1iwYYRKWPUrDWhek_lSPLPnH8g-EWVr03",
+      "mime_type": "image/png",
+      "size": "6767613",
+      "url": "https://drive.google.com/file/d/1iwYYRKWPUrDWhek_lSPLPnH8g-EWVr03/view",
+      "error": "MarkItDown returned empty content",
+      "error_type": "MarkItDownProcessingError",
+      "file_category": "client_materials",
+      "timestamp": "2025-10-05T04:48:52.966904"
+    },
+    {
+      "name": "2022_Released_WMU Banner.jpg",
+      "id": "1zRzW9wpifDHRZCJAs-Uc0rbeMBZM2oHv",
+      "mime_type": "image/jpeg",
+      "size": "2147635",
+      "url": "https://drive.google.com/file/d/1zRzW9wpifDHRZCJAs-Uc0rbeMBZM2oHv/view",
+      "error": "MarkItDown returned empty content",
+      "error_type": "MarkItDownProcessingError",
+      "file_category": "client_materials",
+      "timestamp": "2025-10-05T04:48:52.974367"
+    },
+    {
+      "name": "2020_Released_Slingshot_HolidayCard_Email.jpg",
+      "id": "1ZSI7UqWQmLVs-vUVH96D1TqGvZiVkb_c",
+      "mime_type": "image/jpeg",
+      "size": "5067923",
+      "url": "https://drive.google.com/file/d/1ZSI7UqWQmLVs-vUVH96D1TqGvZiVkb_c/view",
+      "error": "MarkItDown returned empty content",
+      "error_type": "MarkItDownProcessingError",
+      "file_category": "client_materials",
+      "timestamp": "2025-10-05T04:48:53.003417"
+    }
+  ]
+}

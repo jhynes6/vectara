@@ -1,0 +1,15 @@
+{
+  "client_id": "webster-fulfillment",
+  "timestamp": "2025-10-05T03:31:45.698167Z",
+  "files_processed": 22,
+  "successful_uploads": 22,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "webster-fulfillment",
+    "client_uuid": "webster-fulfillment",
+    "document_count": 22,
+    "chunk_count": 75,
+    "total_tokens": 57927
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/webster-fulfillment"
+}

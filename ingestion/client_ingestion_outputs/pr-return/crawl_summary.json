@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-10-05T02:30:13.958353",
+  "folder_id": "1_3jnBcFNkBgJx5BFFxxYhf0AKYIHlaW5",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 5,
+    "supported_files": 3,
+    "successfully_processed": 3,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Client Intake Form - PR Return",
+      "final_filename": "client_intake_client-intake-form-pr-return.md",
+      "id": "1jq-l9ptqacCIQ73S1GiMs8EyneLGqqGOR9PwWr-wJGs",
+      "size": "54604",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1jq-l9ptqacCIQ73S1GiMs8EyneLGqqGOR9PwWr-wJGs/view",
+      "word_count": 1430,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "PR Return - Fizyr - 2022Nov21 - with some slides added.pptx",
+      "final_filename": "pitch_decks_pr-return-fizyr-2022nov21-with-some-slides-added.md",
+      "id": "15CKZGoaOugSrURZbWd-GAy8AQuq5cvmh",
+      "size": "4308351",
+      "mime_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "content_type": "pitch_decks",
+      "url": "https://drive.google.com/file/d/15CKZGoaOugSrURZbWd-GAy8AQuq5cvmh/view",
+      "word_count": 1820
+    },
+    {
+      "name": "PR Return - Fizyr - 2022Nov21 - with some slides added",
+      "final_filename": "pitch_decks_pr-return-fizyr-2022nov21-with-some-slides-added.md",
+      "id": "1qd0osZTP6wTNp-F7UHyDjjRCLgdFVwaxVnjPQLPETJU",
+      "size": "4276710",
+      "mime_type": "application/vnd.google-apps.presentation",
+      "content_type": "pitch_decks",
+      "url": "https://docs.google.com/presentation/d/1qd0osZTP6wTNp-F7UHyDjjRCLgdFVwaxVnjPQLPETJU/view",
+      "word_count": 1821
+    }
+  ],
+  "failed_files": []
+}

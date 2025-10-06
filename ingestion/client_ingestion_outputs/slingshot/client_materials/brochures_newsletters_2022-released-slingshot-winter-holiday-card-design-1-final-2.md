@@ -1,0 +1,1 @@
+[File saved for MarkItDown processing: 2022_Released_Slingshot Winter Holiday Card_Design 1_Final_2.png]

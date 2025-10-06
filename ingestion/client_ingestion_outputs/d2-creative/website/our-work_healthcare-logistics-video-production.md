@@ -2,35 +2,22 @@
 source: "website"
 content_type: "case_studies"
 url: "https://www.d2creative.com/our-work/healthcare-logistics-video-production/"
-title: "Engaging Video Campaigns for a Fresh Brand"
+title: "Healthcare Logistics Video Development for an Updated Brand"
 domain: "www.d2creative.com"
 path: "/our-work/healthcare-logistics-video-production/"
-scraped_time: "2025-09-06T16:13:11.869018"
+scraped_time: "2025-10-04T18:56:54.005563"
 url_depth: 2
-word_count: 315
+word_count: 272
 client_name: "d2-creative"
 ---
 
 # Engaging Video Campaigns for a Fresh Brand
 
-Healthcare Logistics Video Development for an Updated Brand
+## The  Challenge
 
-## TRIOSE
+## Our  Approach
 
-#
-
-Engaging Video Campaigns for a Fresh Brand
-
-Video Production & Storytelling
-
-## The
-Challenge
-
-## Our
-Approach
-
-## The
-Result
+## The  Result
 
 With TRIOSE’s [new branding](https://www.d2creative.com/our-work/healthcare-logistics-branding/) successfully established, the next step was building awareness. The client needed an exciting way to show healthcare systems what TRIOSE was capable of, and so our “What If” campaign video was naturally the next step.
 
@@ -44,12 +31,10 @@ The expanded video library gave TRIOSE a new way to [share its offerings and sto
 
 ### TRIOSE Brand Awareness Video
 
-[![](/wp-content/uploads/2022/02/button-play@2x.png)](https://vimeo.com/694967948)
-
 ## Campaign Theme
 
 ## Key Frames
 
-![Aerial view of network of highway roads used for freight and medical transport - What if you could simplify your healthcare supply chain.](https://www.d2creative.com/wp-content/uploads/2022/07/key-frames-01@2x.png) ![Healthcare employees in scrubs and coats looking at tablet.](https://www.d2creative.com/wp-content/uploads/2022/07/key-frames-02@2x.png)
-
 ## Mood Board
+
+[See More Case Studies](https://www.d2creative.com/our-work/)

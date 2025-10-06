@@ -2,35 +2,18 @@
 source: "website"
 content_type: "case_studies"
 url: "https://www.d2creative.com/our-work/building-a-distinct-brand-for-a-unique-take-on-social-change/"
-title: "Distinct Brand for a Unique Take on Social Change"
+title: "Building a Distinct Brand for Social Change"
 domain: "www.d2creative.com"
 path: "/our-work/building-a-distinct-brand-for-a-unique-take-on-social-change/"
-scraped_time: "2025-09-06T16:14:42.340110"
+scraped_time: "2025-10-04T18:57:12.438898"
 url_depth: 2
-word_count: 392
+word_count: 484
 client_name: "d2-creative"
 ---
 
 # Distinct Brand for a Unique Take on Social Change
 
-Building a Distinct Brand for a Unique Take on Social Change
-
-## D2 Creative
-
-#
-
-Distinct Brand for a Unique Take on Social Change
-
-Website Design & Development
-
-## The
-Challenge
-
-## Our
-Approach
-
-## The
-Result
+## The Challenge
 
 Building a brand from scratch is a challenging task. Identifying how you want people to see your company, what feelings or personalities you want be associated with, and how this all affects the way you present yourself is a first step that every brand needs to nail. Combine these challenges with an ambitious goal and a unique service and you’re looking at a process that’s complex enough to stall your company’s important work.
 
@@ -40,6 +23,8 @@ That’s exactly the issue our client, SocialOffset, was facing. Their mission w
 
 We knew that by asking the right questions, the true brand would reveal itself. Being mindful of the SocialOffset team’s time and budget, we put together a rapid branding discovery session to help them confirm the emotional attributes of their brand. Using the insights discovery revealed about their community-oriented and socially forward-thinking goals, their brand’s **sincere, competent, and bold** personality quickly came to light.
 
+These emotional attributes became the cornerstone of our brand development work. From them, we identified a vibrant color palette that fit the brand on this psychological level, and from there, we developed their logo design. We took the idea of offsetting social guilt and elevated it (both figuratively _and_ literally!) to draw attention to what makes SocialOffset truly unique and valuable. We then applied this same ideology to our content approach, even using the abbreviated company name, “SO,” to craft compelling messaging that asks users questions they may already be asking themselves (e.g., “So, you’re going to a state with legislation that doesn’t align with your values?”).
+
 This process, where each element of the brand builds on the next, was our key creating a brand identity for SocialOffset that doesn’t just look eye-catching, but is authentic and tells their story, showing the world how they’re making a difference.
 
 The new brand, applied to their [website](https://socialoffset.org/), helped them spread word of their cause and work to potential users as well as advocacy groups and charitable organizations. With these partnerships, they’ve built a true community around their mission for improving equality and social justice, no matter where one lives.
@@ -47,6 +32,10 @@ The new brand, applied to their [website](https://socialoffset.org/), helped the
 ## Color Palette
 
 ![Social Offset's purple, orange, yellow, green, blue, and black color palette with rationales](https://www.d2creative.com/wp-content/uploads/2024/05/social-offset-color-palette-mobile@2x1.jpg)
+
+## Logo Design
+
+![Social Offset standard and shortened ](https://www.d2creative.com/wp-content/uploads/2024/05/social-offset-logos-mobile@2x1.webp)
 
 ## Website
 

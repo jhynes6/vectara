@@ -2,39 +2,24 @@
 source: "website"
 content_type: "case_studies"
 url: "https://www.d2creative.com/our-work/biotech-youtube-optimization/"
-title: "Optimizing the Social Media Presence of an International Biotech Society"
+title: "YouTube Channel Optimization for Biomedical Engineering"
 domain: "www.d2creative.com"
 path: "/our-work/biotech-youtube-optimization/"
-scraped_time: "2025-09-06T16:15:48.585976"
+scraped_time: "2025-10-04T18:56:49.540325"
 url_depth: 2
-word_count: 464
+word_count: 406
 client_name: "d2-creative"
 ---
 
-# Optimizing the Social Media Presence of an International Biotech Society
+## The Challenge
 
-YouTube Channel Optimization for Biomedical Engineering
+## Our Approach
 
-## IEEE EMBS
-
-#
-
-Optimizing the Social Media Presence of an International Biotech Society
-
-Website Design & Development
-
-## The
-Challenge
-
-## Our
-Approach
-
-## The
-Result
+## The Result
 
 The Result IEEE’s Engineering in Medicine & Biology Society (EMBS) has a long-established YouTube channel filled with educational and thought-provoking videos for the biomedical engineering community. However, subscribers, views, and engagement were low, driving EMBS to revisit their social media marketing strategy.
 
-EMBS collaborated with D2 Creative to produce many of their videos. Given our existing partnership, as well as our experience in [social media marketing](/capabilities/digital-marketing/), EMBS turned to D2 Creative to help make sure that as many people were finding and engaging with their YouTube content as possible.
+EMBS collaborated with D2 Creative to produce many of their videos. Given our existing partnership, as well as our experience in social media marketing, EMBS turned to D2 Creative to help make sure that as many people were finding and engaging with their YouTube content as possible.
 
 Over the course of our initial audit of the YouTube channel, a handful of issues became immediately apparent. Missing descriptions, randomly generated thumbnails, and underutilized tags were hurting the search engine optimization (SEO) of each video. Additionally, the channel itself lacked some key optimizations for encouraging engagement.
 
@@ -53,14 +38,8 @@ The results speak for themselves. In a roughly two-month period (Jun 20 – Aug 
 
 ## Results
 
-![IEEE EMBS YouTube stats - increased view and subscriber rates](https://www.d2creative.com/wp-content/uploads/2022/07/results-icons-01@2x.png) ![IEEE EMBS YouTube stats - watch time and impression increase](https://www.d2creative.com/wp-content/uploads/2022/07/results-icons-02@2x.png)
-
 ## Before & After
-
-![IEEE EMBS YouTube videos screengrab](https://www.d2creative.com/wp-content/uploads/2022/07/youtube-screenshot-before-mobile@2x.png) ![IEEE EMBS YouTube videos screengrab including YouTube banner](https://www.d2creative.com/wp-content/uploads/2022/07/youtube-after-mobile@2x.png)
 
 ## Video
 
 ### Channel Trailer
-
-[![](/wp-content/uploads/2022/02/button-play@2x.png)](https://vimeo.com/697111464)

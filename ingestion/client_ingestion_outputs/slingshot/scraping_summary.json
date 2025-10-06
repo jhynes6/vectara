@@ -1,0 +1,21 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 47,
+    "successful_scrapes": 47,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 7524,
+    "categories": {
+      "case_studies": 33,
+      "other": 2,
+      "blogs_resources": 7,
+      "about": 1,
+      "services_products": 3,
+      "homepage": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "slingshot"
+    },
+    "scrape_time": "2025-10-05T04:51:07.264022"
+  }
+}

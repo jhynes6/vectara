@@ -1,0 +1,15 @@
+{
+  "client_id": "paper-giants",
+  "timestamp": "2025-10-05T04:18:59.035172Z",
+  "files_processed": 223,
+  "successful_uploads": 223,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "paper-giants",
+    "client_uuid": "paper-giants",
+    "document_count": 223,
+    "chunk_count": 230,
+    "total_tokens": 29605
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/paper-giants"
+}

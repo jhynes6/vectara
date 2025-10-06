@@ -1,0 +1,20 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 12,
+    "successful_scrapes": 12,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 3958,
+    "categories": {
+      "other": 3,
+      "services_products": 6,
+      "blogs_resources": 1,
+      "homepage": 1,
+      "about": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "iceberg-digital"
+    },
+    "scrape_time": "2025-10-05T00:00:55.680531"
+  }
+}

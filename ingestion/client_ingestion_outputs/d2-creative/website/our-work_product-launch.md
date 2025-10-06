@@ -2,35 +2,30 @@
 source: "website"
 content_type: "case_studies"
 url: "https://www.d2creative.com/our-work/product-launch/"
-title: "Product Launch Campaign to Build Brand Awareness"
+title: "Product Launch Campaign for Fujifilm Medical Systems"
 domain: "www.d2creative.com"
 path: "/our-work/product-launch/"
-scraped_time: "2025-09-06T16:13:00.228699"
+scraped_time: "2025-10-04T18:57:12.174070"
 url_depth: 2
-word_count: 277
+word_count: 274
 client_name: "d2-creative"
 ---
 
-# Product Launch Campaign to Build Brand Awareness
-
-Product Launch Marketing Campaign for Medical Product
-
 ## FUJIFILM Medical Systems
 
-#
+# Product Launch Campaign to Build Brand Awareness
 
-Product Launch Campaign to Build Brand Awareness
+Digital Marketing, Print Design, Website Design & Development
 
-Digital Marketing, Print Design, Website Design & Development
+![Fujifilm logo](https://www.d2creative.com/wp-content/uploads/2022/07/fujifilm-logo@2x-2.png)
 
-## The
-Challenge
+## The Challenge
 
-## Our
-Approach
+## Our Approach
 
-## The
-Result
+## The Result
+
+![Fujifilm logo](https://www.d2creative.com/wp-content/uploads/2022/07/fujifilm-logo@2x-2.png)
 
 Our client was bringing a game-changing brand to the marketplace. As the challenger brand, where the dominant player owned a 70% market share, Fujifilm needed to gain more prominence. Our job was to create a campaign that could build brand awareness while maintaining the brand’s voice and values.
 

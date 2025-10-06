@@ -1,0 +1,15 @@
+{
+  "client_id": "upmkt-digital",
+  "timestamp": "2025-10-05T05:35:18.293355Z",
+  "files_processed": 3,
+  "successful_uploads": 3,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "upmkt-digital",
+    "client_uuid": "upmkt-digital",
+    "document_count": 3,
+    "chunk_count": 10,
+    "total_tokens": 7194
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/upmkt-digital"
+}

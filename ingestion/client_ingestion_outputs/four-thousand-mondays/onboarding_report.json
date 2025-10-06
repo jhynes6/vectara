@@ -1,0 +1,15 @@
+{
+  "client_id": "four-thousand-mondays",
+  "timestamp": "2025-10-05T02:30:20.917273Z",
+  "files_processed": 128,
+  "successful_uploads": 128,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "four-thousand-mondays",
+    "client_uuid": "four-thousand-mondays",
+    "document_count": 128,
+    "chunk_count": 241,
+    "total_tokens": 154536
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/four-thousand-mondays"
+}

@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-10-04T18:50:27.383639",
+  "folder_id": "1RQuE7OP3nOakPI-mu2OiQrYgoprFkBeN",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 2,
+    "supported_files": 2,
+    "successfully_processed": 2,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Client Intake Form - Terra Collective",
+      "final_filename": "client_intake_client-intake-form-terra-collective.md",
+      "id": "1bcytbFX37T6uqoDbXorNs3Wqb-S1gOrd-88pHcjpa8k",
+      "size": "54356",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1bcytbFX37T6uqoDbXorNs3Wqb-S1gOrd-88pHcjpa8k/view",
+      "word_count": 1481,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "terra-collective_brief_20251004_184153.md",
+      "final_filename": "other_terra-collective-brief-20251004-184153.md",
+      "id": "1Qs0wNIxqTxv_6ryvLYUytgRElaNHOeAm",
+      "size": "690",
+      "mime_type": "text/markdown",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1Qs0wNIxqTxv_6ryvLYUytgRElaNHOeAm/view",
+      "word_count": 93
+    }
+  ],
+  "failed_files": []
+}

@@ -1,0 +1,20 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 201,
+    "successful_scrapes": 147,
+    "failed_scrapes": 0,
+    "success_rate": "73.1%",
+    "total_words_scraped": 60001,
+    "categories": {
+      "blogs_resources": 100,
+      "other": 35,
+      "about": 2,
+      "services_products": 9,
+      "homepage": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "white-label-markitdown-sample"
+    },
+    "scrape_time": "2025-10-03T06:00:24.345954"
+  }
+}

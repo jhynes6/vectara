@@ -2,39 +2,24 @@
 source: "website"
 content_type: "case_studies"
 url: "https://www.d2creative.com/our-work/content-development-life-sciences/"
-title: "Content Development for Life Sciences Brand Awareness"
+title: "Brand Awareness Video for Biomedical Industry"
 domain: "www.d2creative.com"
 path: "/our-work/content-development-life-sciences/"
-scraped_time: "2025-09-06T16:13:37.206820"
+scraped_time: "2025-10-04T18:57:03.542597"
 url_depth: 2
-word_count: 304
+word_count: 272
 client_name: "d2-creative"
 ---
 
 # Content Development for Life Sciences Brand Awareness
 
-## IEEE EMBS
-
-#
-
-Content Development for Life Sciences Brand Awareness
-
-Video Production & Storytelling
-
-## The
-Challenge
-
-## Our
-Approach
-
-## The
-Result
+## The Challenge
 
 With more than 12,000 members spanning over 100 countries, the IEEE Engineering in Medicine & Biology Society (EMBS) wanted to increase brand awareness to fulfill three core objectives:
 
-*   Attract clinicians to the society to help direct member research and create meaningful new medical devices
-*   Attract current students and recent graduates to this exciting field
-*   Provide outreach to the general public to help explain the broad field of biomedical engineering
+* Attract clinicians to the society to help direct member research and create meaningful new medical devices
+* Attract current students and recent graduates to this exciting field
+* Provide outreach to the general public to help explain the broad field of biomedical engineering
 
 This was a two-phase project.
 
@@ -48,10 +33,8 @@ We also produced two versions of a documentary, “Advances in Biomedical Engine
 
 ## Key Frames
 
-![scientist in lab working and prosthetic legs with sneakers balancing on curb](https://www.d2creative.com/wp-content/uploads/2022/07/ieee-embs-mobile-key-frames-1@2x.png) ![Doctor mid interview and two brown bear cubs](https://www.d2creative.com/wp-content/uploads/2022/07/ieee-embs-mobile-key-frames-2@2x.png)
-
 ## Video
 
 ### Where Engineering Meets Imagination
 
-[![](/wp-content/uploads/2022/02/button-play@2x.png)](https://vimeo.com/729277548)
+[![Play Video](https://vimeo.com/729277548)](https://vimeo.com/729277548)

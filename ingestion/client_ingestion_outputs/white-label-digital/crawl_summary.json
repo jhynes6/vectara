@@ -1,0 +1,286 @@
+{
+  "timestamp": "2025-10-04T18:04:25.500590",
+  "folder_id": "13RE7L-DeYRBf1H6RI2y62AG5UzyT6FSJ",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 20,
+    "supported_files": 18,
+    "successfully_processed": 18,
+    "failed_files_count": 8,
+    "errors": 8
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "White Label Digital: Client Intake Form",
+      "final_filename": "client_intake_white-label-digital-client-intake-form.md",
+      "id": "1Ge3FiBij15hejeKrEMAMNxkfMpWMELM5_3WDk_7ocJA",
+      "size": "54353",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1Ge3FiBij15hejeKrEMAMNxkfMpWMELM5_3WDk_7ocJA/view",
+      "word_count": 809,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "Mint Leads Domain Block List 9.16.25.xlsx",
+      "final_filename": "other_mint-leads-domain-block-list-9-16-25.md",
+      "id": "1hfIijp_0WYXwQH4WymccQ1_PY9n6p55W",
+      "size": "11958",
+      "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1hfIijp_0WYXwQH4WymccQ1_PY9n6p55W/view",
+      "word_count": 339
+    },
+    {
+      "name": "Lizzy Calendly Link.rtf",
+      "final_filename": "other_lizzy-calendly-link.md",
+      "id": "1-uy5HvSz7ANsQgfTwMd2xohOJYxU8KTX",
+      "size": "0",
+      "mime_type": "application/rtf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1-uy5HvSz7ANsQgfTwMd2xohOJYxU8KTX/view",
+      "word_count": 8
+    },
+    {
+      "name": "WLD Sales - Commonly Asked Questions.docx",
+      "final_filename": "other_wld-sales-commonly-asked-questions.md",
+      "id": "1vVPdTzdRh610ExTDLy5sk3aEWWmRl9Vl",
+      "size": "20950",
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1vVPdTzdRh610ExTDLy5sk3aEWWmRl9Vl/view",
+      "word_count": 1288
+    },
+    {
+      "name": "WLD Sales Email Templates - V3.docx",
+      "final_filename": "other_wld-sales-email-templates-v3.md",
+      "id": "1-GIwaDk4dxnQX7Md8A30whba0zxDFeSe",
+      "size": "23291",
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1-GIwaDk4dxnQX7Md8A30whba0zxDFeSe/view",
+      "word_count": 1332
+    },
+    {
+      "name": "WLD 2021 _Part 2bi_Agency Profiles.docx",
+      "final_filename": "other_wld-2021-part-2bi-agency-profiles.md",
+      "id": "1m-mX68MnGua6JX0GV-KNKvjwKz_j8iPf",
+      "size": "41421",
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1m-mX68MnGua6JX0GV-KNKvjwKz_j8iPf/view",
+      "word_count": 447
+    },
+    {
+      "name": "WLD_Digital Advertising Cross Channel Report View 1.pdf",
+      "final_filename": "other_wld-digital-advertising-cross-channel-report-view-1.md",
+      "id": "18yI80yazMCzLisFxrbgMvihKqFYqY2q-",
+      "size": "958142",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/18yI80yazMCzLisFxrbgMvihKqFYqY2q-/view",
+      "word_count": 521
+    },
+    {
+      "name": "Makiaris Media - Reporting Summary Example B.pdf",
+      "final_filename": "other_makiaris-media-reporting-summary-example-b.md",
+      "id": "1_QZDemSgE2-gghFjd8DjXRY1QwIgvNVQ",
+      "size": "1747289",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1_QZDemSgE2-gghFjd8DjXRY1QwIgvNVQ/view",
+      "word_count": 494
+    },
+    {
+      "name": "WLD_Digital Advertising Report Card Sample.png",
+      "final_filename": "other_wld-digital-advertising-report-card-sample.md",
+      "id": "1NBR4p6Qb-k7-qYs66oR_GHT8FVKpHBY_",
+      "size": "347843",
+      "mime_type": "image/png",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1NBR4p6Qb-k7-qYs66oR_GHT8FVKpHBY_/view",
+      "word_count": 10
+    },
+    {
+      "name": "White Label Digital_Capabilities_Channels_2023.pdf",
+      "final_filename": "capabilities_overview_white-label-digital-capabilities-channels-2023.md",
+      "id": "1yuqMBaCleH8LTYAUViRkfkLHc40Aiacy",
+      "size": "3538588",
+      "mime_type": "application/pdf",
+      "content_type": "capabilities_overview",
+      "url": "https://drive.google.com/file/d/1yuqMBaCleH8LTYAUViRkfkLHc40Aiacy/view",
+      "word_count": 1226
+    },
+    {
+      "name": "White Label Digital_Overview Deck_ 2023_.pdf",
+      "final_filename": "capabilities_overview_white-label-digital-overview-deck-2023.md",
+      "id": "1aiCozJe_A34czq_zkVR9bHVZfFSijJz-",
+      "size": "1335843",
+      "mime_type": "application/pdf",
+      "content_type": "capabilities_overview",
+      "url": "https://drive.google.com/file/d/1aiCozJe_A34czq_zkVR9bHVZfFSijJz-/view",
+      "word_count": 680
+    },
+    {
+      "name": "White Label Digital_CTV 4.pdf",
+      "final_filename": "other_white-label-digital-ctv-4.md",
+      "id": "16yHa39bBmAwwWWyLsVfF2mm3HZT2vGUI",
+      "size": "1548365",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/16yHa39bBmAwwWWyLsVfF2mm3HZT2vGUI/view",
+      "word_count": 1
+    },
+    {
+      "name": "WLD - Company Overview 2024.pdf",
+      "final_filename": "capabilities_overview_wld-company-overview-2024.md",
+      "id": "1-cjrjZR_JwZ4m4GKuQ21oHM6q5Is_ShS",
+      "size": "1715803",
+      "mime_type": "application/pdf",
+      "content_type": "capabilities_overview",
+      "url": "https://drive.google.com/file/d/1-cjrjZR_JwZ4m4GKuQ21oHM6q5Is_ShS/view",
+      "word_count": 1
+    },
+    {
+      "name": "MintLeads Agreement SIGNED 9.8.25",
+      "final_filename": "other_mintleads-agreement-signed-9-8.md",
+      "id": "1z1zJ1DZYN4rby0-2Ee2IlEsnr4gC6K04",
+      "size": "264768",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1z1zJ1DZYN4rby0-2Ee2IlEsnr4gC6K04/view",
+      "word_count": 1258
+    },
+    {
+      "name": "MintLeads Proposal for White Label Digital.pdf",
+      "final_filename": "pitch_decks_mintleads-proposal-for-white-label-digital.md",
+      "id": "1lkZnmgAG7Ig5Eo_gtpNa7KdXxVYNxa1b",
+      "size": "4271217",
+      "mime_type": "application/pdf",
+      "content_type": "pitch_decks",
+      "url": "https://drive.google.com/file/d/1lkZnmgAG7Ig5Eo_gtpNa7KdXxVYNxa1b/view",
+      "word_count": 1415
+    },
+    {
+      "name": "WLD Case Study_Agency Partner AE-A.pdf",
+      "final_filename": "case_studies_wld-case-study-agency-partner-ae-a.md",
+      "id": "1n95NlWW1x6qlpCzmO-ze0cN_TABGp-ns",
+      "size": "1016991",
+      "mime_type": "application/pdf",
+      "content_type": "case_studies",
+      "url": "https://drive.google.com/file/d/1n95NlWW1x6qlpCzmO-ze0cN_TABGp-ns/view",
+      "word_count": 492
+    },
+    {
+      "name": "WLD Case Study_Home Services.pdf",
+      "final_filename": "case_studies_wld-case-study-home-services.md",
+      "id": "197hxGTLxr1LyZPDBo4bJ-g5W0LsPnjt9",
+      "size": "1609287",
+      "mime_type": "application/pdf",
+      "content_type": "case_studies",
+      "url": "https://drive.google.com/file/d/197hxGTLxr1LyZPDBo4bJ-g5W0LsPnjt9/view",
+      "word_count": 1
+    },
+    {
+      "name": "WLD Case Study_Education.pdf",
+      "final_filename": "case_studies_wld-case-study-education.md",
+      "id": "1ryfx5_5wVET7OEVndJdnjnwdSSHsenAo",
+      "size": "1481508",
+      "mime_type": "application/pdf",
+      "content_type": "case_studies",
+      "url": "https://drive.google.com/file/d/1ryfx5_5wVET7OEVndJdnjnwdSSHsenAo/view",
+      "word_count": 1
+    }
+  ],
+  "failed_files": [
+    {
+      "name": "WLD Sales Docs - Guide for Mint Leads.rtf",
+      "id": "10k918Sl4K4EzF46MG4tFtm7s09fOzHXZ",
+      "mime_type": "text/rtf",
+      "size": "2686",
+      "url": "https://drive.google.com/file/d/10k918Sl4K4EzF46MG4tFtm7s09fOzHXZ/view",
+      "error": "Failed to extract content (returned None)",
+      "error_type": "ContentExtractionError",
+      "file_category": "client_materials",
+      "timestamp": "2025-10-04T18:03:56.537381"
+    },
+    {
+      "name": "WLD Advertising Brief - Google Form.rtf",
+      "id": "1nhNKQcSQPxG0muHPJihgNz3sX4HMenn8",
+      "mime_type": "text/rtf",
+      "size": "511",
+      "url": "https://drive.google.com/file/d/1nhNKQcSQPxG0muHPJihgNz3sX4HMenn8/view",
+      "error": "Failed to extract content (returned None)",
+      "error_type": "ContentExtractionError",
+      "file_category": "client_materials",
+      "timestamp": "2025-10-04T18:03:56.537441"
+    },
+    {
+      "name": "Lizzy Calendly Link.rtf",
+      "id": "1-uy5HvSz7ANsQgfTwMd2xohOJYxU8KTX",
+      "mime_type": "application/rtf",
+      "size": "0",
+      "url": "https://drive.google.com/file/d/1-uy5HvSz7ANsQgfTwMd2xohOJYxU8KTX/view",
+      "error": "Error processing PDF with MarkItDown: Could not convert stream to Markdown. No converter attempted a conversion, suggesting that the filetype is simply not supported.",
+      "error_type": "MarkItDownProcessingError",
+      "file_category": "client_materials",
+      "timestamp": "2025-10-04T18:04:22.574318"
+    },
+    {
+      "name": "WLD_Digital Advertising Report Card Sample.png",
+      "id": "1NBR4p6Qb-k7-qYs66oR_GHT8FVKpHBY_",
+      "mime_type": "image/png",
+      "size": "347843",
+      "url": "https://drive.google.com/file/d/1NBR4p6Qb-k7-qYs66oR_GHT8FVKpHBY_/view",
+      "error": "MarkItDown returned empty content",
+      "error_type": "MarkItDownProcessingError",
+      "file_category": "client_materials",
+      "timestamp": "2025-10-04T18:04:24.784868"
+    },
+    {
+      "name": "White Label Digital_CTV 4.pdf",
+      "id": "16yHa39bBmAwwWWyLsVfF2mm3HZT2vGUI",
+      "mime_type": "application/pdf",
+      "size": "1548365",
+      "url": "https://drive.google.com/file/d/16yHa39bBmAwwWWyLsVfF2mm3HZT2vGUI/view",
+      "error": "MarkItDown returned empty content",
+      "error_type": "MarkItDownProcessingError",
+      "file_category": "client_materials",
+      "timestamp": "2025-10-04T18:04:24.978920"
+    },
+    {
+      "name": "WLD - Company Overview 2024.pdf",
+      "id": "1-cjrjZR_JwZ4m4GKuQ21oHM6q5Is_ShS",
+      "mime_type": "application/pdf",
+      "size": "1715803",
+      "url": "https://drive.google.com/file/d/1-cjrjZR_JwZ4m4GKuQ21oHM6q5Is_ShS/view",
+      "error": "MarkItDown returned empty content",
+      "error_type": "MarkItDownProcessingError",
+      "file_category": "client_materials",
+      "timestamp": "2025-10-04T18:04:24.988105"
+    },
+    {
+      "name": "WLD Case Study_Home Services.pdf",
+      "id": "197hxGTLxr1LyZPDBo4bJ-g5W0LsPnjt9",
+      "mime_type": "application/pdf",
+      "size": "1609287",
+      "url": "https://drive.google.com/file/d/197hxGTLxr1LyZPDBo4bJ-g5W0LsPnjt9/view",
+      "error": "MarkItDown returned empty content",
+      "error_type": "MarkItDownProcessingError",
+      "file_category": "client_materials",
+      "timestamp": "2025-10-04T18:04:25.485164"
+    },
+    {
+      "name": "WLD Case Study_Education.pdf",
+      "id": "1ryfx5_5wVET7OEVndJdnjnwdSSHsenAo",
+      "mime_type": "application/pdf",
+      "size": "1481508",
+      "url": "https://drive.google.com/file/d/1ryfx5_5wVET7OEVndJdnjnwdSSHsenAo/view",
+      "error": "MarkItDown returned empty content",
+      "error_type": "MarkItDownProcessingError",
+      "file_category": "client_materials",
+      "timestamp": "2025-10-04T18:04:25.494324"
+    }
+  ]
+}

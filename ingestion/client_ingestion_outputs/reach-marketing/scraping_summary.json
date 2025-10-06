@@ -1,0 +1,23 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 956,
+    "successful_scrapes": 166,
+    "failed_scrapes": 0,
+    "success_rate": "17.4%",
+    "total_words_scraped": 111596,
+    "categories": {
+      "blogs_resources": 100,
+      "other": 11,
+      "services_products": 37,
+      "case_studies": 14,
+      "careers": 1,
+      "homepage": 1,
+      "testimonials": 1,
+      "about": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "reach-marketing"
+    },
+    "scrape_time": "2025-10-05T05:26:54.565103"
+  }
+}

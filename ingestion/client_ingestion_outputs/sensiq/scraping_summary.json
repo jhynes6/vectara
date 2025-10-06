@@ -1,0 +1,22 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 149,
+    "successful_scrapes": 125,
+    "failed_scrapes": 0,
+    "success_rate": "83.9%",
+    "total_words_scraped": 115824,
+    "categories": {
+      "blogs_resources": 100,
+      "services_products": 17,
+      "other": 4,
+      "about": 1,
+      "industry_markets": 1,
+      "homepage": 1,
+      "case_studies": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "sensiq"
+    },
+    "scrape_time": "2025-10-05T03:39:27.237514"
+  }
+}

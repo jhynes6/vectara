@@ -2,24 +2,16 @@
 source: "website"
 content_type: "services_products"
 url: "https://www.d2creative.com/capabilities/content-development/"
-title: "Content Development and Marketing"
+title: "Digital Marketing Content Development & Strategy Support"
 domain: "www.d2creative.com"
 path: "/capabilities/content-development/"
-scraped_time: "2025-09-06T16:12:42.169043"
+scraped_time: "2025-10-04T18:55:22.137203"
 url_depth: 2
-word_count: 767
+word_count: 747
 client_name: "d2-creative"
 ---
 
 # Content Development and Marketing
-
-Digital Marketing Content Development & Strategy Support
-
-## CAPABILITIES
-
-# Content Development and Marketing
-
-### CAPABILITIES
 
 ## Creating & Publishing Content
 
@@ -31,19 +23,19 @@ D2 can help. We work with your team to identify and generate content for your we
 
 Common content we produce includes:
 
-*   Web pages/blog posts
-*   Marketing emails
-*   Ad copy/ad creative
-*   Newsletters
-*   Web images
-*   Infographics
-*   Presentations
-*    White Papers
-*   Videos
-*   Case Studies
-*   Calculators
-*   Manuals
-*   Reviews
+* Web pages/blog posts  
+* Marketing emails  
+* Ad copy/ad creative  
+* Newsletters  
+* Web images  
+* Infographics  
+* Presentations
+* White Papers
+* Videos
+* Case Studies
+* Calculators
+* Manuals
+* Reviews
 
 See how D2 Creative transformed the Paragard IUD brand with a strategic content development approach. Read the case study to see how we crafted engaging copy, optimized it for SEO, and tailored it to resonate with their target audience. [Case Study: Fresh Content Energizes an Established Brand.](/our-work/brand-content-development/)
 
@@ -55,7 +47,7 @@ Discover how Luminations can elevate your approach to patient education. [Read M
 
 ## Content Marketing
 
-Search engine algorithms are becoming more and more sophisticated, but one thing hasn’t changed: **Content is still king**. If you create content that educates and helps people make decisions, you’ll be rewarded for it. This is [content marketing](https://www.d2creative.com/digital-glossary/content-marketing/).
+Search engine algorithms are becoming more and more sophisticated, but one thing hasn’t changed: **Content is still king**. If you create content that educates and helps people make decisions, you’ll be rewarded for it. This is [content marketing](https://www.d2creative.com/digital-glossary/content-marketing/).
 
 At D2 Creative, we take a strategic approach to content marketing to ensure you have a strategy that is both realistic and effective. We carry this out by taking a few key points of emphasis, which are:
 
@@ -65,7 +57,7 @@ We take the time to understand your business objectives and overall marketing go
 
 ### Audience Research
 
-Your audiences’ preferences, needs, and pain points provide valuable insight as to the topics and types of content that will resonate most.
+Your audiences’ preferences, needs, and pain points provide valuable insight as to the topics and types of content that will resonate most.  
 
 ### Content Strategy Development
 
@@ -102,9 +94,3 @@ Dive deeper into our [comprehensive digital marketing capabilities](/capabilitie
 ### Transform Complex Health Education Content with Luminations
 
 Looking to create [health education content](https://www.d2creative.com/capabilities/content-development/health-education/) that resonates? Our Luminations approach transforms complex medical information into engaging, easy-to-understand experiences that improve patient comprehension and confidence. Whether through video storytelling, interactive media, infographics, or other formats we make health education both accessible and impactful.
-
-### Capabilities Appendix​
-
-## Let’s Connect
-
-## Let’s Connect

@@ -1,0 +1,21 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 9,
+    "successful_scrapes": 9,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 2917,
+    "categories": {
+      "case_studies": 2,
+      "other": 3,
+      "services_products": 1,
+      "blogs_resources": 1,
+      "homepage": 1,
+      "about": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "atrenet"
+    },
+    "scrape_time": "2025-10-05T04:49:47.260193"
+  }
+}

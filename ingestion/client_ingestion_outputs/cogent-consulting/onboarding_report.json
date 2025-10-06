@@ -1,0 +1,15 @@
+{
+  "client_id": "cogent-consulting",
+  "timestamp": "2025-10-05T05:48:10.841486Z",
+  "files_processed": 46,
+  "successful_uploads": 46,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "cogent-consulting",
+    "client_uuid": "cogent-consulting",
+    "document_count": 46,
+    "chunk_count": 61,
+    "total_tokens": 28353
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/cogent-consulting"
+}

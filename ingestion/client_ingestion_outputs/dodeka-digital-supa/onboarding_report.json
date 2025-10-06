@@ -1,0 +1,15 @@
+{
+  "client_id": "dodeka-digital-supa",
+  "timestamp": "2025-10-04T18:14:44.257055Z",
+  "files_processed": 37,
+  "successful_uploads": 37,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "dodeka-digital-supa",
+    "client_uuid": "dodeka-digital-supa",
+    "document_count": 37,
+    "chunk_count": 54,
+    "total_tokens": 27606
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/dodeka-digital-supa"
+}

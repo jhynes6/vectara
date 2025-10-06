@@ -1,0 +1,67 @@
+{
+  "client_onboarding_summary": {
+    "client_id": "-73",
+    "timestamp": "2025-09-30T13:50:05.187368",
+    "corpus_created": true,
+    "website_url": "https://www.longitude73.com/",
+    "drive_folder_id": "1_D-zv2Qm1Q4ozoXlTdYlduauoWQiWYY_",
+    "output_directory": "ingestion/client_ingestion_outputs/-73",
+    "upload_statistics": {
+      "successful_uploads": 123,
+      "failed_uploads": 1,
+      "total_files_processed": 124,
+      "success_rate": 99.19354838709677
+    },
+    "directories_created": [
+      "ingestion/client_ingestion_outputs/-73/client_intake_form",
+      "ingestion/client_ingestion_outputs/-73/client_materials",
+      "ingestion/client_ingestion_outputs/-73/website"
+    ],
+    "performance_metrics": {
+      "onboarder_initialization": {
+        "duration": 0.051239728927612305,
+        "timestamp": "2025-09-30T13:40:18.357629",
+        "client_id": "-73"
+      },
+      "directory_creation": {
+        "duration": 0.00023102760314941406,
+        "timestamp": "2025-09-30T13:40:18.357921",
+        "directories_created": 4,
+        "total_directories": 4
+      },
+      "corpus_creation": {
+        "duration": 9.833582878112793,
+        "timestamp": "2025-09-30T13:40:28.191573",
+        "status": "created",
+        "corpus_key": "-73"
+      },
+      "drive_ingestion": {
+        "duration": 1.876326084136963,
+        "timestamp": "2025-09-30T13:40:31.869785",
+        "status": "success"
+      },
+      "website_ingestion": {
+        "duration": 396.28507590293884,
+        "timestamp": "2025-09-30T13:47:04.480367",
+        "status": "success"
+      },
+      "file_discovery": {
+        "duration": 0.01994800567626953,
+        "timestamp": "2025-09-30T13:47:04.501883",
+        "total_files": 124,
+        "intake_files": 1,
+        "materials_files": 0,
+        "website_files": 123
+      },
+      "file_upload": {
+        "duration": 180.67878198623657,
+        "timestamp": "2025-09-30T13:50:05.180811",
+        "total_files": 124,
+        "successful_uploads": 123,
+        "failed_uploads": 1,
+        "total_bytes": 323046
+      }
+    },
+    "onboarding_status": "completed_with_errors"
+  }
+}

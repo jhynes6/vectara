@@ -1,0 +1,21 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 32,
+    "successful_scrapes": 32,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 32324,
+    "categories": {
+      "blogs_resources": 15,
+      "case_studies": 4,
+      "services_products": 3,
+      "industry_markets": 1,
+      "other": 8,
+      "about": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "nutramarketers"
+    },
+    "scrape_time": "2025-10-04T18:53:39.890020"
+  }
+}

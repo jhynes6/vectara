@@ -2,37 +2,22 @@
 source: "website"
 content_type: "case_studies"
 url: "https://www.d2creative.com/our-work/healthcare-company-web-reporting/"
-title: "Simplifying Client Website Analytics Reporting"
+title: "Monthly Website Analytics Reporting & Analysis Services"
 domain: "www.d2creative.com"
 path: "/our-work/healthcare-company-web-reporting/"
-scraped_time: "2025-09-06T16:15:54.452135"
+scraped_time: "2025-10-04T18:57:01.655851"
 url_depth: 2
-word_count: 337
+word_count: 320
 client_name: "d2-creative"
 ---
 
 # Simplifying Client Website Analytics Reporting
 
-Monthly Website Analytics Reporting & Analysis Services
-
-## Healthcare Company
-
-#
-
-Simplifying Client Website Analytics Reporting
-
-Web Analytics & Measurement
-
-## The
-Challenge
-
-## Our
-Approach
-
-## The
-Result
+## The Challenge
 
 Every month, our client was asked to prepare a website analysis and performance report for company leadership. The report generally consisted of rows of tabular data in a spreadsheet with a handful of top-line charts. Feeling like the task was not only tedious to prepare but did not give them the actionable results they wanted, the client turned to us for our recommendations. We took on this task for the client, believing there was a more efficient way to report and analyze website and advertising performance reports.
+
+## Our Approach
 
 Our task was to create a turn-key website analysis report that was easy for our client to understand, present, and distribute to colleagues. First, we worked with our client to understand some of their key business objectives. We mapped these objectives to a series of Key Performance Indicators (KPIs) that would lead off each monthly report along with an executive summary that outlined the analysis in a concise, easy to understand way.
 

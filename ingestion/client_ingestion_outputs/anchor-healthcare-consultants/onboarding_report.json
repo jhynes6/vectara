@@ -1,0 +1,15 @@
+{
+  "client_id": "anchor-healthcare-consultants",
+  "timestamp": "2025-10-05T04:22:11.688694Z",
+  "files_processed": 49,
+  "successful_uploads": 49,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "anchor-healthcare-consultants",
+    "client_uuid": "anchor-healthcare-consultants",
+    "document_count": 49,
+    "chunk_count": 53,
+    "total_tokens": 16644
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/anchor-healthcare-consultants"
+}

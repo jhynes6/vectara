@@ -1,0 +1,21 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 240,
+    "successful_scrapes": 125,
+    "failed_scrapes": 0,
+    "success_rate": "52.1%",
+    "total_words_scraped": 138190,
+    "categories": {
+      "blogs_resources": 100,
+      "other": 15,
+      "services_products": 5,
+      "about": 1,
+      "careers": 3,
+      "homepage": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "woven-legal"
+    },
+    "scrape_time": "2025-10-05T03:10:01.207299"
+  }
+}

@@ -1,20 +1,38 @@
 #!/usr/bin/env python3
 """
-Client Website Content Scraper
+Client Website Content Scraper with Bright Data + LLM Content Extraction
 
 This script crawls a client's website using their sitemap and saves each page
-as a markdown file in a "website" folder with rich metadata.
+as a markdown file in a "website" folder with rich metadata. It uses Bright Data
+for professional web scraping and GPT-4o mini LLM for intelligent content cleaning
+that removes navigation, headers, footers, and boilerplate while preserving
+the core informational content.
+
+Features:
+    - Professional web scraping with Bright Data (bot detection bypass)
+    - GPT-4o mini LLM for intelligent content cleaning and structuring
+    - Automatic filtering of navigation, headers, footers, social media, contact info
+    - Content restructuring for optimal RAG retrieval
+    - LLM-based URL categorization for better content organization
+    - Parallel processing for faster scraping
 
 Usage:
+    # Full website crawl (default)
     python ingest_client_website.py --url https://example.com --client-name "Client Corp"
 
+    # Single URL scrape
+    python ingest_client_website.py --url https://example.com/page --single-url --client-name "Client Corp"
+
 Required:
-    --url: The client's website URL (will look for sitemap.xml)
+    --url: The website URL (base URL for sitemap discovery, or specific URL when using --single-url)
+    -- BRIGHTDATA_API_TOKEN environment variable
+    -- OPENAI_API_KEY environment variable (for LLM content cleaning)
 
 Optional:
     --workers: Number of parallel workers for faster processing (default: 4)
     --output-dir: Output directory for website folder and logs (default: ingestion/client_ingestion_outputs)
     --no-llm-categories: Disable LLM categorization (LLM is enabled by default)
+    --single-url: Scrape only the specified URL instead of crawling the entire sitemap
     --client-name: Client name to add to metadata
     --project-name: Project name to add to metadata
 """
@@ -33,18 +51,23 @@ from pathlib import Path
 from urllib.parse import urlparse, urljoin
 from dotenv import load_dotenv
 from xml.etree import ElementTree
-from typing import List, Set, Optional, Dict
+from typing import List, Set, Optional, Dict, Any
 from bs4 import BeautifulSoup
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from openai import AsyncOpenAI
+from openai import OpenAI
+
+# Content cleaning and extraction utilities are built-in
 
 load_dotenv()
 
 # Bright Data Configuration
 BRIGHTDATA_API_TOKEN = os.getenv("BRIGHTDATA_API_TOKEN")
 
-print(BRIGHTDATA_API_TOKEN)
+# Scraper utilities are built-in
+
+print(f"BrightData API Token available: {bool(BRIGHTDATA_API_TOKEN)}")
 
 # Configure logging
 logging.basicConfig(
@@ -133,90 +156,63 @@ def discover_sitemaps(base_url: str) -> List[str]:
     
     return sitemap_candidates
 
-def clean_markdown_content(markdown_content: str) -> str:
+def extract_clean_content_from_markdown(markdown_content: str) -> tuple[str, str]:
     """
-    Clean markdown content by removing navigation, headers, footers, and other boilerplate.
+    Use LLM-based content cleaning to process Bright Data markdown content.
+    Uses GPT-4o mini to remove navigation, headers, footers, and boilerplate.
+    Returns (cleaned_markdown_content, title)
+    """
+    try:
+        # Prefer true LLM cleaning when OPENAI_API_KEY is available
+        api_key = os.getenv('OPENAI_API_KEY')
+        if api_key:
+            cleaned_md, title = llm_clean_markdown_content(markdown_content)
+            if cleaned_md:
+                logger.info("✅ LLM content cleaning applied")
+                return cleaned_md, title
+            logger.warning("⚠️ LLM cleaning returned empty content, using fallback")
+        else:
+            logger.info("OPENAI_API_KEY not found; using fallback cleaner")
+    except Exception as e:
+        logger.error(f"❌ Error in LLM content cleaning: {e}")
+
+    # Fallback cleaner
+    logger.info("Using built-in content cleaning fallback")
+    return clean_markdown_content_fallback(markdown_content)
+
+def clean_markdown_content_fallback(markdown_content: str) -> tuple[str, str]:
+    """
+    Fallback content cleaning for markdown when the main extractor fails
     """
     lines = markdown_content.split('\n')
     
-    # First pass: Remove everything before the main content starts
-    main_content_start = -1
-    for i, line in enumerate(lines):
-        line = line.strip()
-        
-        # Look for company/client name headers that indicate main content
-        if re.match(r'^##?\s+[A-Z][A-Z\s]+$', line):  # Headers like "## TRIOSE" or "## IEEE EMBS"
-            main_content_start = i
-            break
-        # Or look for substantial content paragraphs (not navigation)
-        elif (line and len(line) > 50 and 
-              not line.startswith('*') and 
-              not line.startswith('[') and 
-              not 'Skip to content' in line and
-              not 'logo' in line.lower()):
-            main_content_start = i
+    # Extract title from first # heading
+    title = ""
+    for line in lines[:20]:  # Check first 20 lines for title
+        line_stripped = line.strip()
+        if line_stripped.startswith('# ') and len(line_stripped) > 3:
+            title = line_stripped[2:].strip()
             break
     
-    # If no clear main content found, look for the first substantial paragraph
-    if main_content_start == -1:
-        for i, line in enumerate(lines):
-            line = line.strip()
-            if (line and len(line) > 30 and 
-                not line.startswith('*') and 
-                not line.startswith('[') and
-                '(' not in line and
-                not line.startswith('#')):
-                main_content_start = i
-                break
-    
-    # Second pass: Remove everything after footer content starts
-    main_content_end = len(lines)
-    footer_patterns = [
-        r'^\[See More Case Studies\]',
-        r'^## Let\'s Connect$',
-        r'^\*\*New Business\*\*',
-        r'^## Send Us a Note$',
-        r'^Mike DeFabrizio',
-        r'^\*\*Careers at D2',
-        r'^\*\*Insights\*\*',
-    ]
-    
-    for i in range(main_content_start, len(lines)):
-        line = lines[i].strip()
-        for pattern in footer_patterns:
-            if re.match(pattern, line):
-                main_content_end = i
-                break
-        if main_content_end != len(lines):
-            break
-    
-    # Extract the main content section
-    if main_content_start >= 0:
-        content_lines = lines[main_content_start:main_content_end]
-    else:
-        content_lines = lines
-    
-    # Third pass: Clean up remaining navigation and boilerplate within content
+    # Simple navigation filtering
     cleaned_lines = []
     skip_next_empty = False
     
-    for line in content_lines:
+    for line in lines:
         line = line.strip()
         
-        # Skip navigation bullets
-        if line.startswith('*') and '](' in line:
+        # Skip obvious navigation
+        if (line.startswith('[') and '](' in line and len(line) < 50) or \
+           'website-files.com' in line or \
+           'Asset%20' in line:
             skip_next_empty = True
             continue
-        
-        # Skip logo links and images in navigation
-        if '[Skip to content]' in line or 'logo' in line.lower():
-            continue
-        
+            
         # Skip empty lines after removed navigation
         if not line and skip_next_empty:
             skip_next_empty = False
             continue
-        
+            
         skip_next_empty = False
         cleaned_lines.append(line)
     
@@ -224,11 +220,95 @@ def clean_markdown_content(markdown_content: str) -> str:
     cleaned_content = '\n'.join(cleaned_lines)
     cleaned_content = re.sub(r'\n{3,}', '\n\n', cleaned_content).strip()
     
-    return cleaned_content
+    return cleaned_content, title
+
+def llm_clean_markdown_content(markdown_content: str) -> tuple[str, str]:
+    """
+    Clean raw markdown using GPT-4o mini to remove navigation, headers, footers, and boilerplate
+    while preserving core informational content and structure. Returns (cleaned_markdown, title).
+    """
+    api_key = os.getenv('OPENAI_API_KEY')
+    if not api_key:
+        raise RuntimeError("OPENAI_API_KEY not set")
+
+    # Truncate overly large inputs to stay safely within context limits
+    content = markdown_content
+    max_chars = int(os.getenv('CONTENT_CLEAN_MAX_CHARS', '120000'))
+    if len(content) > max_chars:
+        logger.info(f"Truncating content from {len(content)} to {max_chars} chars for LLM cleaning")
+        content = content[:max_chars]
+
+    client = OpenAI(api_key=api_key)
+
+    system_instructions = (
+        "You are an expert content extraction assistant. Given a single web page in Markdown, "
+        "return only the substantive article/page content. Remove navigation menus, headers, footers, "
+        "sidebars, cookie notices, forms, repeated link lists, social links, and boilerplate. Preserve "
+        "semantic structure (headings, paragraphs, lists, code blocks). Do not invent content. "
+        "If multiple sections exist (e.g., hero + body), keep the meaningful text and headings only. "
+        "Do not include site-wide menus or footers."
+    )
+
+    user_prompt = (
+        "Clean the following Markdown. Return ONLY a valid JSON object with keys 'title' and 'content_md'. "
+        "- 'title' should be a concise page title inferred from the H1 or the main content. "
+        "- 'content_md' should be the cleaned Markdown content only, no extra commentary or JSON wrapper. "
+        "Do not include any text outside the JSON object. Example format:\n"
+        '{"title": "Page Title", "content_md": "# Clean Markdown Content Here"}\n\n'
+        "```markdown\n" + content + "\n```"
+    )
+
+    try:
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {"role": "system", "content": system_instructions},
+                {"role": "user", "content": user_prompt},
+            ],
+            temperature=0.1,
+            max_tokens=4096,
+        )
+        text = response.choices[0].message.content or ""
+
+        # Attempt JSON parse
+        title = ""
+        cleaned = ""
+        try:
+            data = json.loads(text)
+            title = (data.get("title") or "").strip()
+            cleaned = (data.get("content_md") or "").strip()
+        except Exception as e:
+            # If not JSON, try to heuristically split out a first-level heading as title
+            logger.warning(f"⚠️  LLM returned non-JSON response, falling back to simple extraction. Error: {e}")
+            logger.debug(f"LLM response was: {text[:200]}...")
+            lines = [ln.strip() for ln in text.splitlines()]
+            for ln in lines:
+                if ln.startswith('# '):
+                    title = ln[2:].strip()
+                    break
+            # If JSON parsing failed, don't use the raw text - it might be malformed JSON
+            # Instead, return empty content to trigger fallback
+            cleaned = ""
+
+        # Final sanitation
+        if not cleaned:
+            return "", ""
+        if not title:
+            # Derive title from first H1 in cleaned content
+            for ln in cleaned.splitlines():
+                ln = ln.strip()
+                if ln.startswith('# '):
+                    title = ln[2:].strip()
+                    break
+        return cleaned, title
+    except Exception as e:
+        raise RuntimeError(f"OpenAI cleaning failed: {e}")
 
 def crawl_single_url(url: str) -> dict:
     """
-    Crawl a single URL using the Bright Data Scraping Browser API and return the content.
+    Crawl a single URL using Bright Data API for scraping and GPT-4o mini LLM for content cleaning.
+    This provides professional web scraping with intelligent content extraction that removes
+    navigation, headers, footers, and boilerplate while preserving core informational content.
     """
     if not BRIGHTDATA_API_TOKEN:
         logger.error("❌ BRIGHTDATA_API_TOKEN not found in environment variables. Cannot scrape.")
@@ -244,8 +324,9 @@ def crawl_single_url(url: str) -> dict:
       "format": "raw",
       "method": "GET",
       "country": "US",
-      "data_format": "markdown"
+      "data_format": "markdown"  # Using markdown format for better content extraction
     })
+    
     headers = {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
@@ -263,15 +344,14 @@ def crawl_single_url(url: str) -> dict:
                 'url': url, 'title': '', 'content': f"Error from Bright Data. Status: {response.headers.get('x-response-code')}",
                 'success': False, 'word_count': 0, 'extraction_method': 'brightdata_failed_load'
             }
-
+        
         markdown_content = response.text
 
-        # Clean the markdown content to remove navigation, headers, and footers
-        cleaned_content = clean_markdown_content(markdown_content)
+        # Use our sophisticated content extractor to clean the markdown and extract content
+        cleaned_content, extracted_title = extract_clean_content_from_markdown(markdown_content)
 
-        # Extract title from the first H1 tag in the cleaned markdown, fallback to URL path
-        title_match = re.search(r'^#\s+(.*)', cleaned_content, re.MULTILINE)
-        title = title_match.group(1).strip() if title_match else urlparse(url).path
+        # Use extracted title or fallback to URL path
+        title = extracted_title if extracted_title else urlparse(url).path
 
         return {
             'url': url,
@@ -279,7 +359,7 @@ def crawl_single_url(url: str) -> dict:
             'content': cleaned_content,
             'success': True,
             'word_count': len(cleaned_content.split()),
-            'extraction_method': 'brightdata_api'
+            'extraction_method': 'brightdata_markdown_llm_cleanup'
         }
 
     except requests.RequestException as e:
@@ -287,6 +367,129 @@ def crawl_single_url(url: str) -> dict:
         return {
             'url': url, 'title': '', 'content': f"Error calling Bright Data API: {str(e)}",
             'success': False, 'word_count': 0, 'extraction_method': 'brightdata_request_error'
+        }
+
+def scrape_single_url(url: str, custom_metadata: Dict[str, str], output_dir: str, use_llm_categories: bool = True) -> dict:
+    """
+    Scrape a single URL and save it to the appropriate location with proper metadata.
+    Returns summary statistics similar to the full crawl.
+    """
+    logger.info(f"🎯 Scraping single URL: {url}")
+
+    try:
+        start_time = time.time()
+
+        # Create output directories
+        website_dir = os.path.join(output_dir, 'website')
+        os.makedirs(website_dir, exist_ok=True)
+
+        # Scrape the URL
+        scrape_result = crawl_single_url(url)
+
+        if not scrape_result['success']:
+            logger.error(f"❌ Failed to scrape {url}: {scrape_result['content']}")
+            return {
+                'successful': 0,
+                'failed': 1,
+                'total_words': 0,
+                'categories': {},
+                'urls': [url]
+            }
+
+        # Create filename and save content
+        filename = safe_filename(url)
+        filepath = os.path.join(website_dir, filename)
+
+        # Prepare metadata for the markdown file
+        metadata = {
+            'url': url,
+            'scraped_at': datetime.now().isoformat(),
+            'extraction_method': scrape_result['extraction_method'],
+            'word_count': scrape_result['word_count'],
+            **custom_metadata
+        }
+
+        # Categorize the URL if LLM categorization is enabled
+        if use_llm_categories:
+            try:
+                # Use the synchronous categorization from the main async function
+                # We'll set this to a simple fallback for now in single URL mode
+                # TODO: Properly handle async categorization in single URL mode
+                metadata['category'] = categorize_url_simple(url)
+                logger.info(f"🏷️  Categorized as: {metadata['category']} (simple categorization)")
+
+            except Exception as e:
+                logger.warning(f"⚠️  Categorization failed: {e}")
+                metadata['category'] = 'other'
+
+        # Create YAML frontmatter
+        yaml_frontmatter = "---\n"
+        for key, value in metadata.items():
+            yaml_frontmatter += f"{key}: {value}\n"
+        yaml_frontmatter += "---\n\n"
+
+        # Write the markdown file
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(yaml_frontmatter)
+            f.write(f"# {scrape_result['title']}\n\n")
+            f.write(scrape_result['content'])
+
+        logger.info(f"✅ Saved: {filepath}")
+        logger.info(f"📊 Words: {scrape_result['word_count']}")
+
+        # Save URL reference
+        urls_file = os.path.join(output_dir, 'urls_discovered.txt')
+        with open(urls_file, 'w', encoding='utf-8') as f:
+            f.write(url + '\n')
+
+        # Save categorization results
+        categories_file = os.path.join(output_dir, 'url_categories.json')
+        with open(categories_file, 'w', encoding='utf-8') as f:
+            json.dump({url: metadata.get('category', 'other')}, f, indent=2, ensure_ascii=False)
+
+        # Save scraping summary
+        summary = {
+            'total_urls_discovered': 1,
+            'successful': 1,
+            'failed': 0,
+            'total_words': scrape_result['word_count'],
+            'categories': {metadata.get('category', 'other'): 1},
+            'extraction_methods': {scrape_result['extraction_method']: 1},
+            'scraped_at': datetime.now().isoformat(),
+            'custom_metadata': custom_metadata
+        }
+
+        summary_file = os.path.join(output_dir, 'scraping_summary.json')
+        with open(summary_file, 'w', encoding='utf-8') as f:
+            json.dump(summary, f, indent=2, ensure_ascii=False)
+
+        end_time = time.time()
+        duration = end_time - start_time
+
+        logger.info(f"\n🎉 SINGLE URL SCRAPING COMPLETE!")
+        logger.info(f"⏱️  Total time: {duration:.2f} seconds")
+        logger.info(f"✅ Successfully scraped: 1/1")
+        logger.info(f"📝 Words scraped: {scrape_result['word_count']:,}")
+        logger.info(f"📂 Content saved to: {filepath}")
+
+        return {
+            'successful': 1,
+            'failed': 0,
+            'total_words': scrape_result['word_count'],
+            'categories': {metadata.get('category', 'other'): 1},
+            'urls': [url]
+        }
+
+    except Exception as e:
+        logger.error(f"❌ Error scraping single URL {url}: {e}")
+        import traceback
+        logger.error(f"Traceback: {traceback.format_exc()}")
+        return {
+            'successful': 0,
+            'failed': 1,
+            'total_words': 0,
+            'categories': {},
+            'urls': [url]
         }
 
 def safe_filename(url: str) -> str:
@@ -311,21 +514,35 @@ def safe_filename(url: str) -> str:
 
 # LLM-based URL categorization system
 CATEGORIZATION_SYSTEM_PROMPT = """
-You are helping categorize website URLs based on the type of content likely to be on each page.
+Your task is to categorize website URLs based on the type of content likely found on each page.
 
-Categories and definitions:
-- homepage: the company's home page
-- services_products: pages that detail the company's services or products they are selling
-- industry_markets: pages that detail the industries or markets the company serves
-- pricing: pages that give information on pricing
-- case_studies: pages with case studies detailing success stories
-- testimonials: pages exclusively for client testimonials
-- blogs_resources: blogs, resources, guides, and other thought leadership content
-- about: pages with more information about the company
-- careers: career / hiring related pages
-- other: use this if you cannot confidently assign the URL to one of the provided categories
+Begin with a concise checklist (3-7 bullets) of what you will do; keep items conceptual, not implementation-level.
 
-Your output should contain only the category name with no other text.
+## Category Definitions
+- **homepage**: The company's main or landing page.
+- **services_products**: Pages describing specific services or products the company offers for sale.
+- **industry_markets**: Pages detailing the industries or markets served by the company.
+- **pricing**: Pages providing information about the cost or pricing of products or services.
+- **case_studies**: Pages containing case studies or detailed success stories.
+- **testimonials**: Pages devoted exclusively to customer testimonials.
+- **blogs_resources**: Pages featuring blogs, resources, guides, or other thought leadership materials.
+- **about**: Pages with background or general information about the company.
+- **careers**: Pages related to employment, job openings, or hiring.
+- **other**: Use this for URLs that cannot be confidently categorized using the options above.
+
+## Categorization Rules
+- Assign each URL to only one category from the list above.
+- If a URL could fit into multiple categories, select the most specific and relevant category.
+- If the input is invalid, empty, or not a well-formed URL, categorize it as "other".
+- Set reasoning_effort = minimal; ensure decisions are efficient and only escalate if ambiguous cases arise.
+
+## Input Handling
+- Input is a list of URLs. If a single URL is provided, respond with a list containing one item.
+- Maintain the original order of URLs in your output.
+- Each category value must exactly match one of the defined category names listed above (spelling and case sensitive).
+
+## Output Format
+Always return a JSON object structured as:
 """
 
 VALID_CATEGORIES = [
@@ -494,11 +711,8 @@ def crawl_parallel(urls: List[str], custom_metadata: dict, output_dir: str, max_
                     frontmatter += f"{key}: {value}\n"
             frontmatter += "---\n\n"
             
-            markdown_content = frontmatter
-            if scrape_result['title']:
-                markdown_content += f"# {scrape_result['title']}\n\n"
-            
-            markdown_content += scrape_result['content']
+            # Don't add title manually - our content extractor already preserves document structure
+            markdown_content = frontmatter + scrape_result['content']
             
             # Save file
             try:
@@ -518,7 +732,7 @@ def crawl_parallel(urls: List[str], custom_metadata: dict, output_dir: str, max_
         return {'url': url, 'success': False, 'words': 0, 'category': 'failed'}
     
     # Process with thread pool
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+    with    (max_workers=max_workers) as executor:
         url_data = [(url, idx) for idx, url in enumerate(urls)]
         futures = [executor.submit(process_single_url, data) for data in url_data]
         
@@ -595,18 +809,24 @@ async def main_async():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__
     )
-    
+    a
     # Required arguments
     parser.add_argument('--url', '-u', required=True,
-                       help='Client website URL (will look for sitemap.xml)')
+                       help='Website URL (base URL for sitemap discovery, or specific URL when using --single-url)')
     
     # Optional arguments
-    parser.add_argument('--workers', '-w', type=int, default=4,
+    parser.add_argument('--workers', '-w', type=int, default=8,
                        help='Number of parallel workers for faster processing (default: 4)')
     parser.add_argument('--output-dir', '-o', default='ingestion/client_ingestion_outputs',
                        help='Output directory for website folder and logs (default: ingestion/client_ingestion_outputs)')
     parser.add_argument('--no-llm-categories', action='store_true',
-                       help='Disable LLM categorization and use simple keyword-based categorization instead')
+                       help='Disable LLM categorization and use simple keyword-based categorization instead (LLM categories enabled by default)')
+    parser.add_argument('--single-url', action='store_true',
+                       help='Scrape only the specified URL instead of crawling the entire sitemap (default: False)')
+    parser.add_argument('--max-per-category', type=int, default=100,
+                       help='Maximum number of URLs to scrape per category (default: 100)')
+    parser.add_argument('--max-total-urls', type=int, default=500,
+                       help='Maximum total URLs to process (default: 500)')
     
     # Metadata arguments
     parser.add_argument('--client-name', default='',
@@ -646,14 +866,39 @@ async def main_async():
     logger.info(f"📁 Output: {args.output_dir}/website/")
     use_llm_categories = not args.no_llm_categories
     logger.info(f"🤖 LLM Categorization: {'Enabled' if use_llm_categories else 'Disabled (--no-llm-categories flag used)'}")
-    
+    logger.info(f"🧠 Content Extraction: Bright Data + LLM cleanup")
+    logger.info(f"🎯 Mode: {'Single URL' if args.single_url else 'Full Sitemap Crawl'}")
+
     if custom_metadata:
         logger.info(f"🏷️  Custom metadata: {custom_metadata}")
-    
+
     try:
         start_time = time.time()
-        
-        # Step 1: Discover sitemaps and extract URLs
+
+        # Handle single URL vs. full sitemap crawl
+        if args.single_url:
+            logger.info("🎯 SINGLE URL MODE: Scraping only the specified URL")
+
+            # Scrape single URL
+            results = scrape_single_url(args.url, custom_metadata, args.output_dir, use_llm_categories)
+
+            # Final summary
+            end_time = time.time()
+            duration = end_time - start_time
+
+            logger.info(f"\n🎉 SINGLE URL SCRAPING COMPLETE!")
+            logger.info(f"⏱️  Total time: {duration:.2f} seconds")
+            logger.info(f"✅ Successfully scraped: {results['successful']}")
+            logger.info(f"❌ Failed: {results['failed']}")
+            logger.info(f"📝 Total words scraped: {results['total_words']:,}")
+            logger.info(f"📂 Content saved to: {args.output_dir}/website/")
+
+            if duration > 0:
+                logger.info(f"🚀 Scraping speed: {results['successful']/duration:.1f} URLs/second")
+
+            return 0
+
+        # Default behavior: Full sitemap crawl
         logger.info("🔍 Discovering URLs from sitemap...")
         
         sitemap_candidates = discover_sitemaps(args.url)
@@ -672,6 +917,16 @@ async def main_async():
             all_urls = [args.url]
             logger.info(f"⚠️  No sitemap URLs found, using base URL only")
         
+        # Apply total URL cap to prevent runaway scraping
+        original_count = len(all_urls)
+        max_total_urls = args.max_total_urls
+        if len(all_urls) > max_total_urls:
+            logger.warning(f"⚠️  Found {len(all_urls)} URLs, capping at {max_total_urls} to prevent runaway scraping")
+            # Prioritize URLs: homepage first, then by URL length (shorter = more important)
+            all_urls.sort(key=lambda x: (x != args.url, len(x)))
+            all_urls = all_urls[:max_total_urls]
+            logger.info(f"📊 Limited from {original_count} to {len(all_urls)} URLs")
+
         logger.info(f"📊 Total unique URLs to process: {len(all_urls)}")
         
         # Save discovered URLs for reference
@@ -691,9 +946,27 @@ async def main_async():
             with open(categories_file, 'w', encoding='utf-8') as f:
                 json.dump(url_categories, f, indent=2, ensure_ascii=False)
             logger.info(f"🏷️  URL categories saved to: {categories_file}")
+        else:
+            # If LLM categorization disabled, do simple categorization
+            url_categories = {u: categorize_url_simple(u) for u in all_urls}
+        
+        # Apply per-category cap
+        max_per = max(1, args.max_per_category)
+        by_cat = {}
+        for u, c in url_categories.items():
+            by_cat.setdefault(c, []).append(u)
+        limited_urls = []
+        for c, urls in by_cat.items():
+            if len(urls) > max_per:
+                logger.info(f"🔎 Limiting category '{c}' from {len(urls)} to {max_per} URLs")
+                limited_urls.extend(urls[:max_per])
+            else:
+                limited_urls.extend(urls)
+        
+        logger.info(f"📊 URLs after per-category cap ({max_per}): {len(limited_urls)} (from {len(all_urls)})")
         
         # Step 3: Crawl URLs in parallel
-        results = crawl_parallel(all_urls, custom_metadata, args.output_dir, args.workers, url_categories)
+        results = crawl_parallel(limited_urls, custom_metadata, args.output_dir, args.workers, url_categories)
         
         # Step 4: Save summary
         save_scraping_summary(all_urls, results, args.output_dir, custom_metadata)
@@ -727,6 +1000,120 @@ async def main_async():
         import traceback
         logger.error(f"Traceback: {traceback.format_exc()}")
         return 1
+
+async def run_website_ingestion_async(
+    url: str,
+    output_dir: str,
+    client_name: str,
+    workers: int = 4,
+    use_llm_categories: bool = True,
+    single_url: bool = False,
+    max_per_category: int = 100,
+    max_total_urls: int = 500,  # Cap total URLs to prevent runaway scraping
+    project_name: str = "",
+    extra_metadata: Optional[Dict[str, str]] = None,
+) -> Dict[str, Any]:
+    """
+    Programmatic async entrypoint for website ingestion.
+    Returns a dict with summary information.
+    """
+    load_dotenv()
+
+    if not url.startswith(("http://", "https://")):
+        url = "https://" + url
+
+    custom_metadata: Dict[str, str] = {}
+    if client_name:
+        custom_metadata["client_name"] = client_name
+    if project_name:
+        custom_metadata["project_name"] = project_name
+    if extra_metadata:
+        custom_metadata.update(extra_metadata)
+
+    os.makedirs(output_dir, exist_ok=True)
+
+    try:
+        start_time = time.time()
+
+        if single_url:
+            # Single URL path
+            results = scrape_single_url(url, custom_metadata, output_dir, use_llm_categories)
+            duration = time.time() - start_time
+            return {
+                "status": "success",
+                "mode": "single_url",
+                "url": url,
+                "successful": results.get("successful", 0),
+                "failed": results.get("failed", 0),
+                "total_words": results.get("total_words", 0),
+                "output_dir": output_dir,
+                "duration_sec": duration,
+            }
+
+        # Full crawl path
+        sitemap_candidates = discover_sitemaps(url)
+        all_urls: List[str] = []
+        for sitemap_url in sitemap_candidates:
+            urls = get_urls_from_sitemap(sitemap_url)
+            if urls:
+                all_urls.extend(urls)
+        all_urls = list(set(all_urls))
+        if not all_urls:
+            all_urls = [url]
+
+        # Apply total URL cap BEFORE categorization to save on API costs
+        original_count = len(all_urls)
+        if len(all_urls) > max_total_urls:
+            logger.warning(f"⚠️  Found {len(all_urls)} URLs, capping at {max_total_urls} to prevent runaway scraping")
+            # Prioritize URLs: homepage first, then by URL length (shorter = more important)
+            all_urls.sort(key=lambda x: (x != url, len(x)))
+            all_urls = all_urls[:max_total_urls]
+            logger.info(f"📊 Limited from {original_count} to {len(all_urls)} URLs")
+
+        # Save discovered URLs
+        urls_file = os.path.join(output_dir, "urls_discovered.txt")
+        with open(urls_file, 'w', encoding='utf-8') as f:
+            for u in sorted(all_urls):
+                f.write(u + "\n")
+
+        url_categories: Dict[str, str] = {}
+        if use_llm_categories:
+            url_categories = await categorize_urls_with_llm(all_urls)
+            categories_file = os.path.join(output_dir, 'url_categories.json')
+            with open(categories_file, 'w', encoding='utf-8') as f:
+                json.dump(url_categories, f, indent=2, ensure_ascii=False)
+        else:
+            url_categories = {u: categorize_url_simple(u) for u in all_urls}
+
+        # Enforce per-category cap
+        max_per = max(1, int(max_per_category))
+        by_cat: Dict[str, List[str]] = {}
+        for u, c in url_categories.items():
+            by_cat.setdefault(c, []).append(u)
+        limited_urls: List[str] = []
+        for c, urls in by_cat.items():
+            limited_urls.extend(urls[:max_per])
+
+        results = crawl_parallel(limited_urls, custom_metadata, output_dir, workers, url_categories)
+        save_scraping_summary(all_urls, results, output_dir, custom_metadata)
+
+        duration = time.time() - start_time
+        return {
+            "status": "success",
+            "mode": "full",
+            "total_urls": len(all_urls),
+            "processed_urls": len(limited_urls),
+            "successful": results.get("successful", 0),
+            "failed": results.get("failed", 0),
+            "total_words": results.get("total_words", 0),
+            "output_dir": output_dir,
+            "duration_sec": duration,
+        }
+    except Exception as e:
+        logger.error(f"❌ Error in programmatic website ingestion: {e}")
+        import traceback
+        logger.error(traceback.format_exc())
+        return {"status": "error", "error": str(e)}
 
 def main():
     """Wrapper to run async main function"""

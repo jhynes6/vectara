@@ -1,0 +1,15 @@
+{
+  "client_id": "zoomgrants",
+  "timestamp": "2025-10-05T06:38:29.942696Z",
+  "files_processed": 91,
+  "successful_uploads": 1,
+  "failed_uploads": 90,
+  "database_stats": {
+    "client_id": "zoomgrants",
+    "client_uuid": "zoomgrants",
+    "document_count": 91,
+    "chunk_count": 102,
+    "total_tokens": 37965
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/zoomgrants"
+}

@@ -1,0 +1,24 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 1820,
+    "successful_scrapes": 455,
+    "failed_scrapes": 0,
+    "success_rate": "25.0%",
+    "total_words_scraped": 55668,
+    "categories": {
+      "services_products": 77,
+      "other": 100,
+      "blogs_resources": 100,
+      "industry_markets": 31,
+      "case_studies": 100,
+      "about": 34,
+      "careers": 10,
+      "testimonials": 2,
+      "homepage": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "slice-communications"
+    },
+    "scrape_time": "2025-10-05T00:14:35.737675"
+  }
+}

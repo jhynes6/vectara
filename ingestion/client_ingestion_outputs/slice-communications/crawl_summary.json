@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-10-04T23:59:04.869358",
+  "folder_id": "191aog58jGQDC6nzvQErM4cq5urqwB1F0",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 2,
+    "supported_files": 2,
+    "successfully_processed": 2,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Slice Communications: Client Intake Form",
+      "final_filename": "client_intake_slice-communications-client-intake-form.md",
+      "id": "10vQ6BCTiv7E-eGfYV-GPzKr8KSm5QVp0EgBbwrLrcfU",
+      "size": "54395",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/10vQ6BCTiv7E-eGfYV-GPzKr8KSm5QVp0EgBbwrLrcfU/view",
+      "word_count": 655,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "Slice-One-Pager.pdf",
+      "final_filename": "brochures_newsletters_slice-one-pager.md",
+      "id": "1EiiV9wR27bB0F4MVVyiGfaQJ_QHbjIIf",
+      "size": "1170104",
+      "mime_type": "application/pdf",
+      "content_type": "brochures_newsletters",
+      "url": "https://drive.google.com/file/d/1EiiV9wR27bB0F4MVVyiGfaQJ_QHbjIIf/view",
+      "word_count": 1176
+    }
+  ],
+  "failed_files": []
+}

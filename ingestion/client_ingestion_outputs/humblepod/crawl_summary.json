@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-10-05T01:52:39.978896",
+  "folder_id": "1EUC2P7wUdhjgCTMTQlNY3pc5ng9-zqYg",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 3,
+    "supported_files": 3,
+    "successfully_processed": 3,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Client Intake Form - HumblePod",
+      "final_filename": "client_intake_client-intake-form-humblepod.md",
+      "id": "1N2aW-Vqr8N2fkrsI7aH3Olz86Qpy65-kw1ZJ05md0OY",
+      "size": "40213",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1N2aW-Vqr8N2fkrsI7aH3Olz86Qpy65-kw1ZJ05md0OY/view",
+      "word_count": 858,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "HumblePod-Do Not Contact.xlsx",
+      "final_filename": "other_humblepod-do-not-contact.md",
+      "id": "1wb7DLzyYBUrMbfbOmaPF7iGMJlz87Dmb",
+      "size": "9665",
+      "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1wb7DLzyYBUrMbfbOmaPF7iGMJlz87Dmb/view",
+      "word_count": 154
+    },
+    {
+      "name": "HumblePod Pricing Guide 2024.pdf",
+      "final_filename": "other_humblepod-pricing-guide-2024.md",
+      "id": "1LleeTWtNRAVTT7QxI9FIZb2HVfFEgRDv",
+      "size": "6501346",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1LleeTWtNRAVTT7QxI9FIZb2HVfFEgRDv/view",
+      "word_count": 863
+    }
+  ],
+  "failed_files": []
+}

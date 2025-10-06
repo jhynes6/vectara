@@ -1,0 +1,15 @@
+{
+  "client_id": "nutramarketers",
+  "timestamp": "2025-10-04T22:54:51.465795Z",
+  "files_processed": 33,
+  "successful_uploads": 33,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "nutramarketers",
+    "client_uuid": "nutramarketers",
+    "document_count": 33,
+    "chunk_count": 65,
+    "total_tokens": 38656
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/nutramarketers"
+}

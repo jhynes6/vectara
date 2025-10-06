@@ -1,0 +1,23 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 40,
+    "successful_scrapes": 40,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 19417,
+    "categories": {
+      "blogs_resources": 30,
+      "case_studies": 3,
+      "services_products": 2,
+      "other": 1,
+      "industry_markets": 1,
+      "testimonials": 1,
+      "homepage": 1,
+      "about": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "cogent-consulting"
+    },
+    "scrape_time": "2025-10-05T01:46:53.211918"
+  }
+}

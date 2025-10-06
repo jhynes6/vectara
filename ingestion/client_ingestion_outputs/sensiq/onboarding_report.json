@@ -1,0 +1,15 @@
+{
+  "client_id": "sensiq",
+  "timestamp": "2025-10-05T07:44:24.312286Z",
+  "files_processed": 152,
+  "successful_uploads": 4,
+  "failed_uploads": 148,
+  "database_stats": {
+    "client_id": "sensiq",
+    "client_uuid": "sensiq",
+    "document_count": 152,
+    "chunk_count": 346,
+    "total_tokens": 247666
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/sensiq"
+}

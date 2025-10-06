@@ -1,0 +1,21 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 72,
+    "successful_scrapes": 72,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 29466,
+    "categories": {
+      "blogs_resources": 31,
+      "case_studies": 28,
+      "services_products": 6,
+      "other": 5,
+      "homepage": 1,
+      "about": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "tenstrat"
+    },
+    "scrape_time": "2025-10-05T01:41:43.535480"
+  }
+}

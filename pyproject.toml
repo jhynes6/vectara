@@ -1,0 +1,30 @@
+[project]
+name = "vectara-client-onboarding"
+version = "1.0.0"
+description = "Client onboarding system with Vertex AI RAG integration"
+requires-python = ">=3.11"
+dependencies = [
+    # Core dependencies
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.3",
+    "tqdm>=4.67.1",
+    "pydantic>=2.11.5",
+    "beautifulsoup4>=4.12.3",
+    "markitdown>=0.0.1a2",
+    # Vertex AI RAG dependencies
+    "google-cloud-aiplatform[adk,agent-engines]>=1.108.0",
+    "google-adk>=1.10.0",
+    "google-auth>=2.35.0",
+    "google-api-python-client>=2.154.0",
+    # LLM and embeddings
+    "openai>=1.99.3",
+    "llama-index>=0.13.3",
+    "llama-index-core>=0.13.3",
+    # Google Cloud Storage
+    "google-cloud-storage>=2.18.2",
+    # Additional utilities
+    "aiohttp>=3.11.11",
+    "httpx>=0.28.1",
+    "mcp>=1.13.1",
+]
+

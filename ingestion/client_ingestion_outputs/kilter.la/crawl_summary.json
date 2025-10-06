@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-10-04T22:17:20.613404",
+  "folder_id": "1pE-P8imohCGApyfUsSrhnhq0YJXowBk_",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 1,
+    "supported_files": 1,
+    "successfully_processed": 1,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Client Intake Form - Kilter",
+      "final_filename": "client_intake_client-intake-form-kilter.md",
+      "id": "1HUvg3pNySFE1aaDVDHBOQBWgZYg33fMmK7wA4bRzCTw",
+      "size": "38240",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1HUvg3pNySFE1aaDVDHBOQBWgZYg33fMmK7wA4bRzCTw/view",
+      "word_count": 763,
+      "special_category": "client_intake"
+    }
+  ],
+  "failed_files": []
+}

@@ -1,0 +1,22 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 147,
+    "successful_scrapes": 129,
+    "failed_scrapes": 0,
+    "success_rate": "87.8%",
+    "total_words_scraped": 63442,
+    "categories": {
+      "blogs_resources": 100,
+      "other": 17,
+      "careers": 5,
+      "case_studies": 2,
+      "homepage": 1,
+      "services_products": 3,
+      "about": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "humblepod"
+    },
+    "scrape_time": "2025-10-05T01:57:07.475053"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-10-05T00:00:16.445412",
+  "folder_id": "1egoGW5_5GwFQzJpNXp4Q7PjBn17I0dY4",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 1,
+    "supported_files": 1,
+    "successfully_processed": 1,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Iceberg Digital: Client Intake Form",
+      "final_filename": "client_intake_iceberg-digital-client-intake-form.md",
+      "id": "1gQmxqmmDKZer5RZlx7FVrlz8MnJ-IYqX1cVtGBhG0Wo",
+      "size": "39197",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1gQmxqmmDKZer5RZlx7FVrlz8MnJ-IYqX1cVtGBhG0Wo/view",
+      "word_count": 1154,
+      "special_category": "client_intake"
+    }
+  ],
+  "failed_files": []
+}

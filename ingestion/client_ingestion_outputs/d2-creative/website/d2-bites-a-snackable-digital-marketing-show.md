@@ -5,25 +5,21 @@ url: "https://www.d2creative.com/d2-bites-a-snackable-digital-marketing-show/"
 title: "D2 Bites: A Snackable Digital Marketing Show"
 domain: "www.d2creative.com"
 path: "/d2-bites-a-snackable-digital-marketing-show/"
-scraped_time: "2025-09-06T16:14:58.354170"
+scraped_time: "2025-10-04T18:55:59.511502"
 url_depth: 1
-word_count: 669
+word_count: 657
 client_name: "d2-creative"
 ---
 
 # D2 Bites: A Snackable Digital Marketing Show
 
-## BLOG
-
-# D2 Bites: A Snackable Digital Marketing Show
-
 *   Digital Marketing, Social Media
 
-By
+By 
 
 Laura Lentchitsky
 
-,
+, 
 
 Director of Messaging and Strategic Growth
 
@@ -59,14 +55,14 @@ In this episode of D2 Bites, Senior Account Supervisor Melissa Silva shares how 
 
 ![Laura Lentchitsky interviewing Lauren Sparagna for D2 Bites](https://www.d2creative.com/wp-content/uploads/2024/10/Lauren-Laura@2x.png)
 
-**Lauren Sparagna Gets Interrupted
+**Lauren Sparagna Gets Interrupted  
 by Kevin Chung while Talking Video**
 
 In this episode of D2 Bites, Lauren Sparagna discusses the intricacies of video capture and production from our sound studio, while input from the video team adds a twist to the conversation.
 
 ![Vijaya Singh interviewing Laura Lentchitsky for D2 Bites](https://www.d2creative.com/wp-content/uploads/2024/10/Vijaya-Laura-2@2x.png)
 
-**Laura Lentchitsky Shares SEO
+**Laura Lentchitsky Shares SEO  
 Trends and How AI and Chatbots are Changing the Game**
 
 In this episode of D2 Bites, Laura Lentchitsky swaps seats from host to interviewee to dish about how AI-powered chatbots are reshaping search engine results, the importance of balancing technical and creative aspects in SEO, and practical tips for optimizing content in MedTech.
@@ -88,9 +84,3 @@ In this episode of D2 Bites, social media expert Vijaya Singh reveals the secret
 **Kenny Kudzma Talks AI and Why Robots Aren’t Taking Over Just Yet**
 
 In this episode of D2 Bites, writer Kenny Kudzma shares his approach to content creation, using AI, tackling writer’s block, and how video game music fuels his creativity, all while discussing its role in the changing landscape of digital marketing.
-
-[View All Blog Topics](https://www.d2creative.com/blog/)
-
-## Let’s Connect
-
-## Let’s Connect

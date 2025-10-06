@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-10-04T23:54:33.435809",
+  "folder_id": "1pJ8quD1VPS2WmjwI5rulYkgmGGaDomwi",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 2,
+    "supported_files": 2,
+    "successfully_processed": 2,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Client Intake Form - American Ethanol",
+      "final_filename": "client_intake_client-intake-form-american-ethanol.md",
+      "id": "1FK_0WbffCHFO5LMbpdL9h39xjr0Py0Qi81P48sQwoyc",
+      "size": "37851",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1FK_0WbffCHFO5LMbpdL9h39xjr0Py0Qi81P48sQwoyc/view",
+      "word_count": 614,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "American Ethanol Brief.pdf",
+      "final_filename": "other_american-ethanol-brief.md",
+      "id": "1nFHusYWH0hLQfY39OfV_kGDSI-8ddcNv",
+      "size": "10121262",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1nFHusYWH0hLQfY39OfV_kGDSI-8ddcNv/view",
+      "word_count": 990
+    }
+  ],
+  "failed_files": []
+}

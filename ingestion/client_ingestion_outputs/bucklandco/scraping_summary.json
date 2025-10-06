@@ -1,0 +1,21 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 44,
+    "successful_scrapes": 44,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 26525,
+    "categories": {
+      "blogs_resources": 32,
+      "services_products": 3,
+      "case_studies": 3,
+      "other": 4,
+      "homepage": 1,
+      "about": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "bucklandco"
+    },
+    "scrape_time": "2025-10-04T23:56:29.458443"
+  }
+}

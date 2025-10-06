@@ -2,20 +2,14 @@
 source: "website"
 content_type: "blogs_resources"
 url: "https://www.d2creative.com/digital-glossary/pay-per-click-advertising/"
-title: "Pay-Per-Click (PPC) Advertising"
+title: "Pay-per-Click Advertising Overview"
 domain: "www.d2creative.com"
 path: "/digital-glossary/pay-per-click-advertising/"
-scraped_time: "2025-09-06T16:13:10.259776"
+scraped_time: "2025-10-04T18:55:38.138080"
 url_depth: 2
-word_count: 313
+word_count: 368
 client_name: "d2-creative"
 ---
-
-# Pay-Per-Click (PPC) Advertising
-
-Pay-per-Click Advertsing: Overview & Tips for Success
-
-## DIGITAL GLOSSARY
 
 # Pay-Per-Click (PPC) Advertising
 
@@ -39,21 +33,28 @@ You’ll see PPC ads in your search engine results (like Google and Bing), on so
 
 #### Common Pitfalls for PPC Ads
 
-**You can’t know what “success” is unless you set goals.**
+**You can’t know what “success” is unless you set goals.**  
 Appropriate benchmarking and goal-setting are key to measuring your campaign’s effectiveness.
 
-**Don’t just “Set It and Forget It.”
-**It’s essential to monitor your ads and revise them based on their performance. More effective ads generate more clicks, visits, qualified leads, and ROI. What to edit? Try changing tone of voice, keyword usage & placement, and content and see if you can get even better results.
+**Don’t just “Set It and Forget It.”**  
+It’s essential to monitor your ads and revise them based on their performance. More effective ads generate more clicks, visits, qualified leads, and ROI. What to edit? Try changing tone of voice, keyword usage & placement, and content and see if you can get even better results.
 
-**The landing page is as important as the ads.
-[Contact Us](https://www.d2creative.com/contact-us/) to discuss your digital marketing program.
-
-[Brand & Messaging Development](/capabilities/brand-and-messaging-development/)
-
-[See Our Branding Samples](https://go.d2creative.com/d2-branding-examples/)
+**The landing page is as important as the ads.**  
+If you’re really looking to generate new business and qualified leads (and who isn’t?), make sure to create focused, coherent landing pages with a clear, single CTA. Don’t forget to optimize your landing page for mobile as well.
 
 ### Digital Glossary Appendix
 
-## Let’s Connect
-
-## Let’s Connect
+*   [Ad Display](https://www.d2creative.com/digital-glossary/ad-display/)
+*   [Ad Retargeting](https://www.d2creative.com/digital-glossary/ad-retargeting/)
+*   [The Brand Discovery Process](https://www.d2creative.com/digital-glossary/brand-discovery/)
+*   [Branding Fundamentals](https://www.d2creative.com/digital-glossary/branding-fundamentals/)
+*   [Common Branding Deliverables](https://www.d2creative.com/digital-glossary/branding-deliverables/)
+*   [Community Management](https://www.d2creative.com/digital-glossary/community-management/)
+*   [Content Marketing](https://www.d2creative.com/digital-glossary/content-marketing/)
+*   [Email Marketing](https://www.d2creative.com/digital-glossary/email-marketing/)
+*   [Landing Pages](https://www.d2creative.com/digital-glossary/landing-pages/)
+*   [Pay-Per-Click (PPC) Advertising](https://www.d2creative.com/digital-glossary/pay-per-click-advertising/)
+*   [Programmatic Advertising](https://www.d2creative.com/digital-glossary/programmatic-advertising/)
+*   [Search Engine Optimization](https://www.d2creative.com/digital-glossary/search-engine-optimization/)
+*   [Understanding Website Analytics](https://www.d2creative.com/digital-glossary/understanding-website-analytics/)
+*   [Web Design Fundamentals](https://www.d2creative.com/digital-glossary/web-design-fundamentals/)

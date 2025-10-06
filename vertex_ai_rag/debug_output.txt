@@ -1,0 +1,94 @@
+MCP requires Python 3.10 or above. Please upgrade your Python version in order to use it.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1759539117.683360 11859138 alts_credentials.cc:93] ALTS creds ignored. Not running on GCP and untrusted ALTS is not enabled.
+INFO:google_adk.google.adk.sessions.vertex_ai_session_service:Create session response received.
+E0000 00:00:1759539119.702737 11859138 alts_credentials.cc:93] ALTS creds ignored. Not running on GCP and untrusted ALTS is not enabled.
+E0000 00:00:1759539122.865045 11859138 alts_credentials.cc:93] ALTS creds ignored. Not running on GCP and untrusted ALTS is not enabled.
+E0000 00:00:1759539125.676546 11859138 alts_credentials.cc:93] ALTS creds ignored. Not running on GCP and untrusted ALTS is not enabled.
+E0000 00:00:1759539126.508634 11859138 alts_credentials.cc:93] ALTS creds ignored. Not running on GCP and untrusted ALTS is not enabled.
+E0000 00:00:1759539126.509448 11859138 alts_credentials.cc:93] ALTS creds ignored. Not running on GCP and untrusted ALTS is not enabled.
+E0000 00:00:1759539127.540500 11859138 alts_credentials.cc:93] ALTS creds ignored. Not running on GCP and untrusted ALTS is not enabled.
+E0000 00:00:1759539127.542488 11859138 alts_credentials.cc:93] ALTS creds ignored. Not running on GCP and untrusted ALTS is not enabled.
+🔍 COMPREHENSIVE AGENT DIAGNOSTICS
+================================================================================
+
+📋 Step 1: Configuration Check
+--------------------------------------------------------------------------------
+Project: walkinto-473412
+Location: us-east4
+RAG_CORPUS_MAIN: projects/walkinto-473412/locations/us-east4/ragCorpora/5148740273991319552
+Service Account: vertex-service-account.json
+
+📡 Step 2: Initialize Vertex AI
+--------------------------------------------------------------------------------
+✅ Vertex AI initialized
+
+🤖 Step 3: Testing Agent
+--------------------------------------------------------------------------------
+Agent ID: projects/730752998321/locations/us-east4/reasoningEngines/1894643252611514368
+
+📦 Step 4: Get Agent
+--------------------------------------------------------------------------------
+✅ Agent retrieved
+   Display name: N/A
+   Available operations: 13
+   Operations: ['get_session', 'list_sessions', 'create_session', 'delete_session', 'async_get_session']
+   Has stream_query: True
+
+📌 Step 5: Create Session
+--------------------------------------------------------------------------------
+✅ Session created: 4174639492235264000
+
+📨 Step 6: Send Query and Monitor Events
+--------------------------------------------------------------------------------
+
+🔍 Query 1: 'Hello, can you hear me?'
+   Waiting for response...
+   Streaming events:
+
+   ✅ Stream complete: 0 events in 1.2s
+   ❌ NO EVENTS RECEIVED
+   This indicates:
+      1. Agent is not processing the query
+      2. Agent crashed or errored silently
+      3. Configuration issue preventing execution
+
+🔍 Query 2: 'List the documents you have access to'
+   Waiting for response...
+   Streaming events:
+
+   ✅ Stream complete: 0 events in 0.8s
+   ❌ NO EVENTS RECEIVED
+   This indicates:
+      1. Agent is not processing the query
+      2. Agent crashed or errored silently
+      3. Configuration issue preventing execution
+
+🔍 Query 3: 'What is in your knowledge base?'
+   Waiting for response...
+   Streaming events:
+
+   ✅ Stream complete: 0 events in 0.8s
+   ❌ NO EVENTS RECEIVED
+   This indicates:
+      1. Agent is not processing the query
+      2. Agent crashed or errored silently
+      3. Configuration issue preventing execution
+
+📚 Step 7: Direct RAG Corpus Check
+--------------------------------------------------------------------------------
+✅ Corpus accessible: 49 files
+
+   Testing direct RAG query (without agent)...
+   ✅ Direct RAG query works: 5 contexts retrieved
+   First context: source: "website"
+content_type: "case_studies"
+url: "https://mintleads.io/case-study/thoughtlab/"
+title: "ThoughtLab Case Study"
+domain: "mintleads.io"
+path: "/case-study/thoughtlab/"
+scraped_time: "2...
+
+================================================================================
+🔍 DIAGNOSTIC COMPLETE
+================================================================================

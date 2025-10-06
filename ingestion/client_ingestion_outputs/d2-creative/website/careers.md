@@ -2,20 +2,16 @@
 source: "website"
 content_type: "careers"
 url: "https://www.d2creative.com/careers/"
-title: "Our Work Rocks."
+title: "Careers at D2 Creative"
 domain: "www.d2creative.com"
 path: "/careers/"
-scraped_time: "2025-09-06T16:12:59.968727"
+scraped_time: "2025-10-04T18:56:45.401679"
 url_depth: 1
-word_count: 81
+word_count: 127
 client_name: "d2-creative"
 ---
 
-# Our Work Rocks.
-
-## CAREERS
-
-# Our Work Rocks.
+## Our Work Rocks.  
 Do You?
 
 ## Work. Learn. Grow.
@@ -24,10 +20,34 @@ D2 Creative is a proven, award-winning digital agency located in Somerset, NJ. W
 
 ## Open Positions:
 
-## Full Stack Web Application Developer
-
-[Learn More](https://www.d2creative.com/careers/full-stack-web-application-developer/)
-
 ## Let’s Connect
 
-## Let’s Connect
+**New Business**  
+Mike DeFabrizio  
+732-539-2257  
+[Email Mike](/cdn-cgi/l/email-protection#81ece5e4e7e0e3f3e8fbe8eec1e5b3e2f3e4e0f5e8f7e4afe2eeec)
+
+**Careers at D2  **[See Openings](/careers/)
+
+**Insights**
+
+Explore contemporary marketing and communications expertise:
+
+[Digital Glossary](/digital-glossary/)  
+[Blog](/blog/)  
+[White Papers](https://www.d2creative.com/white-papers/)  
+[Digital Ad Performance Calculator](/digital-ad-performance-calculator/)
+
+**Location**
+
+399 Campus Drive  
+Suite 309  
+Somerset, NJ 08873-1178
+
+**Connect**
+
+## Send Us a Note
+
+How can we help you?Discuss a ProjectLearn More About D2 CreativePartner With Us
+
+[**Awards & Certifications**](https://www.d2creative.com/about-us/award-page/)

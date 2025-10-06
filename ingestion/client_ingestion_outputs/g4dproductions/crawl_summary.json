@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-10-04T23:44:40.561913",
+  "folder_id": "1EzddFeWyqeTTxvUsyvTtDpvIqYNGpQUr",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 2,
+    "supported_files": 2,
+    "successfully_processed": 2,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "client intake form g4d productions",
+      "final_filename": "client_intake_client-intake-form-g4d-productions.md",
+      "id": "1R8imhMZlqVAGvLcStYIFrhzPmnsPuzo_AH7rORq4VDs",
+      "size": "30436",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1R8imhMZlqVAGvLcStYIFrhzPmnsPuzo_AH7rORq4VDs/view",
+      "word_count": 831,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "2025_08_11_G4D Productions Deck.pdf",
+      "final_filename": "pitch_decks_2025-08-11-g4d-productions-deck.md",
+      "id": "10EDVwd886_I4xQH22daXLuC-KbrXvbFo",
+      "size": "13063556",
+      "mime_type": "application/pdf",
+      "content_type": "pitch_decks",
+      "url": "https://drive.google.com/file/d/10EDVwd886_I4xQH22daXLuC-KbrXvbFo/view",
+      "word_count": 653
+    }
+  ],
+  "failed_files": []
+}

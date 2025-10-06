@@ -2,35 +2,22 @@
 source: "website"
 content_type: "case_studies"
 url: "https://www.d2creative.com/our-work/interactive-visual-aid/"
-title: "Engaging Physicians Online"
+title: "Interactive Vis-Aid Converted to Website for Sales Force"
 domain: "www.d2creative.com"
 path: "/our-work/interactive-visual-aid/"
-scraped_time: "2025-09-06T16:14:41.078914"
+scraped_time: "2025-10-04T18:57:13.400583"
 url_depth: 2
-word_count: 356
+word_count: 348
 client_name: "d2-creative"
 ---
 
 # Engaging Physicians Online
 
-Interactive Vis-Aid Converted to Website for Sales Force
+Digital Marketing, Website Design & Development
 
-## CooperSurgical
+![Orange and yellow sphere followed by CooperSurgical name](https://www.d2creative.com/wp-content/uploads/2022/07/cs-logo-org@2x.png)
 
-#
-
-Engaging Physicians Online
-
-Digital Marketing, Website Design & Development
-
-## The
-Challenge
-
-## Our
-Approach
-
-## The
-Result
+## The Challenge
 
 Our client had launched a new handheld office hysteroscope, Endosee, that’s portable, lightweight and offers clear visualization. To promote this game-changing product, they needed a website that provides all the information physicians would need to change how they think about hysterocopy procedures.
 

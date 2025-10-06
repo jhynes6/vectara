@@ -5,32 +5,13 @@ url: "https://www.d2creative.com/our-work/reaching-a-larger-audience-with-rented
 title: "Reaching a Larger Audience with Rented List Email Marketing"
 domain: "www.d2creative.com"
 path: "/our-work/reaching-a-larger-audience-with-rented-list-email-marketing/"
-scraped_time: "2025-09-06T16:15:50.683436"
+scraped_time: "2025-10-04T18:56:54.150214"
 url_depth: 2
-word_count: 505
+word_count: 457
 client_name: "d2-creative"
 ---
 
-# Reaching a Larger Audience with Rented List Email Marketing
-
-Expand Reach with Rented List Email Marketing Campaigns
-
-## D2 CREATIVE
-
-#
-
-Reaching a Larger Audience with Rented List Email Marketing
-
-Campaign Development, Digital Marketing
-
-## The
-Challenge
-
-## Our
-Approach
-
-## The
-Result
+## The  Challenge
 
 Purchasing email lists has become an increasingly difficult task as laws and regulations online have made strides to protect people’s privacy. Nowadays, these types of lists have become far more expensive, and trying to upload an improperly vetted list can lead to email services not accepting the new emails or at worst, blacklisting your account entirely.
 
@@ -47,8 +28,6 @@ We segment and target our audience based on demographics and industry, then craf
 With each campaign, we also deploy a resend to those who opened and interacted with the original email, allowing for even more opportunities to connect and convert with tailored messaging for the most interested recipients.
 
 By providing our clients with access to hundreds of thousands of new emails to contact, we’re able to help them not only execute their email marketing campaigns but make them a success as well. With campaigns generating as much as 6,000 clicks from one email, the campaigns using these lists helped to promote both our clients and their offerings to a plethora of people they couldn’t reach before. The way these campaigns were executed gave our clients valuable insight into who is interacting with their content while giving them the ability to follow up on potential leads with personalized remarketing campaigns.
-
-![Table showing the industry average open and click through rates compared to D2 rented list email rates](https://www.d2creative.com/wp-content/uploads/2023/10/img-mobile-email-table@2x1.png)
 
 ## Email Templates
 

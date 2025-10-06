@@ -1,0 +1,15 @@
+{
+  "client_id": "healthworks-medical",
+  "timestamp": "2025-10-05T05:46:47.953238Z",
+  "files_processed": 29,
+  "successful_uploads": 29,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "healthworks-medical",
+    "client_uuid": "healthworks-medical",
+    "document_count": 29,
+    "chunk_count": 31,
+    "total_tokens": 3988
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/healthworks-medical"
+}

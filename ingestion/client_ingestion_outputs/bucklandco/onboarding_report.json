@@ -1,0 +1,15 @@
+{
+  "client_id": "bucklandco",
+  "timestamp": "2025-10-05T03:57:48.506013Z",
+  "files_processed": 45,
+  "successful_uploads": 45,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "bucklandco",
+    "client_uuid": "bucklandco",
+    "document_count": 45,
+    "chunk_count": 58,
+    "total_tokens": 28937
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/bucklandco"
+}

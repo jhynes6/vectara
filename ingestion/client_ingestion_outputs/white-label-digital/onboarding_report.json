@@ -1,0 +1,15 @@
+{
+  "client_id": "white-label-digital",
+  "timestamp": "2025-10-04T22:15:34.188862Z",
+  "files_processed": 198,
+  "successful_uploads": 197,
+  "failed_uploads": 1,
+  "database_stats": {
+    "client_id": "white-label-digital",
+    "client_uuid": "white-label-digital",
+    "document_count": 196,
+    "chunk_count": 217,
+    "total_tokens": 93052
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/white-label-digital"
+}

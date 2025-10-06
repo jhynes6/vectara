@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-10-04T23:54:28.818862",
+  "folder_id": "1JjSsQnPVcZySy_c-nbwtfiF2zTSLAXxx",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 1,
+    "supported_files": 1,
+    "successfully_processed": 1,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "BucklandCo: Client Intake Form",
+      "final_filename": "client_intake_bucklandco-client-intake-form.md",
+      "id": "1OH5YID_0Ri18bNZUWm3cRhHpJyu7RNe2y9-J-ySkjhk",
+      "size": "456300",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1OH5YID_0Ri18bNZUWm3cRhHpJyu7RNe2y9-J-ySkjhk/view",
+      "word_count": 850,
+      "special_category": "client_intake"
+    }
+  ],
+  "failed_files": []
+}

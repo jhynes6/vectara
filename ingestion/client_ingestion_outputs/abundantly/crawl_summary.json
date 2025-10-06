@@ -1,0 +1,87 @@
+{
+  "timestamp": "2025-10-04T18:50:56.682153",
+  "folder_id": "1yHNyICnNt2oP2Bn3cWo9dDZS77soRbvq",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 7,
+    "supported_files": 7,
+    "successfully_processed": 7,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Abundantly: Client Intake Form",
+      "final_filename": "client_intake_abundantly-client-intake-form.md",
+      "id": "1xxf5ry7vxhtYn9r8yMIU5WkEMwKGj_D1uRFsLRIU8xo",
+      "size": "38048",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1xxf5ry7vxhtYn9r8yMIU5WkEMwKGj_D1uRFsLRIU8xo/view",
+      "word_count": 542,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "Abundantly Synthsesis (v1 notes).docx",
+      "final_filename": "other_abundantly-synthsesis-v1-notes.md",
+      "id": "1UBFfwUf5YujjkOvNT2kdaIVVJW_uLnsj",
+      "size": "37074",
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1UBFfwUf5YujjkOvNT2kdaIVVJW_uLnsj/view",
+      "word_count": 1213
+    },
+    {
+      "name": "Abundantly One Pager (v1 notes).docx",
+      "final_filename": "brochures_newsletters_abundantly-one-pager-v1-notes.md",
+      "id": "1wvDDOwApp9EHnyhP2TvY-n9NVoI0cmCS",
+      "size": "20798",
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "content_type": "brochures_newsletters",
+      "url": "https://drive.google.com/file/d/1wvDDOwApp9EHnyhP2TvY-n9NVoI0cmCS/view",
+      "word_count": 326
+    },
+    {
+      "name": "abundantly Connect ebook.pdf",
+      "final_filename": "other_abundantly-connect-ebook.md",
+      "id": "1gfIQnesBtDXPwOEnDYJjqtARSXr_Mf_H",
+      "size": "832294",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1gfIQnesBtDXPwOEnDYJjqtARSXr_Mf_H/view",
+      "word_count": 936
+    },
+    {
+      "name": "Abundantly Case Study - Commonwealth Senior Living.pdf",
+      "final_filename": "case_studies_abundantly-case-study-commonwealth-senior-living.md",
+      "id": "1pfqAdTVwii6LiRD1eERu1hFE20UnzREi",
+      "size": "559027",
+      "mime_type": "application/pdf",
+      "content_type": "case_studies",
+      "url": "https://drive.google.com/file/d/1pfqAdTVwii6LiRD1eERu1hFE20UnzREi/view",
+      "word_count": 1387
+    },
+    {
+      "name": "Abundantly - Overview.pdf",
+      "final_filename": "capabilities_overview_abundantly-overview.md",
+      "id": "1UVl2sq0KVVOZ56LL78Il9Sn0er1c55V3",
+      "size": "3663921",
+      "mime_type": "application/pdf",
+      "content_type": "capabilities_overview",
+      "url": "https://drive.google.com/file/d/1UVl2sq0KVVOZ56LL78Il9Sn0er1c55V3/view",
+      "word_count": 748
+    },
+    {
+      "name": "Abundanlty Case Study - Transcosmos.pdf",
+      "final_filename": "case_studies_abundanlty-case-study-transcosmos.md",
+      "id": "1ujMHvXt551cjHpesb8EsQ5W3FyS1j3D_",
+      "size": "905858",
+      "mime_type": "application/pdf",
+      "content_type": "case_studies",
+      "url": "https://drive.google.com/file/d/1ujMHvXt551cjHpesb8EsQ5W3FyS1j3D_/view",
+      "word_count": 398
+    }
+  ],
+  "failed_files": []
+}

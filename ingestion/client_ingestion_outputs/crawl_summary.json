@@ -1,0 +1,187 @@
+{
+  "timestamp": "2025-10-05T03:40:55.431544",
+  "folder_id": "1fG-_X9iusyNsLrGG1fc0SLGHNiOUeKNW",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 19,
+    "supported_files": 17,
+    "successfully_processed": 17,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Client Intake Form - ZoomGrants",
+      "final_filename": "client_intake_client-intake-form-zoomgrants.md",
+      "id": "1T2_jE7Xov8troDFxrY9DEEFkp2QKlC9DlRb3Z37RGYA",
+      "size": "54458",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1T2_jE7Xov8troDFxrY9DEEFkp2QKlC9DlRb3Z37RGYA/view",
+      "word_count": 1834,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "apollo-contacts-export-2.csv",
+      "final_filename": "other_apollo-contacts-export-2.md",
+      "id": "1_9rhGlV7XNCZjn0mkY4nZIxaeRuQ9hId",
+      "size": "4600486",
+      "mime_type": "text/csv",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1_9rhGlV7XNCZjn0mkY4nZIxaeRuQ9hId/view",
+      "word_count": 6
+    },
+    {
+      "name": "apollo-contacts-export-3.csv",
+      "final_filename": "other_apollo-contacts-export-3.md",
+      "id": "1xzMZSR8bEE6_qsFA7eWG1tNYr5mdrOCR",
+      "size": "2426958",
+      "mime_type": "text/csv",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1xzMZSR8bEE6_qsFA7eWG1tNYr5mdrOCR/view",
+      "word_count": 6
+    },
+    {
+      "name": "apollo-contacts-export.csv",
+      "final_filename": "other_apollo-contacts-export.md",
+      "id": "1bHZOhCjNivpkQWecyv5QHMQG2KmxAOUh",
+      "size": "2406288",
+      "mime_type": "text/csv",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1bHZOhCjNivpkQWecyv5QHMQG2KmxAOUh/view",
+      "word_count": 6
+    },
+    {
+      "name": "ZoomGrants Pricing Sheet-Revised 5-1-2023.pdf",
+      "final_filename": "other_zoomgrants-pricing-sheet-revised-5-1-2023.md",
+      "id": "1i0kKzunzUZK4kWl2mFIwxciGdV_B07NQ",
+      "size": "203992",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1i0kKzunzUZK4kWl2mFIwxciGdV_B07NQ/view",
+      "word_count": 849
+    },
+    {
+      "name": "ZG Case Study - GPA.docx",
+      "final_filename": "case_studies_zg-case-study-gpa.md",
+      "id": "1kxqomUKH042r2wRfRT8gR6dGB5kNiyvC",
+      "size": "26583",
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "content_type": "case_studies",
+      "url": "https://drive.google.com/file/d/1kxqomUKH042r2wRfRT8gR6dGB5kNiyvC/view",
+      "word_count": 10
+    },
+    {
+      "name": "LinkedIn Upcoming Conference Template",
+      "final_filename": "brochures_newsletters_linkedin-upcoming-conference-template.md",
+      "id": "1uunEm1zvgugepuvcv4JPcvDhCQAdE1OLcxPF9J9BqSw",
+      "size": "2749",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "brochures_newsletters",
+      "url": "https://docs.google.com/document/d/1uunEm1zvgugepuvcv4JPcvDhCQAdE1OLcxPF9J9BqSw/view",
+      "word_count": 276
+    },
+    {
+      "name": "ZoomGrants - Jennifer - Companies working with grants_Management Titles - NGMA - Feb",
+      "final_filename": "brochures_newsletters_zoomgrants-jennifer-companies-working-with-grants-management-titles-ngma-feb.md",
+      "id": "1zhO7_nmaj1LxcCX-Iachx-vbbHQHqKeBPOAvVAKAdvI",
+      "size": "62375",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "brochures_newsletters",
+      "url": "https://docs.google.com/document/d/1zhO7_nmaj1LxcCX-Iachx-vbbHQHqKeBPOAvVAKAdvI/view",
+      "word_count": 232
+    },
+    {
+      "name": "ZoomGrants - Lauren - Critical Communication Companies_CTO/IT Directors/Network Architect & similar  - IWCE - Feb",
+      "final_filename": "brochures_newsletters_zoomgrants-lauren-critical-communication-companies-cto-it-directors-network-architect-similar-iwce-feb.md",
+      "id": "14Is4Gu4-p2JfSCwvzVRkysHnIapke2P43HwB2xWwKNU",
+      "size": "62343",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "brochures_newsletters",
+      "url": "https://docs.google.com/document/d/14Is4Gu4-p2JfSCwvzVRkysHnIapke2P43HwB2xWwKNU/view",
+      "word_count": 213
+    },
+    {
+      "name": "ZoomGrants Copy Packet 01/21/25",
+      "final_filename": "other_zoomgrants-copy-packet-01-21-25.md",
+      "id": "1SZWn8FJFo3CxNNNWGaUvDaZNuuRfVqxa7iqhXhWnlok",
+      "size": "178684",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "other",
+      "url": "https://docs.google.com/document/d/1SZWn8FJFo3CxNNNWGaUvDaZNuuRfVqxa7iqhXhWnlok/view",
+      "word_count": 212
+    },
+    {
+      "name": "ZoomGrants Copy Packet 02/13/25",
+      "final_filename": "other_zoomgrants-copy-packet-02-13-25.md",
+      "id": "1HbKY8rFoexz0R3UlGzuvbRoHH6PPHbSYi5T71NuJosQ",
+      "size": "178685",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "other",
+      "url": "https://docs.google.com/document/d/1HbKY8rFoexz0R3UlGzuvbRoHH6PPHbSYi5T71NuJosQ/view",
+      "word_count": 199
+    },
+    {
+      "name": "ZoomGrants Copy Packet 12/23/24",
+      "final_filename": "other_zoomgrants-copy-packet-12-23-24.md",
+      "id": "1WnXTD3ryqFcmjzdj-1FVr0vA1kT2G4smLR_fOUt3BH4",
+      "size": "178684",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "other",
+      "url": "https://docs.google.com/document/d/1WnXTD3ryqFcmjzdj-1FVr0vA1kT2G4smLR_fOUt3BH4/view",
+      "word_count": 452
+    },
+    {
+      "name": "ZoomGrants Booked Calls",
+      "final_filename": "other_zoomgrants-booked-calls.md",
+      "id": "1Oc1KM9ChyuMdV9pCSZSYmz6v581IeuBnj8_p3oJmqwQ",
+      "size": "993707",
+      "mime_type": "application/vnd.google-apps.spreadsheet",
+      "content_type": "other",
+      "url": "https://docs.google.com/spreadsheets/d/1Oc1KM9ChyuMdV9pCSZSYmz6v581IeuBnj8_p3oJmqwQ/view",
+      "word_count": 8
+    },
+    {
+      "name": "LinkedIn Upcoming Conference Template",
+      "final_filename": "brochures_newsletters_linkedin-upcoming-conference-template.md",
+      "id": "1uunEm1zvgugepuvcv4JPcvDhCQAdE1OLcxPF9J9BqSw",
+      "size": "2749",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "brochures_newsletters",
+      "url": "https://docs.google.com/document/d/1uunEm1zvgugepuvcv4JPcvDhCQAdE1OLcxPF9J9BqSw/view",
+      "word_count": 276
+    },
+    {
+      "name": "ZoomGrants Copy Packet 12/23/24",
+      "final_filename": "other_zoomgrants-copy-packet-12-23-24.md",
+      "id": "1WnXTD3ryqFcmjzdj-1FVr0vA1kT2G4smLR_fOUt3BH4",
+      "size": "178684",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "other",
+      "url": "https://docs.google.com/document/d/1WnXTD3ryqFcmjzdj-1FVr0vA1kT2G4smLR_fOUt3BH4/view",
+      "word_count": 452
+    },
+    {
+      "name": "ZG Case Study - GPA.docx",
+      "final_filename": "case_studies_zg-case-study-gpa.md",
+      "id": "1kxqomUKH042r2wRfRT8gR6dGB5kNiyvC",
+      "size": "26583",
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "content_type": "case_studies",
+      "url": "https://drive.google.com/file/d/1kxqomUKH042r2wRfRT8gR6dGB5kNiyvC/view",
+      "word_count": 10
+    },
+    {
+      "name": "ZoomGrants Pricing Sheet-Revised 5-1-2023.pdf",
+      "final_filename": "other_zoomgrants-pricing-sheet-revised-5-1-2023.md",
+      "id": "1i0kKzunzUZK4kWl2mFIwxciGdV_B07NQ",
+      "size": "203992",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1i0kKzunzUZK4kWl2mFIwxciGdV_B07NQ/view",
+      "word_count": 1
+    }
+  ],
+  "failed_files": []
+}

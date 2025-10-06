@@ -1,0 +1,22 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 35,
+    "successful_scrapes": 35,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 20131,
+    "categories": {
+      "other": 12,
+      "case_studies": 10,
+      "services_products": 4,
+      "blogs_resources": 6,
+      "pricing": 1,
+      "about": 1,
+      "homepage": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "dodeka-digital-supa"
+    },
+    "scrape_time": "2025-10-04T14:13:47.605752"
+  }
+}

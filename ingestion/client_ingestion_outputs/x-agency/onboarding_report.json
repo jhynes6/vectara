@@ -1,0 +1,15 @@
+{
+  "client_id": "x-agency",
+  "timestamp": "2025-10-05T05:53:18.529761Z",
+  "files_processed": 56,
+  "successful_uploads": 56,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "x-agency",
+    "client_uuid": "x-agency",
+    "document_count": 56,
+    "chunk_count": 75,
+    "total_tokens": 42666
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/x-agency"
+}

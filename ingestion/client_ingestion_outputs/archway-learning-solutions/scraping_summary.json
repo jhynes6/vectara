@@ -1,0 +1,19 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 37,
+    "successful_scrapes": 37,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 39508,
+    "categories": {
+      "blogs_resources": 31,
+      "other": 4,
+      "about": 1,
+      "homepage": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "archway-learning-solutions"
+    },
+    "scrape_time": "2025-10-05T03:54:55.287799"
+  }
+}

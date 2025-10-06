@@ -1,0 +1,15 @@
+{
+  "client_id": "longitude-73",
+  "timestamp": "2025-10-04T22:01:52.986332Z",
+  "files_processed": 124,
+  "successful_uploads": 124,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "longitude-73",
+    "client_uuid": "longitude-73",
+    "document_count": 124,
+    "chunk_count": 143,
+    "total_tokens": 43093
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/longitude-73"
+}

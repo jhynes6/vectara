@@ -1,0 +1,1 @@
+[File saved for MarkItDown processing: 2020_Released_Slingshot_HolidayCard_Email.jpg]

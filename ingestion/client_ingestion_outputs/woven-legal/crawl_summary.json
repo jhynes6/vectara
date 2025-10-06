@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-10-05T03:00:09.176202",
+  "folder_id": "1Pfx3R-YzhxWcb-qQIwaxEp-J5zjkRiQI",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 3,
+    "supported_files": 2,
+    "successfully_processed": 2,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Client Intake Form - Woven Legal",
+      "final_filename": "client_intake_client-intake-form-woven-legal.md",
+      "id": "1rAPXi-WAJju3RJ8pCjhoNs9KLtRaqJ1qUSWFAeAbL08",
+      "size": "54459",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1rAPXi-WAJju3RJ8pCjhoNs9KLtRaqJ1qUSWFAeAbL08/view",
+      "word_count": 1088,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "Flyer partner.pdf",
+      "final_filename": "brochures_newsletters_flyer-partner.md",
+      "id": "1SP7x2AF5QhYp31P-hDTCLvitrbDJ3xHJ",
+      "size": "1727734",
+      "mime_type": "application/pdf",
+      "content_type": "brochures_newsletters",
+      "url": "https://drive.google.com/file/d/1SP7x2AF5QhYp31P-hDTCLvitrbDJ3xHJ/view",
+      "word_count": 83
+    }
+  ],
+  "failed_files": []
+}

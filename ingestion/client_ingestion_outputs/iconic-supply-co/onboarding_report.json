@@ -1,0 +1,15 @@
+{
+  "client_id": "iconic-supply-co",
+  "timestamp": "2025-10-05T03:55:40.512462Z",
+  "files_processed": 23,
+  "successful_uploads": 23,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "iconic-supply-co",
+    "client_uuid": "iconic-supply-co",
+    "document_count": 23,
+    "chunk_count": 23,
+    "total_tokens": 3406
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/iconic-supply-co"
+}

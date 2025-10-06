@@ -1,0 +1,131 @@
+https://www.zoomgrants.com/
+https://www.zoomgrants.com/about-us/
+https://www.zoomgrants.com/about-us/contact-sales/
+https://www.zoomgrants.com/about-us/media-inquiries/
+https://www.zoomgrants.com/about-us/request-technical-help/
+https://www.zoomgrants.com/author/zoomgrants-wp-admin/
+https://www.zoomgrants.com/awards-management/
+https://www.zoomgrants.com/best-grants-management-software-for-nonprofits/
+https://www.zoomgrants.com/best-scholarship-management-software-2022/
+https://www.zoomgrants.com/blog/
+https://www.zoomgrants.com/call-for-speakers-management/
+https://www.zoomgrants.com/category/administrators/
+https://www.zoomgrants.com/category/management-process/
+https://www.zoomgrants.com/category/management-software/
+https://www.zoomgrants.com/category/post-decision-activities/
+https://www.zoomgrants.com/category/program-management/
+https://www.zoomgrants.com/category/program-setup/
+https://www.zoomgrants.com/category/streamlining/
+https://www.zoomgrants.com/category/tips-and-tricks/
+https://www.zoomgrants.com/common-grant-management-pitfalls-and-how-to-avoid-them/
+https://www.zoomgrants.com/covid19-grantresources/
+https://www.zoomgrants.com/data-driven-grantmaking-insights-and-strategies-for-utilizing-zoomgrants-reporting/
+https://www.zoomgrants.com/effective-grants-management/
+https://www.zoomgrants.com/efficient-online-application-management-software/
+https://www.zoomgrants.com/error/
+https://www.zoomgrants.com/federal-block-grants/
+https://www.zoomgrants.com/fellowship/
+https://www.zoomgrants.com/get-started/
+https://www.zoomgrants.com/government-grant-management/
+
+
+
+https://www.zoomgrants.com/grant-application-management-software/
+https://www.zoomgrants.com/grant-fund-management/
+https://www.zoomgrants.com/grant-management-best-practices/
+https://www.zoomgrants.com/grant-management-system/
+https://www.zoomgrants.com/grantmaking-software/
+https://www.zoomgrants.com/how-do-grants-work-for-nonprofits/
+https://www.zoomgrants.com/how-to-manage-grants-for-non-profit/
+https://www.zoomgrants.com/how-to-select-grantmaking-software/
+https://www.zoomgrants.com/identifying-key-features-of-an-effective-grant-management-software/
+https://www.zoomgrants.com/industries/
+https://www.zoomgrants.com/industries/american-rescue-plan/
+https://www.zoomgrants.com/industries/arts/
+https://www.zoomgrants.com/industries/college-scholarships/
+https://www.zoomgrants.com/industries/community-foundations/
+https://www.zoomgrants.com/industries/corporate-foundations/
+https://www.zoomgrants.com/industries/donor-advised-funds/
+https://www.zoomgrants.com/industries/entitled-jurisdictions/
+https://www.zoomgrants.com/industries/faith-based-foundations/
+https://www.zoomgrants.com/industries/federal-government/
+https://www.zoomgrants.com/industries/local-government/
+https://www.zoomgrants.com/industries/medical-foundations/
+https://www.zoomgrants.com/industries/state-government/
+https://www.zoomgrants.com/industries/tourism/
+https://www.zoomgrants.com/industries/transportation/
+https://www.zoomgrants.com/internal-grants/
+https://www.zoomgrants.com/managing-federal-grants/
+https://www.zoomgrants.com/ncda/
+https://www.zoomgrants.com/overview/
+https://www.zoomgrants.com/overview/features/
+https://www.zoomgrants.com/overview/frequent-questions/
+https://www.zoomgrants.com/overview/preview/
+https://www.zoomgrants.com/overview/technical-specifications/
+https://www.zoomgrants.com/partners/
+https://www.zoomgrants.com/pricing/
+https://www.zoomgrants.com/private-family-foundations/
+https://www.zoomgrants.com/private-grants/
+https://www.zoomgrants.com/request-a-demo/
+https://www.zoomgrants.com/rfp-project-management/
+https://www.zoomgrants.com/scholarships-management-system/
+https://www.zoomgrants.com/sitemap/
+https://www.zoomgrants.com/terms/
+https://www.zoomgrants.com/thank-you-contact-our-media/
+https://www.zoomgrants.com/thank-you-contact-our-sales/
+https://www.zoomgrants.com/the-evolution-of-grant-management-embracing-technology-for-greater-impact/
+https://www.zoomgrants.com/what-are-common-features-of-grant-management-software/
+https://www.zoomgrants.com/what-benefits-do-grant-management-systems-offer/
+https://www.zoomgrants.com/what-does-grant-management-software-do/
+https://www.zoomgrants.com/what-is-an-example-of-online-application-management-software/
+https://www.zoomgrants.com/what-is-grant-management-software/
+https://www.zoomgrants.com/what-is-the-grant-management-process/
+https://www.zoomgrants.com/which-is-the-best-grant-management-software/
+https://www.zoomgrants.com/why-do-corporate-giving-programs-need-grant-scholarship-software/
+https://www.zoomgrants.com/why-you-need-a-scholarship-management-system/
+https://www.zoomgrants.com/zoom-grants-old/
+https://www.zoomgrants.com/zoomgrants-streamlining-your-grant-management-process/
+
+
+
+
+System: Your task is to categorize website URLs based on the type of content likely found on each page.
+
+Begin with a concise checklist (3-7 bullets) of what you will do; keep items conceptual, not implementation-level.
+
+## Category Definitions
+- **homepage**: The company's main or landing page.
+- **services_products**: Pages describing specific services or products the company offers for sale.
+- **industry_markets**: Pages detailing the industries or markets served by the company.
+- **pricing**: Pages providing information about the cost or pricing of products or services.
+- **case_studies**: Pages containing case studies or detailed success stories.
+- **testimonials**: Pages devoted exclusively to customer testimonials.
+- **blogs_resources**: Pages featuring blogs, resources, guides, or other thought leadership materials.
+- **about**: Pages with background or general information about the company.
+- **careers**: Pages related to employment, job openings, or hiring.
+- **other**: Use this for URLs that cannot be confidently categorized using the options above.
+
+## Categorization Rules
+- Assign each URL to only one category from the list above.
+- If a URL could fit into multiple categories, select the most specific and relevant category.
+- If the input is invalid, empty, or not a well-formed URL, categorize it as "other".
+- Set reasoning_effort = minimal; ensure decisions are efficient and only escalate if ambiguous cases arise.
+
+## Input Handling
+- Input is a list of URLs. If a single URL is provided, respond with a list containing one item.
+- Maintain the original order of URLs in your output.
+- Each category value must exactly match one of the defined category names listed above (spelling and case sensitive).
+
+## Output Format
+Always return a JSON object structured as:
+
+{
+  "url_categories": [
+    { "url": "<input_url>", "category": "<category_name>" },
+    ...
+  ]
+}
+
+After assigning categories, validate that all output category values match the definitions exactly and that the result structure aligns with the required JSON output format.
+
+User: categorize the url: https://www.fitness.com/forum/threads/rutina-hst-para-marzo-y-abril.571724/

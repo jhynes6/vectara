@@ -28,7 +28,6 @@ import argparse
 import logging
 import json
 import io
-import asyncio
 import shutil
 from pathlib import Path
 from datetime import datetime, timedelta
@@ -41,7 +40,6 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from googleapiclient.http import MediaIoBaseDownload
 from google.auth.transport.requests import Request
-from openai import AsyncOpenAI
 
 # PDF processing imports
 import PyPDF2
@@ -52,8 +50,19 @@ from pdf2image import convert_from_bytes
 from PIL import Image
 import tempfile
 import time
-import urllib3
-import vectorize_client as v
+
+# Import PDF processing methods (add current directory to path)
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+from pdf_process_gpt import process_pdf_with_gpt
+from pdf_process_markitdown import process_pdf_with_markitdown, process_pdf_batch_markitdown
+
+# Import Google Drive Helper for presentation conversion
+try:
+    from google_drive_helper import GoogleDriveHelper
+    DRIVE_HELPER_AVAILABLE = True
+except ImportError:
+    DRIVE_HELPER_AVAILABLE = False
+    # Logger will be initialized later, warning will be shown during processing if needed
 
 # LLM-based content categorization system (same as website scraper)
 CATEGORIZATION_SYSTEM_PROMPT = """
@@ -64,8 +73,9 @@ Categories and definitions:
 - capabilities_overview: content that provides an overview of the company's capabilities
 - case_studies: content with case studies detailing success stories or project examples
 - brochures_newsletters: content with brochures or newsletters
-- other: use this if you cannot confidently assign the content to one of the provided categories
 - pitch_decks: content with pitch decks
+- other: use this if you cannot confidently assign the content to one of the provided categories
+
 
 Your output should contain only the category name with no other text.
 """
@@ -81,7 +91,13 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-SCOPES = ["https://www.googleapis.com/auth/drive.readonly"]
+SCOPES = [
+    'https://www.googleapis.com/auth/drive',
+    'https://www.googleapis.com/auth/documents',
+    'https://www.googleapis.com/auth/spreadsheets',
+    'https://www.googleapis.com/auth/presentations',
+    'https://www.googleapis.com/auth/docs',
+]
 
 def get_credentials(delegated_user: str, credentials_file: str) -> service_account.Credentials:
     """Get delegated credentials for Google Drive API"""
@@ -102,13 +118,13 @@ def get_gdrive_url(file_id: str, mime_type: str = '') -> str:
         url = f'https://drive.google.com/file/d/{file_id}/view'
     return url
 
-async def categorize_single_document_with_llm(content: str, filename: str, client: AsyncOpenAI) -> str:
+def categorize_single_document_with_llm(content: str, filename: str, client) -> str:
     """Categorize a single document using LLM based on its content"""
     try:
         # Limit content size for LLM processing (first 4000 chars)
         truncated_content = content[:4000] + "..." if len(content) > 4000 else content
         
-        response = await client.chat.completions.create(
+        response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": CATEGORIZATION_SYSTEM_PROMPT},
@@ -152,15 +168,19 @@ def categorize_document_simple(filename: str, content: str = "") -> str:
 
 class FolderSpecificDriveCrawler:
     def __init__(self, credentials_file: str, delegated_user: str, folder_id: str, 
-                 days_back: int = 30, output_dir: str = "./ingestion/client_ingestion_outputs"):
+                 days_back: int = 30, output_dir: str = "./ingestion/client_ingestion_outputs",
+                 pdf_processor: str = "gpt", client_name: str = ""):
         self.credentials_file = credentials_file
         self.delegated_user = delegated_user
         self.folder_id = folder_id
         self.days_back = days_back
         self.output_dir = output_dir
         self.crawled_files = []
+        self.failed_files = []  # Track files that failed processing
         self.pdf_temp_dir = None
         self.pdf_files_to_process = []  # List of (file_info, temp_path) tuples
+        self.pdf_processor = pdf_processor  # 'gpt', 'markitdown', or 'pdfplumber'
+        self.client_name = client_name  # Client name for metadata
         
         # Initialize services (public folder access - no delegation needed)
         self.credentials = service_account.Credentials.from_service_account_file(
@@ -227,7 +247,7 @@ class FolderSpecificDriveCrawler:
                 try:
                     params = {
                         'q': query,
-                        'fields': 'nextPageToken, files(id, name, mimeType, modifiedTime, createdTime, owners, size, parents)',
+                        'fields': 'nextPageToken, files(id, name, mimeType, modifiedTime, createdTime, owners, size, parents, shortcutDetails(targetId,targetMimeType))',
                         'supportsAllDrives': True,
                         'includeItemsFromAllDrives': True
                     }
@@ -243,8 +263,33 @@ class FolderSpecificDriveCrawler:
                             if recursive:
                                 folders_to_process.append(file['id'])
                                 logger.info(f"📁 Found subfolder: {file['name']} ({file['id']})")
+                        elif file['mimeType'] == 'application/vnd.google-apps.shortcut':
+                            # Resolve shortcut to its target
+                            shortcut = file.get('shortcutDetails', {}) or {}
+                            target_id = shortcut.get('targetId')
+                            target_mime = shortcut.get('targetMimeType')
+                            if not target_id:
+                                logger.warning(f"⚠️  Skipping Drive shortcut with no target: {file.get('name','(no name)')} ({file.get('id')})")
+                                continue
+                            try:
+                                target_meta = self.drive_service.files().get(
+                                    fileId=target_id,
+                                    fields='id, name, mimeType, modifiedTime, createdTime, owners, size, parents',
+                                    supportsAllDrives=True
+                                ).execute()
+                                # Preserve that this came via a shortcut
+                                target_meta['shortcut'] = True
+                                target_meta['shortcut_id'] = file.get('id')
+                                # Use the shortcut's name if it differs (so user intent is visible)
+                                if file.get('name') and file.get('name') != target_meta.get('name'):
+                                    target_meta['name'] = file.get('name')
+                                all_files.append(target_meta)
+                                logger.info(f"🔗 Resolved shortcut → {target_meta.get('name')} [{target_meta.get('mimeType')}] ({target_id})")
+                            except HttpError as e:
+                                logger.warning(f"⚠️  Failed to resolve shortcut {file.get('id')}: {e}")
+                                continue
                         else:
-                            # It's a file - add to results
+                            # It's a regular file - add to results
                             all_files.append(file)
                             logger.info(f"📄 Found file: {file['name']} ({file.get('size', 'N/A')} bytes)")
                     
@@ -291,6 +336,31 @@ class FolderSpecificDriveCrawler:
             logger.error(f"Error finding Client Intake files: {e}")
         
         return intake_files
+    
+    
+    def export_google_slides_as_pptx(self, file_id: str) -> bytes:
+        """Export Google Slides as PowerPoint"""
+        try:
+            request = self.drive_service.files().export_media(
+                fileId=file_id,
+                mimeType='application/vnd.openxmlformats-officedocument.presentationml.presentation'
+            )
+            return request.execute()
+        except HttpError as e:
+            logger.error(f"Error exporting Google Slides {file_id}: {e}")
+            raise
+
+    def export_google_sheets_as_xlsx(self, file_id: str) -> bytes:
+        """Export Google Sheets as Excel"""
+        try:
+            request = self.drive_service.files().export_media(
+                fileId=file_id,
+                mimeType='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+            )
+            return request.execute()
+        except HttpError as e:
+            logger.error(f"Error exporting Google Sheets {file_id}: {e}")
+            raise
     
     def get_document_text(self, doc_id: str) -> str:
         """Get all text from a Google Doc as plain text."""
@@ -370,29 +440,129 @@ class FolderSpecificDriveCrawler:
             mime_type = file['mimeType']
             file_name = file['name']
             
-            # Handle Google Docs
+            # Handle Google Docs (text extraction)
             if mime_type == 'application/vnd.google-apps.document':
                 return self.get_document_text(file['id'])
             
-            # Handle plain text files (excluding CSV)
-            elif mime_type in ['text/plain', 'text/markdown']:
+            # Handle Google Slides (use GoogleDriveHelper)
+            elif mime_type == 'application/vnd.google-apps.presentation':
+                logger.info(f"📊 Processing Google Slides: {file_name}")
+                if DRIVE_HELPER_AVAILABLE:
+                    try:
+                        helper = GoogleDriveHelper(credentials_file=self.credentials_file)
+                        content = helper.get_file_content(file['id'], convert_to_markdown=True)
+                        return content
+                    except Exception as e:
+                        logger.error(f"❌ Error processing Google Slides with GoogleDriveHelper: {e}")
+                        return None
+                else:
+                    logger.warning(f"⚠️  GoogleDriveHelper not available, saving for batch processing: {file_name}")
+                    try:
+                        pptx_content = self.export_google_slides_as_pptx(file['id'])
+                        return self._save_file_for_markitdown_processing(file, pptx_content, '.pptx')
+                    except HttpError as e:
+                        if 'exportSizeLimitExceeded' in str(e):
+                            logger.warning(f"⚠️  File too large to export as PPTX, trying plain text: {file_name}")
+                            try:
+                                request = self.drive_service.files().export_media(
+                                    fileId=file['id'],
+                                    mimeType='text/plain'
+                                )
+                                content = request.execute().decode('utf-8')
+                                return content
+                            except Exception as text_error:
+                                logger.error(f"❌ Plain text export also failed: {text_error}")
+                                logger.info(f"⚠️  Skipping large Google Slides file: {file_name}")
+                                return None
+                        else:
+                            logger.error(f"❌ Error exporting Google Slides: {e}")
+                            return None
+            
+            # Handle Google Sheets (export as XLSX and process with MarkItDown)
+            elif mime_type == 'application/vnd.google-apps.spreadsheet':
+                logger.info(f"📈 Processing Google Sheets: {file_name}")
+                try:
+                    # Try to export as XLSX first
+                    xlsx_content = self.export_google_sheets_as_xlsx(file['id'])
+                    return self._save_file_for_markitdown_processing(file, xlsx_content, '.xlsx')
+                except HttpError as e:
+                    if 'exportSizeLimitExceeded' in str(e):
+                        logger.warning(f"⚠️  File too large to export as XLSX, trying CSV: {file_name}")
+                        # Fallback to CSV export for large files
+                        try:
+                            request = self.drive_service.files().export_media(
+                                fileId=file['id'],
+                                mimeType='text/csv'
+                            )
+                            content = request.execute().decode('utf-8')
+                            return content
+                        except Exception as csv_error:
+                            logger.error(f"❌ CSV export also failed: {csv_error}")
+                            logger.info(f"⚠️  Skipping large Google Sheets file: {file_name}")
+                            return None
+                    else:
+                        logger.error(f"❌ Error exporting Google Sheets: {e}")
+                        return None
+            
+            # Handle plain text files (direct processing)
+            elif mime_type in ['text/plain', 'text/markdown', 'text/html']:
                 request = self.drive_service.files().get_media(fileId=file['id'])
                 content = request.execute().decode('utf-8')
                 return content
-
-            # Explicitly skip CSV files
-            elif mime_type == 'text/csv':
-                logger.warning(f"Skipping CSV file processing: {file_name}")
-                return None
             
-            # Handle PDFs - save for batch processing with vectorize
+            # Handle PDFs - save for batch processing
             elif mime_type == 'application/pdf':
                 return self._save_pdf_for_batch_processing(file)
             
-            # Handle other binary files
-            elif mime_type in ['application/msword']:
-                logger.warning(f"Binary file type {mime_type} not yet supported: {file_name}")
-                return None
+            # Handle Microsoft Office presentations (PPTX, PPT) - use GoogleDriveHelper
+            elif mime_type in [
+                'application/vnd.openxmlformats-officedocument.presentationml.presentation',  # .pptx
+                'application/vnd.ms-powerpoint',  # .ppt
+            ]:
+                logger.info(f"📊 Processing PowerPoint file: {file_name}")
+                if DRIVE_HELPER_AVAILABLE:
+                    try:
+                        helper = GoogleDriveHelper(credentials_file=self.credentials_file)
+                        content = helper.get_file_content(file['id'], convert_to_markdown=True)
+                        return content
+                    except Exception as e:
+                        logger.error(f"❌ Error processing PowerPoint with GoogleDriveHelper: {e}")
+                        return None
+                else:
+                    logger.warning(f"⚠️  GoogleDriveHelper not available, saving for batch processing: {file_name}")
+                    return self._save_file_for_markitdown_processing(file)
+            
+            # Handle Microsoft Office documents (DOCX, XLSX, DOC, XLS)
+            elif mime_type in [
+                'application/vnd.openxmlformats-officedocument.wordprocessingml.document',  # .docx
+                'application/msword',  # .doc
+                'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',  # .xlsx
+                'application/vnd.ms-excel'  # .xls
+            ]:
+                logger.info(f"📄 Processing Office file: {file_name}")
+                return self._save_file_for_markitdown_processing(file)
+            
+            # Handle images (MarkItDown can OCR)
+            elif mime_type.startswith('image/') and mime_type in [
+                'image/jpeg', 'image/png', 'image/gif', 'image/bmp'
+            ]:
+                logger.info(f"🖼️  Processing image (OCR): {file_name}")
+                return self._save_file_for_markitdown_processing(file)
+            
+            # Handle audio files (MarkItDown can transcribe)
+            elif mime_type in ['audio/mpeg', 'audio/wav', 'audio/mp4']:
+                logger.info(f"🎵 Processing audio file (transcription): {file_name}")
+                return self._save_file_for_markitdown_processing(file)
+            
+            # Handle archives (ZIP)
+            elif mime_type == 'application/zip':
+                logger.info(f"📦 Processing ZIP archive: {file_name}")
+                return self._save_file_for_markitdown_processing(file)
+            
+            # Handle other text-based files
+            elif mime_type in ['text/csv', 'application/json', 'text/xml', 'application/rtf']:
+                logger.info(f"📝 Processing text-based file: {file_name}")
+                return self._save_file_for_markitdown_processing(file)
             
             else:
                 logger.warning(f"Unsupported file type {mime_type}: {file_name}")
@@ -400,6 +570,63 @@ class FolderSpecificDriveCrawler:
                 
         except Exception as e:
             logger.error(f"Error downloading file {file['name']}: {str(e)}")
+            import traceback
+            logger.error(traceback.format_exc())
+            return None
+
+    def _save_file_for_markitdown_processing(self, file: Dict, file_content: bytes = None, extension: str = None) -> str:
+        """Save any file to temp directory for later batch processing with MarkItDown
+        
+        Args:
+            file: File metadata from Google Drive
+            file_content: Optional pre-downloaded file content (for Google Workspace exports)
+            extension: Optional file extension override (for Google Workspace exports)
+        """
+        try:
+            # Create temp directory if it doesn't exist
+            if self.pdf_temp_dir is None:
+                self.pdf_temp_dir = tempfile.mkdtemp(prefix="drive_files_")
+                logger.info(f"📁 Created temp directory for files: {self.pdf_temp_dir}")
+            
+            file_id = file['id']
+            file_name = file['name']
+            
+            # Determine file extension
+            if extension:
+                file_ext = extension
+            else:
+                file_ext = os.path.splitext(file_name)[1] or '.bin'
+            
+            # Create sanitized filename
+            safe_name = slugify(os.path.splitext(file_name)[0])[:100]
+            temp_filename = f"{safe_name}_{file_id}{file_ext}"
+            temp_path = os.path.join(self.pdf_temp_dir, temp_filename)
+            
+            # Download file if not provided
+            if file_content is None:
+                request = self.drive_service.files().get_media(fileId=file_id)
+                fh = io.BytesIO()
+                downloader = MediaIoBaseDownload(fh, request)
+                done = False
+                while not done:
+                    status, done = downloader.next_chunk()
+                fh.seek(0)
+                file_content = fh.read()
+            
+            # Save to temp directory
+            with open(temp_path, 'wb') as f:
+                f.write(file_content)
+            
+            logger.info(f"📥 Saved for MarkItDown processing: {temp_filename}")
+            
+            # Track this file for batch processing (use tuple format for consistency)
+            self.pdf_files_to_process.append((file, temp_path))
+            
+            # Return placeholder - actual content will be processed in batch
+            return f"[File saved for MarkItDown processing: {file_name}]"
+            
+        except Exception as e:
+            logger.error(f"Error saving file for processing: {str(e)}")
             return None
 
     def _save_pdf_for_batch_processing(self, file: Dict) -> str:
@@ -533,143 +760,101 @@ class FolderSpecificDriveCrawler:
         
         return enhanced
 
-    def _batch_process_pdfs_with_vectorize(self) -> Dict[str, str]:
-        """Process all collected PDFs using vectorize.io API"""
+    def _batch_process_pdfs_with_gpt(self, openai_client) -> Dict[str, str]:
+        """Process all collected PDFs using GPT-4o image analysis"""
         if not self.pdf_files_to_process:
             return {}
             
-        logger.info(f"🚀 Starting batch PDF processing with vectorize.io for {len(self.pdf_files_to_process)} PDFs")
+        logger.info(f"🚀 Starting batch PDF processing with GPT-4o for {len(self.pdf_files_to_process)} PDFs")
         
-        # Load environment variables
-        load_dotenv()
-        api_key = os.getenv('VECTORIZE_API_KEY')
-        organization_id = os.getenv('VECTORIZE_ORGANIZATION_ID')
-        
-        if not api_key or not organization_id:
-            logger.error("❌ VECTORIZE_API_KEY or VECTORIZE_ORGANIZATION_ID not found in environment")
-            logger.warning("⚠️  Falling back to pdfplumber for PDF processing")
+        if not openai_client and self.pdf_processor == 'gpt':
+            logger.warning("⚠️  No OpenAI client available, falling back to pdfplumber for PDF processing")
             return self._fallback_pdf_processing()
+        
+        extracted_content = {}
+        
+        for file_info, temp_path in self.pdf_files_to_process:
+            file_name = file_info['name']
+            file_id = file_info['id']
+            
+            try:
+                logger.info(f"🤖 Processing PDF with GPT-4o: {file_name}")
+                
+                # Process with GPT-4o
+                result = process_pdf_with_gpt(temp_path, openai_client, include_first_page=False)
+                
+                if result['success']:
+                    # Combine extracted text and GPT analysis
+                    combined_content = []
+                    
+                    # Add extracted text if available
+                    if result['extracted_text'].strip():
+                        combined_content.append("## Extracted Text\n")
+                        cleaned_text = result['extracted_text'].replace('\f', '\n\n---\n\n')
+                        combined_content.append(cleaned_text)
+                    
+                    # Add GPT-4o page analysis
+                    if result['pages_description']:
+                        combined_content.append("\n\n## LLM Page Analysis\n")
+                        for i, description in enumerate(result['pages_description'], 1):
+                            combined_content.append(f"\n### Page {i + 1}\n")
+                            combined_content.append(description)
+                            combined_content.append("\n---\n")
+                    
+                    extracted_content[file_id] = '\n'.join(combined_content)
+                    logger.info(f"✅ GPT processing completed: {file_name} ({result['pages_analyzed']} pages analyzed)")
+                    
+                else:
+                    logger.error(f"❌ GPT processing failed for {file_name}: {result.get('error', 'Unknown error')}")
+                    # Try fallback processing
+                    fallback_content = self._extract_pdf_with_fallback(file_id)
+                    if fallback_content:
+                        extracted_content[file_id] = fallback_content
+                        logger.info(f"✅ Fallback processing successful for {file_name}")
+                    
+            except Exception as e:
+                logger.error(f"❌ Error processing {file_name} with GPT: {e}")
+                # Try fallback processing
+                try:
+                    fallback_content = self._extract_pdf_with_fallback(file_id)
+                    if fallback_content:
+                        extracted_content[file_id] = fallback_content
+                        logger.info(f"✅ Fallback processing successful for {file_name}")
+                except Exception as fallback_error:
+                    logger.error(f"❌ Fallback processing also failed for {file_name}: {fallback_error}")
+        
+        logger.info(f"🎉 PDF batch processing completed: {len(extracted_content)}/{len(self.pdf_files_to_process)} successful")
+        return extracted_content
+
+    def _batch_process_pdfs_with_markitdown(self) -> Dict[str, str]:
+        """Process all collected files using MarkItDown (PDFs, Office docs, images, audio, etc.)"""
+        if not self.pdf_files_to_process:
+            return {}
+            
+        # Count different file types
+        file_types = {}
+        for item in self.pdf_files_to_process:
+            if isinstance(item, tuple):
+                file_meta, _ = item
+                mime = file_meta.get('mimeType', 'unknown')
+            else:
+                mime = item.get('mime_type', 'unknown')
+            file_types[mime] = file_types.get(mime, 0) + 1
+        
+        logger.info(f"🚀 Starting batch processing with MarkItDown for {len(self.pdf_files_to_process)} files:")
+        for mime, count in file_types.items():
+            logger.info(f"   • {mime}: {count} file(s)")
         
         try:
-            # Initialize the API client
-            config = v.Configuration(host="https://api.vectorize.io/v1")
-            apiClient = v.ApiClient(config)
-            apiClient.set_default_header('Authorization', f'Bearer {api_key}')
-            
-            files_api = v.FilesApi(apiClient)
-            extraction_api = v.ExtractionApi(apiClient)
-            
-            # Phase 1: Upload PDFs and start extractions
-            extraction_jobs = {}
-            content_type = "application/pdf"
-            http = urllib3.PoolManager()
-            
-            for file_info, temp_path in self.pdf_files_to_process:
-                file_name = file_info['name']
-                file_id = file_info['id']
-                
-                try:
-                    logger.info(f"⬆️  Uploading PDF: {file_name}")
-                    
-                    # Start file upload
-                    start_file_upload_response = files_api.start_file_upload(
-                        organization_id,
-                        start_file_upload_request=v.StartFileUploadRequest(
-                            content_type=content_type,
-                            name=file_name,
-                        )
-                    )
-                    
-                    # Upload the file
-                    with open(temp_path, "rb") as f:
-                        response = http.request(
-                            "PUT",
-                            start_file_upload_response.upload_url,
-                            body=f,
-                            headers={
-                                "Content-Type": content_type,
-                                "Content-Length": str(os.path.getsize(temp_path))
-                            }
-                        )
-                        
-                    if response.status != 200:
-                        logger.error(f"❌ Upload failed for {file_name}: status {response.status}")
-                        continue
-                    
-                    # Start extraction
-                    extraction_response = extraction_api.start_extraction(
-                        organization_id,
-                        start_extraction_request=v.StartExtractionRequest(
-                            file_id=start_file_upload_response.file_id
-                        )
-                    )
-                    
-                    extraction_jobs[file_id] = {
-                        'extraction_id': extraction_response.extraction_id,
-                        'file_name': file_name,
-                        'file_info': file_info
-                    }
-                    logger.info(f"🔄 Started extraction for {file_name}: {extraction_response.extraction_id}")
-                    
-                except Exception as e:
-                    logger.error(f"❌ Error uploading {file_name}: {e}")
-                    continue
-            
-            # Phase 2: Wait for extractions to complete
-            logger.info(f"⏳ Waiting for {len(extraction_jobs)} extractions to complete...")
-            extracted_content = {}
-            pending_jobs = extraction_jobs.copy()
-            
-            max_wait_time = 300  # 5 minutes max wait
-            start_time = time.time()
-            
-            while pending_jobs and (time.time() - start_time) < max_wait_time:
-                for file_id, job_info in list(pending_jobs.items()):
-                    try:
-                        response = extraction_api.get_extraction_result(
-                            organization_id, 
-                            job_info['extraction_id']
-                        )
-                        
-                        if response.ready:
-                            if response.data.success:
-                                extracted_content[file_id] = response.data.text
-                                logger.info(f"✅ Extraction completed: {job_info['file_name']}")
-                                del pending_jobs[file_id]
-                            else:
-                                logger.error(f"❌ Extraction failed for {job_info['file_name']}: {response.data.error}")
-                                del pending_jobs[file_id]
-                        else:
-                            logger.debug(f"⏳ Still processing: {job_info['file_name']}")
-                            
-                    except Exception as e:
-                        logger.error(f"❌ Error checking extraction for {job_info['file_name']}: {e}")
-                        del pending_jobs[file_id]
-                
-                if pending_jobs:
-                    time.sleep(5)
-            
-            # Handle any remaining pending jobs
-            if pending_jobs:
-                logger.warning(f"⚠️  {len(pending_jobs)} extractions timed out, using fallback processing")
-                for file_id, job_info in pending_jobs.items():
-                    # Try fallback processing for timed out files
-                    try:
-                        content = self._extract_pdf_with_fallback(file_id)
-                        if content:
-                            extracted_content[file_id] = content
-                    except Exception as e:
-                        logger.error(f"❌ Fallback processing failed for {job_info['file_name']}: {e}")
-            
-            logger.info(f"🎉 PDF batch processing completed: {len(extracted_content)}/{len(self.pdf_files_to_process)} successful")
+            extracted_content = process_pdf_batch_markitdown(self.pdf_files_to_process)
             return extracted_content
-            
         except Exception as e:
-            logger.error(f"❌ Error in vectorize batch processing: {e}")
+            logger.error(f"❌ MarkItDown batch processing failed: {e}")
+            logger.warning("⚠️  Falling back to pdfplumber for PDF files")
             return self._fallback_pdf_processing()
-
+    
     def _fallback_pdf_processing(self) -> Dict[str, str]:
-        """Fallback PDF processing using pdfplumber if vectorize fails"""
+        """Fallback PDF processing using pdfplumber if other methods fail"""
         logger.info("🔄 Using fallback pdfplumber processing for PDFs...")
         extracted_content = {}
         
@@ -727,24 +912,70 @@ class FolderSpecificDriveCrawler:
                 logger.warning(f"⚠️  Could not clean up temp directory: {e}")
     
     def is_supported_file_type(self, mime_type: str, file_name: str) -> bool:
-        """Check if file type is supported for processing"""
+        """Check if file type is supported for processing (MarkItDown-compatible)"""
         supported_mime_types = [
+            # Documents
             'application/pdf',
             'application/msword',
+            'application/vnd.openxmlformats-officedocument.wordprocessingml.document',  # .docx
+            'application/vnd.openxmlformats-officedocument.presentationml.presentation',  # .pptx
+            'application/vnd.ms-powerpoint',  # .ppt
+            'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',  # .xlsx
+            'application/vnd.ms-excel',  # .xls
+            
+            # Text-based formats
             'text/plain',
             'text/markdown',
+            'text/html',
+            'text/xml',
+            'application/json',
+            'text/csv',
+            
+            # Google Workspace files
             'application/vnd.google-apps.document',
-            'application/rtf'
+            'application/vnd.google-apps.presentation',
+            'application/vnd.google-apps.spreadsheet',
+            
+            # RTF
+            'application/rtf',
+            
+            # Images (MarkItDown can OCR these)
+            'image/jpeg',
+            'image/png',
+            'image/gif',
+            'image/bmp',
+            
+            # Audio (MarkItDown can transcribe)
+            'audio/mpeg',  # .mp3
+            'audio/wav',
+            'audio/mp4',  # .m4a
+            
+            # Archives
+            'application/zip'
         ]
         
-        supported_extensions = ['.doc', '.docx', '.pdf', '.txt', '.md', '.rtf']
+        supported_extensions = [
+            # Documents
+            '.pdf', '.doc', '.docx', '.ppt', '.pptx', '.xls', '.xlsx',
+            # Text
+            '.txt', '.md', '.html', '.xml', '.json', '.csv',
+            # Images
+            '.jpg', '.jpeg', '.png', '.gif', '.bmp',
+            # Audio
+            '.mp3', '.wav', '.m4a',
+            # Archives
+            '.zip',
+            # Other
+            '.rtf'
+        ]
         
-        mime_supported = any(mime_type.startswith(supported) for supported in supported_mime_types)
+        mime_supported = any(mime_type.startswith(supported) or mime_type == supported 
+                           for supported in supported_mime_types)
         extension_supported = any(file_name.lower().endswith(ext) for ext in supported_extensions)
         
         return mime_supported or extension_supported
     
-    async def crawl_and_save_locally(self, use_llm_categories: bool = False):
+    def crawl_and_save_locally(self, use_llm_categories: bool = False):
         """Crawl folder and save files locally with metadata"""
         logger.info(f"🚀 Starting folder-specific crawl of: {self.folder_id}")
         
@@ -766,20 +997,30 @@ class FolderSpecificDriveCrawler:
         supported_files = [f for f in files if self.is_supported_file_type(f['mimeType'], f['name'])]
         logger.info(f"📋 {len(supported_files)} files are supported for processing")
         
-        # Setup LLM client if needed
+        # Setup LLM client for both categorization and PDF processing
         openai_client = None
-        if use_llm_categories:
-            try:
-                load_dotenv()
-                api_key = os.getenv('OPENAI_API_KEY')
-                if api_key:
-                    openai_client = AsyncOpenAI(api_key=api_key)
-                    logger.info("🤖 LLM categorization enabled")
+        try:
+            load_dotenv()
+            api_key = os.getenv('OPENAI_API_KEY')
+            if api_key:
+                # Use regular OpenAI client (not AsyncOpenAI) for PDF processing compatibility
+                from openai import OpenAI
+                openai_client = OpenAI(api_key=api_key)
+                
+                if use_llm_categories:
+                    logger.info("🤖 LLM categorization and GPT PDF processing enabled")
                 else:
-                    logger.warning("⚠️  OPENAI_API_KEY not found, using simple categorization")
-            except Exception as e:
-                logger.error(f"❌ Failed to initialize OpenAI client: {e}")
+                    logger.info("🤖 GPT PDF processing enabled (categorization disabled)")
+            else:
+                logger.warning("⚠️  OPENAI_API_KEY not found")
+                if use_llm_categories:
+                    logger.warning("⚠️  Using simple categorization")
+                logger.warning("⚠️  PDF processing will fall back to pdfplumber")
+        except Exception as e:
+            logger.error(f"❌ Failed to initialize OpenAI client: {e}")
+            if use_llm_categories:
                 logger.warning("⚠️  Falling back to simple categorization")
+            logger.warning("⚠️  PDF processing will fall back to pdfplumber")
         
         # Phase 1: Process Client Intake files separately
         intake_processed_count = 0
@@ -808,6 +1049,7 @@ class FolderSpecificDriveCrawler:
                     intake_metadata = {
                         'source': 'client_intake',
                         'content_type': 'client_intake',
+                        'client_name': self.client_name,
                         'id': file_id,
                         'name': name,
                         'title': name,
@@ -855,6 +1097,18 @@ class FolderSpecificDriveCrawler:
                     
                 except Exception as e:
                     logger.error(f"❌ Error processing Client Intake {file.get('name', 'unknown')}: {e}")
+                    # Track failed file
+                    self.failed_files.append({
+                        'name': file.get('name', 'unknown'),
+                        'id': file.get('id', 'unknown'),
+                        'mime_type': file.get('mimeType', 'unknown'),
+                        'size': file.get('size', 'N/A'),
+                        'url': get_gdrive_url(file.get('id', ''), file.get('mimeType', '')),
+                        'error': str(e),
+                        'error_type': type(e).__name__,
+                        'file_category': 'client_intake',
+                        'timestamp': datetime.now().isoformat()
+                    })
         
         # Filter out intake files from regular processing to avoid duplicates
         intake_file_ids = {f['id'] for f in intake_files}
@@ -888,11 +1142,23 @@ class FolderSpecificDriveCrawler:
                 if not file_content:
                     logger.warning(f"❌ Failed to extract content from: {name}")
                     error_count += 1
+                    # Track failed file
+                    self.failed_files.append({
+                        'name': name,
+                        'id': file_id,
+                        'mime_type': mime_type,
+                        'size': file.get('size', 'N/A'),
+                        'url': get_gdrive_url(file_id, mime_type),
+                        'error': 'Failed to extract content (returned None)',
+                        'error_type': 'ContentExtractionError',
+                        'file_category': 'client_materials',
+                        'timestamp': datetime.now().isoformat()
+                    })
                     continue
                 
                 # Categorize content
                 if openai_client and file_content:
-                    content_type = await categorize_single_document_with_llm(file_content, name, openai_client)
+                    content_type = categorize_single_document_with_llm(file_content, name, openai_client)
                 else:
                     content_type = categorize_document_simple(name, file_content)
                 
@@ -900,6 +1166,7 @@ class FolderSpecificDriveCrawler:
                 file_metadata = {
                     'source': 'client_materials',
                     'content_type': content_type,
+                    'client_name': self.client_name,
                     'id': file_id,
                     'name': name,
                     'title': name,
@@ -948,12 +1215,33 @@ class FolderSpecificDriveCrawler:
             except Exception as e:
                 logger.error(f"❌ Error processing {file.get('name', 'unknown')}: {e}")
                 error_count += 1
+                # Track failed file
+                self.failed_files.append({
+                    'name': file.get('name', 'unknown'),
+                    'id': file.get('id', 'unknown'),
+                    'mime_type': file.get('mimeType', 'unknown'),
+                    'size': file.get('size', 'N/A'),
+                    'url': get_gdrive_url(file.get('id', ''), file.get('mimeType', '')),
+                    'error': str(e),
+                    'error_type': type(e).__name__,
+                    'file_category': 'client_materials',
+                    'timestamp': datetime.now().isoformat()
+                })
         
-        # Phase 2: Process PDFs with vectorize if any were found
+        # Phase 3: Process files based on selected processor
         pdf_extracted_content = {}
+        markitdown_failed_files = []
         if self.pdf_files_to_process:
-            logger.info(f"\n📄 PHASE 2: Processing {len(self.pdf_files_to_process)} PDFs with vectorize.io...")
-            pdf_extracted_content = self._batch_process_pdfs_with_vectorize()
+            if self.pdf_processor == 'markitdown':
+                logger.info(f"\n📄 PHASE 3: Processing {len(self.pdf_files_to_process)} files with MarkItDown...")
+                logger.info("   Supported: PDFs, Office docs (PPTX, DOCX, XLSX), images, audio, and more!")
+                pdf_extracted_content, markitdown_failed_files = self._batch_process_pdfs_with_markitdown()
+            elif self.pdf_processor == 'pdfplumber':
+                logger.info(f"\n📄 PHASE 3: Processing {len(self.pdf_files_to_process)} PDFs with pdfplumber...")
+                pdf_extracted_content = self._fallback_pdf_processing()
+            else:  # default to 'gpt'
+                logger.info(f"\n📄 PHASE 3: Processing {len(self.pdf_files_to_process)} PDFs with GPT-4o...")
+                pdf_extracted_content = self._batch_process_pdfs_with_gpt(openai_client)
             
             # Update the processed files with actual PDF content (only for regular client materials, not intake forms)
             for crawled_file in self.crawled_files:
@@ -968,7 +1256,7 @@ class FolderSpecificDriveCrawler:
                         with open(file_path, 'r', encoding='utf-8') as f:
                             content = f.read()
                         
-                        # Look for PDF placeholder
+                        # Look for placeholders (PDF or MarkItDown processing)
                         if content.startswith('[PDF_PLACEHOLDER_'):
                             file_id = content.replace('[PDF_PLACEHOLDER_', '').replace(']', '')
                             if file_id in pdf_extracted_content:
@@ -991,6 +1279,32 @@ class FolderSpecificDriveCrawler:
                                 logger.info(f"📄 Updated PDF content: {crawled_file['name']}")
                             else:
                                 logger.warning(f"⚠️  No extracted content found for PDF: {crawled_file['name']}")
+                        elif content.startswith('[File saved for MarkItDown processing:'):
+                            # Extract file ID from the placeholder text
+                            # Format: [File saved for MarkItDown processing: filename]
+                            # We need to find the file_id from the crawled_file info
+                            file_id = crawled_file['id']
+                            
+                            if file_id in pdf_extracted_content:
+                                # Replace with actual extracted content
+                                actual_content = pdf_extracted_content[file_id]
+                                with open(file_path, 'w', encoding='utf-8') as f:
+                                    f.write(actual_content)
+                                
+                                # Update metadata
+                                metadata_file_path = file_path + '.metadata.json'
+                                if os.path.exists(metadata_file_path):
+                                    with open(metadata_file_path, 'r') as f:
+                                        metadata = json.load(f)
+                                    metadata['word_count'] = len(actual_content.split())
+                                    with open(metadata_file_path, 'w') as f:
+                                        json.dump(metadata, f, indent=2)
+                                
+                                # Update crawled file info
+                                crawled_file['word_count'] = len(actual_content.split())
+                                logger.info(f"📄 Updated MarkItDown content: {crawled_file['name']}")
+                            else:
+                                logger.warning(f"⚠️  No extracted content found for MarkItDown file: {crawled_file['name']} (file_id: {file_id})")
                     except Exception as e:
                         logger.error(f"❌ Error updating PDF content for {crawled_file['name']}: {e}")
         
@@ -1002,7 +1316,7 @@ class FolderSpecificDriveCrawler:
         
         # Generate summary report
         total_processed = processed_count + intake_processed_count
-        self.generate_report(total_processed, error_count, len(files))
+        self.generate_report(total_processed, error_count, len(files), markitdown_failed_files)
         
         logger.info(f"\n🎉 Drive folder processing completed!")
         logger.info(f"📊 Total files found: {len(files)}")
@@ -1010,13 +1324,16 @@ class FolderSpecificDriveCrawler:
         logger.info(f"📄 Regular client materials: {processed_count}")
         logger.info(f"✅ Total successfully processed: {total_processed}")
         logger.info(f"📄 PDFs processed with vectorize: {len(pdf_extracted_content)}")
-        logger.info(f"❌ Errors: {error_count}")
+        logger.info(f"❌ Errors: {error_count + len(markitdown_failed_files)}")
         logger.info(f"📂 Client materials saved to: {client_materials_dir}")
         logger.info(f"📋 Client intake saved to: {client_intake_dir}")
         logger.info(f"📋 Report saved to: {self.output_dir}/crawl_summary.json")
     
-    def generate_report(self, processed_count: int, error_count: int, total_files: int):
+    def generate_report(self, processed_count: int, error_count: int, total_files: int, markitdown_failed_files: list = None):
         """Generate a summary report of the crawl"""
+        # Combine all failed files (including MarkItDown failures)
+        all_failed_files = self.failed_files + (markitdown_failed_files or [])
+        
         report = {
             'timestamp': datetime.now().isoformat(),
             'folder_id': self.folder_id,
@@ -1026,9 +1343,11 @@ class FolderSpecificDriveCrawler:
                 'total_files_found': total_files,
                 'supported_files': len(self.crawled_files),
                 'successfully_processed': processed_count,
-                'errors': error_count
+                'failed_files_count': len(all_failed_files),
+                'errors': len(all_failed_files)
             },
-            'crawled_files': self.crawled_files
+            'successfully_crawled_files': self.crawled_files,
+            'failed_files': all_failed_files
         }
         
         report_file = os.path.join(self.output_dir, 'crawl_summary.json')
@@ -1036,6 +1355,14 @@ class FolderSpecificDriveCrawler:
             json.dump(report, f, indent=2)
         
         logger.info(f"📋 Report saved: {report_file}")
+        
+        # Log failed files summary if any
+        if self.failed_files:
+            logger.warning(f"\n⚠️  Failed Files Summary ({len(self.failed_files)} files):")
+            for failed in self.failed_files:
+                logger.warning(f"   ❌ {failed['name']}")
+                logger.warning(f"      Error: {failed['error_type']} - {failed['error']}")
+                logger.warning(f"      Link: {failed['url']}")
 
 def extract_folder_id_from_url(folder_input: str) -> str:
     """Extract folder ID from Google Drive URL or return the ID if already provided"""
@@ -1078,8 +1405,27 @@ def validate_credentials_file(credentials_path: str) -> bool:
         logger.error(f"Error validating credentials file: {e}")
         return False
 
-async def main_async():
-    """Async main function to handle LLM categorization"""
+def extract_pdf_with_pdfplumber(file_path: str) -> str:
+    """Extract text from a local PDF file using pdfplumber.
+    Returns a single string with page contents separated by double newlines.
+    """
+    try:
+        if not os.path.exists(file_path):
+            logger.error(f"PDF not found: {file_path}")
+            return ""
+        text_content = []
+        with pdfplumber.open(file_path) as pdf:
+            for page in pdf.pages:
+                text = page.extract_text() or ""
+                if text.strip():
+                    text_content.append(text)
+        return '\n\n'.join(text_content).strip()
+    except Exception as e:
+        logger.error(f"Error extracting PDF with pdfplumber from {file_path}: {e}")
+        return ""
+
+def main_sync():
+    """Main function to handle LLM categorization and PDF processing"""
     parser = argparse.ArgumentParser(
         description='Download files from a specific Google Drive folder with LLM categorization',
         formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -1099,6 +1445,10 @@ async def main_async():
                        help='Output directory for client materials (default: ./ingestion/client_ingestion_outputs)')
     parser.add_argument('--no-llm-categories', action='store_true',
                        help='Disable LLM categorization and use simple keyword-based categorization instead')
+    parser.add_argument('--pdf-processor', '-p', choices=['gpt', 'markitdown', 'pdfplumber'], default='gpt',
+                       help='PDF processing method: gpt (GPT-4o), markitdown (MarkItDown), or pdfplumber (default: gpt)')
+    parser.add_argument('--client-name', default='',
+                       help='Client name to add to metadata for all processed files')
     
     args = parser.parse_args()
     
@@ -1125,6 +1475,7 @@ async def main_async():
     logger.info(f"📅 Days back: {args.days_back}")
     use_llm_categories = not args.no_llm_categories
     logger.info(f"🤖 LLM Categorization: {'Enabled' if use_llm_categories else 'Disabled (--no-llm-categories flag used)'}")
+    logger.info(f"📄 PDF Processor: {args.pdf_processor}")
     logger.info(f"🔑 Credentials: {credentials_path}")
     logger.info(f"📁 Output directory: {args.output_dir}/client_materials/")
     logger.info(f"🔓 Public folder access - no delegation required")
@@ -1136,12 +1487,14 @@ async def main_async():
             delegated_user=None,  # No user delegation needed for public folders
             folder_id=folder_id,
             days_back=args.days_back,
-            output_dir=args.output_dir
+            output_dir=args.output_dir,
+            pdf_processor=args.pdf_processor,
+            client_name=args.client_name
         )
         
         # Setup and crawl
         crawler.setup()
-        await crawler.crawl_and_save_locally(use_llm_categories=use_llm_categories)
+        crawler.crawl_and_save_locally(use_llm_categories=use_llm_categories)
         
         logger.info("✅ Google Drive folder processing completed successfully!")
         return 0
@@ -1155,9 +1508,34 @@ async def main_async():
         logger.error(f"Traceback: {traceback.format_exc()}")
         return 1
 
+async def main_async(folder_id: str, output_dir: str = "./ingestion/client_ingestion_outputs", 
+                    credentials_file: str = "./service_account.json", use_llm_categories: bool = True):
+    """Async main function for use by other modules"""
+    try:
+        # Initialize crawler
+        crawler = FolderSpecificDriveCrawler(
+            credentials_file=credentials_file,
+            delegated_user=None,  # No user delegation needed for public folders
+            folder_id=folder_id,
+            days_back=0,
+            output_dir=output_dir,
+            pdf_processor="markitdown",
+            client_name=""
+        )
+        
+        # Setup and crawl
+        crawler.setup()
+        crawler.crawl_and_save_locally(use_llm_categories=use_llm_categories)
+        
+        return {"status": "success", "folder_id": folder_id, "output_dir": output_dir}
+        
+    except Exception as e:
+        logger.error(f"❌ Error during Google Drive processing: {e}")
+        return {"status": "error", "error": str(e)}
+
 def main():
-    """Wrapper to run async main function"""
-    return asyncio.run(main_async())
+    """Main entry point"""
+    return main_sync()
 
 if __name__ == "__main__":
     sys.exit(main())

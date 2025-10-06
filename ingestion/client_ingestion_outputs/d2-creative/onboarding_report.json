@@ -1,20 +1,15 @@
 {
-  "client_onboarding_summary": {
+  "client_id": "d2-creative",
+  "timestamp": "2025-10-04T23:01:46.660298Z",
+  "files_processed": 152,
+  "successful_uploads": 152,
+  "failed_uploads": 0,
+  "database_stats": {
     "client_id": "d2-creative",
-    "timestamp": "2025-09-06T16:20:43.307105",
-    "corpus_created": true,
-    "website_url": "https://www.d2creative.com/",
-    "drive_folder_id": "1oe7dVJA9iYPIO9_QGv01s33xqw4750Wa",
-    "output_directory": "./ingestion/client_ingestion_outputs/d2-creative",
-    "upload_statistics": {
-      "successful_uploads": 150,
-      "failed_uploads": 0,
-      "total_files_processed": 150
-    },
-    "directories_created": [
-      "./ingestion/client_ingestion_outputs/d2-creative/client_intake_form",
-      "./ingestion/client_ingestion_outputs/d2-creative/client_materials",
-      "./ingestion/client_ingestion_outputs/d2-creative/website"
-    ]
-  }
+    "client_uuid": "d2-creative",
+    "document_count": 152,
+    "chunk_count": 183,
+    "total_tokens": 87503
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/d2-creative"
 }

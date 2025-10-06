@@ -1,0 +1,22 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 31,
+    "successful_scrapes": 31,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 23595,
+    "categories": {
+      "blogs_resources": 20,
+      "other": 4,
+      "about": 2,
+      "pricing": 1,
+      "homepage": 1,
+      "testimonials": 1,
+      "services_products": 2
+    },
+    "custom_metadata_applied": {
+      "client_name": "nga-healthcare"
+    },
+    "scrape_time": "2025-10-05T01:39:48.419466"
+  }
+}

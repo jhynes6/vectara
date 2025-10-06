@@ -1,0 +1,164 @@
+{
+  "timestamp": "2025-09-07T06:55:05.039437",
+  "folder_id": "15DcPsTJ__zTKI92cQL66dqk54eGLAHu5",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 19,
+    "supported_files": 15,
+    "successfully_processed": 15,
+    "errors": 1
+  },
+  "crawled_files": [
+    {
+      "name": "CAS Severn - Finance_HC 1+ - cost savings - AI Enrichment",
+      "final_filename": "pitch_decks_cas-severn-finance-hc-1-cost-savings-ai-enrichment.md",
+      "id": "1fgBQ1gb7XqKs_DeMhYsDIua6JHzPFZYHztn37lZ-0QU",
+      "size": "2588",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "pitch_decks",
+      "url": "https://docs.google.com/document/d/1fgBQ1gb7XqKs_DeMhYsDIua6JHzPFZYHztn37lZ-0QU/view",
+      "word_count": 490
+    },
+    {
+      "name": "CAS Severn - Finance_HC 1+ - energy reduction - AI Enrichment",
+      "final_filename": "pitch_decks_cas-severn-finance-hc-1-energy-reduction-ai-enrichment.md",
+      "id": "1XPbMINEuFL3R87msc7QnkMdU6zD1KW8dhGgGpvWMOJY",
+      "size": "2426",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "pitch_decks",
+      "url": "https://docs.google.com/document/d/1XPbMINEuFL3R87msc7QnkMdU6zD1KW8dhGgGpvWMOJY/view",
+      "word_count": 477
+    },
+    {
+      "name": "CAS Severn - Healthcare, hospital systems, home health, healthcare staffing, senior living_HC 1+ - energy reduction - AI Enrichment",
+      "final_filename": "pitch_decks_cas-severn-healthcare-hospital-systems-home-health-healthcare-staffing-senior-living-hc-1-energy-reduction-ai-enrichment.md",
+      "id": "1Ie4K0vW7trgXOnKr_VPFfjJViS-glHmT_zJtL05nOiI",
+      "size": "2588",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "pitch_decks",
+      "url": "https://docs.google.com/document/d/1Ie4K0vW7trgXOnKr_VPFfjJViS-glHmT_zJtL05nOiI/view",
+      "word_count": 453
+    },
+    {
+      "name": "CAS Severn - Healthcare, hospital systems, home health, healthcare staffing, senior living_HC 1+ - cost savings - AI Enrichment",
+      "final_filename": "pitch_decks_cas-severn-healthcare-hospital-systems-home-health-healthcare-staffing-senior-living-hc-1-cost-savings-ai-enrichment.md",
+      "id": "1wK_3IF6o65e5bTTi9qqfXGPrSvq0NFQlTMVdEDsoOTk",
+      "size": "2652",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "pitch_decks",
+      "url": "https://docs.google.com/document/d/1wK_3IF6o65e5bTTi9qqfXGPrSvq0NFQlTMVdEDsoOTk/view",
+      "word_count": 488
+    },
+    {
+      "name": "CAS Severn - High-Growth, recently funded startups_HC 10+ - shot in the dark - AI Enrichment",
+      "final_filename": "other_cas-severn-high-growth-recently-funded-startups-hc-10-shot-in-the-dark-ai-enrichment.md",
+      "id": "1RcPFm_b9n2fXIPR38Mw4hS_ZEVVuLT7i1VAKLF0TUKE",
+      "size": "2676",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "other",
+      "url": "https://docs.google.com/document/d/1RcPFm_b9n2fXIPR38Mw4hS_ZEVVuLT7i1VAKLF0TUKE/view",
+      "word_count": 501
+    },
+    {
+      "name": "CAS Severn - High-Growth, recently funded startups_HC 10+ - partner - AI Enrichment",
+      "final_filename": "pitch_decks_cas-severn-high-growth-recently-funded-startups-hc-10-partner-ai-enrichment.md",
+      "id": "1ZVpPMUNOAKq3EjQW8QpSDDqo1x06vESFJ43fg7BdTdA",
+      "size": "2652",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "pitch_decks",
+      "url": "https://docs.google.com/document/d/1ZVpPMUNOAKq3EjQW8QpSDDqo1x06vESFJ43fg7BdTdA/view",
+      "word_count": 535
+    },
+    {
+      "name": "CAS Severn - High-Growth, recently funded startups_HC 10+ - run your tech - AI Enrichment",
+      "final_filename": "other_cas-severn-high-growth-recently-funded-startups-hc-10-run-your-tech-ai-enrichment.md",
+      "id": "1ggaNUkyKSwXoeoXHIAVqEfLijDwBvXYijzc5yc_JESU",
+      "size": "2652",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "other",
+      "url": "https://docs.google.com/document/d/1ggaNUkyKSwXoeoXHIAVqEfLijDwBvXYijzc5yc_JESU/view",
+      "word_count": 382
+    },
+    {
+      "name": "CAS Severn - High-Growth, recently funded startups_HC 10+ - casual - AI Enrichment",
+      "final_filename": "other_cas-severn-high-growth-recently-funded-startups-hc-10-casual-ai-enrichment.md",
+      "id": "1aWdG9ppj2uq8sUC5MqMb2-6xHLQJAlgw4OXkvKZXSEc",
+      "size": "2673",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "other",
+      "url": "https://docs.google.com/document/d/1aWdG9ppj2uq8sUC5MqMb2-6xHLQJAlgw4OXkvKZXSEc/view",
+      "word_count": 523
+    },
+    {
+      "name": "Evergreen__Forever Datasheet.PDF",
+      "final_filename": "other_evergreen-forever-datasheet.md",
+      "id": "1LIn0jskNEI2Y2Sk_5bIT-c7AJ1LDjRhP",
+      "size": "386779",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1LIn0jskNEI2Y2Sk_5bIT-c7AJ1LDjRhP/view",
+      "word_count": 1753
+    },
+    {
+      "name": "Evergreen__Forever Infographic.PDF",
+      "final_filename": "other_evergreen-forever-infographic.md",
+      "id": "1M3r3AnTgO5_c8nKqi8IaS0XkscQ5N1A3",
+      "size": "106739",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1M3r3AnTgO5_c8nKqi8IaS0XkscQ5N1A3/view",
+      "word_count": 889
+    },
+    {
+      "name": "Why Pure for Cyber Resilience.pdf",
+      "final_filename": "other_why-pure-for-cyber-resilience.md",
+      "id": "1KFPkbaZ5qp0W4Rs7JjyDhVMEPurv0FZw",
+      "size": "114202",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1KFPkbaZ5qp0W4Rs7JjyDhVMEPurv0FZw/view",
+      "word_count": 1558
+    },
+    {
+      "name": "AI for Healthcare and Life Sciences Solution Brief.pdf",
+      "final_filename": "capabilities_overview_ai-for-healthcare-and-life-sciences-solution-brief.md",
+      "id": "1UUwB0W783kB1m2ueaVKvabsXMZIb1Ngl",
+      "size": "342846",
+      "mime_type": "application/pdf",
+      "content_type": "capabilities_overview",
+      "url": "https://drive.google.com/file/d/1UUwB0W783kB1m2ueaVKvabsXMZIb1Ngl/view",
+      "word_count": 1932
+    },
+    {
+      "name": "CAS Severn 2025 cold calling_ emailing templates.pdf",
+      "final_filename": "other_cas-severn-2025-cold-calling-emailing-templates.md",
+      "id": "1POSoZhk4LUeX-n5hR7Aawg0xDi425kfr",
+      "size": "131281",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1POSoZhk4LUeX-n5hR7Aawg0xDi425kfr/view",
+      "word_count": 2653
+    },
+    {
+      "name": "AI Cold email messaging.pdf",
+      "final_filename": "other_ai-cold-email-messaging.md",
+      "id": "1ZZLpY1J_2ivc7kvPkUfTsuXzvXdo8mDQ",
+      "size": "91061",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1ZZLpY1J_2ivc7kvPkUfTsuXzvXdo8mDQ/view",
+      "word_count": 1263
+    },
+    {
+      "name": "AI Cold Calling Messaging (1).pdf",
+      "final_filename": "other_ai-cold-calling-messaging-1.md",
+      "id": "1FY9suSp-nL4-C7DRyI53kNKsqshY1cbt",
+      "size": "51965",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1FY9suSp-nL4-C7DRyI53kNKsqshY1cbt/view",
+      "word_count": 507
+    }
+  ]
+}

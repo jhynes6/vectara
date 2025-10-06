@@ -2,25 +2,17 @@
 source: "website"
 content_type: "services_products"
 url: "https://www.d2creative.com/capabilities/"
-title: "Changing Hearts"
+title: "Digital Marketing Strategy and Capabilities"
 domain: "www.d2creative.com"
 path: "/capabilities/"
-scraped_time: "2025-09-06T16:16:31.202319"
+scraped_time: "2025-10-04T18:55:17.284685"
 url_depth: 1
-word_count: 137
+word_count: 160
 client_name: "d2-creative"
 ---
 
-# Changing Hearts
-
-Digital Marketing Strategy, Creative, & Technology Expertise
-
-## CAPABILITIES
-
-# Changing Hearts
+# Changing Hearts  
 and Minds
-
-### CAPABILITIES
 
 ## Our Capabilities
 
@@ -30,18 +22,37 @@ You need an effective way to tell your story and make meaningful emotional conne
 
 [Download our capabilities brochure](./../wp-content/uploads/2025/06/d2-capabilities-brochure-lifesciences-3.pdf)
 
-### [Brand & Messaging Development](https://www.d2creative.com/capabilities/brand-and-messaging-development/)
+### Brand & Messaging Development
 
-### [Content Development & Marketing](https://www.d2creative.com/capabilities/content-development/)
+### Content Development & Marketing
 
-### [Digital Marketing](https://www.d2creative.com/capabilities/strategic-digital-marketing/)
+### Digital Marketing
 
-### [Search Engine Optimization (SEO)](https://www.d2creative.com/capabilities/search-engine-optimization/)
+### Search Engine Optimization (SEO)
 
-### [Website/App Design & Development](https://www.d2creative.com/capabilities/website-design-and-app-development/)
+### Website/App Design & Development
 
-### [Video Production & Digital Storytelling](https://www.d2creative.com/capabilities/video-production-and-digital-storytelling/)
-
-## Let’s Connect
+### Video Production & Digital Storytelling
 
 ## Let’s Connect
+
+**New Business**  
+Mike DeFabrizio  
+732-539-2257  
+[Email Mike](/cdn-cgi/l/email-protection#e78a8382818685958e9d8e88a783d584958286938e9182c984888a)
+
+**Careers at D2**  
+[See Openings](/careers/)
+
+**Insights**  
+Explore contemporary marketing and communications expertise:
+
+[Digital Glossary](/digital-glossary/)  
+[Blog](/blog/)  
+[White Papers](https://www.d2creative.com/white-papers/)  
+[Digital Ad Performance Calculator](/digital-ad-performance-calculator/)
+
+**Location**  
+399 Campus Drive  
+Suite 309  
+Somerset, NJ 08873-1178

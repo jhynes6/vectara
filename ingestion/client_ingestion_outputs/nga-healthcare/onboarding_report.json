@@ -1,0 +1,15 @@
+{
+  "client_id": "nga-healthcare",
+  "timestamp": "2025-10-05T05:40:52.727190Z",
+  "files_processed": 32,
+  "successful_uploads": 32,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "nga-healthcare",
+    "client_uuid": "nga-healthcare",
+    "document_count": 32,
+    "chunk_count": 51,
+    "total_tokens": 27904
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/nga-healthcare"
+}

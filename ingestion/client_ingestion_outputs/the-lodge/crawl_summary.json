@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-10-05T02:51:04.572835",
+  "folder_id": "19e3u-BzxNBjgTkk4eoTn0hnivnUeGkyE",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 5,
+    "supported_files": 3,
+    "successfully_processed": 3,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "The Lodge-Client Intake Form",
+      "final_filename": "client_intake_the-lodge-client-intake-form.md",
+      "id": "1FBYu59iPeqtSOE3XqeBCSbAJOGeqz9D1j1kIzFW9itI",
+      "size": "54870",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1FBYu59iPeqtSOE3XqeBCSbAJOGeqz9D1j1kIzFW9itI/view",
+      "word_count": 787,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "The Lodge Inc Capabilities Deck 09_23",
+      "final_filename": "pitch_decks_the-lodge-inc-capabilities-deck-09-23.md",
+      "id": "1sltSB28ACIWRfCaEfYtMJMhBt2VvEG2UxVEtMr7DIvc",
+      "size": "389234",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "pitch_decks",
+      "url": "https://docs.google.com/document/d/1sltSB28ACIWRfCaEfYtMJMhBt2VvEG2UxVEtMr7DIvc/view",
+      "word_count": 260
+    },
+    {
+      "name": "The Lodge Inc Capabilities Deck 09_23.pdf",
+      "final_filename": "capabilities_overview_the-lodge-inc-capabilities-deck-09-23.md",
+      "id": "1JjPwqUVdsalEryapROundg1WYc_vObf6",
+      "size": "4057546",
+      "mime_type": "application/pdf",
+      "content_type": "capabilities_overview",
+      "url": "https://drive.google.com/file/d/1JjPwqUVdsalEryapROundg1WYc_vObf6/view",
+      "word_count": 356
+    }
+  ],
+  "failed_files": []
+}

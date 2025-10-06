@@ -2,35 +2,20 @@
 source: "website"
 content_type: "case_studies"
 url: "https://www.d2creative.com/our-work/product-use-video/"
-title: "Product Demonstration Video Shot on Location"
+title: "Fujifilm Medical Systems Product Demonstration Video"
 domain: "www.d2creative.com"
 path: "/our-work/product-use-video/"
-scraped_time: "2025-09-06T16:16:04.175453"
+scraped_time: "2025-10-04T18:57:05.367006"
 url_depth: 2
-word_count: 437
+word_count: 413
 client_name: "d2-creative"
 ---
 
-# Product Demonstration Video Shot on Location
+## The Challenge
 
-Medical Product Use Video, Shot On-Location in a Hospital
+## Our Approach
 
-## FUJIFILM Medical Systems
-
-#
-
-Product Demonstration Video Shot on Location
-
-Video Production & Storytelling
-
-## The
-Challenge
-
-## Our
-Approach
-
-## The
-Result
+## The Result
 
 The Result 88% of video marketers reported that video gives them a positive ROI, and more than half of cite video as the content providing the best ROI. It’s not just marketing professionals who love video; 84% of people say they’ve been convinced to buy a product or service by watching a brand’s video (Wyzowl, 2020).
 

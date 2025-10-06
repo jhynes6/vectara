@@ -1,0 +1,77 @@
+{
+  "timestamp": "2025-10-05T04:49:10.515148",
+  "folder_id": "1fDrNHnhaoDm9lFgEAR1LxnT6arykvx8n",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 7,
+    "supported_files": 6,
+    "successfully_processed": 6,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "AtreNet: Client Intake Form",
+      "final_filename": "client_intake_atrenet-client-intake-form.md",
+      "id": "1VY9Osg34yAPq9MbVA7Dx392oJIaqVnwNyTE9_tgMn5E",
+      "size": "16774",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1VY9Osg34yAPq9MbVA7Dx392oJIaqVnwNyTE9_tgMn5E/view",
+      "word_count": 830,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "AtreNet - 2024 Customer Websites | Portfolio.html",
+      "final_filename": "other_atrenet-2024-customer-websites-portfolio.md",
+      "id": "1BXVSi5QomSzgTfIB3-qLXCYFYjBM0jKg",
+      "size": "7677",
+      "mime_type": "text/html",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1BXVSi5QomSzgTfIB3-qLXCYFYjBM0jKg/view",
+      "word_count": 623
+    },
+    {
+      "name": "AtreNet-Case-Study-Valtix.pdf",
+      "final_filename": "case_studies_atrenet-case-study-valtix.md",
+      "id": "1q1QPdLbFOqgzcSJMy743MxkEt0sbWPpg",
+      "size": "103340",
+      "mime_type": "application/pdf",
+      "content_type": "case_studies",
+      "url": "https://drive.google.com/file/d/1q1QPdLbFOqgzcSJMy743MxkEt0sbWPpg/view",
+      "word_count": 495
+    },
+    {
+      "name": "AtreNet-proposal-example-with-removed-sections.pdf",
+      "final_filename": "other_atrenet-proposal-example-with-removed-sections.md",
+      "id": "1zsUw_4vOv-pi-PVJVnOgyI5EB4W_NZqD",
+      "size": "8892474",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1zsUw_4vOv-pi-PVJVnOgyI5EB4W_NZqD/view",
+      "word_count": 2303
+    },
+    {
+      "name": "AtreNet - Overview-October-2023.pdf",
+      "final_filename": "capabilities_overview_atrenet-overview-october-2023.md",
+      "id": "1Deyqv6Gvi7ovH1PPhXYBDXfhKDKLGQPD",
+      "size": "8588392",
+      "mime_type": "application/pdf",
+      "content_type": "capabilities_overview",
+      "url": "https://drive.google.com/file/d/1Deyqv6Gvi7ovH1PPhXYBDXfhKDKLGQPD/view",
+      "word_count": 479
+    },
+    {
+      "name": "AtreNet Inc. and MintLeads.io Service Contract - V2.pdf",
+      "final_filename": "other_atrenet-inc-and-mintleads-io-service-contract-v2.md",
+      "id": "1P0ddmvvjOIu7sfHGtU9FrMYuGhCyIJ19",
+      "size": "262219",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1P0ddmvvjOIu7sfHGtU9FrMYuGhCyIJ19/view",
+      "word_count": 1443
+    }
+  ],
+  "failed_files": []
+}

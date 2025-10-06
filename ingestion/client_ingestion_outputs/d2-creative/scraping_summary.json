@@ -1,23 +1,23 @@
 {
   "scraping_summary": {
-    "total_urls_discovered": 145,
-    "successful_scrapes": 145,
+    "total_urls_discovered": 143,
+    "successful_scrapes": 143,
     "failed_scrapes": 0,
     "success_rate": "100.0%",
-    "total_words_scraped": 74682,
+    "total_words_scraped": 65493,
     "categories": {
-      "case_studies": 38,
-      "blogs_resources": 69,
       "services_products": 16,
-      "other": 15,
+      "blogs_resources": 70,
+      "industry_markets": 3,
+      "other": 13,
+      "careers": 1,
+      "case_studies": 37,
       "about": 2,
-      "careers": 2,
-      "industry_markets": 2,
       "homepage": 1
     },
     "custom_metadata_applied": {
       "client_name": "d2-creative"
     },
-    "scrape_time": "2025-09-06T16:16:31.203326"
+    "scrape_time": "2025-10-04T18:57:41.087190"
   }
 }

@@ -1,0 +1,2245 @@
+{
+  "pipeline_log_version": "1.0",
+  "created_at": "2025-09-09T13:26:43.319631",
+  "last_updated": "2025-10-05T01:19:44.967443",
+  "clients": {
+    "reach_marketing": {
+      "client_id": "reach_marketing",
+      "pipeline_started": "2025-09-10T11:05:58.652243",
+      "pipeline_updated": "2025-09-10T11:35:05.681112",
+      "overall_status": "in_progress",
+      "metadata": {
+        "drive_folder_id": "1X_vZdBMCkdE1jgO_0gng1nJxx8B1u1Ja",
+        "homepage_url": "https://reachmarketing.com/",
+        "output_dir": "ingestion/client_ingestion_outputs",
+        "workers": 4
+      },
+      "checkpoints": {
+        "website_ingestion": {
+          "status": "completed",
+          "started_at": "2025-09-10T11:06:14.414853",
+          "completed_at": "2025-09-10T11:30:14.326676",
+          "duration_seconds": 1439.911823,
+          "metadata": {
+            "url": "https://reachmarketing.com/",
+            "workers": 4,
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/reach_marketing/website",
+            "status": "success"
+          },
+          "error": null
+        },
+        "intake_form_ingestion": {
+          "status": "completed",
+          "started_at": "2025-09-10T11:30:14.327377",
+          "completed_at": "2025-09-10T11:30:14.327970",
+          "duration_seconds": 0.000593,
+          "metadata": {
+            "directory": "ingestion/client_ingestion_outputs/reach_marketing/client_intake_form",
+            "files_processed": 1
+          },
+          "error": null
+        },
+        "client_materials_ingestion": {
+          "status": "completed",
+          "started_at": "2025-09-10T11:06:21.682046",
+          "completed_at": "2025-09-10T11:07:05.733882",
+          "duration_seconds": 44.051836,
+          "metadata": {
+            "folder_id": "1X_vZdBMCkdE1jgO_0gng1nJxx8B1u1Ja",
+            "credentials_file": "./service_account.json",
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/reach_marketing/client_materials",
+            "status": "success"
+          },
+          "error": null
+        },
+        "corpus_creation": {
+          "status": "completed",
+          "started_at": "2025-09-10T11:05:58.653080",
+          "completed_at": "2025-09-10T11:06:14.414252",
+          "duration_seconds": 15.761172,
+          "metadata": {
+            "corpus_key": "reach_marketing",
+            "encoder_name": "boomerang-2023-q3",
+            "status": "created"
+          },
+          "error": null
+        },
+        "website_upload": {
+          "status": "completed",
+          "started_at": "2025-09-10T11:30:14.341413",
+          "completed_at": "2025-09-10T11:35:05.681108",
+          "duration_seconds": 291.339695,
+          "metadata": {
+            "total_files": 165,
+            "successful_uploads": 165,
+            "success_rate": 100.0
+          },
+          "error": null
+        },
+        "intake_form_upload": {
+          "status": "completed",
+          "started_at": "2025-09-10T11:30:14.340715",
+          "completed_at": "2025-09-10T11:35:05.680048",
+          "duration_seconds": 291.339333,
+          "metadata": {
+            "total_files": 1,
+            "successful_uploads": 1,
+            "success_rate": 100.0
+          },
+          "error": null
+        },
+        "client_materials_upload": {
+          "status": "completed",
+          "started_at": "2025-09-10T11:30:14.341112",
+          "completed_at": "2025-09-10T11:35:05.680685",
+          "duration_seconds": 291.339573,
+          "metadata": {
+            "total_files": 1,
+            "successful_uploads": 1,
+            "success_rate": 100.0
+          },
+          "error": null
+        },
+        "brief_generation": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "brief_gdrive_upload": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "case_study_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "client_materials_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "intake_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "website_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        }
+      },
+      "errors": [],
+      "performance_metrics": {}
+    },
+    "mintleads_v2": {
+      "client_id": "mintleads_v2",
+      "pipeline_started": "2025-09-09T16:18:16.976538",
+      "pipeline_updated": "2025-09-09T16:23:49.793974",
+      "overall_status": "in_progress",
+      "metadata": {
+        "drive_folder_id": "1BjlW9f3DpkqNVcY0HincuHe1Pov95toK",
+        "homepage_url": "https://mintleads.io",
+        "output_dir": "ingestion/client_ingestion_outputs",
+        "workers": 4
+      },
+      "checkpoints": {
+        "website_ingestion": {
+          "status": "completed",
+          "started_at": "2025-09-09T16:18:28.196038",
+          "completed_at": "2025-09-09T16:22:29.489980",
+          "duration_seconds": 241.293942,
+          "metadata": {
+            "url": "https://mintleads.io",
+            "workers": 4,
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/mintleads_v2/website",
+            "status": "success"
+          },
+          "error": null
+        },
+        "intake_form_ingestion": {
+          "status": "completed",
+          "started_at": "2025-09-09T16:22:29.490514",
+          "completed_at": "2025-09-09T16:22:29.490928",
+          "duration_seconds": 0.000414,
+          "metadata": {
+            "directory": "ingestion/client_ingestion_outputs/mintleads_v2/client_intake_form",
+            "files_processed": 1
+          },
+          "error": null
+        },
+        "client_materials_ingestion": {
+          "status": "completed",
+          "started_at": "2025-09-09T16:18:34.282288",
+          "completed_at": "2025-09-09T16:20:00.321058",
+          "duration_seconds": 86.03877,
+          "metadata": {
+            "folder_id": "1BjlW9f3DpkqNVcY0HincuHe1Pov95toK",
+            "credentials_file": "./service_account.json",
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/mintleads_v2/client_materials",
+            "status": "success"
+          },
+          "error": null
+        },
+        "corpus_creation": {
+          "status": "completed",
+          "started_at": "2025-09-09T16:18:16.977568",
+          "completed_at": "2025-09-09T16:18:28.194749",
+          "duration_seconds": 11.217181,
+          "metadata": {
+            "corpus_key": "mintleads_v2",
+            "encoder_name": "boomerang-2023-q3",
+            "status": "created"
+          },
+          "error": null
+        },
+        "website_upload": {
+          "status": "completed",
+          "started_at": "2025-09-09T16:22:29.494495",
+          "completed_at": "2025-09-09T16:23:49.793972",
+          "duration_seconds": 80.299477,
+          "metadata": {
+            "total_files": 45,
+            "successful_uploads": 43,
+            "success_rate": 95.55555555555556
+          },
+          "error": null
+        },
+        "intake_form_upload": {
+          "status": "completed",
+          "started_at": "2025-09-09T16:22:29.493864",
+          "completed_at": "2025-09-09T16:23:49.792911",
+          "duration_seconds": 80.299047,
+          "metadata": {
+            "total_files": 1,
+            "successful_uploads": 0,
+            "success_rate": 0.0
+          },
+          "error": null
+        },
+        "client_materials_upload": {
+          "status": "completed",
+          "started_at": "2025-09-09T16:22:29.494217",
+          "completed_at": "2025-09-09T16:23:49.793593",
+          "duration_seconds": 80.299376,
+          "metadata": {
+            "total_files": 3,
+            "successful_uploads": 2,
+            "success_rate": 66.66666666666666
+          },
+          "error": null
+        },
+        "brief_generation": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "brief_gdrive_upload": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "case_study_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "client_materials_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "intake_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "website_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        }
+      },
+      "errors": [],
+      "performance_metrics": {}
+    },
+    "dodeka-digital": {
+      "client_id": "dodeka-digital",
+      "pipeline_started": "2025-09-16T10:03:41.663046",
+      "pipeline_updated": "2025-09-16T10:08:32.266450",
+      "overall_status": "in_progress",
+      "metadata": {
+        "drive_folder_id": "15UXWbmuhFWpQBIp4lY6QHkPNHY_1eFJi",
+        "homepage_url": "https://www.dodekadigital.com/",
+        "output_dir": "ingestion/client_ingestion_outputs",
+        "workers": 4
+      },
+      "checkpoints": {
+        "website_ingestion": {
+          "status": "completed",
+          "started_at": "2025-09-16T10:03:47.645996",
+          "completed_at": "2025-09-16T10:07:32.133803",
+          "duration_seconds": 224.487807,
+          "metadata": {
+            "url": "https://www.dodekadigital.com/",
+            "workers": 4,
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/dodeka-digital/website",
+            "status": "success"
+          },
+          "error": null
+        },
+        "intake_form_ingestion": {
+          "status": "completed",
+          "started_at": "2025-09-16T10:07:32.134567",
+          "completed_at": "2025-09-16T10:07:32.135111",
+          "duration_seconds": 0.000544,
+          "metadata": {
+            "directory": "ingestion/client_ingestion_outputs/dodeka-digital/client_intake_form",
+            "files_processed": 1
+          },
+          "error": null
+        },
+        "client_materials_ingestion": {
+          "status": "completed",
+          "started_at": "2025-09-16T10:03:48.953205",
+          "completed_at": "2025-09-16T10:03:51.278527",
+          "duration_seconds": 2.325322,
+          "metadata": {
+            "folder_id": "15UXWbmuhFWpQBIp4lY6QHkPNHY_1eFJi",
+            "credentials_file": "./service_account.json",
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/dodeka-digital/client_materials",
+            "status": "success"
+          },
+          "error": null
+        },
+        "corpus_creation": {
+          "status": "completed",
+          "started_at": "2025-09-16T10:03:41.664232",
+          "completed_at": "2025-09-16T10:03:47.645240",
+          "duration_seconds": 5.981008,
+          "metadata": {
+            "corpus_key": "dodeka-digital",
+            "encoder_name": "boomerang-2023-q3",
+            "status": "created"
+          },
+          "error": null
+        },
+        "website_upload": {
+          "status": "completed",
+          "started_at": "2025-09-16T10:07:32.138484",
+          "completed_at": "2025-09-16T10:08:32.266438",
+          "duration_seconds": 60.127954,
+          "metadata": {
+            "total_files": 35,
+            "successful_uploads": 35,
+            "success_rate": 100.0
+          },
+          "error": null
+        },
+        "intake_form_upload": {
+          "status": "completed",
+          "started_at": "2025-09-16T10:07:32.137990",
+          "completed_at": "2025-09-16T10:08:32.264850",
+          "duration_seconds": 60.12686,
+          "metadata": {
+            "total_files": 1,
+            "successful_uploads": 1,
+            "success_rate": 100.0
+          },
+          "error": null
+        },
+        "client_materials_upload": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "brief_generation": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "brief_gdrive_upload": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "case_study_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "client_materials_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "intake_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "website_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        }
+      },
+      "errors": [],
+      "performance_metrics": {}
+    },
+    "terra-collective": {
+      "client_id": "terra-collective",
+      "pipeline_started": "2025-09-26T15:59:52.933334",
+      "pipeline_updated": "2025-09-26T16:01:08.135198",
+      "overall_status": "in_progress",
+      "metadata": {
+        "drive_folder_id": "1RQuE7OP3nOakPI-mu2OiQrYgoprFkBeN",
+        "homepage_url": "https://www.terracollectiveagency.com",
+        "output_dir": "ingestion/client_ingestion_outputs",
+        "workers": 4
+      },
+      "checkpoints": {
+        "website_ingestion": {
+          "status": "completed",
+          "started_at": "2025-09-26T16:00:04.985413",
+          "completed_at": "2025-09-26T16:00:43.817956",
+          "duration_seconds": 38.832543,
+          "metadata": {
+            "url": "https://www.terracollectiveagency.com",
+            "workers": 4,
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/terra-collective/website",
+            "status": "success"
+          },
+          "error": null
+        },
+        "intake_form_ingestion": {
+          "status": "completed",
+          "started_at": "2025-09-26T16:00:43.818882",
+          "completed_at": "2025-09-26T16:00:43.819778",
+          "duration_seconds": 0.000896,
+          "metadata": {
+            "directory": "ingestion/client_ingestion_outputs/terra-collective/client_intake_form",
+            "files_processed": 1
+          },
+          "error": null
+        },
+        "client_materials_ingestion": {
+          "status": "completed",
+          "started_at": "2025-09-26T16:00:06.804949",
+          "completed_at": "2025-09-26T16:00:09.670548",
+          "duration_seconds": 2.865599,
+          "metadata": {
+            "folder_id": "1RQuE7OP3nOakPI-mu2OiQrYgoprFkBeN",
+            "credentials_file": "./service_account.json",
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/terra-collective/client_materials",
+            "status": "success"
+          },
+          "error": null
+        },
+        "corpus_creation": {
+          "status": "completed",
+          "started_at": "2025-09-26T15:59:52.935458",
+          "completed_at": "2025-09-26T16:00:04.984497",
+          "duration_seconds": 12.049039,
+          "metadata": {
+            "corpus_key": "terra-collective",
+            "encoder_name": "boomerang-2023-q3",
+            "status": "created"
+          },
+          "error": null
+        },
+        "website_upload": {
+          "status": "completed",
+          "started_at": "2025-09-26T16:00:43.823204",
+          "completed_at": "2025-09-26T16:01:08.135193",
+          "duration_seconds": 24.311989,
+          "metadata": {
+            "total_files": 15,
+            "successful_uploads": 14,
+            "success_rate": 93.33333333333333
+          },
+          "error": null
+        },
+        "intake_form_upload": {
+          "status": "completed",
+          "started_at": "2025-09-26T16:00:43.822643",
+          "completed_at": "2025-09-26T16:01:08.134428",
+          "duration_seconds": 24.311785,
+          "metadata": {
+            "total_files": 1,
+            "successful_uploads": 0,
+            "success_rate": 0.0
+          },
+          "error": null
+        },
+        "client_materials_upload": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "brief_generation": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "brief_gdrive_upload": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "case_study_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "client_materials_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "intake_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "website_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        }
+      },
+      "errors": [],
+      "performance_metrics": {}
+    },
+    "-73": {
+      "client_id": "-73",
+      "pipeline_started": "2025-09-30T13:40:18.356930",
+      "pipeline_updated": "2025-09-30T13:50:05.184521",
+      "overall_status": "in_progress",
+      "metadata": {
+        "drive_folder_id": "1_D-zv2Qm1Q4ozoXlTdYlduauoWQiWYY_",
+        "homepage_url": "https://www.longitude73.com/",
+        "output_dir": "ingestion/client_ingestion_outputs",
+        "workers": 4
+      },
+      "checkpoints": {
+        "website_ingestion": {
+          "status": "completed",
+          "started_at": "2025-09-30T13:40:28.195749",
+          "completed_at": "2025-09-30T13:47:04.480856",
+          "duration_seconds": 396.285107,
+          "metadata": {
+            "url": "https://www.longitude73.com/",
+            "workers": 4,
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/-73/website",
+            "status": "success"
+          },
+          "error": null
+        },
+        "intake_form_ingestion": {
+          "status": "completed",
+          "started_at": "2025-09-30T13:47:04.482091",
+          "completed_at": "2025-09-30T13:47:04.483226",
+          "duration_seconds": 0.001135,
+          "metadata": {
+            "directory": "ingestion/client_ingestion_outputs/-73/client_intake_form",
+            "files_processed": 1
+          },
+          "error": null
+        },
+        "client_materials_ingestion": {
+          "status": "completed",
+          "started_at": "2025-09-30T13:40:29.993581",
+          "completed_at": "2025-09-30T13:40:31.870063",
+          "duration_seconds": 1.876482,
+          "metadata": {
+            "folder_id": "1_D-zv2Qm1Q4ozoXlTdYlduauoWQiWYY_",
+            "credentials_file": "./service_account.json",
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/-73/client_materials",
+            "status": "success"
+          },
+          "error": null
+        },
+        "corpus_creation": {
+          "status": "completed",
+          "started_at": "2025-09-30T13:40:18.358071",
+          "completed_at": "2025-09-30T13:40:28.193094",
+          "duration_seconds": 9.835023,
+          "metadata": {
+            "corpus_key": "-73",
+            "encoder_name": "boomerang-2023-q3",
+            "status": "created"
+          },
+          "error": null
+        },
+        "website_upload": {
+          "status": "completed",
+          "started_at": "2025-09-30T13:47:04.502864",
+          "completed_at": "2025-09-30T13:50:05.184499",
+          "duration_seconds": 180.681635,
+          "metadata": {
+            "total_files": 123,
+            "successful_uploads": 122,
+            "success_rate": 99.1869918699187
+          },
+          "error": null
+        },
+        "intake_form_upload": {
+          "status": "completed",
+          "started_at": "2025-09-30T13:47:04.502162",
+          "completed_at": "2025-09-30T13:50:05.182103",
+          "duration_seconds": 180.679941,
+          "metadata": {
+            "total_files": 1,
+            "successful_uploads": 0,
+            "success_rate": 0.0
+          },
+          "error": null
+        },
+        "client_materials_upload": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "brief_generation": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "brief_gdrive_upload": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "case_study_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "client_materials_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "intake_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "website_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        }
+      },
+      "errors": [],
+      "performance_metrics": {}
+    },
+    "abundantly": {
+      "client_id": "abundantly",
+      "pipeline_started": "2025-10-03T04:37:41.460304",
+      "pipeline_updated": "2025-10-03T04:54:14.916277",
+      "overall_status": "in_progress",
+      "metadata": {
+        "drive_folder_id": "1yHNyICnNt2oP2Bn3cWo9dDZS77soRbvq",
+        "homepage_url": "https://abundantly.com/",
+        "output_dir": "ingestion/client_ingestion_outputs",
+        "workers": 4
+      },
+      "checkpoints": {
+        "website_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T04:37:52.531470",
+          "completed_at": "2025-10-03T04:49:47.121987",
+          "duration_seconds": 714.590517,
+          "metadata": {
+            "url": "https://abundantly.com/",
+            "workers": 4,
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/abundantly/website",
+            "status": "success"
+          },
+          "error": null
+        },
+        "intake_form_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T04:49:47.124517",
+          "completed_at": "2025-10-03T04:49:47.126460",
+          "duration_seconds": 0.001943,
+          "metadata": {
+            "directory": "ingestion/client_ingestion_outputs/abundantly/client_intake_form",
+            "files_processed": 1
+          },
+          "error": null
+        },
+        "client_materials_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T04:37:57.424136",
+          "completed_at": "2025-10-03T04:39:47.194935",
+          "duration_seconds": 109.770799,
+          "metadata": {
+            "folder_id": "1yHNyICnNt2oP2Bn3cWo9dDZS77soRbvq",
+            "credentials_file": "./service_account.json",
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/abundantly/client_materials",
+            "status": "success"
+          },
+          "error": null
+        },
+        "corpus_creation": {
+          "status": "completed",
+          "started_at": "2025-10-03T04:37:41.461649",
+          "completed_at": "2025-10-03T04:37:52.529446",
+          "duration_seconds": 11.067797,
+          "metadata": {
+            "corpus_key": "abundantly",
+            "encoder_name": "boomerang-2023-q3",
+            "status": "created"
+          },
+          "error": null
+        },
+        "website_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T04:49:47.153774",
+          "completed_at": "2025-10-03T04:54:14.916265",
+          "duration_seconds": 267.762491,
+          "metadata": {
+            "total_files": 164,
+            "successful_uploads": 161,
+            "success_rate": 98.17073170731707
+          },
+          "error": null
+        },
+        "intake_form_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T04:49:47.151956",
+          "completed_at": "2025-10-03T04:54:14.911121",
+          "duration_seconds": 267.759165,
+          "metadata": {
+            "total_files": 1,
+            "successful_uploads": 0,
+            "success_rate": 0.0
+          },
+          "error": null
+        },
+        "client_materials_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T04:49:47.152856",
+          "completed_at": "2025-10-03T04:54:14.914224",
+          "duration_seconds": 267.761368,
+          "metadata": {
+            "total_files": 4,
+            "successful_uploads": 3,
+            "success_rate": 75.0
+          },
+          "error": null
+        },
+        "brief_generation": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "brief_gdrive_upload": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "case_study_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "client_materials_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "intake_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "website_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        }
+      },
+      "errors": [],
+      "performance_metrics": {}
+    },
+    "white-label-digital": {
+      "client_id": "white-label-digital",
+      "pipeline_started": "2025-10-03T05:02:47.586335",
+      "pipeline_updated": "2025-10-03T05:22:07.282427",
+      "overall_status": "in_progress",
+      "metadata": {
+        "drive_folder_id": "13RE7L-DeYRBf1H6RI2y62AG5UzyT6FSJ",
+        "homepage_url": "https://whitelabeldigital.co/",
+        "output_dir": "ingestion/client_ingestion_outputs",
+        "workers": 4
+      },
+      "checkpoints": {
+        "website_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T05:02:57.861634",
+          "completed_at": "2025-10-03T05:17:47.315721",
+          "duration_seconds": 889.454087,
+          "metadata": {
+            "url": "https://whitelabeldigital.co/",
+            "workers": 4,
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/white-label-digital/website",
+            "status": "success"
+          },
+          "error": null
+        },
+        "intake_form_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T05:17:47.316821",
+          "completed_at": "2025-10-03T05:17:47.317651",
+          "duration_seconds": 0.00083,
+          "metadata": {
+            "directory": "ingestion/client_ingestion_outputs/white-label-digital/client_intake_form",
+            "files_processed": 1
+          },
+          "error": null
+        },
+        "client_materials_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T05:03:12.035955",
+          "completed_at": "2025-10-03T05:08:12.385260",
+          "duration_seconds": 300.349305,
+          "metadata": {
+            "folder_id": "13RE7L-DeYRBf1H6RI2y62AG5UzyT6FSJ",
+            "credentials_file": "./service_account.json",
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/white-label-digital/client_materials",
+            "status": "success"
+          },
+          "error": null
+        },
+        "corpus_creation": {
+          "status": "completed",
+          "started_at": "2025-10-03T05:02:47.587739",
+          "completed_at": "2025-10-03T05:02:57.857837",
+          "duration_seconds": 10.270098,
+          "metadata": {
+            "corpus_key": "white-label-digital",
+            "encoder_name": "boomerang-2023-q3",
+            "status": "created"
+          },
+          "error": null
+        },
+        "website_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T05:17:47.327993",
+          "completed_at": "2025-10-03T05:22:07.282423",
+          "duration_seconds": 259.95443,
+          "metadata": {
+            "total_files": 147,
+            "successful_uploads": 147,
+            "success_rate": 100.0
+          },
+          "error": null
+        },
+        "intake_form_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T05:17:47.326430",
+          "completed_at": "2025-10-03T05:22:07.279042",
+          "duration_seconds": 259.952612,
+          "metadata": {
+            "total_files": 1,
+            "successful_uploads": 1,
+            "success_rate": 100.0
+          },
+          "error": null
+        },
+        "client_materials_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T05:17:47.327319",
+          "completed_at": "2025-10-03T05:22:07.281167",
+          "duration_seconds": 259.953848,
+          "metadata": {
+            "total_files": 11,
+            "successful_uploads": 11,
+            "success_rate": 100.0
+          },
+          "error": null
+        },
+        "brief_generation": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "brief_gdrive_upload": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "case_study_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "client_materials_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "intake_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "website_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        }
+      },
+      "errors": [],
+      "performance_metrics": {}
+    },
+    "nutramarketers": {
+      "client_id": "nutramarketers",
+      "pipeline_started": "2025-10-03T05:21:46.609980",
+      "pipeline_updated": "2025-10-03T05:28:49.239366",
+      "overall_status": "in_progress",
+      "metadata": {
+        "drive_folder_id": "17f61Ky458t4ohDm0FvMppG_nBPJBHoNz",
+        "homepage_url": "https://nutramarketers.com/",
+        "output_dir": "ingestion/client_ingestion_outputs",
+        "workers": 4,
+        "pdf_processor": "gpt"
+      },
+      "checkpoints": {
+        "website_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T05:21:58.428485",
+          "completed_at": "2025-10-03T05:27:50.643019",
+          "duration_seconds": 352.214534,
+          "metadata": {
+            "url": "https://nutramarketers.com/",
+            "workers": 4,
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/nutramarketers/website",
+            "status": "success"
+          },
+          "error": null
+        },
+        "intake_form_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T05:27:50.644494",
+          "completed_at": "2025-10-03T05:27:50.645850",
+          "duration_seconds": 0.001356,
+          "metadata": {
+            "directory": "ingestion/client_ingestion_outputs/nutramarketers/client_intake_form",
+            "files_processed": 1
+          },
+          "error": null
+        },
+        "client_materials_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T05:22:06.730122",
+          "completed_at": "2025-10-03T05:22:09.277477",
+          "duration_seconds": 2.547355,
+          "metadata": {
+            "folder_id": "17f61Ky458t4ohDm0FvMppG_nBPJBHoNz",
+            "credentials_file": "./service_account.json",
+            "use_llm_categories": true,
+            "pdf_processor": "gpt",
+            "output_directory": "ingestion/client_ingestion_outputs/nutramarketers/client_materials",
+            "status": "success"
+          },
+          "error": null
+        },
+        "corpus_creation": {
+          "status": "completed",
+          "started_at": "2025-10-03T05:21:46.611483",
+          "completed_at": "2025-10-03T05:21:58.426829",
+          "duration_seconds": 11.815346,
+          "metadata": {
+            "corpus_key": "nutramarketers",
+            "encoder_name": "boomerang-2023-q3",
+            "status": "created"
+          },
+          "error": null
+        },
+        "website_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T05:27:50.654137",
+          "completed_at": "2025-10-03T05:28:49.239346",
+          "duration_seconds": 58.585209,
+          "metadata": {
+            "total_files": 31,
+            "successful_uploads": 31,
+            "success_rate": 100.0
+          },
+          "error": null
+        },
+        "intake_form_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T05:27:50.653006",
+          "completed_at": "2025-10-03T05:28:49.236571",
+          "duration_seconds": 58.583565,
+          "metadata": {
+            "total_files": 1,
+            "successful_uploads": 1,
+            "success_rate": 100.0
+          },
+          "error": null
+        },
+        "client_materials_upload": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "brief_generation": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "brief_gdrive_upload": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "case_study_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "client_materials_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "intake_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "website_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        }
+      },
+      "errors": [],
+      "performance_metrics": {}
+    },
+    "white-label-markitdown-sample": {
+      "client_id": "white-label-markitdown-sample",
+      "pipeline_started": "2025-10-03T05:49:56.779023",
+      "pipeline_updated": "2025-10-03T06:04:32.996844",
+      "overall_status": "in_progress",
+      "metadata": {
+        "drive_folder_id": "13RE7L-DeYRBf1H6RI2y62AG5UzyT6FSJ",
+        "homepage_url": "https://whitelabeldigital.co/",
+        "output_dir": "ingestion/client_ingestion_outputs",
+        "workers": 4,
+        "pdf_processor": "markitdown"
+      },
+      "checkpoints": {
+        "website_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T05:50:05.891343",
+          "completed_at": "2025-10-03T06:00:24.348310",
+          "duration_seconds": 618.456967,
+          "metadata": {
+            "url": "https://whitelabeldigital.co/",
+            "workers": 4,
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/white-label-markitdown-sample/website",
+            "status": "success"
+          },
+          "error": null
+        },
+        "intake_form_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T06:00:24.351462",
+          "completed_at": "2025-10-03T06:00:24.353820",
+          "duration_seconds": 0.002358,
+          "metadata": {
+            "directory": "ingestion/client_ingestion_outputs/white-label-markitdown-sample/client_intake_form",
+            "files_processed": 1
+          },
+          "error": null
+        },
+        "client_materials_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T05:50:20.257865",
+          "completed_at": "2025-10-03T05:50:52.314342",
+          "duration_seconds": 32.056477,
+          "metadata": {
+            "folder_id": "13RE7L-DeYRBf1H6RI2y62AG5UzyT6FSJ",
+            "credentials_file": "./service_account.json",
+            "use_llm_categories": true,
+            "pdf_processor": "markitdown",
+            "output_directory": "ingestion/client_ingestion_outputs/white-label-markitdown-sample/client_materials",
+            "status": "success"
+          },
+          "error": null
+        },
+        "corpus_creation": {
+          "status": "completed",
+          "started_at": "2025-10-03T05:49:56.780510",
+          "completed_at": "2025-10-03T05:50:05.887226",
+          "duration_seconds": 9.106716,
+          "metadata": {
+            "corpus_key": "white-label-markitdown-sample",
+            "encoder_name": "boomerang-2023-q3",
+            "status": "created"
+          },
+          "error": null
+        },
+        "website_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T06:00:24.375100",
+          "completed_at": "2025-10-03T06:04:32.996840",
+          "duration_seconds": 248.62174,
+          "metadata": {
+            "total_files": 147,
+            "successful_uploads": 146,
+            "success_rate": 99.31972789115646
+          },
+          "error": null
+        },
+        "intake_form_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T06:00:24.372309",
+          "completed_at": "2025-10-03T06:04:32.993320",
+          "duration_seconds": 248.621011,
+          "metadata": {
+            "total_files": 1,
+            "successful_uploads": 0,
+            "success_rate": 0.0
+          },
+          "error": null
+        },
+        "client_materials_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T06:00:24.373807",
+          "completed_at": "2025-10-03T06:04:32.995214",
+          "duration_seconds": 248.621407,
+          "metadata": {
+            "total_files": 11,
+            "successful_uploads": 10,
+            "success_rate": 90.9090909090909
+          },
+          "error": null
+        },
+        "brief_generation": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "brief_gdrive_upload": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "case_study_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "client_materials_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "intake_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "website_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        }
+      },
+      "errors": [],
+      "performance_metrics": {}
+    },
+    "mintleads-full-run": {
+      "client_id": "mintleads-full-run",
+      "pipeline_started": "2025-10-03T06:29:30.961516",
+      "pipeline_updated": "2025-10-03T06:34:46.602552",
+      "overall_status": "in_progress",
+      "metadata": {
+        "drive_folder_id": "1gaOLC7F0cEQmW69Z1cLEL2tfZp07NLcm",
+        "homepage_url": "https://mintleads.io",
+        "output_dir": "ingestion/client_ingestion_outputs",
+        "workers": 4,
+        "pdf_processor": "markitdown"
+      },
+      "checkpoints": {
+        "website_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T06:29:40.222573",
+          "completed_at": "2025-10-03T06:33:33.533149",
+          "duration_seconds": 233.310576,
+          "metadata": {
+            "url": "https://mintleads.io",
+            "workers": 4,
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/mintleads-full-run/website",
+            "status": "success"
+          },
+          "error": null
+        },
+        "intake_form_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T06:33:33.536771",
+          "completed_at": "2025-10-03T06:33:33.540425",
+          "duration_seconds": 0.003654,
+          "metadata": {
+            "directory": "ingestion/client_ingestion_outputs/mintleads-full-run/client_intake_form",
+            "files_processed": 1
+          },
+          "error": null
+        },
+        "client_materials_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T06:29:55.306380",
+          "completed_at": "2025-10-03T06:30:11.400927",
+          "duration_seconds": 16.094547,
+          "metadata": {
+            "folder_id": "1gaOLC7F0cEQmW69Z1cLEL2tfZp07NLcm",
+            "credentials_file": "./service_account.json",
+            "use_llm_categories": true,
+            "pdf_processor": "markitdown",
+            "output_directory": "ingestion/client_ingestion_outputs/mintleads-full-run/client_materials",
+            "status": "success"
+          },
+          "error": null
+        },
+        "corpus_creation": {
+          "status": "completed",
+          "started_at": "2025-10-03T06:29:30.963054",
+          "completed_at": "2025-10-03T06:29:40.220357",
+          "duration_seconds": 9.257303,
+          "metadata": {
+            "corpus_key": "mintleads-full-run",
+            "encoder_name": "boomerang-2023-q3",
+            "status": "created"
+          },
+          "error": null
+        },
+        "website_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T06:33:33.555568",
+          "completed_at": "2025-10-03T06:34:46.602546",
+          "duration_seconds": 73.046978,
+          "metadata": {
+            "total_files": 45,
+            "successful_uploads": 43,
+            "success_rate": 95.55555555555556
+          },
+          "error": null
+        },
+        "intake_form_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T06:33:33.551887",
+          "completed_at": "2025-10-03T06:34:46.596950",
+          "duration_seconds": 73.045063,
+          "metadata": {
+            "total_files": 1,
+            "successful_uploads": 0,
+            "success_rate": 0.0
+          },
+          "error": null
+        },
+        "client_materials_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T06:33:33.554006",
+          "completed_at": "2025-10-03T06:34:46.600286",
+          "duration_seconds": 73.04628,
+          "metadata": {
+            "total_files": 3,
+            "successful_uploads": 2,
+            "success_rate": 66.66666666666666
+          },
+          "error": null
+        },
+        "brief_generation": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "brief_gdrive_upload": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "case_study_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "client_materials_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "intake_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "website_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        }
+      },
+      "errors": [],
+      "performance_metrics": {}
+    },
+    "mintleads-vertex-test": {
+      "client_id": "mintleads-vertex-test",
+      "pipeline_started": "2025-10-03T12:43:28.580155",
+      "pipeline_updated": "2025-10-03T12:53:10.967929",
+      "overall_status": "in_progress",
+      "metadata": {
+        "drive_folder_id": "1gaOLC7F0cEQmW69Z1cLEL2tfZp07NLcm",
+        "homepage_url": "https://mintleads.io",
+        "output_dir": "ingestion/client_ingestion_outputs",
+        "workers": 4,
+        "pdf_processor": "markitdown"
+      },
+      "checkpoints": {
+        "website_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T12:43:37.163708",
+          "completed_at": "2025-10-03T12:48:07.996277",
+          "duration_seconds": 270.832569,
+          "metadata": {
+            "url": "https://mintleads.io",
+            "workers": 4,
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/mintleads-vertex-test/website",
+            "status": "success"
+          },
+          "error": null
+        },
+        "intake_form_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T12:48:07.999341",
+          "completed_at": "2025-10-03T12:48:08.002144",
+          "duration_seconds": 0.002803,
+          "metadata": {
+            "directory": "ingestion/client_ingestion_outputs/mintleads-vertex-test/client_intake_form",
+            "files_processed": 1
+          },
+          "error": null
+        },
+        "client_materials_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T12:43:53.304123",
+          "completed_at": "2025-10-03T12:44:10.548400",
+          "duration_seconds": 17.244277,
+          "metadata": {
+            "folder_id": "1gaOLC7F0cEQmW69Z1cLEL2tfZp07NLcm",
+            "credentials_file": "./service_account.json",
+            "use_llm_categories": true,
+            "pdf_processor": "markitdown",
+            "output_directory": "ingestion/client_ingestion_outputs/mintleads-vertex-test/client_materials",
+            "status": "success"
+          },
+          "error": null
+        },
+        "corpus_creation": {
+          "status": "completed",
+          "started_at": "2025-10-03T12:43:28.581814",
+          "completed_at": "2025-10-03T12:43:37.161806",
+          "duration_seconds": 8.579992,
+          "metadata": {
+            "corpus_key": "mintleads-vertex-test",
+            "platform": "vertex_ai_rag",
+            "corpus_name": "projects/730752998321/locations/us-east4/ragCorpora/1441151880758558720",
+            "status": "created"
+          },
+          "error": null
+        },
+        "website_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T12:48:08.012451",
+          "completed_at": "2025-10-03T12:53:10.967921",
+          "duration_seconds": 302.95547,
+          "metadata": {
+            "total_files": 45,
+            "successful_uploads": 45,
+            "success_rate": 100.0
+          },
+          "error": null
+        },
+        "intake_form_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T12:48:08.008698",
+          "completed_at": "2025-10-03T12:53:10.960447",
+          "duration_seconds": 302.951749,
+          "metadata": {
+            "total_files": 1,
+            "successful_uploads": 1,
+            "success_rate": 100.0
+          },
+          "error": null
+        },
+        "client_materials_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T12:48:08.010643",
+          "completed_at": "2025-10-03T12:53:10.964786",
+          "duration_seconds": 302.954143,
+          "metadata": {
+            "total_files": 3,
+            "successful_uploads": 3,
+            "success_rate": 100.0
+          },
+          "error": null
+        },
+        "brief_generation": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "brief_gdrive_upload": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "case_study_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "client_materials_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "intake_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "website_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        }
+      },
+      "errors": [],
+      "performance_metrics": {}
+    },
+    "mintleads-final-test": {
+      "client_id": "mintleads-final-test",
+      "pipeline_started": "2025-10-03T13:25:24.125573",
+      "pipeline_updated": "2025-10-03T13:34:35.867588",
+      "overall_status": "in_progress",
+      "metadata": {
+        "drive_folder_id": "1gaOLC7F0cEQmW69Z1cLEL2tfZp07NLcm",
+        "homepage_url": "https://mintleads.io",
+        "output_dir": "ingestion/client_ingestion_outputs",
+        "workers": 4,
+        "pdf_processor": "markitdown"
+      },
+      "checkpoints": {
+        "website_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T13:25:32.723685",
+          "completed_at": "2025-10-03T13:29:18.781514",
+          "duration_seconds": 226.057829,
+          "metadata": {
+            "url": "https://mintleads.io",
+            "workers": 4,
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/mintleads-final-test/website",
+            "status": "success"
+          },
+          "error": null
+        },
+        "intake_form_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T13:29:18.782859",
+          "completed_at": "2025-10-03T13:29:18.784063",
+          "duration_seconds": 0.001204,
+          "metadata": {
+            "directory": "ingestion/client_ingestion_outputs/mintleads-final-test/client_intake_form",
+            "files_processed": 1
+          },
+          "error": null
+        },
+        "client_materials_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-03T13:25:49.615178",
+          "completed_at": "2025-10-03T13:26:14.089508",
+          "duration_seconds": 24.47433,
+          "metadata": {
+            "folder_id": "1gaOLC7F0cEQmW69Z1cLEL2tfZp07NLcm",
+            "credentials_file": "./service_account.json",
+            "use_llm_categories": true,
+            "pdf_processor": "markitdown",
+            "output_directory": "ingestion/client_ingestion_outputs/mintleads-final-test/client_materials",
+            "status": "success"
+          },
+          "error": null
+        },
+        "corpus_creation": {
+          "status": "completed",
+          "started_at": "2025-10-03T13:25:24.127360",
+          "completed_at": "2025-10-03T13:25:32.720347",
+          "duration_seconds": 8.592987,
+          "metadata": {
+            "corpus_key": "mintleads-final-test",
+            "platform": "vertex_ai_rag",
+            "corpus_name": "projects/730752998321/locations/us-east4/ragCorpora/8358680908399640576",
+            "status": "created"
+          },
+          "error": null
+        },
+        "website_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T13:29:18.790393",
+          "completed_at": "2025-10-03T13:34:35.867578",
+          "duration_seconds": 317.077185,
+          "metadata": {
+            "total_files": 45,
+            "successful_uploads": 45,
+            "success_rate": 100.0
+          },
+          "error": null
+        },
+        "intake_form_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T13:29:18.787554",
+          "completed_at": "2025-10-03T13:34:35.860840",
+          "duration_seconds": 317.073286,
+          "metadata": {
+            "total_files": 1,
+            "successful_uploads": 1,
+            "success_rate": 100.0
+          },
+          "error": null
+        },
+        "client_materials_upload": {
+          "status": "completed",
+          "started_at": "2025-10-03T13:29:18.788973",
+          "completed_at": "2025-10-03T13:34:35.865359",
+          "duration_seconds": 317.076386,
+          "metadata": {
+            "total_files": 4,
+            "successful_uploads": 4,
+            "success_rate": 100.0
+          },
+          "error": null
+        },
+        "brief_generation": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "brief_gdrive_upload": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "case_study_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "client_materials_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "intake_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "website_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        }
+      },
+      "errors": [],
+      "performance_metrics": {}
+    },
+    "prospex": {
+      "client_id": "prospex",
+      "pipeline_started": "2025-10-04T01:14:38.487217",
+      "pipeline_updated": "2025-10-04T01:17:29.693111",
+      "overall_status": "in_progress",
+      "metadata": {
+        "drive_folder_id": "1gaOLC7F0cEQmW69Z1cLEL2tfZp07NLcm",
+        "homepage_url": "https://goprospex.com",
+        "output_dir": "ingestion/client_ingestion_outputs",
+        "workers": 4,
+        "pdf_processor": "gpt"
+      },
+      "checkpoints": {
+        "website_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-04T01:14:44.830816",
+          "completed_at": "2025-10-04T01:17:29.671099",
+          "duration_seconds": 164.840283,
+          "metadata": {
+            "url": "https://goprospex.com",
+            "workers": 4,
+            "use_llm_categories": true,
+            "output_directory": "ingestion/client_ingestion_outputs/prospex/website",
+            "status": "success"
+          },
+          "error": null
+        },
+        "intake_form_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-04T01:17:29.674377",
+          "completed_at": "2025-10-04T01:17:29.677501",
+          "duration_seconds": 0.003124,
+          "metadata": {
+            "directory": "ingestion/client_ingestion_outputs/prospex/client_intake_form",
+            "files_processed": 1
+          },
+          "error": null
+        },
+        "client_materials_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-04T01:14:46.571023",
+          "completed_at": "2025-10-04T01:16:21.805523",
+          "duration_seconds": 95.2345,
+          "metadata": {
+            "folder_id": "1gaOLC7F0cEQmW69Z1cLEL2tfZp07NLcm",
+            "credentials_file": "./service_account.json",
+            "use_llm_categories": true,
+            "pdf_processor": "gpt",
+            "output_directory": "ingestion/client_ingestion_outputs/prospex/client_materials",
+            "status": "success"
+          },
+          "error": null
+        },
+        "corpus_creation": {
+          "status": "completed",
+          "started_at": "2025-10-04T01:14:38.488906",
+          "completed_at": "2025-10-04T01:14:44.828205",
+          "duration_seconds": 6.339299,
+          "metadata": {
+            "corpus_key": "prospex",
+            "platform": "vertex_ai_rag",
+            "corpus_name": "projects/730752998321/locations/us-east4/ragCorpora/6986208921958481920",
+            "status": "created"
+          },
+          "error": null
+        },
+        "website_upload": {
+          "status": "completed",
+          "started_at": "2025-10-04T01:17:29.686678",
+          "completed_at": "2025-10-04T01:17:29.693108",
+          "duration_seconds": 0.00643,
+          "metadata": {
+            "total_files": 24,
+            "successful_uploads": 0,
+            "success_rate": 0.0
+          },
+          "error": null
+        },
+        "intake_form_upload": {
+          "status": "completed",
+          "started_at": "2025-10-04T01:17:29.682155",
+          "completed_at": "2025-10-04T01:17:29.689045",
+          "duration_seconds": 0.00689,
+          "metadata": {
+            "total_files": 1,
+            "successful_uploads": 0,
+            "success_rate": 0.0
+          },
+          "error": null
+        },
+        "client_materials_upload": {
+          "status": "completed",
+          "started_at": "2025-10-04T01:17:29.684620",
+          "completed_at": "2025-10-04T01:17:29.691104",
+          "duration_seconds": 0.006484,
+          "metadata": {
+            "total_files": 5,
+            "successful_uploads": 0,
+            "success_rate": 0.0
+          },
+          "error": null
+        },
+        "brief_generation": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "brief_gdrive_upload": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "case_study_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "client_materials_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "intake_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "website_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        }
+      },
+      "errors": [],
+      "performance_metrics": {}
+    },
+    "mintleads": {
+      "client_id": "mintleads",
+      "pipeline_started": "2025-10-04T01:47:38.218372",
+      "pipeline_updated": "2025-10-04T01:50:45.583379",
+      "overall_status": "in_progress",
+      "metadata": {
+        "drive_folder_id": "",
+        "homepage_url": "",
+        "output_dir": "ingestion/client_ingestion_outputs",
+        "workers": 4,
+        "pdf_processor": "markitdown"
+      },
+      "checkpoints": {
+        "website_ingestion": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "intake_form_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-04T01:47:45.185636",
+          "completed_at": "2025-10-04T01:47:45.189321",
+          "duration_seconds": 0.003685,
+          "metadata": {
+            "directory": "ingestion/client_ingestion_outputs/mintleads/client_intake_form",
+            "files_processed": 1
+          },
+          "error": null
+        },
+        "client_materials_ingestion": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "corpus_creation": {
+          "status": "completed",
+          "started_at": "2025-10-04T01:47:38.220013",
+          "completed_at": "2025-10-04T01:47:45.181820",
+          "duration_seconds": 6.961807,
+          "metadata": {
+            "corpus_key": "mintleads",
+            "platform": "vertex_ai_rag",
+            "corpus_name": "projects/730752998321/locations/us-east4/ragCorpora/2662753279682805760",
+            "status": "created"
+          },
+          "error": null
+        },
+        "website_upload": {
+          "status": "completed",
+          "started_at": "2025-10-04T01:47:45.199551",
+          "completed_at": "2025-10-04T01:50:45.583376",
+          "duration_seconds": 180.383825,
+          "metadata": {
+            "total_files": 24,
+            "successful_uploads": 24,
+            "success_rate": 100.0
+          },
+          "error": null
+        },
+        "intake_form_upload": {
+          "status": "completed",
+          "started_at": "2025-10-04T01:47:45.194968",
+          "completed_at": "2025-10-04T01:50:45.579453",
+          "duration_seconds": 180.384485,
+          "metadata": {
+            "total_files": 1,
+            "successful_uploads": 1,
+            "success_rate": 100.0
+          },
+          "error": null
+        },
+        "client_materials_upload": {
+          "status": "completed",
+          "started_at": "2025-10-04T01:47:45.197311",
+          "completed_at": "2025-10-04T01:50:45.581726",
+          "duration_seconds": 180.384415,
+          "metadata": {
+            "total_files": 5,
+            "successful_uploads": 5,
+            "success_rate": 100.0
+          },
+          "error": null
+        },
+        "brief_generation": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "brief_gdrive_upload": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "case_study_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "client_materials_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "intake_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "website_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        }
+      },
+      "errors": [],
+      "performance_metrics": {}
+    },
+    "slice-communications": {
+      "client_id": "slice-communications",
+      "pipeline_started": "2025-10-05T01:19:37.809268",
+      "pipeline_updated": "2025-10-05T01:19:44.967441",
+      "overall_status": "in_progress",
+      "metadata": {
+        "drive_folder_id": "",
+        "homepage_url": "",
+        "output_dir": "ingestion/client_ingestion_outputs",
+        "workers": 8,
+        "pdf_processor": "markitdown"
+      },
+      "checkpoints": {
+        "website_ingestion": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "intake_form_ingestion": {
+          "status": "completed",
+          "started_at": "2025-10-05T01:19:44.923866",
+          "completed_at": "2025-10-05T01:19:44.927796",
+          "duration_seconds": 0.00393,
+          "metadata": {
+            "directory": "ingestion/client_ingestion_outputs/slice-communications/client_intake_form",
+            "files_processed": 1
+          },
+          "error": null
+        },
+        "client_materials_ingestion": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "corpus_creation": {
+          "status": "completed",
+          "started_at": "2025-10-05T01:19:37.810913",
+          "completed_at": "2025-10-05T01:19:44.919492",
+          "duration_seconds": 7.108579,
+          "metadata": {
+            "corpus_key": "slice-communications",
+            "platform": "vertex_ai_rag",
+            "corpus_name": "projects/730752998321/locations/us-east4/ragCorpora/6121517793503346688",
+            "status": "created"
+          },
+          "error": null
+        },
+        "website_upload": {
+          "status": "in_progress",
+          "started_at": "2025-10-05T01:19:44.967438",
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {
+            "total_files": 455
+          },
+          "error": null
+        },
+        "intake_form_upload": {
+          "status": "in_progress",
+          "started_at": "2025-10-05T01:19:44.963099",
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {
+            "total_files": 1
+          },
+          "error": null
+        },
+        "client_materials_upload": {
+          "status": "in_progress",
+          "started_at": "2025-10-05T01:19:44.965417",
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {
+            "total_files": 1
+          },
+          "error": null
+        },
+        "brief_generation": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "brief_gdrive_upload": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "case_study_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "client_materials_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "intake_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        },
+        "website_summary": {
+          "status": "pending",
+          "started_at": null,
+          "completed_at": null,
+          "duration_seconds": null,
+          "metadata": {},
+          "error": null
+        }
+      },
+      "errors": [],
+      "performance_metrics": {}
+    }
+  }
+}

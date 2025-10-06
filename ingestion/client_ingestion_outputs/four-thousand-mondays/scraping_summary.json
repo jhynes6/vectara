@@ -1,0 +1,22 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 317,
+    "successful_scrapes": 127,
+    "failed_scrapes": 0,
+    "success_rate": "40.1%",
+    "total_words_scraped": 133878,
+    "categories": {
+      "blogs_resources": 100,
+      "other": 12,
+      "case_studies": 7,
+      "services_products": 5,
+      "homepage": 1,
+      "about": 1,
+      "testimonials": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "four-thousand-mondays"
+    },
+    "scrape_time": "2025-10-04T22:26:27.059470"
+  }
+}

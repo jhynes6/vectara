@@ -1,0 +1,67 @@
+{
+  "client_onboarding_summary": {
+    "client_id": "cas-severn",
+    "timestamp": "2025-09-07T07:12:39.538106",
+    "corpus_created": true,
+    "website_url": "https://cassevern.com",
+    "drive_folder_id": "15DcPsTJ__zTKI92cQL66dqk54eGLAHu5",
+    "output_directory": "ingestion/client_ingestion_outputs/cas-severn",
+    "upload_statistics": {
+      "successful_uploads": 159,
+      "failed_uploads": 1,
+      "total_files_processed": 160,
+      "success_rate": 99.375
+    },
+    "directories_created": [
+      "ingestion/client_ingestion_outputs/cas-severn/client_intake_form",
+      "ingestion/client_ingestion_outputs/cas-severn/client_materials",
+      "ingestion/client_ingestion_outputs/cas-severn/website"
+    ],
+    "performance_metrics": {
+      "onboarder_initialization": {
+        "duration": 0.030249834060668945,
+        "timestamp": "2025-09-07T06:53:17.526863",
+        "client_id": "cas-severn"
+      },
+      "directory_creation": {
+        "duration": 0.0001430511474609375,
+        "timestamp": "2025-09-07T06:53:17.527074",
+        "directories_created": 4,
+        "total_directories": 4
+      },
+      "corpus_creation": {
+        "duration": 8.58846116065979,
+        "timestamp": "2025-09-07T06:53:26.115617",
+        "status": "created",
+        "corpus_key": "cas-severn"
+      },
+      "drive_ingestion": {
+        "duration": 93.51414394378662,
+        "timestamp": "2025-09-07T06:55:05.039994",
+        "status": "success"
+      },
+      "website_ingestion": {
+        "duration": 918.416218996048,
+        "timestamp": "2025-09-07T07:08:44.532050",
+        "status": "success"
+      },
+      "file_discovery": {
+        "duration": 0.014310836791992188,
+        "timestamp": "2025-09-07T07:08:44.546604",
+        "total_files": 160,
+        "intake_files": 0,
+        "materials_files": 15,
+        "website_files": 145
+      },
+      "file_upload": {
+        "duration": 234.99102091789246,
+        "timestamp": "2025-09-07T07:12:39.537789",
+        "total_files": 160,
+        "successful_uploads": 159,
+        "failed_uploads": 1,
+        "total_bytes": 470978
+      }
+    },
+    "onboarding_status": "completed_with_errors"
+  }
+}

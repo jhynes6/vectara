@@ -1,0 +1,22 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 170,
+    "successful_scrapes": 123,
+    "failed_scrapes": 0,
+    "success_rate": "72.4%",
+    "total_words_scraped": 37120,
+    "categories": {
+      "blogs_resources": 100,
+      "other": 8,
+      "homepage": 1,
+      "case_studies": 6,
+      "services_products": 5,
+      "about": 2,
+      "careers": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "longitude-73"
+    },
+    "scrape_time": "2025-10-04T17:59:23.938160"
+  }
+}

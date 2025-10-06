@@ -2,53 +2,36 @@
 source: "website"
 content_type: "case_studies"
 url: "https://www.d2creative.com/our-work/corporate-rebrand/"
-title: "Crafting a New Identity for an Industry Pioneer"
+title: "Corporate Rebrand for Coriell Life Sciences"
 domain: "www.d2creative.com"
 path: "/our-work/corporate-rebrand/"
-scraped_time: "2025-09-06T16:14:30.236704"
+scraped_time: "2025-10-04T18:57:15.032456"
 url_depth: 2
-word_count: 645
+word_count: 674
 client_name: "d2-creative"
 ---
 
 # Crafting a New Identity for an Industry Pioneer
 
-Corporate Rebrand for a Life Sciences Company in Transition
-
-## Coriell Life Sciences
-
-#
-
-Crafting a New Identity for an Industry Pioneer
-
-Branding Design & Development, Website Design & Development
-
-## The
-Challenge
-
-## Our
-Approach
-
-## The
-Result
+## The Challenge
 
 Coriell Life Sciences (CLS), a commercial entity spun off from genomics industry pioneer the Coriell Institute, was in “pivot mode”. Moving from solely relying on laboratories as customers, CLS set their focus on enterprise pharmacogenetic testing (PGx) for identifying genetic risks in patient care including drug-gene interactions and incorporating other big data such as drug-drug interactions and lifestyle risks to help develop better treatment options. In this context, the company needed to speak to a broader range of players—including members of the public who are part of populations being targeted for this genetic testing.
 
 CLS’ marketing materials and web presence did not speak to this new mission and the company needed to be repositioned to compete in the ever-crowding genomic testing marketplace.
 
-We guided Coriell Life Sciences through our brand discovery process to understand key drivers of the organization, its service offerings, how they address marketplace needs. Our [life science marketing](https://www.d2lifesciences.com/) experience and findings from Coriell let us craft a messaging framework that clearly articulated the value proposition in a way that resonated with the multitude of audiences including providers, medical professionals and member patients. The discovery process also fueled the visualization of the new brand identity.
+## Our Approach
+
+We guided Coriell Life Sciences through our brand discovery process to understand key drivers of the organization, its service offerings, how they address marketplace needs. Our life science marketing experience and findings from Coriell let us craft a messaging framework that clearly articulated the value proposition in a way that resonated with the multitude of audiences including providers, medical professionals and member patients. The discovery process also fueled the visualization of the new brand identity.
 
 D2 delivered a stand out brand identity and message platform for a stand out company in the pharmacogenomic testing space. We’ve translated that to tactical deliverables including a brand style guide to ensure continuity, an icon library to simplify storytelling, a new website, product packaging, and trade show display materials. Now armed with the right communication tools, Coriell Life Sciences is able advance their position as a trusted provider of genetic laboratory interpretation and reporting services.
 
 ## Branding
 
+The Coriell Life Sciences logo is the cornerstone of our visual identity. It’s a guarantee of quality and our promise to deliver on the knowledge and insights we are able to derive utilizing precision medicine. Our logo is a unique piece of artwork. The proportion and arrangement of the wordmark have been specifically determined and the “E” contains a coded word. The logo should never be typeset, recreated or altered, which could cause inconsistencies that dilute the impact of the brand’s power. To preserve its integrity, always maintain a minimum clear space around the logo. This clear space isolates the logo from competing graphic elements such as other logos, copy, photography or background patterns that may divert attention. The minimum clear space for the Coriell logo is defined as the height of the “O” in the wordmark. This minimum space should be maintained as the logo is proportionally enlarged or reduced in size.
+
 ## Visual Identity
 
-![Color palette swatches with different meanings applied to each one.](https://www.d2creative.com/wp-content/uploads/2022/07/colors-mobile@2x.png)
-
 ## Typography
-
-![Brandon Grotesque and Zilla Slab typography.](https://www.d2creative.com/wp-content/uploads/2022/07/zilla-slab-brandon-grotesque-mask@2x-1.png)
 
 To help provide a consistent, unified look in the Coriell brand’s use of typography, the Brandon Grotesque and Zilla Slab typefaces should be used on all communications.
 
@@ -56,26 +39,16 @@ The thick and thin quality of Brandon Grotesque’s sans serif characters is sim
 
 ## Photography
 
-![Color gradient images of healthcare and lab employees, older woman smiling, and people working and looking at computers.](https://www.d2creative.com/wp-content/uploads/2022/07/coriell-photos-mobile@2x.png)
-
 Photographic imagery is a critical component to further establish the Coriell brand identity. Consistency in photographic style and subject matter is necessary to convey our brand promise: The Power of Precision Medicine. Delivered.
 
 Imagery selections should work to tell this story in a powerful and positive way. Groups of people should be engaged, portraits of everyday people emote well-being while medical professionals emote confidence. A gradient overlay from the approved brand palette is applied to photography to provide flexibility and strengthen the visual connection with Coriell Life Sciences.
 
 ## Mood Board
 
-![Coriell Life Sciences photography on webpage with slogan, welcome to precision medicine. Welcome to the power to know.](https://www.d2creative.com/wp-content/uploads/2022/07/coriell-mobile-moodboard-1@2x.png) ![Coriell Life Sciences mood board, which includes a color palette of swatches, iconography, buttons and typography.](https://www.d2creative.com/wp-content/uploads/2022/07/coriell-mobile-moodboard-2@2x.png)
-
 ## Website Design & Development
-
-![Coriell website page, which includes quotes, statistics, links to other pages, blog articles and news and press release posts.](https://www.d2creative.com/wp-content/uploads/2022/07/coriell-mobile-website@2x.png)
 
 ## Iconography
 
 ## Packaging Design
 
-![Coriell Life Sciences DNA Test Kit.](https://www.d2creative.com/wp-content/uploads/2022/07/coriell-mobile-packaging@2x.png)
-
 ## Trade Show Display
-
-![Coriell Life Sciences tall banner image displays.](https://www.d2creative.com/wp-content/uploads/2022/07/coriell-mobile-signage@2x.png)

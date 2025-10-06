@@ -1,0 +1,22 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 19,
+    "successful_scrapes": 19,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 3153,
+    "categories": {
+      "blogs_resources": 8,
+      "case_studies": 3,
+      "services_products": 2,
+      "other": 3,
+      "careers": 1,
+      "homepage": 1,
+      "about": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "a-perfect-promotion"
+    },
+    "scrape_time": "2025-10-05T00:09:08.239813"
+  }
+}

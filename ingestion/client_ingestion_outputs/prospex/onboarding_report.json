@@ -1,0 +1,66 @@
+{
+  "client_onboarding_summary": {
+    "client_id": "prospex",
+    "timestamp": "2025-10-04T01:17:29.706695",
+    "corpus_created": true,
+    "website_url": "https://goprospex.com",
+    "drive_folder_id": "1gaOLC7F0cEQmW69Z1cLEL2tfZp07NLcm",
+    "output_directory": "ingestion/client_ingestion_outputs/prospex",
+    "upload_statistics": {
+      "successful_uploads": 0,
+      "failed_uploads": 30,
+      "total_files_processed": 30,
+      "success_rate": 0.0
+    },
+    "directories_created": [
+      "ingestion/client_ingestion_outputs/prospex/client_intake_form",
+      "ingestion/client_ingestion_outputs/prospex/client_materials",
+      "ingestion/client_ingestion_outputs/prospex/website"
+    ],
+    "performance_metrics": {
+      "onboarder_initialization": {
+        "duration": 0.002747774124145508,
+        "timestamp": "2025-10-04T01:14:38.488454",
+        "client_id": "prospex"
+      },
+      "directory_creation": {
+        "duration": 0.00011706352233886719,
+        "timestamp": "2025-10-04T01:14:38.488634",
+        "directories_created": 4,
+        "total_directories": 4
+      },
+      "corpus_creation": {
+        "duration": 6.339138984680176,
+        "timestamp": "2025-10-04T01:14:44.827847",
+        "status": "created",
+        "corpus_name": "projects/730752998321/locations/us-east4/ragCorpora/6986208921958481920"
+      },
+      "drive_ingestion": {
+        "duration": 95.23419189453125,
+        "timestamp": "2025-10-04T01:16:21.804992",
+        "status": "success"
+      },
+      "website_ingestion": {
+        "duration": 164.84016394615173,
+        "timestamp": "2025-10-04T01:17:29.670696",
+        "status": "success"
+      },
+      "file_discovery": {
+        "duration": 0.007639169692993164,
+        "timestamp": "2025-10-04T01:17:29.681623",
+        "total_files": 30,
+        "intake_files": 1,
+        "materials_files": 5,
+        "website_files": 24
+      },
+      "file_upload": {
+        "duration": 0.006810903549194336,
+        "timestamp": "2025-10-04T01:17:29.688640",
+        "total_files": 30,
+        "successful_uploads": 0,
+        "failed_uploads": 30
+      }
+    },
+    "onboarding_status": "completed_with_errors"
+  }
+}

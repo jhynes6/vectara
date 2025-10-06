@@ -1,0 +1,69 @@
+{
+  "timestamp": "2025-10-05T05:00:21.336031",
+  "folder_id": "1r6RVh8AJOqkyOHY7lH-ZUNU-bvEbd2zu",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 4,
+    "supported_files": 4,
+    "successfully_processed": 4,
+    "failed_files_count": 1,
+    "errors": 1
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "LIB: Client Intake Form",
+      "final_filename": "client_intake_lib-client-intake-form.md",
+      "id": "1eL04rNcNi4TVzjuIi5xGhXUelkmIsNBNzensPL7Vg2o",
+      "size": "95982",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1eL04rNcNi4TVzjuIi5xGhXUelkmIsNBNzensPL7Vg2o/view",
+      "word_count": 1494,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "LIB - Packages + Services 8.20",
+      "final_filename": "other_lib-packages-services-8.md",
+      "id": "1XmCACiRT-GH8RYs2U0KEiVDweSmYYGWm",
+      "size": "1037609",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1XmCACiRT-GH8RYs2U0KEiVDweSmYYGWm/view",
+      "word_count": 1
+    },
+    {
+      "name": "Launch Plan (Internal) - LIB Consulting.pdf",
+      "final_filename": "other_launch-plan-internal-lib-consulting.md",
+      "id": "1Ip-GprlXJGLnys-ym39pnDEyyueE6MVe",
+      "size": "29415",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1Ip-GprlXJGLnys-ym39pnDEyyueE6MVe/view",
+      "word_count": 71
+    },
+    {
+      "name": "Launch Plan - LIB Consulting.pdf",
+      "final_filename": "other_launch-plan-lib-consulting.md",
+      "id": "1_edFjYfPdc4-tUcV-WlKtDEKhAPGU1__",
+      "size": "35281",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1_edFjYfPdc4-tUcV-WlKtDEKhAPGU1__/view",
+      "word_count": 130
+    }
+  ],
+  "failed_files": [
+    {
+      "name": "LIB - Packages + Services 8.20",
+      "id": "1XmCACiRT-GH8RYs2U0KEiVDweSmYYGWm",
+      "mime_type": "application/pdf",
+      "size": "1037609",
+      "url": "https://drive.google.com/file/d/1XmCACiRT-GH8RYs2U0KEiVDweSmYYGWm/view",
+      "error": "MarkItDown returned empty content",
+      "error_type": "MarkItDownProcessingError",
+      "file_category": "client_materials",
+      "timestamp": "2025-10-05T05:00:21.244896"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-10-04T23:54:30.016072",
+  "folder_id": "1zmk1Z9Qem1Ef9x2hXyGa6YjNQ3KVXU1f",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 1,
+    "supported_files": 1,
+    "successfully_processed": 1,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Summit Revenue Management Intake Form",
+      "final_filename": "other_summit-revenue-management-intake-form.md",
+      "id": "1m5sRbhyrb4o3roUoZqgJgQZuhlRsjOt1ONj2L6x3SoE",
+      "size": "38537",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "other",
+      "url": "https://docs.google.com/document/d/1m5sRbhyrb4o3roUoZqgJgQZuhlRsjOt1ONj2L6x3SoE/view",
+      "word_count": 914
+    }
+  ],
+  "failed_files": []
+}

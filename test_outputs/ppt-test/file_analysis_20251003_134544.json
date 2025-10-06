@@ -1,0 +1,59 @@
+{
+  "folder_id": "1gaOLC7F0cEQmW69Z1cLEL2tfZp07NLcm",
+  "timestamp": "2025-10-03T13:45:44.201739",
+  "total_files": 6,
+  "folders": [],
+  "supported_count": 6,
+  "unsupported_count": 0,
+  "supported_files": [
+    {
+      "id": "1DF1FLduUZZbAoyhuZHZCQc3WyzPp3ooW",
+      "name": "Copy of 2024 Case Studies.pptx",
+      "mimeType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "size": "23756439",
+      "modifiedTime": "2025-10-03T17:04:53.840Z",
+      "webViewLink": "https://docs.google.com/presentation/d/1DF1FLduUZZbAoyhuZHZCQc3WyzPp3ooW/edit?usp=drivesdk&ouid=107537814481162421611&rtpof=true&sd=true"
+    },
+    {
+      "id": "1-yrdR4CtaNCAuDrDHhUDKrQY8LWFvFx2zXqmHiWy7w0",
+      "name": "Copy of Case Study [Indigo Health] // BERK Labs",
+      "mimeType": "application/vnd.google-apps.presentation",
+      "size": "13291968",
+      "modifiedTime": "2025-10-03T10:33:12.060Z",
+      "webViewLink": "https://docs.google.com/presentation/d/1-yrdR4CtaNCAuDrDHhUDKrQY8LWFvFx2zXqmHiWy7w0/edit?usp=drivesdk"
+    },
+    {
+      "id": "1Rz7M7bAmvi8F_X0sE3-m82gF0RuKQbeCiZMZlFlUSQ4",
+      "name": "mintleads - client intake",
+      "mimeType": "application/vnd.google-apps.document",
+      "size": "1024",
+      "modifiedTime": "2025-09-08T17:00:45.532Z",
+      "webViewLink": "https://docs.google.com/document/d/1Rz7M7bAmvi8F_X0sE3-m82gF0RuKQbeCiZMZlFlUSQ4/edit?usp=drivesdk"
+    },
+    {
+      "id": "1MLykqa6SInOqeWTNPpfc-Yf0ZQFatVBE",
+      "name": "MintLeads_Deck_v3.pdf",
+      "mimeType": "application/pdf",
+      "size": "6500077",
+      "modifiedTime": "2025-09-07T03:29:42.000Z",
+      "webViewLink": "https://drive.google.com/file/d/1MLykqa6SInOqeWTNPpfc-Yf0ZQFatVBE/view?usp=drivesdk"
+    },
+    {
+      "id": "1omO8Dn8qRXOqaHpIxUZSTKpAUjcqGNae",
+      "name": "Generic Pitch Deck.pdf",
+      "mimeType": "application/pdf",
+      "size": "2485443",
+      "modifiedTime": "2025-09-07T03:29:18.000Z",
+      "webViewLink": "https://drive.google.com/file/d/1omO8Dn8qRXOqaHpIxUZSTKpAUjcqGNae/view?usp=drivesdk"
+    },
+    {
+      "id": "1_LVcNh3ETOYkqzR0x2t4CDABM2mMrhiW",
+      "name": "MintLeads_CaseStudy_Saber CS-1138 (6).pdf",
+      "mimeType": "application/pdf",
+      "size": "114531",
+      "modifiedTime": "2025-09-07T03:29:07.000Z",
+      "webViewLink": "https://drive.google.com/file/d/1_LVcNh3ETOYkqzR0x2t4CDABM2mMrhiW/view?usp=drivesdk"
+    }
+  ],
+  "unsupported_files": []
+}

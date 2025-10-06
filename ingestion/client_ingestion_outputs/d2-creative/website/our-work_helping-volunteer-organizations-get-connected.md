@@ -2,35 +2,30 @@
 source: "website"
 content_type: "case_studies"
 url: "https://www.d2creative.com/our-work/helping-volunteer-organizations-get-connected/"
-title: "Helping Connect Young Electrical Engineers & Volunteer Organiz­ations"
+title: "Revitalized Platform for Volunteering Connections"
 domain: "www.d2creative.com"
 path: "/our-work/helping-volunteer-organizations-get-connected/"
-scraped_time: "2025-09-06T16:14:13.147142"
+scraped_time: "2025-10-04T18:57:04.064580"
 url_depth: 2
-word_count: 330
+word_count: 328
 client_name: "d2-creative"
 ---
 
-# Helping Connect Young Electrical Engineers & Volunteer Organiz­ations
-
-A Revitalized Platform for Better Volunteering Connections
-
 ## IEEE Young Professionals
 
-#
+Helping Connect Young Electrical Engineers & Volunteer Organizations
 
-Helping Connect Young Electrical Engineers & Volunteer Organiz­ations
+UI/UX Design, Website Design & Development
 
-UI/UX Design, Website Design & Development
+![IEEE Volunteer logo](https://www.d2creative.com/wp-content/uploads/2022/07/ieee-yp-logo@2x.png)
 
-## The
-Challenge
+## The Challenge
 
-## Our
-Approach
+## Our Approach
 
-## The
-Result
+## The Result
+
+![IEEE Volunteer logo](https://www.d2creative.com/wp-content/uploads/2022/07/ieee-yp-logo@2x.png)
 
 As the world’s largest professional association, IEEE has no shortage of volunteering opportunities for young electrical engineers and students, but getting them in front of the people who need their help was sometimes a challenge. The IEEE’s Young Professionals reached out to D2 to assist with reimagining their [volunteering site](https://volunteer.ieee.org/) to better provide members with a means of identifying opportunities.
 

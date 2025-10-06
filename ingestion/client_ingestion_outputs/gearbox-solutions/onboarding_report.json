@@ -1,0 +1,15 @@
+{
+  "client_id": "gearbox-solutions",
+  "timestamp": "2025-10-05T05:43:16.050762Z",
+  "files_processed": 62,
+  "successful_uploads": 62,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "gearbox-solutions",
+    "client_uuid": "gearbox-solutions",
+    "document_count": 62,
+    "chunk_count": 261,
+    "total_tokens": 219718
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/gearbox-solutions"
+}

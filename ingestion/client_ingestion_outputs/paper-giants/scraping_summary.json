@@ -1,0 +1,21 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 532,
+    "successful_scrapes": 222,
+    "failed_scrapes": 0,
+    "success_rate": "41.7%",
+    "total_words_scraped": 28040,
+    "categories": {
+      "blogs_resources": 100,
+      "other": 100,
+      "services_products": 18,
+      "about": 2,
+      "homepage": 1,
+      "case_studies": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "paper-giants"
+    },
+    "scrape_time": "2025-10-05T00:13:10.418762"
+  }
+}

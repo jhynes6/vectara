@@ -1,15 +1,16 @@
 {
-  "timestamp": "2025-09-06T16:11:52.719331",
+  "timestamp": "2025-10-04T18:54:41.517786",
   "folder_id": "1oe7dVJA9iYPIO9_QGv01s33xqw4750Wa",
   "delegated_user": null,
   "days_back": 0,
   "summary": {
-    "total_files_found": 7,
-    "supported_files": 5,
-    "successfully_processed": 5,
-    "errors": 0
+    "total_files_found": 9,
+    "supported_files": 7,
+    "successfully_processed": 7,
+    "failed_files_count": 1,
+    "errors": 1
   },
-  "crawled_files": [
+  "successfully_crawled_files": [
     {
       "name": "Client Intake Form - D2 Creative",
       "final_filename": "client_intake_client-intake-form-d2-creative.md",
@@ -22,6 +23,26 @@
       "special_category": "client_intake"
     },
     {
+      "name": "d2-creative_client_brief_20250907_082227",
+      "final_filename": "case_studies_d2-creative-client-brief-20250907-082227.md",
+      "id": "1Y5z7a1Cpxdu1AxXRwGB8AxV5xdRR40MDKq5sYMUapAM",
+      "size": "81795",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "case_studies",
+      "url": "https://docs.google.com/document/d/1Y5z7a1Cpxdu1AxXRwGB8AxV5xdRR40MDKq5sYMUapAM/view",
+      "word_count": 12556
+    },
+    {
+      "name": "D2 Creative Booked Calls",
+      "final_filename": "other_d2-creative-booked-calls.md",
+      "id": "1Q5WvQNxTXK70cncq3a7C8hmwZ02L5NAiK0YXO5CHkR8",
+      "size": "877314",
+      "mime_type": "application/vnd.google-apps.spreadsheet",
+      "content_type": "other",
+      "url": "https://docs.google.com/spreadsheets/d/1Q5WvQNxTXK70cncq3a7C8hmwZ02L5NAiK0YXO5CHkR8/view",
+      "word_count": 1248
+    },
+    {
       "name": "Trade Show Capabilities 040125.pdf",
       "final_filename": "capabilities_overview_trade-show-capabilities-040125.md",
       "id": "1RgtOR2xtlMlHgZRVPzooiOa3HDi0NJcx",
@@ -29,7 +50,7 @@
       "mime_type": "application/pdf",
       "content_type": "capabilities_overview",
       "url": "https://drive.google.com/file/d/1RgtOR2xtlMlHgZRVPzooiOa3HDi0NJcx/view",
-      "word_count": 1944
+      "word_count": 340
     },
     {
       "name": "D2Creative-Techical-Capabilities Overview_General_07292025.pdf",
@@ -39,7 +60,7 @@
       "mime_type": "application/pdf",
       "content_type": "capabilities_overview",
       "url": "https://drive.google.com/file/d/1TULz1X99dc7yP9h2K7gSmsMwKVFS0Bvu/view",
-      "word_count": 455
+      "word_count": 462
     },
     {
       "name": "D2-Capabilities-Brochure_2024.pdf",
@@ -49,7 +70,7 @@
       "mime_type": "application/pdf",
       "content_type": "brochures_newsletters",
       "url": "https://drive.google.com/file/d/1qQuZW9qeG3yKxz9GYXNTUcrCwzdBiOMi/view",
-      "word_count": 281
+      "word_count": 324
     },
     {
       "name": "D2-Capabilities-Brochure-Technology.pdf",
@@ -59,7 +80,20 @@
       "mime_type": "application/pdf",
       "content_type": "brochures_newsletters",
       "url": "https://drive.google.com/file/d/1Yhs7U0T-PX5wzvvCMsIg1Fl3tH4IIChH/view",
-      "word_count": 289
+      "word_count": 326
+    }
+  ],
+  "failed_files": [
+    {
+      "name": "d2-creative_client_brief_20250907_082227.md",
+      "id": "1Vpb2AtUWEbhNR6FOQfnKk5Gl3vy3MUmA",
+      "mime_type": "text/x-markdown",
+      "size": "107881",
+      "url": "https://drive.google.com/file/d/1Vpb2AtUWEbhNR6FOQfnKk5Gl3vy3MUmA/view",
+      "error": "Failed to extract content (returned None)",
+      "error_type": "ContentExtractionError",
+      "file_category": "client_materials",
+      "timestamp": "2025-10-04T18:54:33.290879"
     }
   ]
 }

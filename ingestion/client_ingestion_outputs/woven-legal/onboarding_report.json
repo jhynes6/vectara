@@ -1,0 +1,15 @@
+{
+  "client_id": "woven-legal",
+  "timestamp": "2025-10-05T06:41:16.968016Z",
+  "files_processed": 179,
+  "successful_uploads": 54,
+  "failed_uploads": 125,
+  "database_stats": {
+    "client_id": "woven-legal",
+    "client_uuid": "woven-legal",
+    "document_count": 179,
+    "chunk_count": 330,
+    "total_tokens": 198653
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/woven-legal"
+}

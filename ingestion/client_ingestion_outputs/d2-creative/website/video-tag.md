@@ -2,17 +2,15 @@
 source: "website"
 content_type: "other"
 url: "https://www.d2creative.com/video-tag/"
-title: "/video-tag/"
+title: "Video Tag"
 domain: "www.d2creative.com"
 path: "/video-tag/"
-scraped_time: "2025-09-06T16:15:43.288538"
+scraped_time: "2025-10-04T18:56:35.259806"
 url_depth: 1
-word_count: 9
+word_count: 11
 client_name: "d2-creative"
 ---
 
-# /video-tag/
+# Video Tag
 
 Project Impressions and Clicks on Top Digital Platforms
-
-[Calculate](/digital-ad-performance-calculator/)

@@ -5,21 +5,13 @@ url: "https://www.d2creative.com/about-us/"
 title: "Full-service Digital Marketing and Communications Agency"
 domain: "www.d2creative.com"
 path: "/about-us/"
-scraped_time: "2025-09-06T16:16:14.708642"
+scraped_time: "2025-10-04T18:57:23.167122"
 url_depth: 1
-word_count: 559
+word_count: 538
 client_name: "d2-creative"
 ---
 
 # Full-service Digital Marketing and Communications Agency
-
-Award-Winning, Full Service Life Sciences Marketing Agency
-
-## ABOUT
-
-# Full-service Digital Marketing and Communications Agency
-
-### ABOUT
 
 ## We’re a Different Kind of Marketing Agency
 
@@ -31,11 +23,7 @@ How does being an **independent, full-service marketing agency** make D2 differe
 
 It makes no sense to reinvent the wheel. That’s why we’ve partnered with leading software providers to bring our clients the best possible solutions to meet their business challenges. Whether it’s enterprise content management and CRM tools for healthcare companies or best-in-class course-ware for training for your sales force – we’ve got you covered.
 
-![google-partner@2x](https://www.d2creative.com/wp-content/uploads/elementor/thumbs/google-partner@2x-rag1fjhl4tggaevcakb45jq12luxnwa6uatoe87dhc.png "google-partner@2x")
-
 We take pride in our status as a Google Partner. With an arsenal of Google Ads and Analytics certifications under our belt, and close collaboration with Google representatives, we’re up-to-date on the latest platform updates and ready to supercharge your online presence and finely tune your campaigns to maximize performance.
-
-![veeva@2x](https://www.d2creative.com/wp-content/uploads/elementor/thumbs/veeva@2x-rag1fjhl4tggaevcakb45jq12luxnwa6uatoe87dhc.png "veeva@2x")
 
 We are a Veeva Content, Multichannel, and Vault Content partner with the technical skills and experience necessary to help you unlock the full potential of the platform and maximize its value. Our services range from managing content in Veeva CRM and Vault to engineering and supporting applications that integrate directly with Veeva to deliver additional third-party data and insights.
 
@@ -46,7 +34,3 @@ D2 Creative partners with StackAdapt, a leading programmatic advertising platfor
 ### Well-versed in Today’s Top Marketing Tools
 
 In addition to the most popular social platforms and Meta, LinkedIn, and Google Ads our team is proficient in a host of marketing tools, enabling us to not only expand the reach of our campaigns but also ensure they resonate with precisely targeted, high-quality leads. This expertise allows us to streamline and scale our efforts with maximum efficiency.
-
-## Let’s Connect
-
-## Let’s Connect

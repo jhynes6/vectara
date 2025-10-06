@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-10-05T01:39:02.022312",
+  "folder_id": "1Kfs7DtsedBCXuZhPkPeYTcA9LXUq3Wnn",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 2,
+    "supported_files": 2,
+    "successfully_processed": 2,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Gearbox Solutions: Client Intake Form",
+      "final_filename": "client_intake_gearbox-solutions-client-intake-form.md",
+      "id": "1-SJAgVc3w4bsxp9b1Ap4xeqKp4Q4tojqsL7b9v_A9ZM",
+      "size": "54464",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1-SJAgVc3w4bsxp9b1Ap4xeqKp4Q4tojqsL7b9v_A9ZM/view",
+      "word_count": 985,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "CFMA digest 2025.pdf",
+      "final_filename": "brochures_newsletters_cfma-digest-2025.md",
+      "id": "12vunBAQ8Yv4deoGCp4YMGtKrYr_jCtA_",
+      "size": "22944104",
+      "mime_type": "application/pdf",
+      "content_type": "brochures_newsletters",
+      "url": "https://drive.google.com/file/d/12vunBAQ8Yv4deoGCp4YMGtKrYr_jCtA_/view",
+      "word_count": 153378
+    }
+  ],
+  "failed_files": []
+}

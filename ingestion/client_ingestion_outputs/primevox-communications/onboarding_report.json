@@ -1,0 +1,15 @@
+{
+  "client_id": "primevox-communications",
+  "timestamp": "2025-10-05T04:19:39.181340Z",
+  "files_processed": 47,
+  "successful_uploads": 47,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "primevox-communications",
+    "client_uuid": "primevox-communications",
+    "document_count": 47,
+    "chunk_count": 63,
+    "total_tokens": 24112
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/primevox-communications"
+}

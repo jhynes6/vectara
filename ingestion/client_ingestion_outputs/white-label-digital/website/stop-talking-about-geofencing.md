@@ -1,0 +1,36 @@
+---
+source: "website"
+content_type: "blogs_resources"
+url: "https://whitelabeldigital.co/stop-talking-about-geofencing/"
+title: "Stop Talking About Geofencing"
+domain: "whitelabeldigital.co"
+path: "/stop-talking-about-geofencing/"
+scraped_time: "2025-10-04T18:08:20.920634"
+url_depth: 1
+word_count: 673
+client_name: "white-label-digital"
+---
+
+## Stop Talking About Geofencing
+
+Published November 13, 2024
+
+If asked a few years ago about ‘geofencing’ as a digital targeting tactic, my tone conveyed more of a warning, perhaps a suggestion or two that might help manage client expectations and help a client understand where potential – and sometimes predictable – hurdles and general issues should be taken into consideration. I’d not have suggested it, with few exceptions, including a client demanding that we simply “run geofencing”.  Sometimes a client just wants what they want; if they’re happy, I suppose we are, too.
+
+Today though, I find the suggestion of ‘geofencing’ to be a thorn in my side. Ardent demand to run the tactic can feel combative, the idea going against every facet of what I see as common sense and logic. We’re ad geeks though, we’ve had the experience to know better. I can’t blame an unsuspecting business owner for being attracted to a sales pitch about drawing lines on a map to target “your competitors’ customers”, or using dwell time overlays to target competing stores with recruiting ads to poach staff members. I rehearse that devil’s advocate thought regularly, so as to steer clear of what might be an insulting response to the suggestion, given my true opinion on the topic.
+
+Some would read this while nodding, maybe smiling or cringing while reliving the sometimes ridiculous amount of discussion that’s required to bring a client to a full understanding of what they’re speaking to. Some might have no idea what I’m talking about, maybe some even hang their hats on geofencing right now. For those folks, especially if you run geofencing through one very large “DSP” in particular (no names here, but it’s simple to figure out), take a look at your campaign settings to truly understand what is included in your targeting. I’ve found one client’s campaigns to often be targeting “everyone, every device, inside this radius” when they were sold “addressable geofencing”.
+
+Beyond any malicious mistakes or oversight, take a look at which ad sizes are garnering spend. Is 90% of your ad spend running through 320×50 in-app placements? Take a look at GA4 Sessions compared to ad clicks, you might find about 50% of those clicks don’t record a site session, as I have in the past. Of the clicks that do make it to a fully loaded web page, I bet your bounce rate is in the mid-90’s, Session Duration hovering below 0:05. Of the people who you target with ads because they’ve been seen in a geofenced location, how many are employees, delivery drivers, postal workers, and other people that just happen to be walking by? Are your conversions capturing those people, like the Fedex and UPS drivers that visit every nearby business, then “convert” when they visit your client’s (having seen an ad in the meantime)? Good money also says that 98% of your in-store conversions (the mention of which always entices a retail store owner) are post-view, those people having never clicked on any of your ads. I picture someone registering a conversion as an in-store visit, simply because an ad displayed on his phone the night before while his daughter was using it to play solitaire on the way to grandma’s house for dinner. That’s not far fetched.
+
+Mobile, 320×50 placements can be great for reach at a low CPM, but be wary of games and particular app categories, if not apps all together. It’s another example of something that can look good on paper, but only if that paper is lacking the pertinent details which should be the focus. Know enough to look under the covers, enlist your own success tracking (not the claimed post-click conversion activity claimed by so many), and be discerning on behalf of your clients.
+
+–
+
+_We’re always looking for problems to solve, and we’re happy to show you how we do it. Drop us a line [**here**](https://whitelabeldigital.co/contact/) or email us directly at _info@whitelabeldigital.co_ for more info._
+
+##### Tags
+
+*   ad targeting
+*   geofencing
+*   location targeting

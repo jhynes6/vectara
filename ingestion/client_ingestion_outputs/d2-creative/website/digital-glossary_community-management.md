@@ -2,20 +2,14 @@
 source: "website"
 content_type: "blogs_resources"
 url: "https://www.d2creative.com/digital-glossary/community-management/"
-title: "Community Management"
+title: "Community Management Overview"
 domain: "www.d2creative.com"
 path: "/digital-glossary/community-management/"
-scraped_time: "2025-09-06T16:13:25.261362"
+scraped_time: "2025-10-04T18:56:10.888752"
 url_depth: 2
-word_count: 663
+word_count: 635
 client_name: "d2-creative"
 ---
-
-# Community Management
-
-Community Management: Overview and Tips for Success
-
-## DIGITAL GLOSSARY
 
 # Community Management
 
@@ -60,11 +54,3 @@ Successful community management is part art, part strategy. Here are some proven
 4.  **Measure What Matters:** Track engagement metrics (comments, shares, sentiment) to understand what’s working and where there’s room to grow. Use those insights to refine your approach over time.
 
 Great community management is all about cultivating connection. When done right, it transforms followers into loyal advocates that continue to grow your community for you. Your community presence online should represent your organization while driving growth and creating brand champions.
-
-[Contact Us](https://www.d2creative.com/contact-us/) to discuss your digital marketing program.
-
-### Digital Glossary Appendix
-
-## Let’s Connect
-
-## Let’s Connect

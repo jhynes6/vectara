@@ -2,35 +2,28 @@
 source: "website"
 content_type: "case_studies"
 url: "https://www.d2creative.com/our-work/rebranding-healthcare-business-in-transition/"
-title: "Re-branding for a Healthcare Business in Transition"
+title: "Corporate Rebranding for MediMedia Health"
 domain: "www.d2creative.com"
 path: "/our-work/rebranding-healthcare-business-in-transition/"
-scraped_time: "2025-09-06T16:15:44.907878"
+scraped_time: "2025-10-04T18:57:11.759251"
 url_depth: 2
-word_count: 281
+word_count: 295
 client_name: "d2-creative"
 ---
 
 # Re-branding for a Healthcare Business in Transition
 
-Corporate Rebranding & Brand Architecture Development
+Branding Design & Development, Content Development, Website Design & Development
 
-## MediMedia Health
+![MediMedia Health Logo](https://www.d2creative.com/wp-content/uploads/2022/07/mmh-mobile-visual-identity@2x.jpg)
 
-#
+## The Challenge
 
-Re-branding for a Healthcare Business in Transition
+## Our Approach
 
-Branding Design & Development, Content Development, Website Design & Development
+## The Result
 
-## The
-Challenge
-
-## Our
-Approach
-
-## The
-Result
+![MediMedia Health Logo](https://www.d2creative.com/wp-content/uploads/2022/07/mmh-mobile-visual-identity@2x.jpg)
 
 After the consolidation of several business units, MediMedia needed rebranding to support the company’s integrated services and solutions offerings. Since they needed to hit the ground running, they asked healthcare agency D2 Creative to launch the new brand in just two months. The brand strategy had to be solid and enduring, yet flexible enough to accommodate an organization in transition, as new acquisitions were on the horizon.
 
@@ -40,11 +33,15 @@ Companies make a big investment in branding and visual identity, and a good bran
 
 ## VISUAL IDENTITY
 
+![MediMedia Health Logo](https://www.d2creative.com/wp-content/uploads/2022/07/mmh-mobile-visual-identity@2x.jpg)
+
 ## ICONOGRAPHY
 
 ![Access Point image with doctor and point emblem](https://www.d2creative.com/wp-content/uploads/2022/05/ico-mmh-accesspoint@2x.png) ![PatientNet image of patient surrounded with their medical records](https://www.d2creative.com/wp-content/uploads/2022/05/ico-mmh-patientnet@2x.png)
 
 ## MOOD BOARD
+
+![MediMedia health logo concept and image selection](https://www.d2creative.com/wp-content/uploads/2022/05/mmh-mobile-moodboard-1@2x.png) ![MediMedia point emblem and brand delivery methods](https://www.d2creative.com/wp-content/uploads/2022/05/mmh-mobile-moodboard-2@2x.png)
 
 ## PHOTOGRAPHY
 

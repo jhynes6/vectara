@@ -1,0 +1,18 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 7,
+    "successful_scrapes": 7,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 1925,
+    "categories": {
+      "other": 2,
+      "blogs_resources": 4,
+      "services_products": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "american-ethanol"
+    },
+    "scrape_time": "2025-10-04T23:54:52.268396"
+  }
+}

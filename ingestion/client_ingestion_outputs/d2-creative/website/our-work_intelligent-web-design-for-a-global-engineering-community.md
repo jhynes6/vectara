@@ -2,35 +2,26 @@
 source: "website"
 content_type: "case_studies"
 url: "https://www.d2creative.com/our-work/intelligent-web-design-for-a-global-engineering-community/"
-title: "Enhancing Engineering Connections Through User Experience"
+title: "Intelligent Web Design for a Global Engineering Community"
 domain: "www.d2creative.com"
 path: "/our-work/intelligent-web-design-for-a-global-engineering-community/"
-scraped_time: "2025-09-06T16:14:30.754528"
+scraped_time: "2025-10-04T18:56:56.865446"
 url_depth: 2
-word_count: 597
+word_count: 589
 client_name: "d2-creative"
 ---
 
 # Enhancing Engineering Connections Through User Experience
 
-Intelligent Web Design for a Global Engineering Community
+Digital Marketing, Website Design & Development
 
-## IEEE COLLABRATEC
+![IEEE Collabratec logo.](https://www.d2creative.com/wp-content/uploads/2022/08/logo-ct@2x.jpg)
 
-#
+## The Challenge
 
-Enhancing Engineering Connections Through User Experience
+## Our Approach
 
-Digital Marketing, Website Design & Development
-
-## The
-Challenge
-
-## Our
-Approach
-
-## The
-Result
+## The Result
 
 Collabratec is an online collaboration platform created by the Institute of Electrical and Electronics Engineers (IEEE). As the site grew—both in its number of active users and platform capabilities—it became increasingly important to maintain and improve key aspects of the site’s interface and user experience (UX). The D2 Creative team has worked extensively with IEEE in a variety of branding and design projects for Collabratec in recent years, so when UI/UX work is needed, they turn to us.
 

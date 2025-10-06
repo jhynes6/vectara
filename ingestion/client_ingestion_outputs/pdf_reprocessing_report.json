@@ -1,0 +1,71 @@
+{
+  "total_failed_found": 7,
+  "successfully_reprocessed": 7,
+  "still_failed": 0,
+  "reprocessed_files": [
+    {
+      "file": "pitch_decks_mintleads-deck-v3.md",
+      "file_id": "1MLykqa6SInOqeWTNPpfc-Yf0ZQFatVBE",
+      "method": "gpt",
+      "word_count": 1333,
+      "methods_tried": [
+        "gpt"
+      ]
+    },
+    {
+      "file": "other_white-label-digital-ctv-4.md",
+      "file_id": "16yHa39bBmAwwWWyLsVfF2mm3HZT2vGUI",
+      "method": "gpt",
+      "word_count": 307,
+      "methods_tried": [
+        "gpt"
+      ]
+    },
+    {
+      "file": "capabilities_overview_wld-company-overview-2024.md",
+      "file_id": "1-cjrjZR_JwZ4m4GKuQ21oHM6q5Is_ShS",
+      "method": "gpt",
+      "word_count": 139,
+      "methods_tried": [
+        "gpt"
+      ]
+    },
+    {
+      "file": "case_studies_wld-case-study-education.md",
+      "file_id": "1ryfx5_5wVET7OEVndJdnjnwdSSHsenAo",
+      "method": "gpt",
+      "word_count": 221,
+      "methods_tried": [
+        "gpt"
+      ]
+    },
+    {
+      "file": "case_studies_wld-case-study-home-services.md",
+      "file_id": "197hxGTLxr1LyZPDBo4bJ-g5W0LsPnjt9",
+      "method": "gpt",
+      "word_count": 229,
+      "methods_tried": [
+        "gpt"
+      ]
+    },
+    {
+      "file": "pitch_decks_mintleads-deck-v3.md",
+      "file_id": "1MLykqa6SInOqeWTNPpfc-Yf0ZQFatVBE",
+      "method": "gpt",
+      "word_count": 1322,
+      "methods_tried": [
+        "gpt"
+      ]
+    },
+    {
+      "file": "pitch_decks_mintleads-deck-v3.md",
+      "file_id": "1MLykqa6SInOqeWTNPpfc-Yf0ZQFatVBE",
+      "method": "gpt",
+      "word_count": 1365,
+      "methods_tried": [
+        "gpt"
+      ]
+    }
+  ],
+  "still_failed_files": []
+}

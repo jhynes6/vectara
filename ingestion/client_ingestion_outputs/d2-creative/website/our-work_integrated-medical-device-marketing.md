@@ -5,32 +5,13 @@ url: "https://www.d2creative.com/our-work/integrated-medical-device-marketing/"
 title: "Improving Brand Visibility with Integrated, Omnichannel Marketing"
 domain: "www.d2creative.com"
 path: "/our-work/integrated-medical-device-marketing/"
-scraped_time: "2025-09-06T16:13:03.966857"
+scraped_time: "2025-10-04T18:57:14.047021"
 url_depth: 2
-word_count: 466
+word_count: 432
 client_name: "d2-creative"
 ---
 
-# Improving Brand Visibility with Integrated, Omnichannel Marketing
-
-Integrated Omnichannel Campaign Marketing for Medical Device Visibility
-
-## Mizuho OSI
-
-#
-
-Improving Brand Visibility with Integrated, Omnichannel Marketing
-
-Campaign Development, Digital Marketing
-
-## The
-Challenge
-
-## Our
-Approach
-
-## The
-Result
+## The Challenge
 
 Mizuho OSI, a leader in surgical equipment, sought to raise awareness for one of its innovative brands. Their Levó® Head Positioning System gave surgeons state-of-the-art speed, precision, and control when positioning a patient’s head for surgery. However, the device struggled to reach the same degree of market awareness as Mizuho OSI’s other products.
 
@@ -50,20 +31,10 @@ This impact was recognized industry-wide when the campaign **won a 2025 Vega Sil
 
 ## Display Ads
 
-![](https://www.d2creative.com/wp-content/uploads/2025/07/Mizuho-DisplayAds-mobile@2x.jpg)
-
 ## Linkedin Posts
-
-![](https://www.d2creative.com/wp-content/uploads/2025/07/Mizuho-LinkedIn-mobile@2x.jpg)
 
 ## Email Marketing
 
-![](https://www.d2creative.com/wp-content/uploads/2025/07/Mizuho-Emails-mobile@2x.jpg)
-
 ## Direct Mail
 
-![](https://www.d2creative.com/wp-content/uploads/2025/07/Mizuho-DirectMail-mobile@2x.jpg)
-
 ## Landing Page DESIGN & DEVELOPMENT
-
-![](https://www.d2creative.com/wp-content/uploads/2025/07/Mizuho-LP@2x-scaled.jpg)

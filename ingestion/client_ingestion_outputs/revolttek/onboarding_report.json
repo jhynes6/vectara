@@ -1,0 +1,15 @@
+{
+  "client_id": "revolttek",
+  "timestamp": "2025-10-05T04:17:42.435969Z",
+  "files_processed": 34,
+  "successful_uploads": 34,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "revolttek",
+    "client_uuid": "revolttek",
+    "document_count": 34,
+    "chunk_count": 52,
+    "total_tokens": 27618
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/revolttek"
+}

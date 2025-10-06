@@ -2,22 +2,18 @@
 source: "website"
 content_type: "about"
 url: "https://www.d2creative.com/about-us/award-page/"
-title: "Not to Brag…"
+title: "Awards and Certifications"
 domain: "www.d2creative.com"
 path: "/about-us/award-page/"
-scraped_time: "2025-09-06T16:12:34.078110"
+scraped_time: "2025-10-04T18:57:25.611730"
 url_depth: 2
-word_count: 351
+word_count: 355
 client_name: "d2-creative"
 ---
 
-# Not to Brag…
-
-Awards & Certification | D2 Creative's Award-Winning Results
-
 ## Awards and Certifications
 
-# Not to Brag…
+# Not to Brag…  
 But Yeah, We’re Gonna Brag
 
 We don’t do it for the awards – but we won’t pretend it doesn’t feel great to win them. These wins and certifications reflect our commitment to quality. We’re proud of our work, proud of the partnerships, and yeah, proud of the recognition too. Keep scrolling to see what all the fuss is about.
@@ -116,19 +112,21 @@ We don’t do it for the awards – but we won’t pretend it doesn’t feel gre
 
 ### Certifications
 
-### Veeva Content
+![Veeva Content Partner Full Service logo](https://www.d2creative.com/wp-content/uploads/2022/09/veeva-partner-full-service@2x.png)
+
+### Veeva Content  
 Partner
 
 **2025** – Veeva
+
+![WBENC logo](https://www.d2creative.com/wp-content/uploads/2022/09/wbenc-logo@2x.png)
 
 ### Certified Women-Owned Business
 
 **2025** – WBENC
 
+![New York & New Jersey Minority Supplier Development Council Logo](https://www.d2creative.com/wp-content/uploads/2025/05/NYNJMSDC-Logo.png)
+
 ### Certified Minority-Owned Business
 
 **2025** – New York & New Jersey Minority Supply Development Council
-
-## Let’s Connect
-
-## Let’s Connect

@@ -5,32 +5,13 @@ url: "https://www.d2creative.com/our-work/medical-education-platforms-app-develo
 title: "App Development for Medical Education Platforms"
 domain: "www.d2creative.com"
 path: "/our-work/medical-education-platforms-app-development/"
-scraped_time: "2025-09-06T16:13:24.387898"
+scraped_time: "2025-10-04T18:57:02.237124"
 url_depth: 2
-word_count: 398
+word_count: 368
 client_name: "d2-creative"
 ---
 
-# App Development for Medical Education Platforms
-
-Interactive Training Application for Medical Education
-
-## Healthcare Company
-
-#
-
-App Development for Medical Education Platforms
-
-App Design & Development, Video Production & Storytelling
-
-## The
-Challenge
-
-## Our
-Approach
-
-## The
-Result
+## The  Challenge
 
 The impact of Type 2 diabetes on a patient changes over time and is directly related to age, weight, and lifestyle choices. D2 Creative was tasked with developing an interactive tool for key opinion leaders to use during speaker bureau programs that would demonstrate the effects of the disease and incite discussion among physicians.
 

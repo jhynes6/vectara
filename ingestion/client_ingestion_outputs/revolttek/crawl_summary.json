@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-10-05T00:14:53.189762",
+  "folder_id": "14ZQPU0Rg1mdCH8QvtoDv3mMRpbid5oo3",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 3,
+    "supported_files": 3,
+    "successfully_processed": 3,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Prospex Only Client Intake Form - RevoltTek",
+      "final_filename": "client_intake_prospex-only-client-intake-form-revolttek.md",
+      "id": "1Ce-MiiJZyBcCvAbCLW_AqXiacFCXD0AJYjrvw39q_Io",
+      "size": "36051",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1Ce-MiiJZyBcCvAbCLW_AqXiacFCXD0AJYjrvw39q_Io/view",
+      "word_count": 884,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "RevoltTek: Email Intake Form",
+      "final_filename": "other_revolttek-email-intake-form.md",
+      "id": "11lOAuKmjbvrKHOdgVR6pna0qg-O7SOn0RrHxmNp2Zuc",
+      "size": "54397",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "other",
+      "url": "https://docs.google.com/document/d/11lOAuKmjbvrKHOdgVR6pna0qg-O7SOn0RrHxmNp2Zuc/view",
+      "word_count": 837
+    },
+    {
+      "name": "RevoltTek: Podcast Intake Form",
+      "final_filename": "other_revolttek-podcast-intake-form.md",
+      "id": "1o2CWQ3hENxc4xrLR0dT3BeovI8kQ6FZ_tpEtGMFXTA4",
+      "size": "86798",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "other",
+      "url": "https://docs.google.com/document/d/1o2CWQ3hENxc4xrLR0dT3BeovI8kQ6FZ_tpEtGMFXTA4/view",
+      "word_count": 1122
+    }
+  ],
+  "failed_files": []
+}

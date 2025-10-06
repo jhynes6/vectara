@@ -1,0 +1,77 @@
+{
+  "timestamp": "2025-10-04T23:30:06.364474",
+  "folder_id": "1kfivzWTERJ9GRa3w1saSbV2rx7ILhTyu",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 6,
+    "supported_files": 6,
+    "successfully_processed": 6,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Client Intake Form - Sock Fancy",
+      "final_filename": "client_intake_client-intake-form-sock-fancy.md",
+      "id": "1RtFueZRO0JdvrbLRipSMayQY1TqycLj91JWu2S_ZyaM",
+      "size": "55061",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1RtFueZRO0JdvrbLRipSMayQY1TqycLj91JWu2S_ZyaM/view",
+      "word_count": 1076,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "sock-fancy_brief_20251004_231127.md",
+      "final_filename": "case_studies_sock-fancy-brief-20251004-231127.md",
+      "id": "1JcxqorGdav8KwcKytRp1bZxisrtIZVI8",
+      "size": "74778",
+      "mime_type": "text/markdown",
+      "content_type": "case_studies",
+      "url": "https://drive.google.com/file/d/1JcxqorGdav8KwcKytRp1bZxisrtIZVI8/view",
+      "word_count": 10316
+    },
+    {
+      "name": "sock-fancy_client_brief_20251004_225431.md",
+      "final_filename": "case_studies_sock-fancy-client-brief-20251004-225431.md",
+      "id": "1W-H7igTCE7o5A4hzSbDMBsBf2an4YT6p",
+      "size": "88818",
+      "mime_type": "text/markdown",
+      "content_type": "case_studies",
+      "url": "https://drive.google.com/file/d/1W-H7igTCE7o5A4hzSbDMBsBf2an4YT6p/view",
+      "word_count": 12013
+    },
+    {
+      "name": "sock-fancy_client_brief_20251004_222630.md",
+      "final_filename": "capabilities_overview_sock-fancy-client-brief-20251004-222630.md",
+      "id": "1VVyREcMwEdnlsuEfTzfkwzSsvFtrS-bHMUe6c6lgLVs",
+      "size": "44893",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "capabilities_overview",
+      "url": "https://docs.google.com/document/d/1VVyREcMwEdnlsuEfTzfkwzSsvFtrS-bHMUe6c6lgLVs/view",
+      "word_count": 7481
+    },
+    {
+      "name": "sock-fancy_client_brief_20251004_222630.md",
+      "final_filename": "other_sock-fancy-client-brief-20251004-222630.md",
+      "id": "1puevx5tYv-cYEUUOQl3bXLClSWtLlJ-Y",
+      "size": "56995",
+      "mime_type": "text/markdown",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1puevx5tYv-cYEUUOQl3bXLClSWtLlJ-Y/view",
+      "word_count": 7981
+    },
+    {
+      "name": "SockFancy+2023+Catalog+(1).pdf",
+      "final_filename": "brochures_newsletters_sockfancy-2023-catalog-1.md",
+      "id": "16FweFAJgVem0xdkkIqnTk3MQyHNhhlu6",
+      "size": "41603890",
+      "mime_type": "application/pdf",
+      "content_type": "brochures_newsletters",
+      "url": "https://drive.google.com/file/d/16FweFAJgVem0xdkkIqnTk3MQyHNhhlu6/view",
+      "word_count": 4970
+    }
+  ],
+  "failed_files": []
+}

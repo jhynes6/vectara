@@ -1,0 +1,86 @@
+{
+  "timestamp": "2025-10-05T03:51:30.671147",
+  "folder_id": "1RQF1Qc0OI7Y5C_EaKW5t4ct_VF7SvG0r",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 7,
+    "supported_files": 7,
+    "successfully_processed": 7,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "ARCHway Intake Form",
+      "final_filename": "other_archway-intake-form.md",
+      "id": "1KRfIli-lhNnSVDiIlCza57TaFbT2DxwTcPp7l0I5OVI",
+      "size": "54604",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "other",
+      "url": "https://docs.google.com/document/d/1KRfIli-lhNnSVDiIlCza57TaFbT2DxwTcPp7l0I5OVI/view",
+      "word_count": 1931
+    },
+    {
+      "name": "ARCHway Solutions - Info Flyer.pdf",
+      "final_filename": "brochures_newsletters_archway-solutions-info-flyer.md",
+      "id": "1nY9IoKvc3dfBSgtxQlq8S2FmsFTUpqta",
+      "size": "2364590",
+      "mime_type": "application/pdf",
+      "content_type": "brochures_newsletters",
+      "url": "https://drive.google.com/file/d/1nY9IoKvc3dfBSgtxQlq8S2FmsFTUpqta/view",
+      "word_count": 462
+    },
+    {
+      "name": "On-Demand Video Content Sales Sheet.pdf",
+      "final_filename": "brochures_newsletters_on-demand-video-content-sales-sheet.md",
+      "id": "18XDld3svDwwGPVOfqYKuGAOpOHLLm8RA",
+      "size": "346404",
+      "mime_type": "application/pdf",
+      "content_type": "brochures_newsletters",
+      "url": "https://drive.google.com/file/d/18XDld3svDwwGPVOfqYKuGAOpOHLLm8RA/view",
+      "word_count": 289
+    },
+    {
+      "name": "Live Workshops & Webinars Sales Sheet.pdf",
+      "final_filename": "brochures_newsletters_live-workshops-webinars-sales-sheet.md",
+      "id": "1Wc6xfi_t5VGNt0anrXwcaAKsttHgAHJc",
+      "size": "992342",
+      "mime_type": "application/pdf",
+      "content_type": "brochures_newsletters",
+      "url": "https://drive.google.com/file/d/1Wc6xfi_t5VGNt0anrXwcaAKsttHgAHJc/view",
+      "word_count": 300
+    },
+    {
+      "name": "Curated Learning Management Systems Sales Sheet.pdf",
+      "final_filename": "brochures_newsletters_curated-learning-management-systems-sales-sheet.md",
+      "id": "1ED8hAyvGA-SG5Rn32kRiq2FG1JIupVSy",
+      "size": "675049",
+      "mime_type": "application/pdf",
+      "content_type": "brochures_newsletters",
+      "url": "https://drive.google.com/file/d/1ED8hAyvGA-SG5Rn32kRiq2FG1JIupVSy/view",
+      "word_count": 307
+    },
+    {
+      "name": "eLearning Sales Sheet.pdf",
+      "final_filename": "brochures_newsletters_elearning-sales-sheet.md",
+      "id": "1y9Y5G8aVVjBqMRToUKmj3HCimJU3APS_",
+      "size": "827533",
+      "mime_type": "application/pdf",
+      "content_type": "brochures_newsletters",
+      "url": "https://drive.google.com/file/d/1y9Y5G8aVVjBqMRToUKmj3HCimJU3APS_/view",
+      "word_count": 279
+    },
+    {
+      "name": "Onboarding & Orientation Sales Sheet.pdf",
+      "final_filename": "brochures_newsletters_onboarding-orientation-sales-sheet.md",
+      "id": "1mTO7P891I3-Ak_VgcPIatc8fa0NM8mol",
+      "size": "852418",
+      "mime_type": "application/pdf",
+      "content_type": "brochures_newsletters",
+      "url": "https://drive.google.com/file/d/1mTO7P891I3-Ak_VgcPIatc8fa0NM8mol/view",
+      "word_count": 300
+    }
+  ],
+  "failed_files": []
+}

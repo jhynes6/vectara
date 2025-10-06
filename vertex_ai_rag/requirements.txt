@@ -1,0 +1,11 @@
+google-cloud-aiplatform[adk,agent-engines]
+google-adk
+python-dotenv
+google-auth
+google-api-python-client
+tqdm
+openai
+pydantic
+beautifulsoup4
+requests
+

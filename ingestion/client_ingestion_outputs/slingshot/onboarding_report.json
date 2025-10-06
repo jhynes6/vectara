@@ -1,0 +1,15 @@
+{
+  "client_id": "slingshot",
+  "timestamp": "2025-10-05T08:59:46.794958Z",
+  "files_processed": 61,
+  "successful_uploads": 61,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "slingshot",
+    "client_uuid": "slingshot",
+    "document_count": 61,
+    "chunk_count": 420,
+    "total_tokens": 370814
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/slingshot"
+}

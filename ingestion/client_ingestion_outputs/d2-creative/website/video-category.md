@@ -2,17 +2,19 @@
 source: "website"
 content_type: "other"
 url: "https://www.d2creative.com/video-category/"
-title: "/video-category/"
+title: "Video Category"
 domain: "www.d2creative.com"
 path: "/video-category/"
-scraped_time: "2025-09-06T16:15:36.996538"
+scraped_time: "2025-10-04T18:56:33.135077"
 url_depth: 1
 word_count: 9
 client_name: "d2-creative"
 ---
 
-# /video-category/
+# Video Category
 
-Project Impressions and Clicks on Top Digital Platforms
+[![D2 Bites](https://www.d2creative.com/wp-content/plugins/all-in-one-video-gallery/public/assets/images/placeholder-image.png)](https://www.d2creative.com/video-category/d2-bites/)
 
-[Calculate](/digital-ad-performance-calculator/)
+[D2 Bites](https://www.d2creative.com/video-category/d2-bites/)
+
+2 videos

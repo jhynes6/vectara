@@ -1,0 +1,15 @@
+{
+  "client_id": "stark-raving-boston",
+  "timestamp": "2025-10-05T04:19:12.095224Z",
+  "files_processed": 54,
+  "successful_uploads": 54,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "stark-raving-boston",
+    "client_uuid": "stark-raving-boston",
+    "document_count": 54,
+    "chunk_count": 65,
+    "total_tokens": 33502
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/stark-raving-boston"
+}

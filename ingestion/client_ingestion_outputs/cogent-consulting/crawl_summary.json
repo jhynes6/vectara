@@ -1,0 +1,97 @@
+{
+  "timestamp": "2025-10-05T01:45:43.606001",
+  "folder_id": "1JjPS0MeTfDGM2j0ovcmscN29B_E9OLjK",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 8,
+    "supported_files": 8,
+    "successfully_processed": 8,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Cogent Consulting: Client Intake Form",
+      "final_filename": "client_intake_cogent-consulting-client-intake-form.md",
+      "id": "1vsLOjr4r7zIfuIclKggiU_zsPFF29K9Mv-RRb6QoQ28",
+      "size": "40830",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1vsLOjr4r7zIfuIclKggiU_zsPFF29K9Mv-RRb6QoQ28/view",
+      "word_count": 1264,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "CCG Corporate Overview",
+      "final_filename": "capabilities_overview_ccg-corporate-overview.md",
+      "id": "1NkwNLeDqqCmlwEL5DG_7eElxpEsQdFrETbV544AEPkI",
+      "size": "624906",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "capabilities_overview",
+      "url": "https://docs.google.com/document/d/1NkwNLeDqqCmlwEL5DG_7eElxpEsQdFrETbV544AEPkI/view",
+      "word_count": 955
+    },
+    {
+      "name": "Cogent Strategy Advisory Services.pdf",
+      "final_filename": "other_cogent-strategy-advisory-services.md",
+      "id": "17XhObowgLtevrDH0xm6apbkK7Ke8-jAg",
+      "size": "1705175",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/17XhObowgLtevrDH0xm6apbkK7Ke8-jAg/view",
+      "word_count": 648
+    },
+    {
+      "name": "Cogent M&A Advisory Services.pdf",
+      "final_filename": "other_cogent-m-a-advisory-services.md",
+      "id": "1S4foUDBtA8JMBjsdiMJfilHDXOFbfshC",
+      "size": "1676141",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1S4foUDBtA8JMBjsdiMJfilHDXOFbfshC/view",
+      "word_count": 686
+    },
+    {
+      "name": "CCG Corporate Overview.pdf",
+      "final_filename": "capabilities_overview_ccg-corporate-overview.md",
+      "id": "19Un82L6sene6jmXKTV5azULQS8DBGBe-",
+      "size": "2434693",
+      "mime_type": "application/pdf",
+      "content_type": "capabilities_overview",
+      "url": "https://drive.google.com/file/d/19Un82L6sene6jmXKTV5azULQS8DBGBe-/view",
+      "word_count": 1
+    },
+    {
+      "name": "MandA-Process-Flow.pdf",
+      "final_filename": "other_manda-process-flow.md",
+      "id": "1aAyU5cxmoXYC7b1kwN4tOuZzu7Jsza4z",
+      "size": "1410467",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1aAyU5cxmoXYC7b1kwN4tOuZzu7Jsza4z/view",
+      "word_count": 436
+    },
+    {
+      "name": "Warm Leads M&A Call Template.docx",
+      "final_filename": "other_warm-leads-m-a-call-template.md",
+      "id": "1elGr9EvyJ5G7k8dJmREzmGjJxDBgIN56",
+      "size": "21427",
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1elGr9EvyJ5G7k8dJmREzmGjJxDBgIN56/view",
+      "word_count": 1321
+    },
+    {
+      "name": "Cold Leads M&A Lead Calls Template.docx",
+      "final_filename": "other_cold-leads-m-a-lead-calls-template.md",
+      "id": "1WsAO5LSFSgbmHWIoes6pJpxFMcC8VI88",
+      "size": "20310",
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1WsAO5LSFSgbmHWIoes6pJpxFMcC8VI88/view",
+      "word_count": 1051
+    }
+  ],
+  "failed_files": []
+}

@@ -2,29 +2,24 @@
 source: "website"
 content_type: "case_studies"
 url: "https://www.d2creative.com/our-work/building-nasa-icon-a-website/"
-title: "/our-work/building-nasa-icon-a-website/"
+title: "Katherine Johnson Foundation Case Study"
 domain: "www.d2creative.com"
 path: "/our-work/building-nasa-icon-a-website/"
-scraped_time: "2025-09-06T16:14:26.428419"
+scraped_time: "2025-10-04T18:57:12.937874"
 url_depth: 2
-word_count: 466
+word_count: 472
 client_name: "d2-creative"
 ---
 
-# /our-work/building-nasa-icon-a-website/
+# Katherine Johnson Foundation
 
-Building NASA Icon Katherine Johnson the Website She Deserves
+## Building NASA Icon Katherine Johnson the Website She Deserves
 
 Website Design & Development
 
-## The
-Challenge
+![Official website logo of Katherine Johnson Foundation](https://www.d2creative.com/wp-content/uploads/2022/07/kj-logo@2x.png)
 
-## Our
-Approach
-
-## The
-Result
+## The Challenge
 
 The family of Katherine Johnson, legendary NASA research mathematician and subject of the film Hidden Figures, approached D2 Creative for help with a very personal website redesign project. The Katherine Johnson Foundation had a website, but the family was not happy with its cold, impersonal feel, and believed that the information on it about Katherine Johnson’s life and accomplishments didn’t do an adequate job capturing her remarkable journey. They wanted the website to tell a more personal story that spoke to who Katherine Johnson really was, not just what a Wikipedia article or Hollywood movie would tell you about her.
 

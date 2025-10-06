@@ -1,0 +1,22 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 125,
+    "successful_scrapes": 125,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 70749,
+    "categories": {
+      "blogs_resources": 83,
+      "services_products": 22,
+      "case_studies": 9,
+      "other": 2,
+      "industry_markets": 7,
+      "about": 1,
+      "homepage": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "byteworks"
+    },
+    "scrape_time": "2025-10-05T02:04:46.827891"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "client_id": "the-lodge",
+  "timestamp": "2025-10-05T06:51:27.310922Z",
+  "files_processed": 4,
+  "successful_uploads": 4,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "the-lodge",
+    "client_uuid": "the-lodge",
+    "document_count": 4,
+    "chunk_count": 4,
+    "total_tokens": 1494
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/the-lodge"
+}

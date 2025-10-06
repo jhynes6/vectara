@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-10-05T01:34:15.316797",
+  "folder_id": "1NtSir5X8ebskG1fqxxzDbD45JnE50Ohg",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 2,
+    "supported_files": 2,
+    "successfully_processed": 2,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Client Intake Form - Upmkt Digital",
+      "final_filename": "client_intake_client-intake-form-upmkt-digital.md",
+      "id": "1NmgRZkCwHGS0cPA1dejDnWVav9GQMywoF5O_OPbkowM",
+      "size": "54463",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1NmgRZkCwHGS0cPA1dejDnWVav9GQMywoF5O_OPbkowM/view",
+      "word_count": 1616,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "UD_SpiralUSA_Paid-Ad-Proposal_V2.pdf",
+      "final_filename": "other_ud-spiralusa-paid-ad-proposal-v2.md",
+      "id": "1zgZqcwT6pyl3p3UfXP05wichBCGFTypn",
+      "size": "4750083",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1zgZqcwT6pyl3p3UfXP05wichBCGFTypn/view",
+      "word_count": 3301
+    }
+  ],
+  "failed_files": []
+}

@@ -1,0 +1,15 @@
+{
+  "client_id": "iceberg-digital",
+  "timestamp": "2025-10-05T04:01:25.680733Z",
+  "files_processed": 13,
+  "successful_uploads": 13,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "iceberg-digital",
+    "client_uuid": "iceberg-digital",
+    "document_count": 13,
+    "chunk_count": 15,
+    "total_tokens": 5408
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/iceberg-digital"
+}

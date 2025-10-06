@@ -1,0 +1,15 @@
+{
+  "client_id": "ted-miller",
+  "timestamp": "2025-10-05T05:34:51.327484Z",
+  "files_processed": 2,
+  "successful_uploads": 2,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "ted-miller",
+    "client_uuid": "ted-miller",
+    "document_count": 2,
+    "chunk_count": 3,
+    "total_tokens": 1445
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/ted-miller"
+}

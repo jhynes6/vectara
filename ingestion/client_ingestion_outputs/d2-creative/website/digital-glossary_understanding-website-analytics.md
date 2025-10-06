@@ -5,23 +5,15 @@ url: "https://www.d2creative.com/digital-glossary/understanding-website-analytic
 title: "Understanding Website Analytics"
 domain: "www.d2creative.com"
 path: "/digital-glossary/understanding-website-analytics/"
-scraped_time: "2025-09-06T16:15:19.475128"
+scraped_time: "2025-10-04T18:56:19.418350"
 url_depth: 2
-word_count: 985
+word_count: 1033
 client_name: "d2-creative"
 ---
 
 # Understanding Website Analytics
 
-Understanding Your Website Analytics: A Basic Overview
-
-## DIGITAL GLOSSARY
-
-# Understanding Website Analytics
-
-## Learn More About Our Branding Design & Development Solutions
-
-### Demystifying Analytics: Visitors, Visits, & Pageviews
+## Demystifying Analytics: Visitors, Visits, & Pageviews
 
 Determining what to focus on in your website analytics & reporting in addition to understanding the differences between similar sounding metrics can be a challenge. This page contains some basic information about what metrics you should focus and what they mean. We answer questions such as:
 
@@ -63,6 +55,8 @@ There are a number of different Channels that site visitors can come from. Chann
 *   _Referral traffic_ arrives on your site by clicking a link on another website that is not a search engine, social network, or a correctly-tagged paid advertisement.
 *   _Social traffic_ counts visits that originated from sites like Facebook, Twitter, Reddit, and other social media sites.
 *   _Email_ traffic is the result of clicking a link in an email that is correctly tagged. Using an email service provider like Campaign Monitor will generally tag your links automatically so they will be attributed. If the email links are not correctly tagged, they are usually counted in Direct by mistake.
+*   _Display_ and _Paid Search_ traffic comes via ads. [Display ads](https://www.d2creative.com/digital-glossary/display-advertising/) are generally graphics and are placed on other websites. [Paid Search ads](https://www.d2creative.com/digital-glossary/pay-per-click-advertising/) are text-based and appear in search results, like Google AdWords.
+
 #### How can I track specific actions on my site?
 
 If you’re using Google Analytics, defining **Events** and **Goals** on your website with tracking codes allows you to measure how people use specific content and resources on your site. A review of your business objectives will help you determine what actions you should be measuring.
@@ -74,10 +68,19 @@ Examples of Events and Goals trackable on websites could include:
 *   **Event:** Tracking visits to a page linked to from a promotion on your homepage
 *   **Goal:** Finding out the percentage of visitors who requested a quote after looking at a product page
 
-[Contact Us](https://www.d2creative.com/contact-us/) to discuss your digital marketing program.
-
 ### Digital Glossary Appendix
 
-## Let’s Connect
-
-## Let’s Connect
+*   [Ad Display](https://www.d2creative.com/digital-glossary/ad-display/)
+*   [Ad Retargeting](https://www.d2creative.com/digital-glossary/ad-retargeting/)
+*   [The Brand Discovery Process](https://www.d2creative.com/digital-glossary/brand-discovery/)
+*   [Branding Fundamentals](https://www.d2creative.com/digital-glossary/branding-fundamentals/)
+*   [Common Branding Deliverables](https://www.d2creative.com/digital-glossary/branding-deliverables/)
+*   [Community Management](https://www.d2creative.com/digital-glossary/community-management/)
+*   [Content Marketing](https://www.d2creative.com/digital-glossary/content-marketing/)
+*   [Email Marketing](https://www.d2creative.com/digital-glossary/email-marketing/)
+*   [Landing Pages](https://www.d2creative.com/digital-glossary/landing-pages/)
+*   [Pay-Per-Click (PPC) Advertising](https://www.d2creative.com/digital-glossary/pay-per-click-advertising/)
+*   [Programmatic Advertising](https://www.d2creative.com/digital-glossary/programmatic-advertising/)
+*   [Search Engine Optimization](https://www.d2creative.com/digital-glossary/search-engine-optimization/)
+*   [Understanding Website Analytics](https://www.d2creative.com/digital-glossary/understanding-website-analytics/)
+*   [Web Design Fundamentals](https://www.d2creative.com/digital-glossary/web-design-fundamentals/)

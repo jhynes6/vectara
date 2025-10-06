@@ -1,0 +1,67 @@
+{
+  "client_onboarding_summary": {
+    "client_id": "white-label-markitdown-sample",
+    "timestamp": "2025-10-03T06:04:32.998379",
+    "corpus_created": true,
+    "website_url": "https://whitelabeldigital.co/",
+    "drive_folder_id": "13RE7L-DeYRBf1H6RI2y62AG5UzyT6FSJ",
+    "output_directory": "ingestion/client_ingestion_outputs/white-label-markitdown-sample",
+    "upload_statistics": {
+      "successful_uploads": 158,
+      "failed_uploads": 1,
+      "total_files_processed": 159,
+      "success_rate": 99.37106918238993
+    },
+    "directories_created": [
+      "ingestion/client_ingestion_outputs/white-label-markitdown-sample/client_intake_form",
+      "ingestion/client_ingestion_outputs/white-label-markitdown-sample/client_materials",
+      "ingestion/client_ingestion_outputs/white-label-markitdown-sample/website"
+    ],
+    "performance_metrics": {
+      "onboarder_initialization": {
+        "duration": 0.06689190864562988,
+        "timestamp": "2025-10-03T05:49:56.779987",
+        "client_id": "white-label-markitdown-sample"
+      },
+      "directory_creation": {
+        "duration": 0.0002560615539550781,
+        "timestamp": "2025-10-03T05:49:56.780309",
+        "directories_created": 4,
+        "total_directories": 4
+      },
+      "corpus_creation": {
+        "duration": 9.105438947677612,
+        "timestamp": "2025-10-03T05:50:05.885823",
+        "status": "created",
+        "corpus_key": "white-label-markitdown-sample"
+      },
+      "drive_ingestion": {
+        "duration": 32.05382680892944,
+        "timestamp": "2025-10-03T05:50:52.311259",
+        "status": "success"
+      },
+      "website_ingestion": {
+        "duration": 618.4564549922943,
+        "timestamp": "2025-10-03T06:00:24.347359",
+        "status": "success"
+      },
+      "file_discovery": {
+        "duration": 0.02075481414794922,
+        "timestamp": "2025-10-03T06:00:24.371861",
+        "total_files": 159,
+        "intake_files": 1,
+        "materials_files": 11,
+        "website_files": 147
+      },
+      "file_upload": {
+        "duration": 248.61941075325012,
+        "timestamp": "2025-10-03T06:04:32.991471",
+        "total_files": 159,
+        "successful_uploads": 158,
+        "failed_uploads": 1,
+        "total_bytes": 473390
+      }
+    },
+    "onboarding_status": "completed_with_errors"
+  }
+}

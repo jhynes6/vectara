@@ -1,0 +1,1 @@
+[File saved for MarkItDown processing: WLD_Digital Advertising Report Card Sample.png]

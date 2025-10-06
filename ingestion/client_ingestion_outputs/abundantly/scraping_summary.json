@@ -1,0 +1,24 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 175,
+    "successful_scrapes": 163,
+    "failed_scrapes": 0,
+    "success_rate": "93.1%",
+    "total_words_scraped": 78441,
+    "categories": {
+      "blogs_resources": 100,
+      "other": 29,
+      "services_products": 19,
+      "about": 6,
+      "case_studies": 1,
+      "careers": 2,
+      "pricing": 4,
+      "industry_markets": 1,
+      "homepage": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "abundantly"
+    },
+    "scrape_time": "2025-10-04T18:53:56.662102"
+  }
+}

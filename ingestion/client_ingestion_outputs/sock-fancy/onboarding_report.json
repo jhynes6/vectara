@@ -1,0 +1,15 @@
+{
+  "client_id": "sock-fancy",
+  "timestamp": "2025-10-05T02:49:12.013882Z",
+  "files_processed": 83,
+  "successful_uploads": 81,
+  "failed_uploads": 2,
+  "database_stats": {
+    "client_id": "sock-fancy",
+    "client_uuid": "sock-fancy",
+    "document_count": 84,
+    "chunk_count": 135,
+    "total_tokens": 79646
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/sock-fancy"
+}

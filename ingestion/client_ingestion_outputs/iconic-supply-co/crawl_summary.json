@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-10-04T23:54:29.851870",
+  "folder_id": "15P-yz7XyYAFP4C1iedw6otq-aznPTy6r",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 1,
+    "supported_files": 1,
+    "successfully_processed": 1,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Iconic Supply Co Intake Form",
+      "final_filename": "other_iconic-supply-co-intake-form.md",
+      "id": "1dPNK_eXnNPWFN1smkuhFXfDZzxPKGFKx4-1Enq81g8o",
+      "size": "54394",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "other",
+      "url": "https://docs.google.com/document/d/1dPNK_eXnNPWFN1smkuhFXfDZzxPKGFKx4-1Enq81g8o/view",
+      "word_count": 791
+    }
+  ],
+  "failed_files": []
+}

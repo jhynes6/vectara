@@ -2,17 +2,13 @@
 source: "website"
 content_type: "blogs_resources"
 url: "https://www.d2creative.com/video-category/d2-bites/"
-title: "/video-category/d2-bites/"
+title: "D2 Bites"
 domain: "www.d2creative.com"
 path: "/video-category/d2-bites/"
-scraped_time: "2025-09-06T16:13:24.960632"
+scraped_time: "2025-10-04T18:55:40.193973"
 url_depth: 2
-word_count: 9
+word_count: 3
 client_name: "d2-creative"
 ---
 
-# /video-category/d2-bites/
-
-Project Impressions and Clicks on Top Digital Platforms
-
-[Calculate](/digital-ad-performance-calculator/)
+# D2 Bites

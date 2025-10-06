@@ -1,0 +1,23 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 79,
+    "successful_scrapes": 79,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 47694,
+    "categories": {
+      "services_products": 57,
+      "case_studies": 8,
+      "testimonials": 1,
+      "other": 6,
+      "homepage": 1,
+      "industry_markets": 1,
+      "blogs_resources": 4,
+      "about": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "sock-fancy"
+    },
+    "scrape_time": "2025-10-04T22:46:38.072779"
+  }
+}

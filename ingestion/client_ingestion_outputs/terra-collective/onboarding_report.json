@@ -1,0 +1,15 @@
+{
+  "client_id": "terra-collective",
+  "timestamp": "2025-10-04T22:51:38.420824Z",
+  "files_processed": 17,
+  "successful_uploads": 17,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "terra-collective",
+    "client_uuid": "terra-collective",
+    "document_count": 17,
+    "chunk_count": 19,
+    "total_tokens": 5691
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/terra-collective"
+}

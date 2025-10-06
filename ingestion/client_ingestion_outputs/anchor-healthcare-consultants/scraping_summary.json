@@ -1,0 +1,23 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 43,
+    "successful_scrapes": 43,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 13632,
+    "categories": {
+      "services_products": 18,
+      "blogs_resources": 5,
+      "case_studies": 1,
+      "about": 4,
+      "careers": 2,
+      "industry_markets": 1,
+      "other": 9,
+      "homepage": 3
+    },
+    "custom_metadata_applied": {
+      "client_name": "anchor-healthcare-consultants"
+    },
+    "scrape_time": "2025-10-05T00:20:45.748934"
+  }
+}

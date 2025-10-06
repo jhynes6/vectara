@@ -1,0 +1,15 @@
+{
+  "client_id": "quicksecure",
+  "timestamp": "2025-10-05T05:34:38.830744Z",
+  "files_processed": 2,
+  "successful_uploads": 2,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "quicksecure",
+    "client_uuid": "quicksecure",
+    "document_count": 2,
+    "chunk_count": 3,
+    "total_tokens": 1372
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/quicksecure"
+}

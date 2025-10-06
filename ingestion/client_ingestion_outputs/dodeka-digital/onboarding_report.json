@@ -1,0 +1,67 @@
+{
+  "client_onboarding_summary": {
+    "client_id": "dodeka-digital",
+    "timestamp": "2025-09-16T10:08:32.267787",
+    "corpus_created": true,
+    "website_url": "https://www.dodekadigital.com/",
+    "drive_folder_id": "15UXWbmuhFWpQBIp4lY6QHkPNHY_1eFJi",
+    "output_directory": "ingestion/client_ingestion_outputs/dodeka-digital",
+    "upload_statistics": {
+      "successful_uploads": 36,
+      "failed_uploads": 0,
+      "total_files_processed": 36,
+      "success_rate": 100.0
+    },
+    "directories_created": [
+      "ingestion/client_ingestion_outputs/dodeka-digital/client_intake_form",
+      "ingestion/client_ingestion_outputs/dodeka-digital/client_materials",
+      "ingestion/client_ingestion_outputs/dodeka-digital/website"
+    ],
+    "performance_metrics": {
+      "onboarder_initialization": {
+        "duration": 0.05859494209289551,
+        "timestamp": "2025-09-16T10:03:41.663735",
+        "client_id": "dodeka-digital"
+      },
+      "directory_creation": {
+        "duration": 0.0002548694610595703,
+        "timestamp": "2025-09-16T10:03:41.664061",
+        "directories_created": 4,
+        "total_directories": 4
+      },
+      "corpus_creation": {
+        "duration": 5.980867862701416,
+        "timestamp": "2025-09-16T10:03:47.645003",
+        "status": "created",
+        "corpus_key": "dodeka-digital"
+      },
+      "drive_ingestion": {
+        "duration": 2.3253531455993652,
+        "timestamp": "2025-09-16T10:03:51.278420",
+        "status": "success"
+      },
+      "website_ingestion": {
+        "duration": 224.48772478103638,
+        "timestamp": "2025-09-16T10:07:32.133640",
+        "status": "success"
+      },
+      "file_discovery": {
+        "duration": 0.0033080577850341797,
+        "timestamp": "2025-09-16T10:07:32.137765",
+        "total_files": 36,
+        "intake_files": 1,
+        "materials_files": 0,
+        "website_files": 35
+      },
+      "file_upload": {
+        "duration": 60.1256000995636,
+        "timestamp": "2025-09-16T10:08:32.263501",
+        "total_files": 36,
+        "successful_uploads": 36,
+        "failed_uploads": 0,
+        "total_bytes": 153752
+      }
+    },
+    "onboarding_status": "completed"
+  }
+}

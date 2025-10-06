@@ -1,0 +1,15 @@
+{
+  "client_id": "atrenet",
+  "timestamp": "2025-10-05T08:50:19.471758Z",
+  "files_processed": 15,
+  "successful_uploads": 15,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "atrenet",
+    "client_uuid": "atrenet",
+    "document_count": 15,
+    "chunk_count": 20,
+    "total_tokens": 9739
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/atrenet"
+}

@@ -1,0 +1,21 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 149,
+    "successful_scrapes": 115,
+    "failed_scrapes": 0,
+    "success_rate": "77.2%",
+    "total_words_scraped": 90331,
+    "categories": {
+      "services_products": 7,
+      "blogs_resources": 100,
+      "other": 4,
+      "homepage": 1,
+      "industry_markets": 2,
+      "about": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "mobile-locker"
+    },
+    "scrape_time": "2025-10-05T00:05:55.891258"
+  }
+}

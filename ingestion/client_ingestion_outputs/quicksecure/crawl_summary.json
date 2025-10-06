@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-10-05T01:34:11.162912",
+  "folder_id": "1eil5PhXYxU-I_ggD1WXgFJwOAwlpYSB_",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 1,
+    "supported_files": 1,
+    "successfully_processed": 1,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "QuickSecure: Client Intake Form",
+      "final_filename": "client_intake_quicksecure-client-intake-form.md",
+      "id": "1fvw7dN8J14mPIo_6nmx4oBtt3qBiv46gwcrl3RFrAuo",
+      "size": "54465",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1fvw7dN8J14mPIo_6nmx4oBtt3qBiv46gwcrl3RFrAuo/view",
+      "word_count": 837,
+      "special_category": "client_intake"
+    }
+  ],
+  "failed_files": []
+}

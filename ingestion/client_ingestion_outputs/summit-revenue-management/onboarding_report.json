@@ -1,0 +1,15 @@
+{
+  "client_id": "summit-revenue-management",
+  "timestamp": "2025-10-05T03:55:10.883166Z",
+  "files_processed": 7,
+  "successful_uploads": 7,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "summit-revenue-management",
+    "client_uuid": "summit-revenue-management",
+    "document_count": 7,
+    "chunk_count": 8,
+    "total_tokens": 2896
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/summit-revenue-management"
+}

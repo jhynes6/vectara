@@ -1,0 +1,36 @@
+{
+  "timestamp": "2025-10-04T17:56:40.309637",
+  "folder_id": "1_D-zv2Qm1Q4ozoXlTdYlduauoWQiWYY_",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 3,
+    "supported_files": 2,
+    "successfully_processed": 2,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "-73_client_brief_20250930_140119.md",
+      "final_filename": "case_studies_73-client-brief-20250930-140119.md",
+      "id": "1-3C3RBiNNqyrjO2U32Ktti0Ret2kzwZIkVN95e84_YU",
+      "size": "17752",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "case_studies",
+      "url": "https://docs.google.com/document/d/1-3C3RBiNNqyrjO2U32Ktti0Ret2kzwZIkVN95e84_YU/view",
+      "word_count": 2376
+    },
+    {
+      "name": "-73_client_brief_20250930_140119.md",
+      "final_filename": "case_studies_73-client-brief-20250930-140119.md",
+      "id": "1wdUexti8nDPxbocb6bKGcCbw617lXzwb",
+      "size": "18954",
+      "mime_type": "text/markdown",
+      "content_type": "case_studies",
+      "url": "https://drive.google.com/file/d/1wdUexti8nDPxbocb6bKGcCbw617lXzwb/view",
+      "word_count": 2672
+    }
+  ],
+  "failed_files": []
+}

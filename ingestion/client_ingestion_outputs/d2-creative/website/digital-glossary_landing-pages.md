@@ -2,20 +2,14 @@
 source: "website"
 content_type: "blogs_resources"
 url: "https://www.d2creative.com/digital-glossary/landing-pages/"
-title: "Landing Pages"
+title: "Landing Pages: Overview and Tips for Successful Strategies"
 domain: "www.d2creative.com"
 path: "/digital-glossary/landing-pages/"
-scraped_time: "2025-09-06T16:13:01.440344"
+scraped_time: "2025-10-04T18:56:08.903796"
 url_depth: 2
-word_count: 589
+word_count: 645
 client_name: "d2-creative"
 ---
-
-# Landing Pages
-
-Landing Pages: Overview and Tips for Successful Strategies
-
-## DIGITAL GLOSSARY
 
 # Landing Pages
 
@@ -30,7 +24,7 @@ In the context of digital marketing, a landing page is one that has been designe
 
 #### Why use a Landing Page?
 
-Focused [digital marketing](/capabilities/digital-marketing/) creates awareness of your products and solutions, and helps to draw customers along the path toward a sale. Landing pages are an integral component in this strategy.
+Focused digital marketing creates awareness of your products and solutions, and helps to draw customers along the path toward a sale. Landing pages are an integral component in this strategy.
 
 A good landing page will increase your conversion rates. Keep in mind, when someone clicks through, they’re only halfway to a true “conversion.” Your conversion rate is the percentage of **users who took the next action**. That’s why your landing page needs to focus 100% on giving just the right amount of information to **keep drawing the user forward to that next action**, or to weed them out if they’re not interested. If you make your page focused and relevant, then when you measure conversions, you’re measuring something real.
 
@@ -52,10 +46,21 @@ A good landing page will increase your conversion rates. Keep in mind, when some
 *   Think backward from what you want the customer to do. If it’s “view a webinar.” think about the customer’s process for coming to a decision to view the webinar. They probably don’t have time right now, but if it’s interesting enough, they’ll do it later. If your banner ad gives the brief reason to view, the landing page should provide substantiating information, with a CTA to schedule a viewing time (requesting an email, of course) – now you have a very qualified lead!
 *   Don’t link to your website. Avoid the temptation to put a link to your home page, or repeat your site’s global navigation. Don’t give the user an opportunity to vary from the path you want them to take.
 *   Make sure your landing page is mobile-friendly, since increasingly that’s how customers access web content. If they have to wait ’til they get back to their desk to click, you’ve lost them.
-[Contact Us](https://www.d2creative.com/contact-us/) to discuss your digital marketing program.
+*   Test your landing pages. Not sure if your landing page is effective? Do an A/B test. Products like Unbounce make it easy to create A/B landing pages and see the results.
 
 ### Digital Glossary Appendix
 
-## Let’s Connect
-
-## Let’s Connect
+*   [Ad Display](https://www.d2creative.com/digital-glossary/ad-display/)
+*   [Ad Retargeting](https://www.d2creative.com/digital-glossary/ad-retargeting/)
+*   [The Brand Discovery Process](https://www.d2creative.com/digital-glossary/brand-discovery/)
+*   [Branding Fundamentals](https://www.d2creative.com/digital-glossary/branding-fundamentals/)
+*   [Common Branding Deliverables](https://www.d2creative.com/digital-glossary/branding-deliverables/)
+*   [Community Management](https://www.d2creative.com/digital-glossary/community-management/)
+*   [Content Marketing](https://www.d2creative.com/digital-glossary/content-marketing/)
+*   [Email Marketing](https://www.d2creative.com/digital-glossary/email-marketing/)
+*   [Landing Pages](https://www.d2creative.com/digital-glossary/landing-pages/)
+*   [Pay-Per-Click (PPC) Advertising](https://www.d2creative.com/digital-glossary/pay-per-click-advertising/)
+*   [Programmatic Advertising](https://www.d2creative.com/digital-glossary/programmatic-advertising/)
+*   [Search Engine Optimization](https://www.d2creative.com/digital-glossary/search-engine-optimization/)
+*   [Understanding Website Analytics](https://www.d2creative.com/digital-glossary/understanding-website-analytics/)
+*   [Web Design Fundamentals](https://www.d2creative.com/digital-glossary/web-design-fundamentals/)

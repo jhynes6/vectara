@@ -1,0 +1,15 @@
+{
+  "client_id": "on-the-marc-media",
+  "timestamp": "2025-10-05T08:34:47.530804Z",
+  "files_processed": 11,
+  "successful_uploads": 11,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "on-the-marc-media",
+    "client_uuid": "on-the-marc-media",
+    "document_count": 11,
+    "chunk_count": 15,
+    "total_tokens": 7514
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/on-the-marc-media"
+}

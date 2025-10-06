@@ -1,0 +1,67 @@
+{
+  "client_onboarding_summary": {
+    "client_id": "reach_marketing",
+    "timestamp": "2025-09-10T11:35:05.681479",
+    "corpus_created": true,
+    "website_url": "https://reachmarketing.com/",
+    "drive_folder_id": "1X_vZdBMCkdE1jgO_0gng1nJxx8B1u1Ja",
+    "output_directory": "ingestion/client_ingestion_outputs/reach_marketing",
+    "upload_statistics": {
+      "successful_uploads": 167,
+      "failed_uploads": 0,
+      "total_files_processed": 167,
+      "success_rate": 100.0
+    },
+    "directories_created": [
+      "ingestion/client_ingestion_outputs/reach_marketing/client_intake_form",
+      "ingestion/client_ingestion_outputs/reach_marketing/client_materials",
+      "ingestion/client_ingestion_outputs/reach_marketing/website"
+    ],
+    "performance_metrics": {
+      "onboarder_initialization": {
+        "duration": 0.06238913536071777,
+        "timestamp": "2025-09-10T11:05:58.652627",
+        "client_id": "reach_marketing"
+      },
+      "directory_creation": {
+        "duration": 0.0002579689025878906,
+        "timestamp": "2025-09-10T11:05:58.652948",
+        "directories_created": 4,
+        "total_directories": 4
+      },
+      "corpus_creation": {
+        "duration": 15.761035919189453,
+        "timestamp": "2025-09-10T11:06:14.414056",
+        "status": "created",
+        "corpus_key": "reach_marketing"
+      },
+      "drive_ingestion": {
+        "duration": 44.05167508125305,
+        "timestamp": "2025-09-10T11:07:05.733581",
+        "status": "success"
+      },
+      "website_ingestion": {
+        "duration": 1439.9116837978363,
+        "timestamp": "2025-09-10T11:30:14.326476",
+        "status": "success"
+      },
+      "file_discovery": {
+        "duration": 0.013036966323852539,
+        "timestamp": "2025-09-10T11:30:14.340291",
+        "total_files": 167,
+        "intake_files": 1,
+        "materials_files": 1,
+        "website_files": 165
+      },
+      "file_upload": {
+        "duration": 291.338347196579,
+        "timestamp": "2025-09-10T11:35:05.678940",
+        "total_files": 167,
+        "successful_uploads": 167,
+        "failed_uploads": 0,
+        "total_bytes": 1134073
+      }
+    },
+    "onboarding_status": "completed"
+  }
+}

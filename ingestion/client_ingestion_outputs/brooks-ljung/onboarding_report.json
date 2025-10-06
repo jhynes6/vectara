@@ -1,0 +1,15 @@
+{
+  "client_id": "brooks-ljung",
+  "timestamp": "2025-10-05T06:42:45.960468Z",
+  "files_processed": 41,
+  "successful_uploads": 41,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "brooks-ljung",
+    "client_uuid": "brooks-ljung",
+    "document_count": 41,
+    "chunk_count": 42,
+    "total_tokens": 4865
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/brooks-ljung"
+}

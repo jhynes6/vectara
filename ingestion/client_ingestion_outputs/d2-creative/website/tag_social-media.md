@@ -2,24 +2,20 @@
 source: "website"
 content_type: "blogs_resources"
 url: "https://www.d2creative.com/tag/social-media/"
-title: "Yep."
+title: "Life Science & Medical Device Marketing Agency"
 domain: "www.d2creative.com"
 path: "/tag/social-media/"
-scraped_time: "2025-09-06T16:12:49.386999"
+scraped_time: "2025-10-04T18:56:37.757869"
 url_depth: 2
-word_count: 506
+word_count: 533
 client_name: "d2-creative"
 ---
 
 # Yep.
 
-Life Science & Medical Device Focused Marketing Agency in NJ
-
-# Yep.
-
 ![Microphone with red tint](https://www.d2creative.com/wp-content/uploads/2025/05/Mike-Overlay@2x.png)
 
-## Now Let’s Work On Your Win.
+## Now Let’s Work On Your Win.
 
 ![2025 Vega Awards Gold Winner Icon](https://www.d2creative.com/wp-content/uploads/2025/05/2025-Vega-Digital-Awards-Gold-Winner@2x.png)
 
@@ -27,7 +23,7 @@ Life Science & Medical Device Focused Marketing Agency in NJ
 
 ## Gold Winner
 
-## Website & Mobile Sites
+## Website & Mobile Sites  
 Business-to-Business
 
 ![2025 Vega Awards Gold Winner Icon](https://www.d2creative.com/wp-content/uploads/2025/05/2025-Vega-Digital-Awards-Gold-Winner@2x.png)
@@ -36,7 +32,7 @@ Business-to-Business
 
 ## Gold Winner
 
-## Digital Marketing
+## Digital Marketing  
 Social Campaign
 
 ![2025 Vega Awards Gold Winner Icon](https://www.d2creative.com/wp-content/uploads/2025/05/2025-Vega-Digital-Awards-Gold-Winner@2x.png)
@@ -45,7 +41,7 @@ Social Campaign
 
 ## Gold Winner
 
-## Website & Mobile Sites
+## Website & Mobile Sites  
 Website Redesign
 
 ![2025 Vega Awards Silver Winner Icon](https://www.d2creative.com/wp-content/uploads/2025/05/2025-Vega-Digital-Awards-Silver-Winner@2x.png)
@@ -54,7 +50,7 @@ Website Redesign
 
 ## Silver Winner
 
-## Digital Marketing
+## Digital Marketing  
 Integrated Campaign
 
 [**See All Our Awards**](/about-us/award-page/)
@@ -89,22 +85,22 @@ We use unique and powerful storytelling techniques that change hearts, minds, an
 
 ### Identify. Connect. Engage. Convert.
 
-Brand & Messaging
+Brand & Messaging  
 Development
 
-Content Development
+Content Development  
 & Marketing
 
-Digital
+Digital  
 Marketing
 
-Search Engine
+Search Engine  
 Optimization
 
-Web/App Design
+Web/App Design  
 & Development
 
-Video Production
+Video Production  
 & Digital Storytelling
 
 ### Outcomes That Speak Louder Than Words
@@ -139,12 +135,36 @@ As an independent, full-service marketing agency, we prioritize YOUR needs over 
 
 We bring top-tier, in-house expertise to the table, spanning branding, web/app development, video production, digital marketing, AR/XR experiences, and more – and rest assured, there’s no B-team here.
 
-[
-
-About D2 Creative
-
-](https://www.d2creative.com/about-us/)
+[About D2 Creative](https://www.d2creative.com/about-us/)
 
 ## Let’s Connect
 
 ## Let’s Connect
+
+**New Business**
+
+Mike DeFabrizio  
+732-539-2257  
+[Email Mike](/cdn-cgi/l/email-protection#3a575e5f5c5b5848534053557a5e0859485f5b4e534c5f14595557)
+
+**Careers at D2  
+**[See Openings](/careers/)
+
+**Insights**
+
+Explore contemporary marketing and communications expertise:
+
+[Digital Glossary](/digital-glossary/)  
+[Blog](/blog/)  
+[White Papers](https://www.d2creative.com/white-papers/)  
+[Digital Ad Performance Calculator](/digital-ad-performance-calculator/)
+
+**Location**
+
+399 Campus Drive  
+Suite 309  
+Somerset, NJ 08873-1178
+
+**Connect**
+
+[![](/wp-content/uploads/2022/08/linkedin-logo.png)](https://www.linkedin.com/company/d2-creative)

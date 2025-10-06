@@ -2,39 +2,26 @@
 source: "website"
 content_type: "case_studies"
 url: "https://www.d2creative.com/our-work/web-app-development-for-pharmaceutical-company/"
-title: "Simple Speaker Contracting for a Pharmaceutical Giant"
+title: "Web App Development for Streamlined Contract Management"
 domain: "www.d2creative.com"
 path: "/our-work/web-app-development-for-pharmaceutical-company/"
-scraped_time: "2025-09-06T16:13:16.964364"
+scraped_time: "2025-10-04T18:56:54.281857"
 url_depth: 2
-word_count: 485
+word_count: 470
 client_name: "d2-creative"
 ---
 
-# Simple Speaker Contracting for a Pharmaceutical Giant
-
-Web App Development for Streamlined Contract Management
-
 ## Multinational Pharmaceutical Company
 
-#
+## Simple Speaker Contracting for a Pharmaceutical Giant
 
-Simple Speaker Contracting for a Pharmaceutical Giant
-
-App Design & Development, Website Design & Development
-
-## The
-Challenge
-
-## Our
-Approach
-
-## The
-Result
+### The Challenge
 
 Speaker bureau programs connect brands with medical professionals and provide training and resources so that they can in turn promote the brand and its products to other physicians. HCP databases help brands keep track of the names, brand affiliations, and contracts of their promotional speakers.
 
 Our client, a multinational pharmaceutical company, found themselves lacking the tools to efficiently manage the speaker bureaus across their many brands. With no tools in place to manage much of the speaker contracting process, brand managers were left manually contacting and updating the contract status for individual speakers. This was time consuming and wasted resources, so the company asked D2 Creative to help streamline the process.
+
+### Our Approach
 
 What this pharmaceutical company needed was an application that could handle speaker negotiation and contract information all in one place while simplifying key parts of the contracting process. We designed and built a speaker portal that could handle all aspects of this process right on the platform. This meant that all aspects of the contract could be managed through a single login, even if a speaker was affiliated with multiple brands.
 
@@ -43,6 +30,8 @@ We designed the application to allow for a streamlined contracting process of mo
 All necessary training was available through the application as well. Speakers would be sent training courses directly and given access to event-specific materials once they were complete, ensuring compliance and preparedness.
 
 Once contracting was finalized, brand managers and speakers could sign all necessary documents through the platform. Brand managers got automatic reminders on contract status and speaker history, helping them keep on top of their current and previously contracted speakers without any extra work.
+
+### The Result
 
 The new system gave our client a portal for speaker bureaus that was tailored to their business and capable of managing contracts at a level that off-the-shelf applications couldn’t match. Both brand managers and speakers now have a more effective and efficient way to stay on top of contract obligations and ensure excellent work.
 

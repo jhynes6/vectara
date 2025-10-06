@@ -1,0 +1,117 @@
+{
+  "timestamp": "2025-10-05T04:34:17.563256",
+  "folder_id": "1M81_h7a4tm5He4bxrZaPGXyoqvm60NG9",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 12,
+    "supported_files": 10,
+    "successfully_processed": 10,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "On The Marc: Client Intake Form",
+      "final_filename": "client_intake_on-the-marc-client-intake-form.md",
+      "id": "15X4csVr6MrnE04Muv5b_JcoC9O9sbXjADaoNXudPDUY",
+      "size": "16291",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/15X4csVr6MrnE04Muv5b_JcoC9O9sbXjADaoNXudPDUY/view",
+      "word_count": 1112,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "On The Marc_client emails to attorneys 5.31",
+      "final_filename": "other_on-the-marc-client-emails-to-attorneys-5.md",
+      "id": "1O2ilV_fdLCR06_ntLRNKBSP5ryDswXhk",
+      "size": "9209",
+      "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1O2ilV_fdLCR06_ntLRNKBSP5ryDswXhk/view",
+      "word_count": 851
+    },
+    {
+      "name": "General Lawyer Case Study.pdf",
+      "final_filename": "case_studies_general-lawyer-case-study.md",
+      "id": "1J-kVmS6zeIF64lu7lOZ3jfWPWeOg5Zun",
+      "size": "1621948",
+      "mime_type": "application/pdf",
+      "content_type": "case_studies",
+      "url": "https://drive.google.com/file/d/1J-kVmS6zeIF64lu7lOZ3jfWPWeOg5Zun/view",
+      "word_count": 237
+    },
+    {
+      "name": "Case Study -  AGT Addimmune pdf.pdf",
+      "final_filename": "case_studies_case-study-agt-addimmune-pdf.md",
+      "id": "1z5avlRAkJryPLQ-WRsr8-7hMYYDXnFj9",
+      "size": "5365112",
+      "mime_type": "application/pdf",
+      "content_type": "case_studies",
+      "url": "https://drive.google.com/file/d/1z5avlRAkJryPLQ-WRsr8-7hMYYDXnFj9/view",
+      "word_count": 1524
+    },
+    {
+      "name": "Brand Style Guide.pdf",
+      "final_filename": "other_brand-style-guide.md",
+      "id": "1-2uZnWq8-VfFHGj6HHH5OzApDJWwviYD",
+      "size": "3571918",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1-2uZnWq8-VfFHGj6HHH5OzApDJWwviYD/view",
+      "word_count": 344
+    },
+    {
+      "name": "OTMM - Case Study -  Garson (1).pdf",
+      "final_filename": "case_studies_otmm-case-study-garson-1.md",
+      "id": "1oMYVqLSO-Wfn7M7hOKJc1Iv4EnaC0LfA",
+      "size": "6148632",
+      "mime_type": "application/pdf",
+      "content_type": "case_studies",
+      "url": "https://drive.google.com/file/d/1oMYVqLSO-Wfn7M7hOKJc1Iv4EnaC0LfA/view",
+      "word_count": 339
+    },
+    {
+      "name": "OTMM - Case Study -  OTL.pdf",
+      "final_filename": "case_studies_otmm-case-study-otl.md",
+      "id": "1_ii-i5AFl-gu6yVZKNhYHjBHQ1lVvWzV",
+      "size": "7025385",
+      "mime_type": "application/pdf",
+      "content_type": "case_studies",
+      "url": "https://drive.google.com/file/d/1_ii-i5AFl-gu6yVZKNhYHjBHQ1lVvWzV/view",
+      "word_count": 391
+    },
+    {
+      "name": "OTMM-Case Study Stein Sperling.pdf",
+      "final_filename": "case_studies_otmm-case-study-stein-sperling.md",
+      "id": "16gw47pnTKAvyhsUJcTiwqIeTH0VnfTzv",
+      "size": "3008905",
+      "mime_type": "application/pdf",
+      "content_type": "case_studies",
+      "url": "https://drive.google.com/file/d/16gw47pnTKAvyhsUJcTiwqIeTH0VnfTzv/view",
+      "word_count": 254
+    },
+    {
+      "name": "_OTMM - Case Study -  SP.pdf",
+      "final_filename": "case_studies_otmm-case-study-sp.md",
+      "id": "1GdKzo5sWMh3P9_Evbb380BSl-LeaLgVQ",
+      "size": "1610015",
+      "mime_type": "application/pdf",
+      "content_type": "case_studies",
+      "url": "https://drive.google.com/file/d/1GdKzo5sWMh3P9_Evbb380BSl-LeaLgVQ/view",
+      "word_count": 448
+    },
+    {
+      "name": "Mintleads Proposal Draft_1.29.24.pdf",
+      "final_filename": "pitch_decks_mintleads-proposal-draft-1-29-24.md",
+      "id": "1msd7NT4TNP14HW-7tVH_DG2EF-6huxI4",
+      "size": "6481647",
+      "mime_type": "application/pdf",
+      "content_type": "pitch_decks",
+      "url": "https://drive.google.com/file/d/1msd7NT4TNP14HW-7tVH_DG2EF-6huxI4/view",
+      "word_count": 1363
+    }
+  ],
+  "failed_files": []
+}

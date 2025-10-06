@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-09-30T13:40:31.867793",
+  "folder_id": "1_D-zv2Qm1Q4ozoXlTdYlduauoWQiWYY_",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 1,
+    "supported_files": 1,
+    "successfully_processed": 1,
+    "errors": 0
+  },
+  "crawled_files": [
+    {
+      "name": "Longitude73: Client Intake Form",
+      "final_filename": "client_intake_longitude73-client-intake-form.md",
+      "id": "1Ni41Kh4QYyI2D2HyPfwLPmGrYjLKYaXCAozYT4_8m68",
+      "size": "38212",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1Ni41Kh4QYyI2D2HyPfwLPmGrYjLKYaXCAozYT4_8m68/view",
+      "word_count": 597,
+      "special_category": "client_intake"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "client_id": "tenstrat",
+  "timestamp": "2025-10-05T05:43:42.784979Z",
+  "files_processed": 74,
+  "successful_uploads": 74,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "tenstrat",
+    "client_uuid": "tenstrat",
+    "document_count": 74,
+    "chunk_count": 91,
+    "total_tokens": 33496
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/tenstrat"
+}

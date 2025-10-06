@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-10-05T01:34:16.473901",
+  "folder_id": "1Q_A-L9vauOwWuz2U2SWpKoyqzARL8btw",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 3,
+    "supported_files": 3,
+    "successfully_processed": 3,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Client Intake Form: Pointsville",
+      "final_filename": "client_intake_client-intake-form-pointsville.md",
+      "id": "14k9xHz_uPAL3LMrdjli_Jytm7nnlusnFwrPMBC6lFQk",
+      "size": "38534",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/14k9xHz_uPAL3LMrdjli_Jytm7nnlusnFwrPMBC6lFQk/view",
+      "word_count": 849,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "Pointsville Loyalty - Standard.pdf",
+      "final_filename": "other_pointsville-loyalty-standard.md",
+      "id": "1hkfI7j788QGjBb0qOCUzc5-ZJadcYKCi",
+      "size": "3562831",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1hkfI7j788QGjBb0qOCUzc5-ZJadcYKCi/view",
+      "word_count": 609
+    },
+    {
+      "name": "Pointsville One-Pager.pdf",
+      "final_filename": "other_pointsville-one-pager.md",
+      "id": "1p2WVhlik5PZl7i4GX7-h9adlaf9huu6G",
+      "size": "3255549",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1p2WVhlik5PZl7i4GX7-h9adlaf9huu6G/view",
+      "word_count": 185
+    }
+  ],
+  "failed_files": []
+}

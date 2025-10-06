@@ -2,29 +2,30 @@
 source: "website"
 content_type: "case_studies"
 url: "https://www.d2creative.com/our-work/campaign-development/"
-title: "/our-work/campaign-development/"
+title: "Integrated Marketing Campaign Development & Launch"
 domain: "www.d2creative.com"
 path: "/our-work/campaign-development/"
-scraped_time: "2025-09-06T16:14:23.458381"
+scraped_time: "2025-10-04T18:57:02.784579"
 url_depth: 2
-word_count: 369
+word_count: 377
 client_name: "d2-creative"
 ---
 
-# /our-work/campaign-development/
+## Fujifilm Medical Systems
 
 Campaign Development for a Broad-reaching Product Launch
 
-Campaign Development, Print Design, Trade Show Support, Website Design & Development
+Campaign Development, Print Design, Trade Show Support, Website Design & Development
 
-## The
-Challenge
+![Fujifilm logo](https://www.d2creative.com/wp-content/uploads/2022/07/fujifilm-logo@2x.png)
 
-## Our
-Approach
+## The  Challenge
 
-## The
-Result
+## Our  Approach
+
+## The  Result
+
+![Fujifilm logo](https://www.d2creative.com/wp-content/uploads/2022/07/fujifilm-logo@2x.png)
 
 Fujifilm approached D2 Creative in anticipation of the launch of a new digital mammography product. Their new Aspire low-dose x-ray technology simplified breast imaging with smart controls and shortcuts. It also minimized patient discomfort and anxiety (compared to traditional mammograms) with a flexible, slotted, and tilted paddle design. Increased detection sensitivity made it easier to capture information while minimizing the patient x-ray dose.
 
@@ -32,7 +33,7 @@ Fujifilm needed to present these imaging, operational, and patient benefits to m
 
 D2 Creative’s first step was to take Fujifilm’s marketing team through a comprehensive [campaign development](https://www.d2creative.com/digital-glossary/brand-discovery/) workshop to understand the campaign objectives, measurements for success and core brand attributes.
 
-Our solution took shape in “The Vital Campaign”. Using a common tagline to address Fujifilm’s diverse audiences allowed us to direct an appropriate, focused message to each specific audience. From Here, the “Because \_\_\_\_ is vital,” was born.
+Our solution took shape in “The Vital Campaign”. Using a common tagline to address Fujifilm’s diverse audiences allowed us to direct an appropriate, focused message to each specific audience. From Here, the “Because ___ is vital,” was born.
 
 The Aspire campaign’s launch included a product website, email campaign, and sales kit. We also developed large format print graphics and an animated video demonstrating the innovative technology. This video was featured at the annual Radiology Society of North America (RSNA) conference, but can also be used to promote the product on social media or in client presentations.
 

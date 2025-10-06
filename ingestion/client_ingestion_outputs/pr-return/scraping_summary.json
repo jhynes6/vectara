@@ -1,0 +1,20 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 574,
+    "successful_scrapes": 105,
+    "failed_scrapes": 0,
+    "success_rate": "18.3%",
+    "total_words_scraped": 23591,
+    "categories": {
+      "blogs_resources": 100,
+      "other": 2,
+      "careers": 1,
+      "services_products": 1,
+      "homepage": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "pr-return"
+    },
+    "scrape_time": "2025-10-05T02:34:44.342872"
+  }
+}

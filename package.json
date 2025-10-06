@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "parlant-chat-react": "^1.0.10",
+    "parlant-client": "^3.0.1"
+  }
+}

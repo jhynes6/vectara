@@ -5,13 +5,11 @@ url: "https://www.d2creative.com/player-embed/"
 title: "/player-embed/"
 domain: "www.d2creative.com"
 path: "/player-embed/"
-scraped_time: "2025-09-06T16:14:20.761412"
+scraped_time: "2025-10-04T18:57:20.577821"
 url_depth: 1
 word_count: 42
 client_name: "d2-creative"
 ---
-
-# /player-embed/
 
 Video Player is loading.
 

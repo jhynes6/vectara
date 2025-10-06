@@ -6,7 +6,7 @@ This script allows you to interact with an existing case-study-summarizer agent 
 your Vectara workspace that generates case study summaries based on document IDs.
 
 Usage:
-    python case_study_summarizer.py --doc-id "clients_rapid-pos.md" 
+    python case_study_summarizer.py --doc-id "clients_rapid-pos.md" --client-id "corpus_123"
     python case_study_summarizer.py --doc-id "your-doc-id" --query "What are the key achievements?"
     python case_study_summarizer.py --list-agents  # List all available agents
 """
@@ -194,7 +194,7 @@ class CaseStudySummarizer:
         
         # Use the corpus key from initialization
         if not self.corpus_key:
-            raise ValueError("VECTARA_CORPUS_KEY is required (set as environment variable or --corpus-key argument)")
+            raise ValueError("VECTARA_CORPUS_KEY is required (set as environment variable or --client-id argument)")
         
         # Create Vectara tool factory
         vec_factory = VectaraToolFactory(
@@ -526,7 +526,7 @@ class CaseStudySummarizer:
             )
         
         if not self.agent:
-            return f"Error: VECTARA_CORPUS_KEY is required to generate summaries (set as environment variable or --corpus-key argument). Agent attributes can still be viewed with --show-attributes."
+            return f"Error: VECTARA_CORPUS_KEY is required to generate summaries (set as environment variable or --client-id argument). Agent attributes can still be viewed with --show-attributes."
         
         # Create enhanced query that instructs the agent to use the doc_id filter and include metadata
         enhanced_query = f"{query}\n\nPlease use the query_case_study_documents tool with doc_id='{doc_id}' to search for this specific document. Make sure to examine the document metadata for source URL information to include in the SOURCE section of your summary."
@@ -616,7 +616,7 @@ class CaseStudySummarizer:
             )
         
         if not self.agent:
-            return f"Error: VECTARA_CORPUS_KEY is required to generate summaries (set as environment variable or --corpus-key argument). Agent attributes can still be viewed with --show-attributes."
+            return f"Error: VECTARA_CORPUS_KEY is required to generate summaries (set as environment variable or --client-id argument). Agent attributes can still be viewed with --show-attributes."
         
         # Create enhanced query that instructs the agent to use the doc_id filter and include metadata
         enhanced_query = f"{query}\n\nPlease use the query_case_study_documents tool with doc_id='{doc_id}' to search for this specific document. Make sure to examine the document metadata for source URL information to include in the SOURCE section of your summary."
@@ -732,8 +732,9 @@ def list_workspace_corpora(api_key: str = None):
             print(f"   📅 Created: {corpus.get('created_at', 'N/A')}")
         
         print("\n" + "=" * 80)
-        print("💡 Copy the 'Key' value and set it as VECTARA_CORPUS_KEY")
+        print("💡 Copy the 'Key' value and use it as --client-id or set as VECTARA_CORPUS_KEY")
         print("💡 Example: export VECTARA_CORPUS_KEY=\"your_corpus_key_here\"")
+        print("💡 Or use: --client-id \"your_corpus_key_here\"")
         
     except Exception as e:
         print(f"❌ Error listing corpora: {e}")
@@ -798,7 +799,7 @@ def list_workspace_agents(api_key: str = None):
         
         print("\n" + "=" * 80)
         print("💡 Use --agent-id <ID> to work with a specific agent")
-        print("🔍 Use --doc-id <ID> to generate case study summaries")
+        print("🔍 Use --doc-id <ID> --client-id <CORPUS_KEY> to generate case study summaries")
         
     except Exception as e:
         print(f"❌ Error listing agents: {e}")
@@ -813,10 +814,10 @@ def main():
 Examples:
   %(prog)s --list-agents                                      # List all workspace agents
   %(prog)s --list-corpora                                     # List all document collections 
-  %(prog)s --doc-id "clients_rapid-pos.md" --corpus-key "corpus_123"  # Generate case study summary
+  %(prog)s --doc-id "clients_rapid-pos.md" --client-id "corpus_123"  # Generate case study summary
   %(prog)s --doc-id "project.pdf" --query "What challenges?" # Custom focused summary
   %(prog)s --agent-id "agt_xyz" --show-attributes             # Show agent attributes
-  %(prog)s --doc-id "client.md" --async --corpus-key "corpus_123"     # Use async processing
+  %(prog)s --doc-id "client.md" --async --client-id "corpus_123"     # Use async processing
         """
     )
     
@@ -860,8 +861,8 @@ Examples:
     )
     
     parser.add_argument(
-        "--corpus-key",
-        help="Vectara corpus key (defaults to VECTARA_CORPUS_KEY env var)"
+        "--client-id",
+        help="Vectara corpus key / client ID (defaults to VECTARA_CORPUS_KEY env var)"
     )
     
     parser.add_argument(
@@ -897,7 +898,7 @@ Examples:
             summarizer = CaseStudySummarizer(
                 api_key=args.api_key,
                 agent_id=args.agent_id,
-                corpus_key=args.corpus_key
+                corpus_key=args.client_id
             )
             
             # Show agent attributes if requested

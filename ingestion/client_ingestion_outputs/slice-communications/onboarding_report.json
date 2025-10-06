@@ -1,0 +1,15 @@
+{
+  "client_id": "slice-communications",
+  "timestamp": "2025-10-05T05:33:39.434794Z",
+  "files_processed": 457,
+  "successful_uploads": 457,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "slice-communications",
+    "client_uuid": "slice-communications",
+    "document_count": 457,
+    "chunk_count": 471,
+    "total_tokens": 59419
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/slice-communications"
+}

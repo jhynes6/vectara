@@ -13,6 +13,8 @@ service_account.json
 *service_account*.json
 credentials.json
 *credentials*.json
+token.json
+*token*.json
 
 # Python
 __pycache__/
@@ -51,3 +53,4 @@ Thumbs.db
 
 # Separate Vectara repositories (cloned for development)
 vectara-documentation/
+node_modules

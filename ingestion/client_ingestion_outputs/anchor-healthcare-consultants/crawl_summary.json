@@ -1,0 +1,78 @@
+{
+  "timestamp": "2025-10-05T00:19:18.879554",
+  "folder_id": "1Au-lZgfFi5inEdMz12FMW_06WoqeoUXy",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 6,
+    "supported_files": 6,
+    "successfully_processed": 6,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Client Intake Form - Anchor Healthcare Consultants",
+      "final_filename": "client_intake_client-intake-form-anchor-healthcare-consultants.md",
+      "id": "19HOw-TgQElycaX1nfIqDRe4-k34ZC6OKNq_37-_4AHU",
+      "size": "54462",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/19HOw-TgQElycaX1nfIqDRe4-k34ZC6OKNq_37-_4AHU/view",
+      "word_count": 978,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "Client Intake Form - Canopii",
+      "final_filename": "client_intake_client-intake-form-canopii.md",
+      "id": "1XrCyzUgh_7ZLo-tGBSH21N5sUvv6ROc9sZAyGfsPtbA",
+      "size": "54354",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1XrCyzUgh_7ZLo-tGBSH21N5sUvv6ROc9sZAyGfsPtbA/view",
+      "word_count": 616,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "Anchor Healthcare Consultants - About Us.pdf",
+      "final_filename": "capabilities_overview_anchor-healthcare-consultants-about-us.md",
+      "id": "1OxolK4LcAA7cikRHAHS8HIqsDNBAUi6K",
+      "size": "205726",
+      "mime_type": "application/pdf",
+      "content_type": "capabilities_overview",
+      "url": "https://drive.google.com/file/d/1OxolK4LcAA7cikRHAHS8HIqsDNBAUi6K/view",
+      "word_count": 184
+    },
+    {
+      "name": "Anchor Healthcare Consultants - Anesthesia Claims.pdf",
+      "final_filename": "other_anchor-healthcare-consultants-anesthesia-claims.md",
+      "id": "1KxYgAl-gg_qoyipWc6OdMHve9tTcpNvN",
+      "size": "202008",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1KxYgAl-gg_qoyipWc6OdMHve9tTcpNvN/view",
+      "word_count": 164
+    },
+    {
+      "name": "Anchor Healthcare Consultants - Strategic Revenue Cycle Engagements.pdf",
+      "final_filename": "other_anchor-healthcare-consultants-strategic-revenue-cycle-engagements.md",
+      "id": "1c3EcUQ2NYl_ubu7qnuen4roxv7WFWQYj",
+      "size": "148114",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1c3EcUQ2NYl_ubu7qnuen4roxv7WFWQYj/view",
+      "word_count": 189
+    },
+    {
+      "name": "Anchor Healthcare Consultants - Epic Staffing and Support.pdf",
+      "final_filename": "other_anchor-healthcare-consultants-epic-staffing-and-support.md",
+      "id": "1hb5bQr5egZ_rEqHLGQTmRoPDYII_pTh0",
+      "size": "233016",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1hb5bQr5egZ_rEqHLGQTmRoPDYII_pTh0/view",
+      "word_count": 148
+    }
+  ],
+  "failed_files": []
+}

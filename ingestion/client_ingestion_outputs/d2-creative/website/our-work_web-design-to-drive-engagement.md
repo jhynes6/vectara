@@ -2,33 +2,18 @@
 source: "website"
 content_type: "case_studies"
 url: "https://www.d2creative.com/our-work/web-design-to-drive-engagement/"
-title: "Website Design to Drive Engagement and Sub­scriptions"
+title: "UX & UI Design for Professional Networking Site"
 domain: "www.d2creative.com"
 path: "/our-work/web-design-to-drive-engagement/"
-scraped_time: "2025-09-06T16:12:39.380881"
+scraped_time: "2025-10-04T18:57:13.324325"
 url_depth: 2
-word_count: 359
+word_count: 240
 client_name: "d2-creative"
 ---
 
 # Website Design to Drive Engagement and Sub­scriptions
 
-## QOLOGY
-
-#
-
-Website Design to Drive Engagement and Sub­scriptions
-
-Website Design & Development
-
-## The
-Challenge
-
-## Our
-Approach
-
-## The
-Result
+## The Challenge
 
 Our client had an existing, peer-to-peer professional networking website. They asked us to explore ways to increase subscription rates and generate more user activity.
 
@@ -44,16 +29,8 @@ The new website design is responsive and easier to use. When we developed the ne
 
 ## MOOD BOARD
 
-![Qology mood board with color palete swatches, different button styles and colors, UI Patterns, and Typography.](https://www.d2creative.com/wp-content/uploads/2022/07/qology-moodboard@2x.jpg)
-
 ## WIREFRAMES
-
-![Qology wireframe webpage, black and white.](https://www.d2creative.com/wp-content/uploads/2022/07/qology-mobile-wireframe-1@2x.jpg) ![Qology web page with notifications, rewards, profile, etc. black and white.](https://www.d2creative.com/wp-content/uploads/2022/07/qology-mobile-wireframe-2@2x.jpg)
 
 ## WEB DESIGN & DEVELOPMENT
 
-![Qology desktop web page with posts for Allergy, Asthma & Immunology and ads on page.](https://www.d2creative.com/wp-content/uploads/2022/07/qology-mobile-website-1@2x.jpg) ![Qology desktop web page with list of search results and ads on page.](https://www.d2creative.com/wp-content/uploads/2022/07/qology-mobile-website-2@2x.jpg)
-
 ## MOBILE WEB DESIGN & DEVELOPMENT
-
-![Qology Mobile webpage app with search function, join and login buttons.](https://www.d2creative.com/wp-content/uploads/2022/07/qology-mobile-website-mobile-1@2x.jpg) ![Mobile webpage for Qology, with featured article at top and other tabs for news articles, notifications, rewards, and medical news.](https://www.d2creative.com/wp-content/uploads/2022/07/qology-mobile-website-mobile-3@2x.jpg) ![Qology Mobile webpage with search function, menu button, and fields to post questions to Qology.](https://www.d2creative.com/wp-content/uploads/2022/07/qology-mobile-website-mobile-2@2x.jpg)

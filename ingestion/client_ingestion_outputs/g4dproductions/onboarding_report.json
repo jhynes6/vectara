@@ -1,0 +1,15 @@
+{
+  "client_id": "g4dproductions",
+  "timestamp": "2025-10-05T03:46:20.575877Z",
+  "files_processed": 24,
+  "successful_uploads": 24,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "g4dproductions",
+    "client_uuid": "g4dproductions",
+    "document_count": 24,
+    "chunk_count": 27,
+    "total_tokens": 8731
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/g4dproductions"
+}

@@ -5,32 +5,13 @@ url: "https://www.d2creative.com/our-work/ieee-collabratec/"
 title: "Improving User Experience for a Global Networking Platform"
 domain: "www.d2creative.com"
 path: "/our-work/ieee-collabratec/"
-scraped_time: "2025-09-06T16:13:34.886582"
+scraped_time: "2025-10-04T18:57:08.058684"
 url_depth: 2
-word_count: 665
+word_count: 632
 client_name: "d2-creative"
 ---
 
-# Improving User Experience for a Global Networking Platform
-
-Improved UX for a Global Networking & Collaboration Platform
-
-## IEEE COLLABRATEC
-
-#
-
-Improving User Experience for a Global Networking Platform
-
-UI/UX Design, Website Design & Development
-
-## The
-Challenge
-
-## Our
-Approach
-
-## The
-Result
+## The  Challenge
 
 Users of [IEEE Collabratec](https://ieee-collabratec.ieee.org/), a leading professional networking and collaboration platform for the IEEE and global technical communities, often found themselves navigating a labyrinth platform. Features and resources, though abundant, were often obscured in its twists and turns, which meant that users had to know precisely where to look to find what they needed. This posed a significant challenge, especially for newcomers who were still exploring the platform. After all, if the benefits of a platform aren’t immediately evident, users are less likely to engage with it.
 

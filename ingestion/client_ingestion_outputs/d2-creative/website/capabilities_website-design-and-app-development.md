@@ -5,21 +5,13 @@ url: "https://www.d2creative.com/capabilities/website-design-and-app-development
 title: "Website/App Design & Development"
 domain: "www.d2creative.com"
 path: "/capabilities/website-design-and-app-development/"
-scraped_time: "2025-09-06T16:14:23.814081"
+scraped_time: "2025-10-04T18:55:27.210319"
 url_depth: 2
-word_count: 809
+word_count: 789
 client_name: "d2-creative"
 ---
 
 # Website/App Design & Development
-
-Website, Mobile App & Custom Application Development
-
-## CAPABILITIES
-
-# Website/App Design & Development
-
-### CAPABILITIES
 
 ## Best-Practice Web Design
 
@@ -44,7 +36,7 @@ Our developers can deliver solutions using:
 *   Software development technologies including Microsoft ASP.NET, .NET Core, Java EE, PHP, Node.js, Apple iOS, and Android
 *   Front-end development expertise including responsive sites and technical optimization for search
 *   JavaScript libraries/frameworks including Vue.js & ReactJS
-*   Content management systems including **WordPress**, **Drupal**, **Joomla!,** and **Umbraco**
+*   Content management systems including **WordPress**, **Drupal**, **Joomla!**, and **Umbraco**
 *   Databases including Microsoft SQL Server, Oracle, and MySQL
 *   Integrations with third-party platforms/services including Salesforce, Mailchimp/Mandrill, Wistia, Vimeo, Bitly, Cvent, SCORM Cloud, bucketAV, and single-sign-on solutions such as Ping Federate
 *   Cloud-based solutions such as Amazon Web Services (AWS), Google Cloud Platform, Microsoft Azure, and Rackspace
@@ -55,7 +47,7 @@ Our developers can deliver solutions using:
 
 ## Mobile Users Are a Priority
 
-You’ve heard the mantra “**mobile-first”****.** It requires you to think carefully about how users perform tasks using only the small amount of screen space available to them. Do your customers come to your site to register for events? Are they looking at pictures or just there for research? These tasks are often very different on a phone, compared to a laptop or desktop. For example, phone users are quite willing to scroll. This is a big change from the days when we lived in fear of placing important content “below the fold”. At D2 Creative, we design to ensure that every user has a great experience regardless of the device they use.
+You’ve heard the mantra “**mobile-first**.” It requires you to think carefully about how users perform tasks using only the small amount of screen space available to them. Do your customers come to your site to register for events? Are they looking at pictures or just there for research? These tasks are often very different on a phone, compared to a laptop or desktop. For example, phone users are quite willing to scroll. This is a big change from the days when we lived in fear of placing important content “below the fold”. At D2 Creative, we design to ensure that every user has a great experience regardless of the device they use.
 
 Read how D2 Creative transformed Dr. Scholl’s website, optimized user experience, and implemented a robust eCommerce platform. [Case Study: Better Organization and New Sales Possibilities for Leading US Orthopedics Brand.](/our-work/orthopedics-ecommerce-web-development/)
 
@@ -76,9 +68,3 @@ We can help you take your idea from concept to a finished iOS or Android app. We
 Did you know that there’s a cost-effective alternative to developing an app? Apps are standalone applications installed on a device, while a progressive web app (PWA) is a website that functions like an app. PWAs can be accessed through a web browser, offer offline capabilities, and provide a more app-like experience without requiring a traditional app installation.
 
 See how D2 Creative helped CooperSurgical digitize in-person education with a progressive web app, providing on-demand training and resources to healthcare providers. Read the case study to see how a PWA transformed their user experience and streamlined access to vital information. [Case Study: In-services Available Anywhere and Any Time.](/our-work/medical-device-pwa-development/)
-
-### Capabilities Appendix
-
-## Let’s Connect
-
-## Let’s Connect

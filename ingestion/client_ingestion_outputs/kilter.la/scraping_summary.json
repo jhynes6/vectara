@@ -1,0 +1,22 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 83,
+    "successful_scrapes": 83,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 22941,
+    "categories": {
+      "case_studies": 61,
+      "blogs_resources": 6,
+      "other": 10,
+      "industry_markets": 3,
+      "homepage": 1,
+      "about": 1,
+      "services_products": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "kilter.la"
+    },
+    "scrape_time": "2025-10-04T22:19:18.060988"
+  }
+}

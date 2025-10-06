@@ -1,0 +1,20 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 16,
+    "successful_scrapes": 16,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 3869,
+    "categories": {
+      "about": 4,
+      "other": 6,
+      "careers": 1,
+      "services_products": 3,
+      "homepage": 2
+    },
+    "custom_metadata_applied": {
+      "client_name": "webster-fulfillment"
+    },
+    "scrape_time": "2025-10-04T23:30:39.016929"
+  }
+}

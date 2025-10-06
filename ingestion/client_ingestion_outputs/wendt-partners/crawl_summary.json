@@ -1,0 +1,48 @@
+{
+  "timestamp": "2025-10-05T05:11:58.017766",
+  "folder_id": "1tQD-JTTN6dojJYeYpOeS8fUHTYtzyEzt",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 3,
+    "supported_files": 3,
+    "successfully_processed": 3,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Wendt Partners Client Intake Form",
+      "final_filename": "client_intake_wendt-partners-client-intake-form.md",
+      "id": "1Bhghwc1p-5jbeLqbvn8a-zqh6sAWvIVJSeZ2g9O-_EQ",
+      "size": "35409",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1Bhghwc1p-5jbeLqbvn8a-zqh6sAWvIVJSeZ2g9O-_EQ/view",
+      "word_count": 890,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "Client Intake Form - SAMPLE",
+      "final_filename": "client_intake_client-intake-form-sample.md",
+      "id": "1skGxI6_RA5GPFpcFtlEcQpevG20sjT06umakFC3cm00",
+      "size": "54611",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1skGxI6_RA5GPFpcFtlEcQpevG20sjT06umakFC3cm00/view",
+      "word_count": 638,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "Wendt Partners Current Client Domain Exclusion List (Jan 19 2023).xlsx",
+      "final_filename": "other_wendt-partners-current-client-domain-exclusion-list-jan-19-2023.md",
+      "id": "1gxxNPHelqMLbw_z3GJv6VUmBtIWGS6xr",
+      "size": "12596",
+      "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1gxxNPHelqMLbw_z3GJv6VUmBtIWGS6xr/view",
+      "word_count": 786
+    }
+  ],
+  "failed_files": []
+}

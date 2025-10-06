@@ -1,0 +1,49 @@
+{
+  "timestamp": "2025-10-04T14:12:19.685359",
+  "folder_id": "15UXWbmuhFWpQBIp4lY6QHkPNHY_1eFJi",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 3,
+    "supported_files": 2,
+    "successfully_processed": 2,
+    "failed_files_count": 1,
+    "errors": 1
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Client Intake Form - Dodeka Digital",
+      "final_filename": "client_intake_client-intake-form-dodeka-digital.md",
+      "id": "1WFwT0xcJ6IZa9EEpvKCkQlBfCMAEBMr68KVEhVDo4lw",
+      "size": "54357",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1WFwT0xcJ6IZa9EEpvKCkQlBfCMAEBMr68KVEhVDo4lw/view",
+      "word_count": 732,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "dodeka-digital_client_brief_20250916_103011",
+      "final_filename": "case_studies_dodeka-digital-client-brief-20250916-103011.md",
+      "id": "1n-2Hgt20UsxzY9VB5qAMWCV01D0NHHcKUkbACM8_oUM",
+      "size": "23815",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "case_studies",
+      "url": "https://docs.google.com/document/d/1n-2Hgt20UsxzY9VB5qAMWCV01D0NHHcKUkbACM8_oUM/view",
+      "word_count": 2797
+    }
+  ],
+  "failed_files": [
+    {
+      "name": "dodeka-digital_client_brief_20250916_103011.md",
+      "id": "1eaduUKCVqwT8e0EyuslmZX-5ObNpwU1h",
+      "mime_type": "text/x-markdown",
+      "size": "23124",
+      "url": "https://drive.google.com/file/d/1eaduUKCVqwT8e0EyuslmZX-5ObNpwU1h/view",
+      "error": "Failed to extract content (returned None)",
+      "error_type": "ContentExtractionError",
+      "file_category": "client_materials",
+      "timestamp": "2025-10-04T14:12:19.685351"
+    }
+  ]
+}

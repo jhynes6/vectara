@@ -1,0 +1,15 @@
+{
+  "client_id": "push-analytics",
+  "timestamp": "2025-10-05T09:00:43.740921Z",
+  "files_processed": 2,
+  "successful_uploads": 2,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "push-analytics",
+    "client_uuid": "push-analytics",
+    "document_count": 2,
+    "chunk_count": 3,
+    "total_tokens": 1356
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/push-analytics"
+}

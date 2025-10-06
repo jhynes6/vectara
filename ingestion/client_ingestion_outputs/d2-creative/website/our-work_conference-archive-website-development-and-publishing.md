@@ -2,16 +2,22 @@
 source: "website"
 content_type: "case_studies"
 url: "https://www.d2creative.com/our-work/conference-archive-website-development-and-publishing/"
-title: "/our-work/conference-archive-website-development-and-publishing/"
+title: "Building a Future-Proof Conference Archive"
 domain: "www.d2creative.com"
 path: "/our-work/conference-archive-website-development-and-publishing/"
-scraped_time: "2025-09-06T16:15:57.904441"
+scraped_time: "2025-10-04T18:57:16.028864"
 url_depth: 2
-word_count: 423
+word_count: 437
 client_name: "d2-creative"
 ---
 
-# /our-work/conference-archive-website-development-and-publishing/
+## Accellera
+
+Building a Future-Proof Conference Archive
+
+Website Design & Development
+
+## The Challenge
 
 Accellera’s Design and Verification Conference and Exhibition (DVCon) is one of the largest conferences in the electronics industry. For over a decade, they’ve brought together industry experts to discuss the latest advancements in systems, software, design, and more at events in several different countries each year.
 

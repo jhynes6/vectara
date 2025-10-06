@@ -1,0 +1,21 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 22,
+    "successful_scrapes": 22,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 2615,
+    "categories": {
+      "homepage": 1,
+      "services_products": 9,
+      "about": 1,
+      "other": 7,
+      "pricing": 3,
+      "case_studies": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "iconic-supply-co"
+    },
+    "scrape_time": "2025-10-04T23:54:56.096369"
+  }
+}

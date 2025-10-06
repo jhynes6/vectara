@@ -1,0 +1,22 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 85,
+    "successful_scrapes": 84,
+    "failed_scrapes": 1,
+    "success_rate": "98.8%",
+    "total_words_scraped": 30838,
+    "categories": {
+      "blogs_resources": 28,
+      "industry_markets": 19,
+      "services_products": 18,
+      "other": 14,
+      "about": 3,
+      "pricing": 1,
+      "homepage": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "zoomgrants"
+    },
+    "scrape_time": "2025-10-05T03:42:24.041236"
+  }
+}

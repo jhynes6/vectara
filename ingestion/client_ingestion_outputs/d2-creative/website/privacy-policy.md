@@ -5,13 +5,83 @@ url: "https://www.d2creative.com/privacy-policy/"
 title: "/privacy-policy/"
 domain: "www.d2creative.com"
 path: "/privacy-policy/"
-scraped_time: "2025-09-06T16:13:08.620295"
+scraped_time: "2025-10-04T18:57:05.191934"
 url_depth: 1
-word_count: 1744
+word_count: 2161
 client_name: "d2-creative"
 ---
 
-# /privacy-policy/
+View the D2 Creative Privacy Policy
+
+[![D2 Creative logo.](https://www.d2creative.com/wp-content/uploads/2021/10/d-2-logo-white.svg)](https://www.d2creative.com)
+
+*   [Capabilities](https://www.d2creative.com/capabilities/)
+*   [Brand & Messaging Development](https://www.d2creative.com/capabilities/brand-and-messaging-development/)
+*   [Content Development & Marketing](https://www.d2creative.com/capabilities/content-development/)
+*   [Digital Marketing](https://www.d2creative.com/capabilities/strategic-digital-marketing/)
+*   [Search Engine Optimization (SEO)](https://www.d2creative.com/capabilities/search-engine-optimization/)
+*   [Website/App Design & Development](https://www.d2creative.com/capabilities/website-design-and-app-development/)
+*   [Video Production & Digital Storytelling](https://www.d2creative.com/capabilities/video-production-and-digital-storytelling/)
+*   [Work](https://www.d2creative.com/our-work/)
+*   [Insights](#)
+*   [About](https://www.d2creative.com/about-us/)
+*   [Awards and Certifications](https://www.d2creative.com/about-us/award-page/)
+*   [Contact](https://www.d2creative.com/contact-us/)
+
+*   [Capabilities](https://www.d2creative.com/capabilities/)
+*   [Brand & Messaging Development](https://www.d2creative.com/capabilities/brand-and-messaging-development/)
+*   [Content Development & Marketing](https://www.d2creative.com/capabilities/content-development/)
+*   [Digital Marketing](https://www.d2creative.com/capabilities/strategic-digital-marketing/)
+*   [Search Engine Optimization (SEO)](https://www.d2creative.com/capabilities/search-engine-optimization/)
+*   [Website/App Design & Development](https://www.d2creative.com/capabilities/website-design-and-app-development/)
+*   [Video Production & Digital Storytelling](https://www.d2creative.com/capabilities/video-production-and-digital-storytelling/)
+*   [Work](https://www.d2creative.com/our-work/)
+*   [Insights](#)
+*   [About](https://www.d2creative.com/about-us/)
+*   [Awards and Certifications](https://www.d2creative.com/about-us/award-page/)
+*   [Contact](https://www.d2creative.com/contact-us/)
+
+*   [Capabilities](https://www.d2creative.com/capabilities/)
+*   [Brand & Messaging Development](https://www.d2creative.com/capabilities/brand-and-messaging-development/)
+*   [Content Development & Marketing](https://www.d2creative.com/capabilities/content-development/)
+*   [Digital Marketing](https://www.d2creative.com/capabilities/strategic-digital-marketing/)
+*   [Search Engine Optimization (SEO)](https://www.d2creative.com/capabilities/search-engine-optimization/)
+*   [Website/App Design & Development](https://www.d2creative.com/capabilities/website-design-and-app-development/)
+*   [Video Production & Digital Storytelling](https://www.d2creative.com/capabilities/video-production-and-digital-storytelling/)
+*   [Work](https://www.d2creative.com/our-work/)
+*   [Insights](#)
+*   [Digital Glossary](https://www.d2creative.com/digital-glossary/)
+*   [Blog](https://www.d2creative.com/blog/)
+*   [White Papers](https://www.d2creative.com/white-papers/)
+*   [Video Library](https://www.youtube.com/@D2CreativeNJ)
+*   [Digital Ad Performance Calculator](https://www.d2creative.com/digital-ad-performance-calculator/)
+*   [About](https://www.d2creative.com/about-us/)
+*   [Awards and Certifications](https://www.d2creative.com/about-us/award-page/)
+*   [Contact](https://www.d2creative.com/contact-us/)
+
+*   [Capabilities](https://www.d2creative.com/capabilities/)
+*   [Brand & Messaging Development](https://www.d2creative.com/capabilities/brand-and-messaging-development/)
+*   [Content Development & Marketing](https://www.d2creative.com/capabilities/content-development/)
+*   [Digital Marketing](https://www.d2creative.com/capabilities/strategic-digital-marketing/)
+*   [Search Engine Optimization (SEO)](https://www.d2creative.com/capabilities/search-engine-optimization/)
+*   [Website/App Design & Development](https://www.d2creative.com/capabilities/website-design-and-app-development/)
+*   [Video Production & Digital Storytelling](https://www.d2creative.com/capabilities/video-production-and-digital-storytelling/)
+*   [Work](https://www.d2creative.com/our-work/)
+*   [Insights](#)
+*   [Digital Glossary](https://www.d2creative.com/digital-glossary/)
+*   [Blog](https://www.d2creative.com/blog/)
+*   [White Papers](https://www.d2creative.com/white-papers/)
+*   [Video Library](https://www.youtube.com/@D2CreativeNJ)
+*   [Digital Ad Performance Calculator](https://www.d2creative.com/digital-ad-performance-calculator/)
+*   [About](https://www.d2creative.com/about-us/)
+*   [Awards and Certifications](https://www.d2creative.com/about-us/award-page/)
+*   [Contact](https://www.d2creative.com/contact-us/)
+
+## D2 CREATIVE
+
+# Privacy Policy
+
+**D2 Creative** (“D2”) takes your privacy seriously. Maintaining the trust of our users necessitates vigilant, responsible privacy protections. We realize that privacy is an important issue for our users providing us with their business information. Please read the following to learn more about how we collect, use, and safeguard the information you may provide to us via our web sites. This Privacy Policy may be revised from time to time, so please revisit this page often to remain fully informed of our policies.
 
 ## What Information Does D2 Creative Collect from You?
 
@@ -68,7 +138,7 @@ We collect, retain and use personally identifiable and business information from
 
 ## Modifications
 
-We strive to maintain the accuracy of any personally identifiable or business information that may be collected from you, and will use our commercially reasonable efforts to respond promptly to update our database when you tell us the information in our database is not accurate. It is your responsibility to ensure that such information is accurate, complete and up-to-date. You may obtain from us by email the information in our records and/or files. If you wish to make any changes to any personally identifiable or business information you have provided to us, you may do so at any time by contacting us at [\[email protected\]](/cdn-cgi/l/email-protection#f69f989099b692c495849397829f8093d895999b).
+We strive to maintain the accuracy of any personally identifiable or business information that may be collected from you, and will use our commercially reasonable efforts to respond promptly to update our database when you tell us the information in our database is not accurate. It is your responsibility to ensure that such information is accurate, complete and up-to-date. You may obtain from us by email the information in our records and/or files. If you wish to make any changes to any personally identifiable or business information you have provided to us, you may do so at any time by contacting us at [\[email protected\]](/cdn-cgi/l/email-protection#f39a9d959cb397c190819692879a8596dd909c9e).
 
 ## Third Party Websites
 
@@ -76,7 +146,7 @@ This site may reference or provide links to third party websites. We are not res
 
 ## Protecting Your Personally Identifiable Information
 
-D2 employs physical, electronic and managerial safeguards to protect the information we receive from you from unauthorized disclosure. This includes our requirement for user names and to access sensitive data and our use of industry-standard SSL encryption to protect data transmissions. You should not share your password with anyone. In addition, if you suspect unauthorized access to your information, it is your responsibility to contact us immediately at [\[email protected\]](/cdn-cgi/l/email-protection#a2cbccc4cde2c690c1d0c7c3d6cbd4c78cc1cdcf). D2 personnel will never ask you to divulge your password in written or electronic communications. Please be aware that Internet data transmission is not always secure and we cannot warrant that information you transmit utilizing this site is secure. Because security is important to D2, we will always make reasonable efforts to ensure the security of our systems.
+D2 employs physical, electronic and managerial safeguards to protect the information we receive from you from unauthorized disclosure. This includes our requirement for user names and to access sensitive data and our use of industry-standard SSL encryption to protect data transmissions. You should not share your password with anyone. In addition, if you suspect unauthorized access to your information, it is your responsibility to contact us immediately at [\[email protected\]](/cdn-cgi/l/email-protection#31585f575e71550352435450455847541f525e5c). D2 personnel will never ask you to divulge your password in written or electronic communications. Please be aware that Internet data transmission is not always secure and we cannot warrant that information you transmit utilizing this site is secure. Because security is important to D2, we will always make reasonable efforts to ensure the security of our systems.
 
 ## Business Transfer
 
@@ -96,8 +166,57 @@ We reserve the right, at any time, to modify, alter, or update this policy, and 
 
 ## Questions?
 
-D2 will happily address any concerns or disputes about our Privacy Policy or inaccuracies regarding your personal and business information. In the event that you have a concern or wish to see recent changes regarding our Privacy Policy, you can contact us directly at [\[email protected\]](/cdn-cgi/l/email-protection#422b2c242d02267021302723362b34276c212d2f).
+D2 will happily address any concerns or disputes about our Privacy Policy or inaccuracies regarding your personal and business information. In the event that you have a concern or wish to see recent changes regarding our Privacy Policy, you can contact us directly at [\[email protected\]](/cdn-cgi/l/email-protection#5a33343c351a3e6839283f3b2e332c3f74393537).
 
 ## Let’s Connect
 
 ## Let’s Connect
+
+**New Business**
+
+Mike DeFabrizio
+732-539-2257
+[Email Mike](/cdn-cgi/l/email-protection#97faf3f2f1f6f5e5feedfef8d7f3a5f4e5f2f6e3fee1f2b9f4f8fa)
+
+**Careers at D2
+**[See Openings](/careers/)
+
+**Insights**
+
+Explore contemporary marketing and communications expertise:
+
+[White Papers](https://www.d2creative.com/white-papers/)
+
+[Digital Ad Performance Calculator](/digital-ad-performance-calculator/)
+
+**Location**
+
+399 Campus Drive
+Suite 309
+Somerset, NJ 08873-1178
+
+**Connect**
+
+[![](/wp-content/uploads/2022/08/linkedin-logo.png)](https://www.linkedin.com/company/d2-creative)
+
+## Send Us a Note
+
+How can we help you?Discuss a ProjectLearn More About D2 CreativePartner With Us
+
+[**Awards & Certifications**](https://www.d2creative.com/about-us/award-page/)
+
+![2019 MM&M Awards: Show Your Bold, Gold award](https://www.d2creative.com/wp-content/uploads/2022/09/mmm-award@2x.png)
+
+![2024 Top Life Sciences Marketing Services Provider trophy](https://www.d2creative.com/wp-content/uploads/2022/01/D2-Award-763x1024.png)
+
+![Veeva Content Partner Full Service logo](https://www.d2creative.com/wp-content/uploads/2022/09/veeva-partner-full-service@2x.png)
+
+![WBENC logo](https://www.d2creative.com/wp-content/uploads/2022/09/wbenc-logo@2x.png)
+
+![New York & New Jersey minority supplier development council logo](https://www.d2creative.com/wp-content/uploads/2022/09/nynj-logo@2x.png)
+
+D2 Creative is a Women-owned Minority-owned Business. ©2025 D2 Creative. All Rights Reserved. [Privacy Policy](/privacy-policy/)
+
+X
+
+Project Impressions and Clicks on Top Digital Pl

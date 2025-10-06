@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-10-05T01:48:56.685714",
+  "folder_id": "1IvlP-PHdDBqGkvC_Q07Ju9PLqxruot8Y",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 3,
+    "supported_files": 2,
+    "successfully_processed": 2,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "X Agency Client Intake Form [OLD]",
+      "final_filename": "client_intake_x-agency-client-intake-form-old.md",
+      "id": "19qO9NH47VE04AYW7tnJOh2IkEYTJLBBO694G7rYFIOQ",
+      "size": "55061",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/19qO9NH47VE04AYW7tnJOh2IkEYTJLBBO694G7rYFIOQ/view",
+      "word_count": 743,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "XAgency-Brand-2023.pdf",
+      "final_filename": "other_xagency-brand-2023.md",
+      "id": "1E7rWi14LtLXTNNas3ZpJjoZ3W8xILqrP",
+      "size": "993950",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1E7rWi14LtLXTNNas3ZpJjoZ3W8xILqrP/view",
+      "word_count": 1402
+    }
+  ],
+  "failed_files": []
+}

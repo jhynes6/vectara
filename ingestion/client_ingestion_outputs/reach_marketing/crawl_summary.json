@@ -1,0 +1,35 @@
+{
+  "timestamp": "2025-09-10T11:07:05.733115",
+  "folder_id": "1X_vZdBMCkdE1jgO_0gng1nJxx8B1u1Ja",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 8,
+    "supported_files": 2,
+    "successfully_processed": 2,
+    "errors": 1
+  },
+  "crawled_files": [
+    {
+      "name": "Reach Marketing Client Intake Form",
+      "final_filename": "client_intake_reach-marketing-client-intake-form.md",
+      "id": "1fZIOyMXOylewHyh0y0ahCcMn4Uyps3YKlIcFwzGKGCI",
+      "size": "316733",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1fZIOyMXOylewHyh0y0ahCcMn4Uyps3YKlIcFwzGKGCI/view",
+      "word_count": 903,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "Lead Generation Presentation 2023.pdf",
+      "final_filename": "pitch_decks_lead-generation-presentation-2023.md",
+      "id": "137UC_ARtd-4yJm3hJSO-GR0dqnPNNhdD",
+      "size": "749335",
+      "mime_type": "application/pdf",
+      "content_type": "pitch_decks",
+      "url": "https://drive.google.com/file/d/137UC_ARtd-4yJm3hJSO-GR0dqnPNNhdD/view",
+      "word_count": 3498
+    }
+  ]
+}

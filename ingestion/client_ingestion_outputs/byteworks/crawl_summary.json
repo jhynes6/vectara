@@ -1,0 +1,110 @@
+{
+  "timestamp": "2025-10-05T01:59:32.654240",
+  "folder_id": "1eevbhkr6O8zWG-zhurhYIurvotBQeNcm",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 9,
+    "supported_files": 7,
+    "successfully_processed": 7,
+    "failed_files_count": 2,
+    "errors": 2
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Client Intake Form: Byteworks",
+      "final_filename": "client_intake_client-intake-form-byteworks.md",
+      "id": "14Q6AXT1GOzeq3mqXUuSdm0yku383iEH-Gk2gCGDhGM8",
+      "size": "54456",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/14Q6AXT1GOzeq3mqXUuSdm0yku383iEH-Gk2gCGDhGM8/view",
+      "word_count": 1018,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "managed_services_ent_networking_ver3.pdf",
+      "final_filename": "other_managed-services-ent-networking-ver3.md",
+      "id": "1qnAhZXD3gHg_NhtB9YIcKMgqfOPX9Hpa",
+      "size": "2522393",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1qnAhZXD3gHg_NhtB9YIcKMgqfOPX9Hpa/view",
+      "word_count": 413
+    },
+    {
+      "name": "managed_services_data_center_ver3.pdf",
+      "final_filename": "other_managed-services-data-center-ver3.md",
+      "id": "1R4nJmUQK2gtg97gB21W0qZcTkipshk8P",
+      "size": "2517411",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1R4nJmUQK2gtg97gB21W0qZcTkipshk8P/view",
+      "word_count": 645
+    },
+    {
+      "name": "managed_services_cyber_ver3.pdf",
+      "final_filename": "other_managed-services-cyber-ver3.md",
+      "id": "1klOsQCIl6Ly01SecCPbQggRsvM7d4skF",
+      "size": "2512925",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1klOsQCIl6Ly01SecCPbQggRsvM7d4skF/view",
+      "word_count": 435
+    },
+    {
+      "name": "managed_services_collaboration_ver3.pdf",
+      "final_filename": "other_managed-services-collaboration-ver3.md",
+      "id": "1N9o2EcXh9JyIFq-cMhPx6-7p8pYhFuuu",
+      "size": "2519707",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1N9o2EcXh9JyIFq-cMhPx6-7p8pYhFuuu/view",
+      "word_count": 488
+    },
+    {
+      "name": "Byteworks One Pager[27].pdf",
+      "final_filename": "other_byteworks-one-pager-27.md",
+      "id": "1hy_1Xc3ID8Nsj_YyTVdig214g9K8lDtw",
+      "size": "2654307",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1hy_1Xc3ID8Nsj_YyTVdig214g9K8lDtw/view",
+      "word_count": 1
+    },
+    {
+      "name": "Mint Leads Suppression List.xls",
+      "final_filename": "other_mint-leads-suppression-list.md",
+      "id": "14uG9d3XBbElKeB9L2_qiV8a27qljUFgu",
+      "size": "50176",
+      "mime_type": "application/vnd.ms-excel",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/14uG9d3XBbElKeB9L2_qiV8a27qljUFgu/view",
+      "word_count": 2118
+    }
+  ],
+  "failed_files": [
+    {
+      "name": "Byteworks - Technology Portal - Email_ Drip Series.docx",
+      "id": "1ZuXcGfnuaceel9jbMcbuZySX8HBGjTPD",
+      "mime_type": "application/vnd.google-apps.shortcut",
+      "size": "N/A",
+      "url": "https://drive.google.com/file/d/1ZuXcGfnuaceel9jbMcbuZySX8HBGjTPD/view",
+      "error": "Failed to extract content (returned None)",
+      "error_type": "ContentExtractionError",
+      "file_category": "client_materials",
+      "timestamp": "2025-10-05T01:59:21.998099"
+    },
+    {
+      "name": "Byteworks One Pager[27].pdf",
+      "id": "1hy_1Xc3ID8Nsj_YyTVdig214g9K8lDtw",
+      "mime_type": "application/pdf",
+      "size": "2654307",
+      "url": "https://drive.google.com/file/d/1hy_1Xc3ID8Nsj_YyTVdig214g9K8lDtw/view",
+      "error": "MarkItDown returned empty content",
+      "error_type": "MarkItDownProcessingError",
+      "file_category": "client_materials",
+      "timestamp": "2025-10-05T01:59:32.625066"
+    }
+  ]
+}

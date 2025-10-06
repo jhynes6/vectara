@@ -1,0 +1,15 @@
+{
+  "client_id": "archway-learning-solutions",
+  "timestamp": "2025-10-05T07:56:20.663018Z",
+  "files_processed": 44,
+  "successful_uploads": 44,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "archway-learning-solutions",
+    "client_uuid": "archway-learning-solutions",
+    "document_count": 44,
+    "chunk_count": 80,
+    "total_tokens": 49997
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/archway-learning-solutions"
+}

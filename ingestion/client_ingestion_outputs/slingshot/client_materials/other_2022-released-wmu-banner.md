@@ -1,0 +1,1 @@
+[File saved for MarkItDown processing: 2022_Released_WMU Banner.jpg]

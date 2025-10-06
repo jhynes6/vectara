@@ -1,0 +1,15 @@
+{
+  "client_id": "humblepod",
+  "timestamp": "2025-10-05T06:00:40.754095Z",
+  "files_processed": 132,
+  "successful_uploads": 132,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "humblepod",
+    "client_uuid": "humblepod",
+    "document_count": 132,
+    "chunk_count": 179,
+    "total_tokens": 73774
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/humblepod"
+}

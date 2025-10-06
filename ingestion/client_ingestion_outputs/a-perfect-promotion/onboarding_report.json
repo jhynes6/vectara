@@ -1,0 +1,15 @@
+{
+  "client_id": "a-perfect-promotion",
+  "timestamp": "2025-10-05T04:09:52.738373Z",
+  "files_processed": 20,
+  "successful_uploads": 20,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "a-perfect-promotion",
+    "client_uuid": "a-perfect-promotion",
+    "document_count": 20,
+    "chunk_count": 22,
+    "total_tokens": 5413
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/a-perfect-promotion"
+}

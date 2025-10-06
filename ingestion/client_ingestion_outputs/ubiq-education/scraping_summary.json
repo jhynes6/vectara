@@ -1,0 +1,23 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 158,
+    "successful_scrapes": 158,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 98737,
+    "categories": {
+      "other": 48,
+      "industry_markets": 3,
+      "homepage": 1,
+      "blogs_resources": 76,
+      "about": 7,
+      "services_products": 15,
+      "case_studies": 7,
+      "careers": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "ubiq-education"
+    },
+    "scrape_time": "2025-10-05T04:42:29.853580"
+  }
+}

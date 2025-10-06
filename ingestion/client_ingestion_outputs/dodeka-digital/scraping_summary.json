@@ -1,0 +1,22 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 35,
+    "successful_scrapes": 35,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 20316,
+    "categories": {
+      "blogs_resources": 6,
+      "case_studies": 10,
+      "services_products": 4,
+      "other": 12,
+      "pricing": 1,
+      "homepage": 1,
+      "about": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "dodeka-digital"
+    },
+    "scrape_time": "2025-09-16T10:07:32.132548"
+  }
+}

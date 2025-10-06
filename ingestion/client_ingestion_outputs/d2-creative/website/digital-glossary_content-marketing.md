@@ -2,20 +2,14 @@
 source: "website"
 content_type: "blogs_resources"
 url: "https://www.d2creative.com/digital-glossary/content-marketing/"
-title: "Content Marketing"
+title: "Content Marketing Overview & Tips"
 domain: "www.d2creative.com"
 path: "/digital-glossary/content-marketing/"
-scraped_time: "2025-09-06T16:13:29.041552"
+scraped_time: "2025-10-04T18:56:41.303122"
 url_depth: 2
-word_count: 852
+word_count: 831
 client_name: "d2-creative"
 ---
-
-# Content Marketing
-
-Content Marketing: Overview & Tips for Successful Strategies
-
-## DIGITAL GLOSSARY
 
 # Content Marketing
 
@@ -76,9 +70,3 @@ Produce content that addresses each customer persona at every stage in the custo
 ![Step 6: Production (Measure, Report, and Change).](https://www.d2creative.com/wp-content/uploads/2022/03/step-6.png)
 
 [Contact Us](https://www.d2creative.com/contact-us/) to discuss your digital marketing program.
-
-### Digital Glossary Appendix
-
-## Let’s Connect
-
-## Let’s Connect

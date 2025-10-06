@@ -1,0 +1,21 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 53,
+    "successful_scrapes": 53,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 29990,
+    "categories": {
+      "case_studies": 9,
+      "blogs_resources": 37,
+      "other": 4,
+      "homepage": 1,
+      "about": 1,
+      "services_products": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "stark-raving-boston"
+    },
+    "scrape_time": "2025-10-05T00:17:36.931508"
+  }
+}

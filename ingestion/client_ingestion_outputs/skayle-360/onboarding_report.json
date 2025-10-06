@@ -1,0 +1,15 @@
+{
+  "client_id": "skayle-360",
+  "timestamp": "2025-10-05T09:07:45.276899Z",
+  "files_processed": 3,
+  "successful_uploads": 3,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "skayle-360",
+    "client_uuid": "skayle-360",
+    "document_count": 3,
+    "chunk_count": 4,
+    "total_tokens": 2628
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/skayle-360"
+}

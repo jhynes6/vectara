@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-10-04T23:59:54.407141",
+  "folder_id": "1XTbjOIkgR-Y3gxvPtDshVdDpcmYm5VVr",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 3,
+    "supported_files": 3,
+    "successfully_processed": 3,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Mobile Locker: Client Intake Form",
+      "final_filename": "client_intake_mobile-locker-client-intake-form.md",
+      "id": "1_ZqzTF8ipSNW4SPPFP09iPWLVZV2ae2toGjftGkBXpI",
+      "size": "54395",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1_ZqzTF8ipSNW4SPPFP09iPWLVZV2ae2toGjftGkBXpI/view",
+      "word_count": 1141,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "Miscellaneous Mobile Locker Information for Mint.pdf",
+      "final_filename": "other_miscellaneous-mobile-locker-information-for-mint.md",
+      "id": "1IwLkPcHs8ld2eRJCextZLjDmk3hvj4um",
+      "size": "76492",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1IwLkPcHs8ld2eRJCextZLjDmk3hvj4um/view",
+      "word_count": 343
+    },
+    {
+      "name": "Instant Value for Field Teams - One Pager - A3.pdf",
+      "final_filename": "other_instant-value-for-field-teams-one-pager-a3.md",
+      "id": "1LKtq_bmhzQZ53csD3zD-Xaz0v3gMGGMr",
+      "size": "263983",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1LKtq_bmhzQZ53csD3zD-Xaz0v3gMGGMr/view",
+      "word_count": 233
+    }
+  ],
+  "failed_files": []
+}

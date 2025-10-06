@@ -1,0 +1,16 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 1,
+    "successful_scrapes": 1,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 0,
+    "categories": {
+      "homepage": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "on-the-marc-media"
+    },
+    "scrape_time": "2025-10-05T04:34:20.395303"
+  }
+}

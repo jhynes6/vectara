@@ -2,20 +2,14 @@
 source: "website"
 content_type: "blogs_resources"
 url: "https://www.d2creative.com/digital-glossary/branding-deliverables/"
-title: "Common Branding Deliverables"
+title: "Branding Deliverables Overview"
 domain: "www.d2creative.com"
 path: "/digital-glossary/branding-deliverables/"
-scraped_time: "2025-09-06T16:16:24.392630"
+scraped_time: "2025-10-04T18:56:27.621704"
 url_depth: 2
-word_count: 477
+word_count: 523
 client_name: "d2-creative"
 ---
-
-# Common Branding Deliverables
-
-Branding Deliverables, Overview and List of What You Receive
-
-## DIGITAL GLOSSARY
 
 # Common Branding Deliverables
 
@@ -43,9 +37,9 @@ Think of your messaging framework as a well that you go to whenever you need to 
 *   **Target Audience(s):** Your ideal buyers or users Your Mission: What is your ultimate goal?
 *   **Tone of Voice:** Not just what announcer you would choose, but kind of like that!
 *   **Elevator Pitch:** A 30-second description of your value proposition. We prefer one in language that your grandmother would understand
-*   **Brand Pillars:** Your most important selling points
-*   **_Headline Benefits:_** Key benefit statements that support each of your Brand Pillars
-*   _**Supporting Attributes:**_ Functional and emotional attributes that support the Headline Benefits
+*   **Brand Pillars:** Your most important selling points  
+    *   **_Headline Benefits:_** Key benefit statements that support each of your Brand Pillars
+    *   _**Supporting Attributes:**_ Functional and emotional attributes that support the Headline Benefits
 
 #### Mood Boards
 
@@ -56,6 +50,8 @@ A mood board captures your visual brand expression. It’s not a specific design
 Your Brand Identity includes guidelines about how your brand appears, such as:
 
 *   Naming
+*   Logo
+*   Tagline, and logo lock-up
 
 These rules help you stay uniform in your branding in various settings, such as business collateral, sales presentation materials, trade show presence/environment, packaging design, signage, as well as in online spaces such as your website and social media channels.
 
@@ -66,6 +62,7 @@ The brand style guide outlines proper use of the brand. Adhering to the guidelin
 *   Color usage
 *   Typography options
 *   Guidelines on illustration and photographic styles
+*   Proper use of logos, taglines and fonts
 *   Use of infographics
 *   Brand positioning
 *   Core brand pillars
@@ -76,6 +73,17 @@ The brand style guide outlines proper use of the brand. Adhering to the guidelin
 
 ### Digital Glossary Appendix
 
-## Let’s Connect
-
-## Let’s Connect
+*   [Ad Display](https://www.d2creative.com/digital-glossary/ad-display/)
+*   [Ad Retargeting](https://www.d2creative.com/digital-glossary/ad-retargeting/)
+*   [The Brand Discovery Process](https://www.d2creative.com/digital-glossary/brand-discovery/)
+*   [Branding Fundamentals](https://www.d2creative.com/digital-glossary/branding-fundamentals/)
+*   [Common Branding Deliverables](https://www.d2creative.com/digital-glossary/branding-deliverables/)
+*   [Community Management](https://www.d2creative.com/digital-glossary/community-management/)
+*   [Content Marketing](https://www.d2creative.com/digital-glossary/content-marketing/)
+*   [Email Marketing](https://www.d2creative.com/digital-glossary/email-marketing/)
+*   [Landing Pages](https://www.d2creative.com/digital-glossary/landing-pages/)
+*   [Pay-Per-Click (PPC) Advertising](https://www.d2creative.com/digital-glossary/pay-per-click-advertising/)
+*   [Programmatic Advertising](https://www.d2creative.com/digital-glossary/programmatic-advertising/)
+*   [Search Engine Optimization](https://www.d2creative.com/digital-glossary/search-engine-optimization/)
+*   [Understanding Website Analytics](https://www.d2creative.com/digital-glossary/understanding-website-analytics/)
+*   [Web Design Fundamentals](https://www.d2creative.com/digital-glossary/web-design-fundamentals/)

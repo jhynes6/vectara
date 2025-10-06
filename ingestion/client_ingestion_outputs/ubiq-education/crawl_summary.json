@@ -1,0 +1,67 @@
+{
+  "timestamp": "2025-10-05T04:23:05.583795",
+  "folder_id": "1J-PTkl51J0UKB9F0DMFpuHiPyGOkWacs",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 6,
+    "supported_files": 5,
+    "successfully_processed": 5,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Ubiq Education: Client Intake Form",
+      "final_filename": "client_intake_ubiq-education-client-intake-form.md",
+      "id": "11zEZ3fl_Abs1d93HHlkJf84TsCc-sFFlZm2Yx6uIq9s",
+      "size": "363672",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/11zEZ3fl_Abs1d93HHlkJf84TsCc-sFFlZm2Yx6uIq9s/view",
+      "word_count": 1205,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "Ubiq - Google Drive for MintLeads ( https://drive.google.com/drive/folders/1eji7OzUEyfc3I13XUj9tdUlFMUeVu-xa )",
+      "final_filename": "other_ubiq-google-drive-for-mintleads-https-drive-google-com-drive-folders-1eji7ozueyfc3i13xuj9tdulfmuevu-xa.md",
+      "id": "1RWsbN5OvdM2OpgCsTsKDHUN7tY8cfygz",
+      "size": "439680",
+      "mime_type": "text/html",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1RWsbN5OvdM2OpgCsTsKDHUN7tY8cfygz/view",
+      "word_count": 14339
+    },
+    {
+      "name": "Repton Analytics Comparison - Feb 2024 (1).pdf",
+      "final_filename": "other_repton-analytics-comparison-feb-2024-1.md",
+      "id": "1vZAiRyz_8XGf3EdIjK0ztCK7dFf0PVb1",
+      "size": "2985903",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1vZAiRyz_8XGf3EdIjK0ztCK7dFf0PVb1/view",
+      "word_count": 350
+    },
+    {
+      "name": "UBIQ Datasheet.pdf",
+      "final_filename": "other_ubiq-datasheet.md",
+      "id": "1uBKZx1iamiA3inNLWXqkfdoC1iryE8y7",
+      "size": "724462",
+      "mime_type": "application/pdf",
+      "content_type": "other",
+      "url": "https://drive.google.com/file/d/1uBKZx1iamiA3inNLWXqkfdoC1iryE8y7/view",
+      "word_count": 285
+    },
+    {
+      "name": "UBIQ Testimonials Ryleys (1).pdf",
+      "final_filename": "case_studies_ubiq-testimonials-ryleys-1.md",
+      "id": "1-BOeRvYqZH8cSMeIxWnZWJ6VCU75l729",
+      "size": "1967106",
+      "mime_type": "application/pdf",
+      "content_type": "case_studies",
+      "url": "https://drive.google.com/file/d/1-BOeRvYqZH8cSMeIxWnZWJ6VCU75l729/view",
+      "word_count": 558
+    }
+  ],
+  "failed_files": []
+}

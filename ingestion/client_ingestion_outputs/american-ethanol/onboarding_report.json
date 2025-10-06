@@ -1,0 +1,15 @@
+{
+  "client_id": "american-ethanol",
+  "timestamp": "2025-10-05T03:55:13.611542Z",
+  "files_processed": 9,
+  "successful_uploads": 5,
+  "failed_uploads": 4,
+  "database_stats": {
+    "client_id": "american-ethanol",
+    "client_uuid": "american-ethanol",
+    "document_count": 9,
+    "chunk_count": 10,
+    "total_tokens": 3717
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/american-ethanol"
+}

@@ -1,0 +1,21 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 145,
+    "successful_scrapes": 145,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 45322,
+    "categories": {
+      "blogs_resources": 106,
+      "about": 3,
+      "services_products": 9,
+      "other": 17,
+      "industry_markets": 9,
+      "homepage": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "cas-severn"
+    },
+    "scrape_time": "2025-09-07T07:08:44.531598"
+  }
+}

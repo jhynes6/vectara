@@ -1,0 +1,15 @@
+{
+  "client_id": "kilter.la",
+  "timestamp": "2025-10-05T02:21:28.380368Z",
+  "files_processed": 84,
+  "successful_uploads": 61,
+  "failed_uploads": 23,
+  "database_stats": {
+    "client_id": "kilter.la",
+    "client_uuid": "kilter.la",
+    "document_count": 84,
+    "chunk_count": 85,
+    "total_tokens": 23619
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/kilter.la"
+}

@@ -1,0 +1,15 @@
+{
+  "client_id": "f1-cloud-solutions",
+  "timestamp": "2025-10-05T08:27:25.680662Z",
+  "files_processed": 48,
+  "successful_uploads": 48,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "f1-cloud-solutions",
+    "client_uuid": "f1-cloud-solutions",
+    "document_count": 48,
+    "chunk_count": 62,
+    "total_tokens": 26957
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/f1-cloud-solutions"
+}

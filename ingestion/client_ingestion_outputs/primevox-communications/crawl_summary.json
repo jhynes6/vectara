@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-10-05T00:16:21.193107",
+  "folder_id": "1f9GD7kRh6vIvh4hU4-gkphJgq_hfDM7V",
+  "delegated_user": null,
+  "days_back": 0,
+  "summary": {
+    "total_files_found": 2,
+    "supported_files": 2,
+    "successfully_processed": 2,
+    "failed_files_count": 0,
+    "errors": 0
+  },
+  "successfully_crawled_files": [
+    {
+      "name": "Client Intake Form - PrimeVox Communications",
+      "final_filename": "client_intake_client-intake-form-primevox-communications.md",
+      "id": "1uYSUKy4OpMeKsSyYdub_U2j8iT_z-LcNpYjwXSTUKJk",
+      "size": "54465",
+      "mime_type": "application/vnd.google-apps.document",
+      "content_type": "client_intake",
+      "url": "https://docs.google.com/document/d/1uYSUKy4OpMeKsSyYdub_U2j8iT_z-LcNpYjwXSTUKJk/view",
+      "word_count": 1764,
+      "special_category": "client_intake"
+    },
+    {
+      "name": "Summary of Capabilities Jun 2025.pdf",
+      "final_filename": "capabilities_overview_summary-of-capabilities-jun-2025.md",
+      "id": "1LpaJ8MvJxqo9I3tkSuB4x9pHlBku1yY1",
+      "size": "5268539",
+      "mime_type": "application/pdf",
+      "content_type": "capabilities_overview",
+      "url": "https://drive.google.com/file/d/1LpaJ8MvJxqo9I3tkSuB4x9pHlBku1yY1/view",
+      "word_count": 2354
+    }
+  ],
+  "failed_files": []
+}

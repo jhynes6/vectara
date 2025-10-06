@@ -5,17 +5,11 @@ url: "https://www.d2creative.com/digital-glossary/branding-fundamentals/"
 title: "Branding Fundamentals"
 domain: "www.d2creative.com"
 path: "/digital-glossary/branding-fundamentals/"
-scraped_time: "2025-09-06T16:16:17.192675"
+scraped_time: "2025-10-04T18:55:36.764310"
 url_depth: 2
-word_count: 633
+word_count: 733
 client_name: "d2-creative"
 ---
-
-# Branding Fundamentals
-
-Brand & Branding: What's it All About? Definition & Overview
-
-## DIGITAL GLOSSARY
 
 # Branding Fundamentals
 
@@ -23,13 +17,17 @@ Brand & Branding: What's it All About? Definition & Overview
 
 ### What is a Brand?
 
+A brand is much more than a logo and a tagline. It’s the collection of all the experiences and ideas associated to your product. (A brand may also refer to an organization, product or solution, of course.) When you think of it that way, a brand is much more than a logo and a tagline. It represents an emotional connection. That connection exists in the mind of the consumer.
+
 #### What is Branding?
+
+Branding is the process that helps you clarify and come to agreement on all the aspects of your brand. You may own your logo, **but you don’t own your brand** **– your customers do**. That’s why **it’s important to clearly understand your brand**. That way you can better **convey that message to your customers**.
 
 Branding shapes the way you communicate, both to external audiences and within the organization. It helps key stakeholders get a better understanding of things like:
 
-*   Your brand’s benefits
-*   What you’re promising your customers
-*   Your organization’s purpose
+* Your brand’s benefits
+* What you’re promising your customers
+* Your organization’s purpose
 
 Branding provides you with a strong set of core messages to use as a basis of all your messaging. It also provides you with the tone of voice and visual identity you’ll use.
 
@@ -37,14 +35,14 @@ Branding provides you with a strong set of core messages to use as a basis of al
 
 Some organizations wonder about the value of [brand discovery](https://d2creative.com/digital-glossary/brand-discovery/). Have a look at the 8 questions below. Would the key stakeholders give the same answers? What about your customers?
 
-*   What is your value proposition?
-*   What is your brand promise?
-*   Who is your target audience?
-*   What is your company mission?
-*   What is your personality?
-*   What are your organization’s values?
-*   What are the top 3 benefits to customers?
-*   What’s your “elevator pitch?” In straightforward terms, what does your brand do and why is it better?
+* What is your value proposition?
+* What is your brand promise?
+* Who is your target audience?
+* What is your company mission?
+* What is your personality?
+* What are your organization’s values?
+* What are the top 3 benefits to customers?
+* What’s your “elevator pitch?” In straightforward terms, what does your brand do and why is it better?
 
 When your brand is strong, you can develop more focused messaging. When your messaging is focused, your customers will better understand what you are offering.
 
@@ -77,9 +75,3 @@ We recommend you work with an external vendor that regularly practices branding.
 [Learn More About Our Agency Capabilities](https://www.d2creative.com/capabilities/)
 
 [See Our Branding Samples](https://go.d2creative.com/d2-branding-examples/)
-
-### Digital Glossary Appendix
-
-## Let’s Connect
-
-## Let’s Connect

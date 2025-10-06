@@ -1,17 +1,21 @@
 ---
 source: "website"
-content_type: "other"
+content_type: "blogs_resources"
 url: "https://www.d2creative.com/digital-ad-performance-calculator/"
-title: "/digital-ad-performance-calculator/"
+title: "Digital Advertising Performance Calculator"
 domain: "www.d2creative.com"
 path: "/digital-ad-performance-calculator/"
-scraped_time: "2025-09-06T16:16:02.490962"
+scraped_time: "2025-10-04T18:56:02.191818"
 url_depth: 1
-word_count: 250
+word_count: 258
 client_name: "d2-creative"
 ---
 
-# /digital-ad-performance-calculator/
+# Digital Advertising Performance Calculator
+
+### CAPABILITIES
+
+## Where Can Your Budget Take You?
 
 Find the spend you need to get the results you want across platforms with this Digital Advertising Performance Calculator.
 
@@ -21,7 +25,7 @@ Platform
 
 \-- Select -- Google Search Google Display Programmatic Display Geotargeting Display Streaming Audio Streaming Video Connected TV Facebook Instagram TikTok
 
-Monthly Budget (USD)
+Monthly Budget (USD) 
 
 Estimated Impressions Per Month:
 
@@ -38,7 +42,3 @@ We recommend using these estimates as a starting point and consulting with our e
 At D2 Creative, we specialize in helping businesses launch new advertising campaigns or optimize existing ones to maximize their budget and achieve their goals. Our team of experts can provide you with personalized support and strategic insights to enhance your digital advertising efforts.
 
 Contact us today to discuss how we can collaborate to create effective and impactful digital advertising campaigns that deliver measurable results.
-
-## Let’s Connect
-
-## Let’s Connect

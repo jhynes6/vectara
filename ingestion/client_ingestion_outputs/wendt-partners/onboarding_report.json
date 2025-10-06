@@ -1,0 +1,15 @@
+{
+  "client_id": "wendt-partners",
+  "timestamp": "2025-10-05T09:12:23.380940Z",
+  "files_processed": 4,
+  "successful_uploads": 4,
+  "failed_uploads": 0,
+  "database_stats": {
+    "client_id": "wendt-partners",
+    "client_uuid": "wendt-partners",
+    "document_count": 4,
+    "chunk_count": 5,
+    "total_tokens": 2404
+  },
+  "output_directory": "ingestion/client_ingestion_outputs/wendt-partners"
+}

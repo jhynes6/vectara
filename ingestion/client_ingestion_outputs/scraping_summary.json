@@ -1,0 +1,14 @@
+{
+  "total_urls_discovered": 1,
+  "successful": 1,
+  "failed": 0,
+  "total_words": 1931,
+  "categories": {
+    "case_studies": 1
+  },
+  "extraction_methods": {
+    "brightdata_markdown_llm_cleanup": 1
+  },
+  "scraped_at": "2025-10-03T06:06:47.704811",
+  "custom_metadata": {}
+}

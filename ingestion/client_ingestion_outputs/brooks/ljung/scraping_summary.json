@@ -1,0 +1,18 @@
+{
+  "scraping_summary": {
+    "total_urls_discovered": 39,
+    "successful_scrapes": 39,
+    "failed_scrapes": 0,
+    "success_rate": "100.0%",
+    "total_words_scraped": 3055,
+    "categories": {
+      "blogs_resources": 30,
+      "other": 8,
+      "services_products": 1
+    },
+    "custom_metadata_applied": {
+      "client_name": "brooks/ljung"
+    },
+    "scrape_time": "2025-10-05T02:28:38.112142"
+  }
+}
